@@ -1,0 +1,96 @@
+# Press Box writer: gathers sports headlines, writes short ORIGINAL summaries (each linking to its source) with OpenRouter's free
+# models, and stores them in the Cloudflare KV namespace the reading app's Worker serves from.
+#
+# Runs every hour. A team with no new article since its last write is skipped with no AI call, so quiet hours cost almost nothing and
+# busy ones spread over the next runs. Public repository = unlimited free Actions minutes.
+# Secrets (repo Settings > Secrets and variables > Actions, never in code): OPENROUTER_API_KEY, CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN
+# (Workers KV Storage: Edit only). Optional repository variables: AI_BASE_URL, AI_MODELS, PRESS_BOX_KV_NAMESPACE_ID, TEAMS_FILE,
+# PRESS_BOX_APP_NAME, PRESS_BOX_SITE_URL, STORIES_PER_TEAM, AI_CALL_BUDGET.
+
+name: Press Box
+
+on:
+  schedule:
+    - cron: '7 * * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'daily = every team; after-game = teams whose game went final today; cleanup = remove stored off-sport stories (no feeds, no AI)'
+        required: false
+        default: 'daily'
+        type: choice
+        options: [daily, after-game, cleanup]
+      teams:
+        description: 'Only these team ids, comma separated (for a first test, e.g. nfl-lions). Empty = every team in the teams file.'
+        required: false
+        default: ''
+      dry_run:
+        description: 'Do everything except write to the store'
+        required: false
+        default: false
+        type: boolean
+
+# One run at a time: a slow run must not overlap the next one.
+concurrency:
+  group: press-box
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  write:
+    name: Write stories
+    if: github.repository == 'ryan-blacksite/press-box'
+    runs-on: ubuntu-latest
+    # The writer stops starting AI requests after RUN_BUDGET_MINUTES (default 12); this is only the backstop.
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci --ignore-scripts
+
+      - name: Write stories
+        env:
+          PRESS_BOX_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'daily' }}
+          PRESS_BOX_TEAMS: ${{ github.event_name == 'workflow_dispatch' && inputs.teams || '' }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '' }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          AI_BASE_URL: ${{ vars.AI_BASE_URL }}
+          AI_MODELS: ${{ vars.AI_MODELS }}
+          PRESS_BOX_KV_NAMESPACE_ID: ${{ vars.PRESS_BOX_KV_NAMESPACE_ID }}
+          TEAMS_FILE: ${{ vars.TEAMS_FILE }}
+          PRESS_BOX_APP_NAME: ${{ vars.PRESS_BOX_APP_NAME }}
+          PRESS_BOX_SITE_URL: ${{ vars.PRESS_BOX_SITE_URL }}
+          STORIES_PER_TEAM: ${{ vars.STORIES_PER_TEAM }}
+          AI_CALL_BUDGET: ${{ vars.AI_CALL_BUDGET }}
+        run: npx vite-node src/main.ts
+
+      # Read back what the live Worker serves, so a run that "succeeded" can be checked against what the app shows. Never fails the job.
+      - name: Read back from the Worker
+        if: always()
+        continue-on-error: true
+        env:
+          READBACK_URL: ${{ vars.READBACK_URL || 'https://fly-press-box.ryan-604.workers.dev/v1/press-box' }}
+          READBACK_TEAMS: ${{ inputs.teams || 'nfl-lions,nba-pistons' }}
+        run: |
+          ids="$(echo "$READBACK_TEAMS" | tr -d ' ' | cut -d, -f1-12)"
+          curl -fsS --max-time 30 "${READBACK_URL}?teams=${ids}&cb=${GITHUB_RUN_ID}" | node -e '
+            let raw = "";
+            process.stdin.on("data", (chunk) => (raw += chunk)).on("end", () => {
+              const teams = JSON.parse(raw).teams;
+              const rows = Object.entries(teams).map(([id, team]) => {
+                const stories = team.stories || [];
+                const newest = stories.map((story) => story.publishedAt).sort().pop() || "-";
+                return `| ${id} | ${team.status} | ${team.updatedAt || "-"} | ${stories.length} | ${newest} |`;
+              });
+              console.log(["### Stored in the Worker", "", "| team | status | updatedAt | stories | newest story |", "|---|---|---|---|---|", ...rows].join("\n"));
+            });
+          ' | tee -a "$GITHUB_STEP_SUMMARY"

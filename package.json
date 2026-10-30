@@ -1,0 +1,21 @@
+{
+  "name": "press-box",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Free sports news fetcher: gathers headlines, writes short original summaries with source links, and stores them for apps to read.",
+  "type": "module",
+  "scripts": {
+    "write": "vite-node src/main.ts",
+    "probe": "vite-node src/probe.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "~5.9.3",
+    "vite": "^5.4.0",
+    "vite-node": "^1.6.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": { "node": ">=20" }
+}

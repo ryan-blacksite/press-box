@@ -1,0 +1,25 @@
+# Measure AI limits: one tiny request per free model plus the key's own limits. Manual only (about a dozen requests). Read the job summary.
+name: Measure AI limits
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    if: github.repository == 'ryan-blacksite/press-box'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npx vite-node src/probe.ts
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          AI_BASE_URL: ${{ vars.AI_BASE_URL }}

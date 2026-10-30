@@ -1,0 +1,66 @@
+# Press Box
+
+A free sports news fetcher. Every hour it gathers recent headlines for each team on a list, has a free AI model write short **original**
+summaries (each links back to its source), and stores them in a Cloudflare KV namespace that an app's Worker serves.
+
+First customer: the FLY app. The story format, storage and the Worker URL FLY reads are unchanged, so FLY needs no changes.
+
+```
+GitHub Actions (hourly, free on public repos) -> news feeds -> OpenRouter ":free" models -> Cloudflare KV <- your Worker <- your app
+```
+
+## What it does
+
+- Reads each team's news (ESPN RSS and team JSON, optional team-site feeds, Google News where its robots.txt allows it).
+- Skips a team with no new article since its last write: no AI call, no write.
+- Asks a free model for 4 short summaries per team (3 teams per request). A summary is checked: it must not copy the source's wording
+  (a shared-phrase limit), must not state numbers the source does not, and must be about the right sport.
+- Stores one item per league (`bundle:nfl`, ...). At most 7 KV writes a run, 0 when nothing changed.
+
+## Respecting sites (see COMPLIANCE.md)
+
+Every feed and article page is fetched through the site's `robots.txt` (`src/robots.ts`). A disallowed page is never requested. The
+bot identifies itself as `PressBox/1.0` with a link to this repo. Stories are our own words plus a link; no article text is stored.
+
+## Setup
+
+1. Repo **Settings > Secrets and variables > Actions > Secrets**: `OPENROUTER_API_KEY`, `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_API_TOKEN`
+   (Cloudflare token with only **Workers KV Storage: Edit**).
+2. Optional **Variables**: `PRESS_BOX_KV_NAMESPACE_ID`, `TEAMS_FILE`, `AI_BASE_URL`, `AI_MODELS`, `PRESS_BOX_APP_NAME`, `PRESS_BOX_SITE_URL`,
+   `STORIES_PER_TEAM` (max 5), `AI_CALL_BUDGET` (AI requests per run, default 40).
+3. Test: Actions > **Press Box** > Run workflow, teams `nfl-lions`, dry run on. Then again with dry run off.
+4. Measure your key: Actions > **Measure AI limits** > Run workflow; read the job summary.
+
+## Using it for another app
+
+Everything app-specific is config:
+
+| What | Where |
+|---|---|
+| Teams (`id`, `league`, `name`, `abbreviation`, `city`) | `config/teams.fly.json`, or point `TEAMS_FILE` at your own |
+| Store (KV namespace) | `PRESS_BOX_KV_NAMESPACE_ID` (FLY's is the built-in default in `src/config.ts`) |
+| Name in prompts and the bot's User-Agent | `PRESS_BOX_APP_NAME`, `PRESS_BOX_SITE_URL` |
+| AI provider and models | `AI_BASE_URL` (any OpenAI-compatible API), `AI_MODELS` |
+
+`src/shared/` is the story format and the read side; the reading Worker uses the same code (FLY's copy is `workers/press-box` in
+fly-frontend). Change the format in both places or in neither.
+
+## Schedule and limits
+
+Hourly (`7 * * * *`). Each run makes at most 40 AI requests (3 teams each), so 24 runs stay under 960 a day, below OpenRouter's free
+limit for an account with purchased credits (about 1,000 a day, 20 a minute). With no credits the limit is far lower (about 50 a day):
+set `AI_CALL_BUDGET=2` and expect fewer teams per day. `npm run probe` measures the real numbers for your key.
+
+GitHub turns off scheduled workflows in a public repo after 60 days with no repository activity; any commit, or re-enabling the workflow
+in the Actions tab, turns it back on.
+
+## Develop
+
+```
+npm ci
+npm test            # 112 tests, no network
+npm run typecheck
+DRY_RUN=1 OPENROUTER_API_KEY=... PRESS_BOX_TEAMS=nfl-lions npm run write
+```
+
+No secret is ever in the repo. Licence: not chosen yet (all rights reserved until one is added).
