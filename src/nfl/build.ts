@@ -204,10 +204,10 @@ export function buildNflFiles(playerRows: Row[], schedule: Row[], season: number
   }
 
   const seasonSchedule = schedule.filter((game) => num(game, 'season') === season);
-  const index: { gameId: string; week: number; seasonType: string; away: string; home: string; awayScore: number | null; homeScore: number | null; hasStats: boolean }[] = [];
+  const index: { gameId: string; week: number; seasonType: string; date: string; away: string; home: string; awayScore: number | null; homeScore: number | null; hasStats: boolean }[] = [];
   for (const game of seasonSchedule) {
     index.push({
-      gameId: game.game_id, week: num(game, 'week'), seasonType: game.game_type, away: game.away_team, home: game.home_team,
+      gameId: game.game_id, week: num(game, 'week'), seasonType: game.game_type, date: game.gameday ?? '', away: game.away_team, home: game.home_team,
       awayScore: game.away_score === '' ? null : num(game, 'away_score'), homeScore: game.home_score === '' ? null : num(game, 'home_score'),
       hasStats: byGame.has(game.game_id),
     });

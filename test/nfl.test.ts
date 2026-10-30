@@ -11,10 +11,10 @@ const PLAYER_CSV = [
   '00-1,J.Love,Jordan Love,QB,,2026,7,REG,2026_07_GB_X,GB,X,20,30,250,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,',
 ].join('\n');
 const SCHEDULE_CSV = [
-  'game_id,season,game_type,week,away_team,away_score,home_team,home_score',
-  '2026_08_CAR_GB,2026,REG,8,CAR,19,GB,27',
-  '2026_07_X_GB,2026,REG,7,X,10,GB,10',
-  '2026_09_GB_BUF,2026,REG,9,GB,,BUF,',
+  'game_id,season,game_type,week,gameday,away_team,away_score,home_team,home_score',
+  '2026_08_CAR_GB,2026,REG,8,2026-10-29,CAR,19,GB,27',
+  '2026_07_X_GB,2026,REG,7,2026-10-22,X,10,GB,10',
+  '2026_09_GB_BUF,2026,REG,9,2026-11-05,GB,,BUF,',
 ].join('\n');
 
 const built = buildNflFiles(parseCsv(PLAYER_CSV), parseCsv(SCHEDULE_CSV), 2026, new Date('2026-10-30T12:00:00Z'));
@@ -70,7 +70,7 @@ describe('the site', () => {
   it('lists every scheduled game with whether stats are posted yet, and carries an attribution page', () => {
     const index = JSON.parse(built.files.get('nfl/2026/index.json') ?? 'null');
     expect(index.updatedAt).toBe('2026-10-30T12:00:00.000Z');
-    expect(index.games.find((g: { gameId: string }) => g.gameId === '2026_08_CAR_GB')).toMatchObject({ hasStats: true, awayScore: 19, homeScore: 27 });
+    expect(index.games.find((g: { gameId: string }) => g.gameId === '2026_08_CAR_GB')).toMatchObject({ hasStats: true, awayScore: 19, homeScore: 27, date: '2026-10-29' });
     expect(index.games.find((g: { gameId: string }) => g.gameId === '2026_09_GB_BUF')).toMatchObject({ hasStats: false, awayScore: null });
     expect(built.files.get('nfl/ATTRIBUTION.txt')).toContain('CC BY 4.0');
     expect(built.games).toBe(2);
