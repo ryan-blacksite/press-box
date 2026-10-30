@@ -7,6 +7,7 @@
   "scripts": {
     "write": "vite-node src/main.ts",
     "probe": "vite-node src/probe.ts",
+    "nfl": "vite-node src/nfl/main.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
