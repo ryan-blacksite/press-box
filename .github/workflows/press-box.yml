@@ -15,11 +15,11 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'daily = every team; after-game = teams whose game went final today; cleanup = remove stored off-sport stories (no feeds, no AI)'
+        description: 'daily = every team; after-game = teams whose game went final today; cleanup = remove stored off-sport stories (no feeds, no AI); bench = compare the free AI models on real articles (stores nothing)'
         required: false
         default: 'daily'
         type: choice
-        options: [daily, after-game, cleanup]
+        options: [daily, after-game, cleanup, bench]
       teams:
         description: 'Only these team ids, comma separated (for a first test, e.g. nfl-lions). Empty = every team in the teams file.'
         required: false
@@ -55,7 +55,16 @@ jobs:
 
       - run: npm ci --ignore-scripts
 
+      # mode=bench: run the free models side by side (src/bench.ts); stores nothing and needs only the OpenRouter key.
+      - name: Model bench
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'bench'
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          BENCH_MODELS: ${{ inputs.teams }}
+        run: npx vite-node src/bench.ts
+
       - name: Write stories
+        if: github.event_name != 'workflow_dispatch' || inputs.mode != 'bench'
         env:
           PRESS_BOX_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'daily' }}
           PRESS_BOX_TEAMS: ${{ github.event_name == 'workflow_dispatch' && inputs.teams || '' }}
