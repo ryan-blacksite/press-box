@@ -6,11 +6,18 @@
  *   exception — and every feed is fetched independently: one that is down costs that feed only.
  *   ESPN publishes league-wide feeds, so its items are filtered to the team by name.
  *   Google News needs the publisher name stripped from the title ("Headline - Detroit Free Press").
+ *   FV2-154 item 6b/6c: an item is kept only if it is English, is not a stats / line-combinations page, and (unless it comes
+ *   through a Google News link, whose real address is only known once the article is fetched and is checked again then) its
+ *   address is a trusted sports outlet (outlets.ts).
+ *   FV2-154 item 6d: Google News is closed to us by robots.txt, so coverage comes from these allowed feeds as well: CBS Sports and
+ *   Yahoo Sports by league, MLB.com's news, and Daily Faceoff for the NHL (LEAGUE_FEEDS). They are league-wide, so items are
+ *   filtered to the team by name like ESPN's, and memoizeFeeds() fetches each once per run however many teams read it.
  */
 import { FEED_FETCH_TIMEOUT_MS, PRESS_BOX_USER_AGENT } from './httpClient';
 import type { FeedItem } from './shared/types';
 import type { PressBoxTeam } from './shared/teams';
 import { isStoryForTeamSport, sportForLeague } from './shared/storySport';
+import { isEnglishText, isNonStoryTitle, isNonStoryUrl, type Trust } from './outlets';
 
 export { FEED_FETCH_TIMEOUT_MS, PRESS_BOX_USER_AGENT } from './httpClient';
 
@@ -108,6 +115,46 @@ export const ESPN_SPORT_PATH: Record<string, string> = {
   NCAAF: 'football/college-football',
   NCAAMB: 'basketball/mens-college-basketball',
 };
+
+/** FV2-154 item 6d: allowed league-wide feeds beyond ESPN's (each host's robots.txt allows them; checked 2026-10-31, see COMPLIANCE.md). */
+export const LEAGUE_FEEDS: Record<string, { name: string; url: string }[]> = {
+  NFL: [{ name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines/nfl/' }, { name: 'Yahoo Sports', url: 'https://sports.yahoo.com/nfl/rss/' }],
+  NBA: [{ name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines/nba/' }, { name: 'Yahoo Sports', url: 'https://sports.yahoo.com/nba/rss/' }],
+  NHL: [
+    { name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines/nhl/' },
+    { name: 'Yahoo Sports', url: 'https://sports.yahoo.com/nhl/rss/' },
+    { name: 'Daily Faceoff', url: 'https://www.dailyfaceoff.com/feed' },
+  ],
+  MLB: [
+    { name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines/mlb/' },
+    { name: 'Yahoo Sports', url: 'https://sports.yahoo.com/mlb/rss/' },
+    { name: 'MLB.com', url: 'https://www.mlb.com/feeds/news/rss.xml' },
+  ],
+  MLS: [{ name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines/soccer/' }, { name: 'Yahoo Sports', url: 'https://sports.yahoo.com/soccer/rss/' }],
+  EPL: [{ name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines/soccer/' }, { name: 'Yahoo Sports', url: 'https://sports.yahoo.com/soccer/rss/' }],
+  NCAAF: [{ name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines/college-football/' }, { name: 'Yahoo Sports', url: 'https://sports.yahoo.com/college-football/rss/' }],
+  NCAAMB: [{ name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines/college-basketball/' }, { name: 'Yahoo Sports', url: 'https://sports.yahoo.com/college-basketball/rss/' }],
+};
+
+const LEAGUE_FEED_URLS = new Set([...Object.values(LEAGUE_FEEDS).flat().map((feed) => feed.url), ...Object.values(ESPN_FEEDS)]);
+
+/**
+ * A fetcher that reads each league-wide feed once per run, however many of the ~290 teams ask for it (ESPN's league feeds and the
+ * LEAGUE_FEEDS above). Everything else passes straight through. Concurrent askers share one request.
+ */
+export function memoizeFeeds(fetcher: Fetcher): Fetcher {
+  const cache = new Map<string, Promise<{ status: number; statusText: string; headers: [string, string][]; body: string }>>();
+  return async (url, init) => {
+    if (!LEAGUE_FEED_URLS.has(url)) return fetcher(url, init);
+    let entry = cache.get(url);
+    if (!entry) {
+      entry = fetcher(url, init).then(async (res) => ({ status: res.status, statusText: res.statusText, headers: Array.from(res.headers as unknown as Iterable<[string, string]>), body: await res.text() }));
+      cache.set(url, entry);
+    }
+    const saved = await entry;
+    return new Response(saved.body, { status: saved.status, statusText: saved.statusText, headers: saved.headers });
+  };
+}
 
 export function googleNewsUrl(team: PressBoxTeam): string {
   const sport = sportForLeague(team.league);
@@ -212,6 +259,7 @@ export async function collectItems(
   teamSiteFeeds: Record<string, string> | undefined,
   fetcher: Fetcher,
   now: number,
+  trust: Trust,
   onIssue: (message: string) => void = () => undefined,
 ): Promise<CollectItemsResult> {
   type Job = { key: string; feed: FeedItem['feed']; url: string; source: string; kind: 'rss' | 'espn-json' };
@@ -220,6 +268,7 @@ export async function collectItems(
   if (espnTeam) jobs.push({ key: 'espn-team', feed: 'espn', url: espnTeam, source: 'ESPN', kind: 'espn-json' });
   const espnLeague = espnFeedUrl(team);
   if (espnLeague) jobs.push({ key: 'espn-league', feed: 'espn', url: espnLeague, source: 'ESPN', kind: 'rss' });
+  for (const feed of LEAGUE_FEEDS[team.league] ?? []) jobs.push({ key: `league-${feed.name}`, feed: 'league', url: feed.url, source: feed.name, kind: 'rss' });
   const site = teamSiteFeed(teamSiteFeeds, team);
   if (site) jobs.push({ key: 'team-site', feed: 'team', url: site, source: team.name, kind: 'rss' });
 
@@ -244,6 +293,9 @@ export async function collectItems(
       // League-wide RSS and team-site feeds are filtered to the team; Google query and ESPN team JSON already are.
       if (!teamFiltered && item.feed !== 'google' && !mentionsTeam(`${item.title} ${item.description}`, team)) continue;
       if (!isStoryForTeamSport({ headline: item.title, summary: item.description }, team)) continue;
+      // FV2-154: not a Japanese office or a stat page, and not an outlet we do not trust. A Google link is judged on the article it forwards to.
+      if (!isEnglishText(`${item.title} ${item.source}`) || isNonStoryTitle(item.title) || isNonStoryUrl(item.link)) continue;
+      if (item.feed !== 'google' && !trust.outlet(item.link)) continue;
       // Undated items are kept only from Google, whose own query is already limited to 3 days.
       if (item.publishedAt === 0 ? item.feed !== 'google' && !teamFiltered : now - item.publishedAt > MAX_ITEM_AGE_MS || item.publishedAt > now + DAY_MS) continue;
       items.push(item);

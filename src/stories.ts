@@ -12,12 +12,16 @@
  *   (buildTeamsBatch, buildBatchMessages): one request carries each team's numbered stories under a "TEAM:" heading and the reply
  *   numbers them straight through. Every story is still checked on its own, the failures of a whole batch are asked for once more
  *   together, and a story that still fails becomes the feed's headline, exactly as for a single team (buildTeamStories is a batch of one).
+ *   FV2-154 item 6: only articles from a trusted English sports outlet (outlets.ts) are read, and the credit is that outlet's own name
+ *   from the article's real address; stat pages and line-combination pages are skipped, not summarized; the prompt asks for what
+ *   happened and nothing about the article, and guard.ts rejects a summary that talks about it (fallback: the headline alone).
  */
 import { fetchArticle, isGoogleNewsLink } from './article';
 import { stripTags } from './feeds';
+import { isEnglishText, isNonStoryUrl, looksLikeStatsPage, type Trust } from './outlets';
 import { APP_NAME } from './httpClient';
 import { AiAuthError, AiBudgetError, AiUnavailableError, type AiClient, type ChatMessage } from './ai';
-import { validateSummary, type SummaryResult } from './guard';
+import { talksAboutTheArticle, validateSummary, type SummaryResult } from './guard';
 import type { Cluster } from './rank';
 import type { FeedItem, Story, StorySource } from './shared/types';
 import type { PressBoxTeam } from './shared/teams';
@@ -46,7 +50,8 @@ export function snippetFromItem(item: FeedItem): string {
   const lead = item.title.replace(/[.\s]+$/, '').toLowerCase();
   // Starts with the headline: what is left after it is at most the outlet's name, which adds nothing.
   if (lead && blurb.toLowerCase().startsWith(lead) && blurb.slice(lead.length).replace(/^[.\s:–—-]+/, '').length < 40) return '';
-  return blurb.length >= 20 ? blurb.slice(0, 900) : '';
+  if (blurb.length < 20 || talksAboutTheArticle(blurb).length > 0) return '';
+  return blurb.slice(0, 900);
 }
 
 /** Headline + link + feed snippet when the article or the AI is unavailable. */
@@ -90,7 +95,8 @@ export function buildMessages(team: Pick<PressBoxTeam, 'name' | 'league'>, input
     'Use ONLY the article text provided for that story. Do not add any fact, number, name, date or quote that is not in that text. Do not use outside knowledge.',
     'Write in your own words. Never copy more than a few words in a row from an article, and never use a long quotation.',
     'If the articles disagree or only some of them say something, say "reports" or "according to reports" instead of stating it as certain.',
-    'Each summary is 4 to 6 sentences: what happened, why it matters to the team and its fans, and what is next or still unknown. If the text does not say what is next, say what is not yet known; do not guess.',
+    'Each summary is 2 to 6 sentences: what happened and why it matters to the team and its fans. Say what is next only if the text says it. Shorter is fine: never pad to reach a length.',
+    'State only what happened. NEVER write about the article or text itself or about what it leaves out: no "the article", "the text", "does not specify", "is not mentioned", "no information", "it is unclear from". If something is not in the text, leave it out of the summary; do not mention that it is missing.',
     `Each headline is a short, plain, factual headline in your own words, no clickbait, no trailing period. Write only about ${team.name}'s ${sportForLeague(team.league) ?? team.league} program; reject any source about another sport or a women's program and return no entry for it.`,
     'Reply with JSON only, no other text: {"stories": [{"n": 1, "headline": string, "summary": string}, ...]} with exactly one entry per story, using the story numbers given.',
   ].join('\n');
@@ -153,7 +159,7 @@ export interface PreparedTeam {
 }
 
 /** Read the article text for a team's biggest stories (no AI yet). */
-export async function prepareTeam(team: PressBoxTeam, ranked: Cluster[], wanted: number, fetcher: Fetcher): Promise<PreparedTeam> {
+export async function prepareTeam(team: PressBoxTeam, ranked: Cluster[], wanted: number, fetcher: Fetcher, trust: Trust): Promise<PreparedTeam> {
   let articleFetches = 0;
   const inputs: StoryInput[] = [];
   const bare: StoryInput[] = [];
@@ -169,8 +175,13 @@ export async function prepareTeam(team: PressBoxTeam, ranked: Cluster[], wanted:
       articleFetches += 1;
       const article = await fetchArticle(item.link, fetcher);
       if (!article) continue;
-      seenOutlets.add(item.source);
-      articles.push({ source: item.source, url: article.url, text: article.text, embeddable: article.embeddable, publishedAt: item.publishedAt });
+      // The page actually read must be a trusted English sports outlet and a story; the credit is the outlet's own name for that address
+      // (never the feed's free text), so an odd <source> can no longer be credited.
+      const outlet = trust.outlet(article.url);
+      if (!outlet || isNonStoryUrl(article.url) || looksLikeStatsPage(article.text) || !isEnglishText(article.text)) continue;
+      if (seenOutlets.has(outlet)) continue;
+      seenOutlets.add(outlet);
+      articles.push({ source: outlet, url: article.url, text: article.text, embeddable: article.embeddable, publishedAt: item.publishedAt });
     }
     (articles.length > 0 ? inputs : bare).push({ cluster, items, articles });
   }
@@ -184,7 +195,8 @@ function rulesFor(subject: string, sportRule: string): string {
     'Use ONLY the article text provided for that story. Do not add any fact, number, name, date or quote that is not in that text. Do not use outside knowledge.',
     'Write in your own words. Never copy more than a few words in a row from an article, and never use a long quotation.',
     'If the articles disagree or only some of them say something, say "reports" or "according to reports" instead of stating it as certain.',
-    'Each summary is 4 to 6 sentences: what happened, why it matters to the team and its fans, and what is next or still unknown. If the text does not say what is next, say what is not yet known; do not guess.',
+    'Each summary is 2 to 6 sentences: what happened and why it matters to the team and its fans. Say what is next only if the text says it. Shorter is fine: never pad to reach a length.',
+    'State only what happened. NEVER write about the article or text itself or about what it leaves out: no "the article", "the text", "does not specify", "is not mentioned", "no information", "it is unclear from". If something is not in the text, leave it out of the summary; do not mention that it is missing.',
     `Each headline is a short, plain, factual headline in your own words, no clickbait, no trailing period. ${sportRule}`,
     'Reply with JSON only, no other text: {"stories": [{"n": 1, "headline": string, "summary": string}, ...]} with exactly one entry per story, using the story numbers given.',
   ].join('\n');
@@ -224,6 +236,8 @@ export function buildBatchMessages(entries: { team: Pick<PressBoxTeam, 'name' | 
 
 export interface BuildDeps {
   fetcher: Fetcher;
+  /** Which outlets may be read and credited (outlets.ts). */
+  trust: Trust;
   ai: AiClient;
   now: number;
 }
@@ -338,7 +352,7 @@ export async function buildTeamsBatch(batch: PreparedTeam[], wanted: number, dep
  * an AI problem: that is `aiFailed` (an AiAuthError, a bad key, is the one exception, because nothing after it can work).
  */
 export async function buildTeamStories(team: PressBoxTeam, ranked: Cluster[], wanted: number, deps: BuildDeps): Promise<TeamBuild> {
-  const prepared = await prepareTeam(team, ranked, wanted, deps.fetcher);
+  const prepared = await prepareTeam(team, ranked, wanted, deps.fetcher, deps.trust);
   const [build] = await buildTeamsBatch([prepared], wanted, { ai: deps.ai, now: deps.now });
   return build;
 }

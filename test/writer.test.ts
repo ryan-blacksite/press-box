@@ -20,6 +20,10 @@ import { ConfigError, DEFAULT_FREE_MODELS, DEFAULT_KV_NAMESPACE_ID, loadConfig }
 import { completedAbbreviations, easternDay, finishedTeamIds, scoreboardUrl } from '../src/afterGame';
 import { aiWarning, coveredTeams, exitCodeFor, formatSummary, runPressBox, RETRY_PASSES, type RunSummary } from '../src/run';
 import type { FeedItem, TeamStories } from '../src/shared/types';
+import { trustFor } from '../src/outlets';
+
+/** The built-in allowlist only (no team-site feeds, no extras). */
+const TRUST = trustFor(undefined);
 
 const LIONS = TEAMS.find((team) => team.id === 'nfl-lions')!;
 const NOW = Date.parse('2026-10-15T14:00:00Z');
@@ -133,7 +137,7 @@ describe('feeds', () => {
       if (url.includes('news.google.com')) return new Response(GOOGLE_RSS, { status: 200 });
       throw new Error('espn is down');
     });
-    const { items } = await collectItems(LIONS, undefined, fetcher as unknown as typeof fetch, NOW, (m) => issues.push(m));
+    const { items } = await collectItems(LIONS, undefined, fetcher as unknown as typeof fetch, NOW, TRUST, (m) => issues.push(m));
     // The nine-day-old item is dropped; the rest survive.
     expect(items.map((item) => item.source)).toEqual(['Detroit Free Press', 'ESPN', 'The Athletic']);
     expect(issues.length).toBeGreaterThanOrEqual(1);
@@ -141,7 +145,7 @@ describe('feeds', () => {
 
   it('filters ESPN’s league-wide feed to the team', async () => {
     const fetcher = vi.fn(async (url: string) => new Response(url.includes('espn') ? ESPN_RSS : '<rss></rss>', { status: 200 }));
-    const { items } = await collectItems(LIONS, undefined, fetcher as unknown as typeof fetch, NOW);
+    const { items } = await collectItems(LIONS, undefined, fetcher as unknown as typeof fetch, NOW, TRUST);
     expect(items.map((item) => item.title)).toEqual(['Detroit Lions put edge rusher on IR, sign veteran']);
   });
 
@@ -228,7 +232,7 @@ describe('summary guardrails', () => {
   });
 
   it('rejects a wrong number of sentences', () => {
-    expect(validateSummary({ ...GOOD_SUMMARY, summary: 'One. Two. Three.' }, [articleText])[0]).toMatch(/3 sentences/);
+    expect(validateSummary({ ...GOOD_SUMMARY, summary: 'One. Two. Three. Four. Five. Six. Seven.' }, [articleText])[0]).toMatch(/7 sentences/);
     expect(sentenceCount('Dr. Smith said so. Yes. Right. Maybe.')).toBe(4);
   });
 
@@ -569,7 +573,7 @@ function makeWorld(options: { unreadable?: boolean; failFeeds?: boolean } = {}) 
     const url = String(input);
     if (options.failFeeds && /rss|site\.web\.api\.espn/.test(url)) return new Response('', { status: 500 });
     if (url.includes('scoreboard')) return new Response(JSON.stringify({ events: [] }), { status: 200 });
-    if (url.includes('news.google.com/rss/search')) return new Response(GOOGLE_RSS.replace(/https:\/\/news\.google\.com\/rss\/articles\/[A-Za-z0-9?=]+/g, (_m, offset: number) => `https://news.example/${offset}`), { status: 200 });
+    if (url.includes('news.google.com/rss/search')) return new Response(GOOGLE_RSS.replace(/https:\/\/news\.google\.com\/rss\/articles\/[A-Za-z0-9?=]+/g, (_m, offset: number) => `https://${offset % 2 === 0 ? 'www.espn.com' : 'www.cbssports.com'}/story/${offset}`), { status: 200 });
     if (url.includes('site.web.api.espn.com')) return new Response(ESPN_TEAM_JSON, { status: 200, headers: { 'content-type': 'application/json' } });
     if (url.includes('espn.com/espn/rss')) return new Response(ESPN_RSS, { status: 200 });
     if (options.unreadable) return new Response('<html><body><p>Paywall.</p></body></html>', { status: 200, headers: { 'content-type': 'text/html' } });
@@ -595,7 +599,7 @@ function fakeAi(handler: (messages: ChatMessage[], call: number) => string = (me
 }
 
 async function rankedLions(fetcher: typeof fetch) {
-  const { items } = await collectItems(LIONS, undefined, fetcher, NOW);
+  const { items } = await collectItems(LIONS, undefined, fetcher, NOW, TRUST);
   return rankClusters(clusterItems(items), NOW);
 }
 
@@ -616,7 +620,7 @@ describe('one team’s stories', () => {
   it('tells the model to use only the article text, never copy, hedge disagreements, and answer in JSON', async () => {
     const ranked = await rankedLions(makeWorld());
     const { ai, calls } = fakeAi();
-    await buildTeamStories(LIONS, ranked, 3, { fetcher: makeWorld(), ai, now: NOW });
+    await buildTeamStories(LIONS, ranked, 3, { fetcher: makeWorld(), ai, trust: TRUST, now: NOW });
     const [system, user] = calls[0];
     expect(system.content).toMatch(/ONLY the article text/);
     expect(system.content).toMatch(/never use a long quotation/i);
@@ -633,7 +637,7 @@ describe('one team’s stories', () => {
       if (call === 1) return JSON.stringify({ stories: [{ n: 1, headline: 'Detroit Pistons basketball hire a coach', summary: GOOD_SUMMARY.summary }, ...Array.from({ length: storyCount(messages) - 1 }, (_, i) => ({ n: i + 2, ...GOOD_SUMMARY }))] });
       return goodReply(storyCount(messages));
     });
-    await buildTeamStories(LIONS, ranked, 3, { fetcher, ai, now: NOW });
+    await buildTeamStories(LIONS, ranked, 3, { fetcher, ai, trust: TRUST, now: NOW });
     expect(calls).toHaveLength(2);
     expect(calls[1][1].content).toMatch(/about another sport/);
     expect(storyCount(calls[1])).toBe(1);
@@ -642,7 +646,7 @@ describe('one team’s stories', () => {
   it('writes up to three stories with ONE AI call, naming the sources', async () => {
     const fetcher = makeWorld();
     const { ai, calls } = fakeAi();
-    const build = await buildTeamStories(LIONS, await rankedLions(fetcher), 3, { fetcher, ai, now: NOW });
+    const build = await buildTeamStories(LIONS, await rankedLions(fetcher), 3, { fetcher, ai, trust: TRUST, now: NOW });
     expect(calls).toHaveLength(1);
     expect(build).toMatchObject({ aiCalls: 1, fallbackStories: 0, aiFailed: false });
     expect(build.stories.length).toBeGreaterThanOrEqual(1);
@@ -658,7 +662,7 @@ describe('one team’s stories', () => {
   it('never writes more stories than asked for', async () => {
     const fetcher = makeWorld();
     const { ai } = fakeAi();
-    expect((await buildTeamStories(LIONS, await rankedLions(fetcher), 1, { fetcher, ai, now: NOW })).stories).toHaveLength(1);
+    expect((await buildTeamStories(LIONS, await rankedLions(fetcher), 1, { fetcher, ai, trust: TRUST, now: NOW })).stories).toHaveLength(1);
   });
 
   it('asks once more, for just the stories that broke the rules, with the objections', async () => {
@@ -669,7 +673,7 @@ describe('one team’s stories', () => {
       return goodReply(storyCount(messages));
     });
     const ranked = await rankedLions(fetcher);
-    const build = await buildTeamStories(LIONS, ranked, 3, { fetcher, ai, now: NOW });
+    const build = await buildTeamStories(LIONS, ranked, 3, { fetcher, ai, trust: TRUST, now: NOW });
     if (storyCount(calls[0]) > 1) {
       expect(calls).toHaveLength(2);
       expect(calls[1][1].content).toMatch(/previous answer for story 1 was rejected/);
@@ -683,7 +687,7 @@ describe('one team’s stories', () => {
   it('falls back to the feed headline and snippet for a story the AI keeps getting wrong', async () => {
     const fetcher = makeWorld();
     const { ai } = fakeAi(() => JSON.stringify({ stories: [{ n: 1, headline: 'Lions news', summary: 'Too short.' }] }));
-    const build = await buildTeamStories(LIONS, await rankedLions(fetcher), 3, { fetcher, ai, now: NOW });
+    const build = await buildTeamStories(LIONS, await rankedLions(fetcher), 3, { fetcher, ai, trust: TRUST, now: NOW });
     expect(build.aiFailed).toBe(false);
     expect(build.stories.length).toBeGreaterThan(0);
     expect(build.fallbackStories).toBe(build.stories.length);
@@ -693,7 +697,7 @@ describe('one team’s stories', () => {
   it('writes feed fallbacks, and spends no AI call, when no article can be read', async () => {
     const fetcher = makeWorld({ unreadable: true });
     const { ai, calls } = fakeAi();
-    const build = await buildTeamStories(LIONS, await rankedLions(fetcher), 3, { fetcher, ai, now: NOW });
+    const build = await buildTeamStories(LIONS, await rankedLions(fetcher), 3, { fetcher, ai, trust: TRUST, now: NOW });
     expect(calls).toHaveLength(0);
     expect(build.stories.length).toBeGreaterThan(0);
     expect(build.stories[0].url).toContain('espn.com');
@@ -703,13 +707,13 @@ describe('one team’s stories', () => {
     const fetcher = makeWorld();
     const ranked = await rankedLions(fetcher);
     const down = fakeAi(() => { throw new AiUnavailableError('down'); });
-    const failed = await buildTeamStories(LIONS, ranked, 3, { fetcher, ai: down.ai, now: NOW });
+    const failed = await buildTeamStories(LIONS, ranked, 3, { fetcher, ai: down.ai, trust: TRUST, now: NOW });
     expect(failed.aiFailed).toBe(true);
     expect(failed.stories.length).toBeGreaterThan(0);
     const spent = fakeAi(() => { throw new AiBudgetError('spent'); });
-    expect((await buildTeamStories(LIONS, ranked, 3, { fetcher, ai: spent.ai, now: NOW })).aiFailed).toBe(true);
+    expect((await buildTeamStories(LIONS, ranked, 3, { fetcher, ai: spent.ai, trust: TRUST, now: NOW })).aiFailed).toBe(true);
     const badKey = fakeAi(() => { throw new AiAuthError('refused'); });
-    await expect(buildTeamStories(LIONS, ranked, 3, { fetcher, ai: badKey.ai, now: NOW })).rejects.toBeInstanceOf(AiAuthError);
+    await expect(buildTeamStories(LIONS, ranked, 3, { fetcher, ai: badKey.ai, trust: TRUST, now: NOW })).rejects.toBeInstanceOf(AiAuthError);
   });
 
   it('builds a graceful fallback story from feed items', () => {
@@ -1134,7 +1138,7 @@ describe('a fast run (FV2-47)', () => {
           onFeed();
           const name = decodeURIComponent(new URL(url).searchParams.get('q') ?? '').replace(/"/g, '').split(' when:')[0].trim();
           const slug = name.toLowerCase().replace(/[^a-z]+/g, '-');
-          const items = [1, 2].map((i) => `<item><title>${name} place star pass rusher on injured reserve ${i} - Outlet ${i}</title><link>https://news.example.com/${slug}/${i}</link><pubDate>${hoursAgo(2)}</pubDate><description>x</description><source url="https://example.com/${i}">Outlet ${i}</source></item>`).join('');
+          const items = [1, 2].map((i) => `<item><title>${name} place star pass rusher on injured reserve ${i} - Outlet ${i}</title><link>https://${i === 1 ? 'www.espn.com' : 'www.cbssports.com'}/${slug}/${i}</link><pubDate>${hoursAgo(2)}</pubDate><description>x</description><source url="https://example.com/${i}">Outlet ${i}</source></item>`).join('');
           return new Response(`<?xml version="1.0"?><rss><channel>${items}</channel></rss>`, { status: 200 });
         }
         return (base as unknown as (u: string, i?: RequestInit) => Promise<Response>)(url, init);

@@ -37,7 +37,7 @@ export interface FeedItem {
   /** The feed's own blurb, tags stripped. Never used as a summary on its own. */
   description: string;
   /** Which feed it came from, for logs and tie-breaks. */
-  feed: 'google' | 'espn' | 'team';
+  feed: 'google' | 'espn' | 'team' | 'league';
 }
 
 export interface StorySource {

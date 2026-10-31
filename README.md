@@ -64,3 +64,9 @@ DRY_RUN=1 OPENROUTER_API_KEY=... PRESS_BOX_TEAMS=nfl-lions npm run write
 ```
 
 No secret is ever in the repo. Licence: not chosen yet (all rights reserved until one is added).
+
+## Quality rules (FV2-154 item 6)
+
+- **Summaries state what happened and nothing about the article.** The prompt forbids it and `src/guard.ts` rejects "the article", "does not specify", "is not mentioned", "no information" and the like; a rejected summary is asked for once more with the objection, then the story keeps only the feed's headline. Summaries are 2 to 6 sentences, so the model is never pushed to pad.
+- **Only real English sports outlets are read and credited.** `src/outlets.ts` holds the allowlist (ESPN, NHL.com and other league sites, CBS Sports, Yahoo Sports, AP, Daily Faceoff and more). The credit is the allowlist's name for the article's real address, never the feed's free text. Non-English text and unlisted hosts are dropped. Team-site feeds you configure (`TEAM_SITE_FEEDS`) are trusted by their host; add others with `EXTRA_OUTLETS="host=Name,host=Name"`.
+- **Non-stories are skipped.** Line combinations, depth charts, stats, standings, schedule and odds pages are recognised by title, address and content and never become a story.

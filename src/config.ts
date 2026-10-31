@@ -53,6 +53,8 @@ export interface WriterConfig {
    *  teams not yet written keep yesterday's stories, to be picked up by the next run. */
   runBudgetMs: number;
   teamSiteFeeds?: Record<string, string>;
+  /** FV2-154: extra trusted outlets beyond the built-in list, "host=Name,host=Name" (env EXTRA_OUTLETS); the hosts of teamSiteFeeds are trusted already. */
+  extraOutlets?: string;
   ai: {
     baseUrl: string;
     apiKey: string;
@@ -116,6 +118,7 @@ export function loadConfig(env: Record<string, string | undefined> = process.env
     batchTeams: Math.min(8, Math.floor(positive(env.BATCH_TEAMS, 3))),
     runBudgetMs: Math.round(positive(env.RUN_BUDGET_MINUTES, 12) * 60_000),
     teamSiteFeeds,
+    extraOutlets: env.EXTRA_OUTLETS,
     ai: {
       baseUrl: (env.AI_BASE_URL || 'https://openrouter.ai/api/v1').trim().replace(/\/$/, ''),
       apiKey,
