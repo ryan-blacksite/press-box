@@ -55,6 +55,42 @@ export function unsupportedNumbers(summary: string, articles: string[]): string[
   return Array.from(new Set(found)).filter((number) => !new RegExp(`(^|[^\\d.])${number.replace('.', '\\.')}([^\\d]|$)`).test(haystack));
 }
 
+/** Words that make a claim of their own ("second straight win", "first loss", "back-to-back"): each must be in the articles if the summary uses it. */
+const CLAIM_WORDS = /\b(first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|back-to-back|consecutive|straight|in a row|undefeated|unbeaten|winless|sweep|swept|record-breaking|franchise record|career-high|season-high|walk-off|shutout|comeback)\b/gi;
+
+/** Capitalized words that are not names: days, months, and words a sentence can carry without being a person or team. */
+const NOT_NAMES = new Set(['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december', 'according', 'coach', 'head', 'general', 'manager', 'league', 'season', 'conference', 'division', 'playoffs', 'playoff', 'overtime', 'american', 'national', 'eastern', 'western', 'central']);
+
+function plain(text: string): string {
+  return text.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[’‘]/g, "'").replace(/'s\b/g, '').replace(/[^a-z0-9\s'-]/g, ' ').replace(/\s+/g, ' ');
+}
+
+/** Claim words the summary uses that no article uses ("second loss in as many games" from an article about a first loss). */
+export function unsupportedClaims(summary: string, articles: string[]): string[] {
+  const haystack = plain(articles.join(' '));
+  const found = (summary.match(CLAIM_WORDS) ?? []).map((word) => plain(word).trim());
+  return Array.from(new Set(found)).filter((word) => !haystack.includes(word));
+}
+
+/**
+ * Names the summary uses that no article uses. A name is a capitalized word that is not the first word of a sentence. Possessives and
+ * accents are folded, so "Cardinals'" is "Cardinals" and "Dončić" is "doncic".
+ */
+export function unsupportedNames(summary: string, articles: string[]): string[] {
+  const haystack = plain(articles.join(' '));
+  const names = new Set<string>();
+  for (const sentence of summary.split(/(?<=[.!?])\s+/)) {
+    const tokens = sentence.split(/\s+/);
+    // The first word of a sentence is capitalized anyway, so it counts only as the start of a full name ("Zacc Hartley").
+    const start = /^[A-Z]/.test(tokens[1] ?? '') ? 0 : 1;
+    for (const raw of tokens.slice(start)) {
+      const word = raw.replace(/[’']s?$/, '').replace(/^[^A-Za-z]+|[^A-Za-z-]+$/g, '');
+      if (/^[A-Z][a-z]{2,}(?:-[A-Z][a-z]+)?$/.test(word) && !NOT_NAMES.has(word.toLowerCase())) names.add(word);
+    }
+  }
+  return Array.from(names).filter((name) => !haystack.includes(plain(name)));
+}
+
 /**
  * Wording that is about the source text rather than the news: "the article", "does not specify", "is not mentioned",
  * "no information". Returns the phrases found, so the retry can name them.
@@ -89,5 +125,10 @@ export function validateSummary(result: SummaryResult, articles: string[]): stri
   if (talk.length > 0) problems.push(`it talks about the article or what it leaves out ("${talk.join('", "')}"); state only what happened and delete any sentence about what the text does not say`);
   const numbers = unsupportedNumbers(`${result.headline} ${result.summary}`, articles);
   if (numbers.length > 0) problems.push(`it states ${numbers.join(', ')}, which the articles do not say; remove anything not in the text`);
+  // Facts must match the articles: claim words ("second straight", "undefeated") and names, as numbers above.
+  const claims = unsupportedClaims(`${result.headline} ${result.summary}`, articles);
+  if (claims.length > 0) problems.push(`it says "${claims.join('", "')}", which the articles do not; remove or correct it`);
+  const names = unsupportedNames(`${result.headline}. ${result.summary}`, articles);
+  if (names.length > 0) problems.push(`it names ${names.join(', ')}, which the articles do not mention; use only names in the text`);
   return problems;
 }

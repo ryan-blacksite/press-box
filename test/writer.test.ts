@@ -721,8 +721,8 @@ describe('one team’s stories', () => {
   });
 
   it('builds a graceful fallback story from feed items', () => {
-    const item: FeedItem = { title: 'Lions sign veteran', link: 'https://www.espn.com/nfl/story/_/id/9', publishedAt: NOW, source: 'ESPN', description: 'Detroit added a pass rusher.', feed: 'espn' };
-    const story = fallbackStoryFromItems('nfl-lions', [item], NOW);
+    const item: FeedItem = { title: 'Lions sign veteran', link: 'https://www.espn.com/nfl/story/_/id/9', publishedAt: NOW, source: 'ESPN', description: 'Detroit added a veteran pass rusher on a one-year deal.', feed: 'espn' };
+    const story = fallbackStoryFromItems('nfl-lions', [item], NOW)!;
     expect(story.headline).toBe('Lions sign veteran');
     expect(story.summary).toContain('pass rusher');
     expect(story.url).toContain('espn.com');

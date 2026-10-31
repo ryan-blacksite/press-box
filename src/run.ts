@@ -327,6 +327,9 @@ export async function runPressBox(config: WriterConfig, deps: RunDeps): Promise<
     }
     batch.forEach((entry, position) => {
       const build = builds[position];
+      // Why a draft was turned down (or why no draft came), so a story that fell back to the feed's blurb can be explained.
+      for (const rejection of build.rejections) deps.log(JSON.stringify({ event: 'press-box-ai-reject', team: entry.team.id, ...rejection }));
+      if (build.aiError) deps.log(JSON.stringify({ event: 'press-box-warn', team: entry.team.id, message: `AI unavailable: ${build.aiError}` }));
       if (build.aiFailed) retryLater.push({ entry, build });
       else finishEntry(entry, build);
     });

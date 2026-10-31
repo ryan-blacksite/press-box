@@ -22,17 +22,21 @@ import { isEnglishText, isNonStoryUrl, looksLikeStatsPage, type Trust } from './
 import { APP_NAME } from './httpClient';
 import { AiAuthError, AiBudgetError, AiUnavailableError, type AiClient, type ChatMessage } from './ai';
 import { talksAboutTheArticle, validateSummary, type SummaryResult } from './guard';
-import type { Cluster } from './rank';
+import { similarity, titleTokens, type Cluster } from './rank';
 import type { FeedItem, Story, StorySource } from './shared/types';
 import type { PressBoxTeam } from './shared/teams';
 import { isStoryForTeamSport, sportForLeague } from './shared/storySport';
 
 const SOURCES_PER_STORY = 2;
+/** Outlets credited on a story after two stories about one event are merged. */
+const MAX_SOURCES_SHOWN = 3;
 /** Articles fetched per team per run. */
 const MAX_ARTICLE_FETCHES = 8;
 const MAX_ARTICLE_PROMPT_CHARS = 2_500;
 /** How much of the start of an article must name the team for it to count as that team's story. */
 const OPENING_CHARS = 700;
+/** A feed blurb shorter than this is a teaser ("Spooky Rangers links."), not a summary. */
+const MIN_BLURB_CHARS = 40;
 
 type Fetcher = (url: string, init?: RequestInit) => Promise<Response>;
 
@@ -52,8 +56,38 @@ export function snippetFromItem(item: FeedItem): string {
   const lead = item.title.replace(/[.\s]+$/, '').toLowerCase();
   // Starts with the headline: what is left after it is at most the outlet's name, which adds nothing.
   if (lead && blurb.toLowerCase().startsWith(lead) && blurb.slice(lead.length).replace(/^[.\s:–—-]+/, '').length < 40) return '';
-  if (blurb.length < 20 || talksAboutTheArticle(blurb).length > 0) return '';
+  // Too short to say anything, a question put to the reader ("How nervous are you?"), or talk about the article: no summary at all.
+  if (blurb.length < MIN_BLURB_CHARS || /\?\s*$/.test(blurb) || talksAboutTheArticle(blurb).length > 0) return '';
   return blurb.slice(0, 900);
+}
+
+/** The final scores in a text ("116-111", "5-2"); a record like 7-5-1 is skipped because of the third number. */
+function scoresIn(text: string): Set<string> {
+  const found = new Set<string>();
+  for (const match of text.matchAll(/(?<![\d-])(\d{1,3})\s?[-–]\s?(\d{1,3})(?![\d-])/g)) found.add(`${match[1]}-${match[2]}`);
+  return found;
+}
+
+/** The names (capitalized words of 4+ letters) a text uses, folded to lower case. */
+function namesIn(text: string): Set<string> {
+  return new Set((text.match(/\b[A-Z][a-z]{3,}\b/g) ?? []).map((word) => word.toLowerCase()));
+}
+
+/**
+ * Two stories about one event: the same final score between at least two of the same names, or nearly the same headline and names.
+ * Conservative on purpose: two different games between the same teams have different scores.
+ */
+export function sameEvent(a: Pick<Story, 'headline' | 'summary'>, b: Pick<Story, 'headline' | 'summary'>): boolean {
+  const textA = `${a.headline}. ${a.summary}`;
+  const textB = `${b.headline}. ${b.summary}`;
+  const namesA = namesIn(textA);
+  const namesB = namesIn(textB);
+  const shared = [...namesA].filter((name) => namesB.has(name)).length;
+  const overlap = shared / Math.max(1, Math.min(namesA.size, namesB.size));
+  const scoresA = scoresIn(textA);
+  const sameScore = [...scoresIn(textB)].some((score) => scoresA.has(score) && score.split('-').some((part) => part.length >= 2));
+  if (sameScore && shared >= 2) return true;
+  return similarity(titleTokens(a.headline), titleTokens(b.headline)) >= 0.7 && overlap >= 0.5;
 }
 
 /**
@@ -159,6 +193,20 @@ export interface TeamBuild {
   articleFetches: number;
   /** The AI could not be used at all (every model failed, or the budget is spent): the caller keeps yesterday's stories. */
   aiFailed: boolean;
+  /** Every draft the checks turned down (and every story the AI left out), so a run can show WHY a story fell back to the feed's blurb. */
+  rejections: Rejection[];
+  /** Why the AI could not be used, when `aiFailed`. */
+  aiError?: string;
+}
+
+export interface Rejection {
+  /** The feed headline of the story the draft was for. */
+  story: string;
+  /** 1 = first answer, 2 = the answer to the retry. */
+  attempt: number;
+  issues: string[];
+  /** What the AI wrote, when it wrote something. */
+  draft?: SummaryResult;
 }
 
 /** A team whose feeds and articles have been read and is ready to be written up. */
@@ -277,12 +325,13 @@ function assembleStories(prepared: PreparedTeam, results: (SummaryResult | null)
   const ordered = [...inputs.map((input, index) => ({ input, index })), ...bare.map((input) => ({ input, index: -1 }))].sort(
     (a, b) => ranked.indexOf(a.input.cluster) - ranked.indexOf(b.input.cluster),
   );
+  const written = new Set<Story>();
   for (const { input, index } of ordered) {
-    if (stories.length >= wanted) break;
     const result = index >= 0 ? results[index] : null;
+    let story: Story | null = null;
     if (result) {
       const lead = input.articles[0];
-      stories.push({
+      story = {
         id: storyId(team.id, lead.url),
         headline: result.headline,
         summary: result.summary,
@@ -290,16 +339,26 @@ function assembleStories(prepared: PreparedTeam, results: (SummaryResult | null)
         url: lead.url,
         embeddable: lead.embeddable,
         publishedAt: new Date(Math.max(...input.articles.map((article) => article.publishedAt), input.cluster.newestAt) || now).toISOString(),
-      });
-      aiStories += 1;
+      };
+      written.add(story);
     } else if (input.items.length > 0) {
-      const fallback = fallbackStoryFromItems(team.id, input.items, now, prepared.trust);
-      if (fallback) {
-        stories.push(fallback);
-        fallbackStories += 1;
-      }
+      story = fallbackStoryFromItems(team.id, input.items, now, prepared.trust);
     }
+    if (!story) continue;
+    // The same game told twice (two recaps of one score) is one story with both outlets credited, not two.
+    const twin = stories.find((other) => sameEvent(other, story!));
+    if (!twin) {
+      stories.push(story);
+      continue;
+    }
+    for (const source of story.sources) if (!twin.sources.some((existing) => existing.name === source.name)) twin.sources.push(source);
+    twin.sources.splice(MAX_SOURCES_SHOWN);
+    // A written summary beats a blurb; otherwise the first (biggest) story stands.
+    if (written.has(story) && !written.has(twin) && story.summary.length > twin.summary.length) Object.assign(twin, { headline: story.headline, summary: story.summary, id: story.id, url: story.url, embeddable: story.embeddable }), written.add(twin);
   }
+  stories.splice(wanted);
+  aiStories = stories.filter((story) => written.has(story)).length;
+  fallbackStories = stories.length - aiStories;
   return { stories, aiStories, fallbackStories };
 }
 
@@ -313,7 +372,10 @@ export async function buildTeamsBatch(batch: PreparedTeam[], wanted: number, dep
   const results = batch.map((prepared) => prepared.inputs.map((): SummaryResult | null => null));
   const problems = batch.map((prepared) => prepared.inputs.map((): string[] | null => null));
   const calls = batch.map(() => 0);
+  const rejections = batch.map((): Rejection[] => []);
   let aiFailed = false;
+  let aiError: string | undefined;
+  let attempt = 1;
 
   async function ask(refs: BatchRef[]): Promise<void> {
     const entries = batch.map((prepared, slot) => ({
@@ -335,14 +397,19 @@ export async function buildTeamsBatch(batch: PreparedTeam[], wanted: number, dep
   const check = (ref: BatchRef): boolean => {
     const { team, inputs } = batch[ref.slot];
     const result = results[ref.slot][ref.input];
+    const story = inputs[ref.input].cluster.items[0]?.title ?? '';
     if (!result) {
       problems[ref.slot][ref.input] = ['it was missing or not valid JSON with "headline" and "summary"'];
+      rejections[ref.slot].push({ story, attempt, issues: problems[ref.slot][ref.input]! });
       return false;
     }
     const issues = validateSummary(result, inputs[ref.input].articles.map((article) => article.text));
     if (!isStoryForTeamSport(result, team)) issues.push('it is about another sport or a women\'s program');
     problems[ref.slot][ref.input] = issues.length > 0 ? issues : null;
-    if (issues.length > 0) results[ref.slot][ref.input] = null;
+    if (issues.length > 0) {
+      rejections[ref.slot].push({ story, attempt, issues, draft: result });
+      results[ref.slot][ref.input] = null;
+    }
     return issues.length === 0;
   };
 
@@ -353,19 +420,22 @@ export async function buildTeamsBatch(batch: PreparedTeam[], wanted: number, dep
       const failed = all.filter((ref) => !check(ref));
       if (failed.length > 0) {
         // One more try for just the stories that broke the rules, with the objections.
+        attempt = 2;
         await ask(failed);
         failed.forEach((ref) => { check(ref); });
       }
     } catch (error) {
       if (error instanceof AiAuthError) throw error;
-      if (error instanceof AiUnavailableError || error instanceof AiBudgetError) aiFailed = true;
-      else throw error;
+      if (error instanceof AiUnavailableError || error instanceof AiBudgetError) {
+        aiFailed = true;
+        aiError = error.message;
+      } else throw error;
     }
   }
 
   return batch.map((prepared, slot) => {
     const { stories, aiStories, fallbackStories } = assembleStories(prepared, results[slot], wanted, now);
-    return { stories, aiCalls: calls[slot], aiStories, fallbackStories, articleFetches: prepared.articleFetches, aiFailed: aiFailed && prepared.inputs.length > 0 };
+    return { stories, aiCalls: calls[slot], aiStories, fallbackStories, articleFetches: prepared.articleFetches, aiFailed: aiFailed && prepared.inputs.length > 0, rejections: rejections[slot], ...(aiFailed && aiError ? { aiError } : {}) };
   });
 }
 

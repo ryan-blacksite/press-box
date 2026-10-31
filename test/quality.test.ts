@@ -8,10 +8,10 @@
 import { describe, expect, it } from 'vitest';
 import { TEAMS } from '../src/shared/teams';
 import { collectItems, memoizeFeeds } from '../src/feeds';
-import { talksAboutTheArticle, validateSummary } from '../src/guard';
+import { talksAboutTheArticle, unsupportedClaims, unsupportedNames, validateSummary } from '../src/guard';
 import { isEnglishText, isNonStoryTitle, isNonStoryUrl, looksLikeStatsPage, outletForUrl, trustFor } from '../src/outlets';
 import { extractArticleText } from '../src/article';
-import { buildMessages, fallbackStoryFromItems, prepareTeam, snippetFromItem } from '../src/stories';
+import { buildMessages, buildTeamsBatch, fallbackStoryFromItems, prepareTeam, sameEvent, snippetFromItem } from '../src/stories';
 import type { Cluster } from '../src/rank';
 import type { FeedItem } from '../src/shared/types';
 
@@ -298,5 +298,54 @@ describe('FV2-154 round two, second pass', () => {
     const fetcher = async (url: string) => (url.includes('site.web.api.espn.com') ? new Response(json, { status: 200 }) : new Response('', { status: 404 }));
     const { items } = await collectItems(STARS, undefined, fetcher as unknown as typeof fetch, NOW, TRUST);
     expect(items.map((entry) => entry.title)).toEqual(['Stars rally past Avalanche']);
+  });
+});
+
+describe('FV2-154 round three: facts match the article, no teaser blurbs, one story per game, and the reasons are logged', () => {
+  const GAME = 'The Dallas Mavericks topped the previously undefeated Houston Rockets 116-111 on Friday. Cooper Flagg and Kyrie Irving scored 25 of their combined 68 points in the fourth quarter as Dallas completed the comeback. Coach Dusty May praised the effort. It was the first loss of the season for Houston. '.repeat(2);
+
+  it('rejects a claim word the article does not use ("second loss in as many games")', () => {
+    expect(unsupportedClaims('The Rockets took their second loss in as many games.', [GAME])).toEqual(['second']);
+    expect(unsupportedClaims('Houston, previously undefeated, took its first loss of the season.', [GAME])).toEqual([]);
+    const problems = validateSummary({ headline: 'Mavericks beat Rockets', summary: 'Dallas won 116-111 in a comeback. The Rockets took their second loss in as many games.' }, [GAME]);
+    expect(problems.join(' ')).toMatch(/second/);
+  });
+
+  it('rejects a name the article never mentions, and accepts names it does (possessives and accents folded)', () => {
+    expect(unsupportedNames('Dallas rallied past Houston behind Irving. Zacc Hartley also played well.', [GAME])).toEqual(['Zacc', 'Hartley']);
+    expect(unsupportedNames('The Rockets’ first loss came behind Flagg’s fourth quarter. Dončić watched.', [GAME + ' Doncic watched.'])).toEqual([]);
+  });
+
+  it('keeps a faithful summary clean', () => {
+    expect(validateSummary({ headline: 'Mavericks end Rockets’ perfect start', summary: 'Dallas rallied past previously undefeated Houston, 116-111, on Friday. Flagg and Irving poured in 25 points late, which sealed the comeback.' }, [GAME])).toEqual([]);
+  });
+
+  it('gives a question or a teaser as no summary at all', () => {
+    const item = (description: string): FeedItem => ({ title: 'Cowboys news', link: 'https://www.espn.com/a', publishedAt: NOW, source: 'ESPN', description, feed: 'espn' });
+    expect(snippetFromItem(item('How nervous are you really about the Cardinals game on Sunday?'))).toBe('');
+    expect(snippetFromItem(item('Spooky Rangers links.'))).toBe('');
+    expect(snippetFromItem(item('Dallas five-time Pro Bowl wide receiver has never beaten Arizona in his career.'))).toContain('Pro Bowl');
+  });
+
+  it('treats two recaps of one score as one event, and two different games as two', () => {
+    const espn = { headline: 'Irving scores 35 and Flagg adds 33 as Mavericks hand Rockets 1st loss 116-111', summary: 'Kyrie Irving scored 35 points and the Dallas Mavericks beat Houston 116-111.' };
+    const yahoo = { headline: 'Mavericks Defeat Undefeated Rockets 116-111', summary: 'The Dallas Mavericks topped the Houston Rockets 116-111 behind Cooper Flagg and Kyrie Irving.' };
+    const nextGame = { headline: 'Mavericks fall to Rockets 104-99 in rematch', summary: 'Houston evened the series 104-99 against the Dallas Mavericks.' };
+    expect(sameEvent(espn, yahoo)).toBe(true);
+    expect(sameEvent(espn, nextGame)).toBe(false);
+  });
+
+  it('records why a draft was turned down, for the dry-run log', async () => {
+    const cluster: Cluster = { items: [{ title: 'Stars beat Avalanche', link: 'https://www.espn.com/nhl/story/_/id/1/stars', publishedAt: NOW, source: 'ESPN', description: '', feed: 'espn' }], outlets: ['ESPN'], newestAt: NOW, score: 1 };
+    const page = `<html><body><article>${PROSE.split('. ').filter(Boolean).map((sentence) => `<p>${sentence}.</p>`).join('')}</article></body></html>`;
+    const fetcher = async () => new Response(page.repeat(1), { status: 200, headers: { 'content-type': 'text/html' } });
+    const prepared = await prepareTeam(STARS, [cluster], 1, fetcher as unknown as typeof fetch, TRUST);
+    const bad = JSON.stringify({ stories: [{ n: 1, headline: 'Stars win', summary: 'Dallas won. The Stars took their fourth straight win. Zorro Quint scored.' }] });
+    const ai = { chat: async () => ({ content: bad, model: 'm' }), stats: () => ({ calls: 0, retries: 0, modelsUsed: {}, deadModels: [] }) };
+    const [build] = await buildTeamsBatch([prepared], 3, { ai, now: NOW });
+    expect(build.rejections.map((entry) => entry.attempt)).toEqual([1, 2]);
+    expect(build.rejections[0]).toMatchObject({ story: 'Stars beat Avalanche', draft: { headline: 'Stars win' } });
+    expect(build.rejections[0].issues.join(' ')).toMatch(/fourth|Zorro/);
+    expect(build.fallbackStories).toBe(1);
   });
 });
