@@ -41,10 +41,10 @@ permissions:
 jobs:
   write:
     name: Write stories
-    if: github.repository == 'ryan-blacksite/press-box'
+    if: github.repository == 'ryan-blacksite/press-box' && (github.event_name != 'workflow_dispatch' || inputs.mode != 'bench')
     runs-on: ubuntu-latest
     # The writer stops starting AI requests after RUN_BUDGET_MINUTES (default 12); this is only the backstop.
-    timeout-minutes: 45
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -55,16 +55,7 @@ jobs:
 
       - run: npm ci --ignore-scripts
 
-      # mode=bench: run the free models side by side (src/bench.ts); stores nothing and needs only the OpenRouter key.
-      - name: Model bench
-        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'bench'
-        env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          BENCH_MODELS: ${{ inputs.teams }}
-        run: npx vite-node src/bench.ts
-
       - name: Write stories
-        if: github.event_name != 'workflow_dispatch' || inputs.mode != 'bench'
         env:
           PRESS_BOX_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'daily' }}
           PRESS_BOX_TEAMS: ${{ github.event_name == 'workflow_dispatch' && inputs.teams || '' }}
@@ -103,3 +94,23 @@ jobs:
               console.log(["### Stored in the Worker", "", "| team | status | updatedAt | stories | newest story |", "|---|---|---|---|---|", ...rows].join("\n"));
             });
           ' | tee -a "$GITHUB_STEP_SUMMARY"
+
+  # mode=bench: the free AI models side by side on real articles (src/bench.ts). Stores nothing and needs only the OpenRouter key; it is
+  # slow on purpose (free-tier limits), so it has its own, longer limit and never runs on the hourly schedule.
+  bench:
+    name: Model bench
+    if: github.repository == 'ryan-blacksite/press-box' && github.event_name == 'workflow_dispatch' && inputs.mode == 'bench'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Run the bench
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          BENCH_MODELS: ${{ inputs.teams }}
+        run: npx vite-node src/bench.ts

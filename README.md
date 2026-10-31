@@ -73,3 +73,7 @@ No secret is ever in the repo. Licence: not chosen yet (all rights reserved unti
 - **The story is about the team.** A league-wide feed item counts for a team only when its name is in the headline or the first words of the blurb, and an article only when its name is in the opening of the page.
 - **A headline-only story follows the same credit rules.** When the article or the AI is unavailable, the story is the feed's headline and blurb, but still only from a trusted outlet, credited by the allowlist's name, once per outlet; with no trusted item there is no story.
 - **Article text is read from the page's own prose.** The `<article>` or `<main>` block with the most prose wins (ESPN and Yahoo put teasers for other stories in an earlier one). Every page is still fetched through the robots.txt-checking fetcher, so a page robots.txt disallows is never read.
+
+## Choosing the free AI model (model bench)
+
+`AI_MODELS` is a fall-back chain, best first: the first model that is not resting is used, the next only when it is rate-limited or gone. `AI_ROTATE=1` spreads requests over all of them in turn instead. To re-test the field, run the **Press Box** workflow with `mode=bench` (optionally `teams` = a comma list of `:free` model ids): it writes the same real stories with each free model, one-step and two-step (extract the facts, then write from only those), judges every answer with the writer's own checks, and prints a table. It stores nothing and only ever calls free models. The order in `DEFAULT_FREE_MODELS` comes from the 2026-10-31 run.

@@ -153,10 +153,13 @@ export function createAiClient(config: WriterConfig['ai'], models: string[], dep
     }
   }
 
-  /** The next model that is not cooling, in rotation; null when every one is. */
+  /**
+   * The model to use: the first in the list that is not cooling (the list is the fall-back chain, best first), or, with AI_ROTATE, the
+   * next one in turn. Null when every one is cooling.
+   */
   function pick(): string | null {
     for (let step = 0; step < models.length; step += 1) {
-      const index = (cursor + step) % models.length;
+      const index = ((config.rotate ? cursor : 0) + step) % models.length;
       if (!isCooling(models[index])) {
         cursor = (index + 1) % models.length;
         return models[index];

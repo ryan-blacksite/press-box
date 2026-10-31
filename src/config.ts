@@ -19,6 +19,10 @@
  * own "pick any free model" router, a safety net.
  */
 export const DEFAULT_FREE_MODELS: readonly string[] = [
+  // Ordered by the model bench (src/bench.ts, 2026-10-31): the first that is not resting is used, the rest are the fall-back chain.
+  'nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free',
+  'nvidia/nemotron-3.5-super-vl:free',
+  'nvidia/nemotron-3-ultra-550b-a55b:free',
   'openai/gpt-oss-120b:free',
   'meta-llama/llama-3.3-70b-instruct:free',
   'z-ai/glm-4.5-air:free',
@@ -59,6 +63,8 @@ export interface WriterConfig {
     baseUrl: string;
     apiKey: string;
     models: string[];
+    /** Spread requests over the models in turn (AI_ROTATE=1) instead of using the first one that is not resting. */
+    rotate: boolean;
     /** Smallest gap between two AI request STARTS, ms (free models allow about 20 a minute). */
     paceMs: number;
     /** AI requests in flight at once (the pace above still applies to when each one starts). Absent: one at a time. */
@@ -123,6 +129,7 @@ export function loadConfig(env: Record<string, string | undefined> = process.env
       baseUrl: (env.AI_BASE_URL || 'https://openrouter.ai/api/v1').trim().replace(/\/$/, ''),
       apiKey,
       models: models.length > 0 ? models : [...DEFAULT_FREE_MODELS],
+      rotate: /^(1|true|yes)$/i.test((env.AI_ROTATE ?? '').trim()),
       paceMs: positive(env.AI_PACE_MS, 3_500),
       concurrency: Math.min(16, Math.floor(positive(env.AI_CONCURRENCY, 10))),
       maxWaitMs: Math.round(positive(env.AI_MAX_WAIT_SECONDS, 120) * 1_000),

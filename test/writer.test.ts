@@ -307,8 +307,14 @@ describe('AI client', () => {
     expect(requests.map((request) => request.model)).toEqual(['model-a', 'model-b']);
   });
 
-  it('uses the models in rotation while they all work, so each one’s own limit is spared (FV2-47)', async () => {
+  it('uses the first model in the list while it works, and the next ones only when it rests (the list is the fall-back chain)', async () => {
     const { ai, requests } = harness(() => okReply('x'), CFG, ['model-a', 'model-b', 'model-c']);
+    for (let i = 0; i < 4; i += 1) await ai.chat(ask);
+    expect(requests.map((request) => request.model)).toEqual(['model-a', 'model-a', 'model-a', 'model-a']);
+  });
+
+  it('with AI_ROTATE uses the models in rotation, so each one’s own limit is spared (FV2-47)', async () => {
+    const { ai, requests } = harness(() => okReply('x'), { ...CFG, rotate: true }, ['model-a', 'model-b', 'model-c']);
     for (let i = 0; i < 6; i += 1) await ai.chat(ask);
     expect(requests.map((request) => request.model)).toEqual(['model-a', 'model-b', 'model-c', 'model-a', 'model-b', 'model-c']);
   });
