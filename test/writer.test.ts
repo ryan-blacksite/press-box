@@ -702,7 +702,9 @@ describe('one team’s stories', () => {
     const build = await buildTeamStories(LIONS, await rankedLions(fetcher), 3, { fetcher, ai, trust: TRUST, now: NOW });
     expect(calls).toHaveLength(0);
     expect(build.stories.length).toBeGreaterThan(0);
-    expect(build.stories[0].url).toContain('espn.com');
+    // A Lions story from a trusted outlet; the Packers item ESPN's team feed also carried no longer gets in.
+    expect(build.stories[0].headline).toMatch(/Lions/);
+    expect(build.stories[0].url).toMatch(/espn\.com|cbssports\.com/);
   });
 
   it('reports aiFailed (so the caller keeps yesterday) when no model answers, and rethrows a rejected key', async () => {

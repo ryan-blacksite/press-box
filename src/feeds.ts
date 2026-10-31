@@ -292,8 +292,8 @@ export async function collectItems(
     sourceCounts[job.key] = result.value.length;
     const teamFiltered = job.key === 'espn-team';
     for (const item of result.value) {
-      // League-wide RSS and team-site feeds are filtered to the team; Google query and ESPN team JSON already are.
-      if (!teamFiltered && item.feed !== 'google' && !mentionsTeam(`${item.title} ${item.description.slice(0, ITEM_OPENING_CHARS)}`, team)) continue;
+      // Every feed but Google (whose own query is the team) must name the team up front: ESPN's team feed also lists other clubs' stories that merely mention it.
+      if (item.feed !== 'google' && !mentionsTeam(`${item.title} ${item.description.slice(0, ITEM_OPENING_CHARS)}`, team)) continue;
       if (!isStoryForTeamSport({ headline: item.title, summary: item.description }, team)) continue;
       // FV2-154: not a Japanese office or a stat page, and not an outlet we do not trust. A Google link is judged on the article it forwards to.
       if (!isEnglishText(`${item.title} ${item.source}`) || isNonStoryTitle(item.title) || isNonStoryUrl(item.link)) continue;

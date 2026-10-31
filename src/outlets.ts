@@ -82,13 +82,13 @@ const NON_STORY_TITLE = /\b(line ?combinations?|lines? and pairings|depth ?chart
  * Things that are about the game but are not news of it: betting guides and picks, predictions, power rankings, trackers, how-to-watch
  * guides, uniform roundups, polls, trivia lists, fantasy advice, video highlights, galleries and link roundups.
  */
-const NON_STORY_KIND = /\b(betting|odds|point spread|against the spread|ats picks|prop bets?|parlays?|best bets?|expert picks|picks? (and|&) predictions?|predictions?|power rankings?|weekly rankings|tracker|uniforms?|highlights|polls?|poll results|fan vote|mock draft|how to watch|where to watch|live ?stream|what channel|tv channel|start time|cheat ?sheet|fantasy|dfs|trivia|quiz|photos|gallery|links|roundup|round-up|mailbag|open thread|game ?thread)\b|\bwho (has|have) won\b|\bwho won the most\b/i;
+const NON_STORY_KIND = /\b(betting|odds|point spread|against the spread|ats picks|prop bets?|parlays?|best bets?|expert picks|picks? (and|&) predictions?|predictions?|power rankings?|weekly rankings|tracker|uniforms?|highlights|polls?|poll results|fan vote|mock draft|how to watch|where to watch|what to watch|everything you need to know|draft order|projections?|game previews?|live ?stream|what channel|tv channel|start time|cheat ?sheet|fantasy|dfs|trivia|quiz|photos|gallery|links|roundup|round-up|mailbag|open thread|game ?thread)\b|\bwho (has|have) won\b|\bwho won the most\b|\bschedule,/i;
 
 export function isNonStoryTitle(title: string): boolean {
   return NON_STORY_TITLE.test(title.trim()) || /\bline ?combinations?\b/i.test(title) || NON_STORY_KIND.test(title);
 }
 
-const NON_STORY_PATH = /\/(line-?combinations?|lines|depth-?chart|stats?|standings|schedule|scoreboard|boxscore|gamelog|odds|betting|picks|predictions|tickets|roster|rosters|players?|teams?|cap-?space|salary-?cap|video|videos|watch|gallery|galleries|photos|podcasts?|fantasy)\/?(\?|#|$)|\/(video|videos|gallery|photos|betting|odds|fantasy)\//i;
+const NON_STORY_PATH = /\/(line-?combinations?|lines|depth-?chart|stats?|standings|schedule|scoreboard|boxscore|gamelog|odds|betting|picks|predictions|tickets|roster|rosters|players?|teams?|cap-?space|salary-?cap|preview|video|videos|watch|gallery|galleries|photos|podcasts?|fantasy)\/?(\?|#|$)|\/(video|videos|gallery|photos|betting|odds|fantasy)\//i;
 
 export function isNonStoryUrl(url: string): boolean {
   try {

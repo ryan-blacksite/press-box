@@ -276,3 +276,27 @@ describe('a headline-only story follows the same credit rules (6b)', () => {
     expect(story.sources.map((source) => source.name)).toEqual(['Daily Faceoff']);
   });
 });
+
+describe('FV2-154 round two, second pass', () => {
+  it('skips the guides the second dry run let through', () => {
+    for (const title of [
+      'NHL Tonight: What to watch in all 10 spooky games on Halloween',
+      '2027 NFL draft order projections for Round 1, chances for top pick, more',
+      '2026 NBA Cup: Schedule, format, groups, updates and more',
+      'Columbus Blue Jackets (10pts) vs. Dallas Stars (15 pts) Game Preview',
+      'Everything you need to know about the NBA Cup',
+    ]) expect(isNonStoryTitle(title), title).toBe(true);
+    expect(isNonStoryUrl('http://www.espn.com/nhl/preview?gameId=401892622')).toBe(true);
+    expect(isNonStoryUrl('http://www.espn.com/nba/recap?gameId=401909283')).toBe(false);
+  });
+
+  it('ESPN’s team feed is held to the same “team named up front” rule as the others', async () => {
+    const json = JSON.stringify({ articles: [
+      { headline: 'Where the Vikings rank among worst 6-0 teams', description: 'Aaron Schatz ranked the worst 6-0 teams ever by DVOA and point differential.', links: { web: { href: 'https://www.espn.com/nfl/story/_/id/1/vikings' } }, published: new Date(NOW - 3_600_000).toISOString() },
+      { headline: 'Stars rally past Avalanche', description: 'A big night in Dallas.', links: { web: { href: 'https://www.espn.com/nhl/story/_/id/2/stars' } }, published: new Date(NOW - 3_600_000).toISOString() },
+    ] });
+    const fetcher = async (url: string) => (url.includes('site.web.api.espn.com') ? new Response(json, { status: 200 }) : new Response('', { status: 404 }));
+    const { items } = await collectItems(STARS, undefined, fetcher as unknown as typeof fetch, NOW, TRUST);
+    expect(items.map((entry) => entry.title)).toEqual(['Stars rally past Avalanche']);
+  });
+});
