@@ -22,6 +22,8 @@ import { isEnglishText, isNonStoryTitle, isNonStoryUrl, type Trust } from './out
 export { FEED_FETCH_TIMEOUT_MS, PRESS_BOX_USER_AGENT } from './httpClient';
 
 const DAY_MS = 86_400_000;
+/** A league-wide feed item is about the team only if its name is in the headline or the first words of the blurb, not further in a roundup. */
+const ITEM_OPENING_CHARS = 200;
 /** Older than this is not "recent". */
 export const MAX_ITEM_AGE_MS = 4 * DAY_MS;
 
@@ -291,7 +293,7 @@ export async function collectItems(
     const teamFiltered = job.key === 'espn-team';
     for (const item of result.value) {
       // League-wide RSS and team-site feeds are filtered to the team; Google query and ESPN team JSON already are.
-      if (!teamFiltered && item.feed !== 'google' && !mentionsTeam(`${item.title} ${item.description}`, team)) continue;
+      if (!teamFiltered && item.feed !== 'google' && !mentionsTeam(`${item.title} ${item.description.slice(0, ITEM_OPENING_CHARS)}`, team)) continue;
       if (!isStoryForTeamSport({ headline: item.title, summary: item.description }, team)) continue;
       // FV2-154: not a Japanese office or a stat page, and not an outlet we do not trust. A Google link is judged on the article it forwards to.
       if (!isEnglishText(`${item.title} ${item.source}`) || isNonStoryTitle(item.title) || isNonStoryUrl(item.link)) continue;

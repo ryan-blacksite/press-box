@@ -10,7 +10,8 @@ import { TEAMS } from '../src/shared/teams';
 import { collectItems, memoizeFeeds } from '../src/feeds';
 import { talksAboutTheArticle, validateSummary } from '../src/guard';
 import { isEnglishText, isNonStoryTitle, isNonStoryUrl, looksLikeStatsPage, outletForUrl, trustFor } from '../src/outlets';
-import { buildMessages, prepareTeam, snippetFromItem } from '../src/stories';
+import { extractArticleText } from '../src/article';
+import { buildMessages, fallbackStoryFromItems, prepareTeam, snippetFromItem } from '../src/stories';
 import type { Cluster } from '../src/rank';
 import type { FeedItem } from '../src/shared/types';
 
@@ -188,5 +189,90 @@ describe('more allowed feeds (6d)', () => {
     await memo('https://www.nhl.com/stars/news/x');
     await memo('https://www.nhl.com/stars/news/x');
     expect(calls).toBe(3);
+  });
+});
+
+describe('FV2-154 round two: the cases the first dry run let through', () => {
+  it('skips betting guides, predictions, trackers, lists, highlights, polls and uniform roundups', () => {
+    for (const title of [
+      'Cowboys vs. Cardinals odds, best bets and expert picks for Week 8',
+      'NFL Week 8 predictions: who wins every game',
+      'Dallas Cowboys betting guide',
+      'Rangers free agency tracker',
+      'Who has won the World Series MVP?',
+      'NFL Week 8 uniforms: every team’s look',
+      'NFL power rankings, Week 8',
+      'Game Highlights: Rangers at Astros',
+      'Fan poll: should Dallas keep its coach?',
+      'Spooky Rangers links',
+      'How to watch Stars vs. Blue Jackets: TV channel, start time and live stream',
+    ]) {
+      expect(isNonStoryTitle(title), title).toBe(true);
+    }
+  });
+
+  it('keeps real news that shares a word with those lists', () => {
+    for (const title of ['Stars trade for two draft picks', 'Lions place pass rusher on injured reserve', 'Mavericks hand Rockets first loss of the season', 'Perron set to debut as Lindell nears return']) {
+      expect(isNonStoryTitle(title), title).toBe(false);
+    }
+  });
+
+  it('skips video, gallery and betting pages by address', () => {
+    for (const url of ['https://www.espn.com/video/clip/_/id/1', 'https://www.cbssports.com/nfl/news/odds/', 'https://www.mlb.com/video/game-highlights']) expect(isNonStoryUrl(url), url).toBe(true);
+    expect(isNonStoryUrl('https://www.espn.com/nhl/story/_/id/123/stars-beat-avalanche')).toBe(false);
+  });
+
+  it('a league feed item counts for the team only when the name is in the headline or the first words of the blurb', async () => {
+    const rss = (items: string) => `<rss><channel>${items}</channel></rss>`;
+    const item = (title: string, description: string, id: string) => `<item><title>${title}</title><link>https://www.cbssports.com/nhl/news/${id}/</link><description>${description}</description><pubDate>${new Date(NOW - 3_600_000).toUTCString()}</pubDate></item>`;
+    const filler = 'Scores and notes from around the league on a busy night with many games and plenty to talk about. '.repeat(3);
+    const body = rss(item('Penguins edge Flyers in a shootout', `${filler} Dallas Stars were off.`, 'a') + item('Stars rally past Avalanche', 'A big night in Dallas.', 'b'));
+    const fetcher = async (url: string) => new Response(url.includes('cbssports.com/rss/headlines/nhl') ? body : '', { status: url.includes('cbssports.com/rss/headlines/nhl') ? 200 : 404 });
+    const { items } = await collectItems(STARS, undefined, fetcher as unknown as typeof fetch, NOW, TRUST);
+    expect(items.map((entry) => entry.title)).toEqual(['Stars rally past Avalanche']);
+  });
+
+  it('reads an article whose first <article> block is a teaser for another story (ESPN, Yahoo)', async () => {
+    const real = PROSE.split('. ').filter(Boolean).map((sentence) => `<p>${sentence}.</p>`).join('');
+    const html = `<html><body><article><p>Related: Sabres sign a goalie to a one-year contract, the team announced.</p></article><article>${real}</article></body></html>`;
+    const fetcher = async () => new Response(html, { status: 200, headers: { 'content-type': 'text/html' } });
+    const cluster: Cluster = { items: [{ title: 'Stars beat Avalanche', link: 'https://www.espn.com/nhl/story/_/id/1/stars', publishedAt: NOW, source: 'ESPN', description: '', feed: 'espn' }], outlets: ['ESPN'], newestAt: NOW, score: 1 };
+    const prepared = await prepareTeam(STARS, [cluster], 1, fetcher as unknown as typeof fetch, TRUST);
+    expect(prepared.inputs).toHaveLength(1);
+    expect(prepared.inputs[0].articles[0].text).toContain('Jason Robertson scored twice');
+    expect(prepared.inputs[0].articles[0].text).not.toContain('Sabres');
+  });
+
+  it('decodes hexadecimal entities in an article (&#x27;)', () => {
+    const html = `<article>${'<p>The coach said it&#x27;s a team that &quot;never quits&quot; and the Stars agree with him after another long night on the road.</p>'.repeat(6)}</article>`;
+    expect(extractArticleText(html)).toContain(`it's a team that "never quits"`);
+  });
+
+  it('drops an article that is not about the team: the team’s name is not in its opening', async () => {
+    const other = ARTICLE.replace(/Dallas Stars|Stars|Dallas/g, 'the club');
+    const page = `<html><body><article>${other.split('. ').filter(Boolean).map((sentence) => `<p>${sentence}.</p>`).join('')}</article></body></html>`;
+    const fetcher = async () => new Response(page, { status: 200, headers: { 'content-type': 'text/html' } });
+    const cluster: Cluster = { items: [{ title: 'League notes', link: 'https://www.espn.com/nhl/story/_/id/2/notes', publishedAt: NOW, source: 'ESPN', description: '', feed: 'espn' }], outlets: ['ESPN'], newestAt: NOW, score: 1 };
+    const prepared = await prepareTeam(STARS, [cluster], 1, fetcher as unknown as typeof fetch, TRUST);
+    expect(prepared.inputs).toHaveLength(0);
+  });
+});
+
+describe('a headline-only story follows the same credit rules (6b)', () => {
+  const item = (source: string, link: string, publishedAt = NOW): FeedItem => ({ title: 'Stars win in overtime', link, publishedAt, source, description: 'Dallas beat Colorado 3-2 in overtime on Thursday night.', feed: 'league' });
+
+  it('credits the allowlist’s own name, once per outlet, not the feed’s text', () => {
+    const story = fallbackStoryFromItems('nhl-stars', [item('ESPN', 'https://www.espn.com/a'), item('ESPN', 'https://www.espn.com/b'), item('SB Nation', 'https://www.cbssports.com/c')], NOW, TRUST)!;
+    expect(story.sources.map((source) => source.name)).toEqual(['ESPN', 'CBS Sports']);
+  });
+
+  it('writes no story at all from a source that is not trusted', () => {
+    expect(fallbackStoryFromItems('nhl-stars', [item('SB Nation', 'https://www.fanposts.example/a'), item('Hockey News', 'https://www.thehockeynews.com/a')], NOW, TRUST)).toBeNull();
+  });
+
+  it('uses only the trusted items when some are not', () => {
+    const story = fallbackStoryFromItems('nhl-stars', [item('SB Nation', 'https://www.fanposts.example/a', NOW), item('Daily Faceoff', 'https://www.dailyfaceoff.com/b', NOW - 1_000)], NOW, TRUST)!;
+    expect(story.url).toBe('https://www.dailyfaceoff.com/b');
+    expect(story.sources.map((source) => source.name)).toEqual(['Daily Faceoff']);
   });
 });

@@ -60,7 +60,9 @@ const ESPN_TEAM_JSON = JSON.stringify({
   ],
 });
 
+// The world's one article is shared by every team the tests write, so its opening names them all (prepareTeam wants the team in the first lines).
 const PARAGRAPHS = [
+  'Around the NFL, the Detroit Lions, Green Bay Packers, Chicago Bears, Minnesota Vikings, Arizona Cardinals and Atlanta Falcons all had roster news on Wednesday.',
   'The Detroit Lions placed their top pass rusher on injured reserve on Wednesday after he left Sunday\'s game with a knee injury, the team announced.',
   'Coach Dan Campbell said the injury will keep the defensive end out for at least four games, and that the team expects him back before the end of the regular season.',
   'The move opens a roster spot, which the club filled by signing a veteran edge rusher who had been released by another team earlier this month.',

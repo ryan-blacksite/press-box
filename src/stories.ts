@@ -17,7 +17,7 @@
  *   happened and nothing about the article, and guard.ts rejects a summary that talks about it (fallback: the headline alone).
  */
 import { fetchArticle, isGoogleNewsLink } from './article';
-import { stripTags } from './feeds';
+import { mentionsTeam, stripTags } from './feeds';
 import { isEnglishText, isNonStoryUrl, looksLikeStatsPage, type Trust } from './outlets';
 import { APP_NAME } from './httpClient';
 import { AiAuthError, AiBudgetError, AiUnavailableError, type AiClient, type ChatMessage } from './ai';
@@ -31,6 +31,8 @@ const SOURCES_PER_STORY = 2;
 /** Articles fetched per team per run. */
 const MAX_ARTICLE_FETCHES = 8;
 const MAX_ARTICLE_PROMPT_CHARS = 2_500;
+/** How much of the start of an article must name the team for it to count as that team's story. */
+const OPENING_CHARS = 700;
 
 type Fetcher = (url: string, init?: RequestInit) => Promise<Response>;
 
@@ -54,14 +56,27 @@ export function snippetFromItem(item: FeedItem): string {
   return blurb.slice(0, 900);
 }
 
-/** Headline + link + feed snippet when the article or the AI is unavailable. */
-export function fallbackStoryFromItems(teamId: string, items: FeedItem[], now: number): Story {
-  const sorted = [...items].sort((a, b) => {
-    const googlePenalty = (item: FeedItem) => (isGoogleNewsLink(item.link) ? 1 : 0);
-    return googlePenalty(a) - googlePenalty(b) || b.publishedAt - a.publishedAt;
-  });
+/**
+ * Headline + link + feed snippet when the article or the AI is unavailable. With `trust` (the real run), the same rules as for an
+ * AI-written story hold: only items from a trusted outlet are used, the credit is that outlet's own name (once per outlet, never the
+ * feed's free text), and a story with no trusted item at all is not written (null).
+ */
+export function fallbackStoryFromItems(teamId: string, items: FeedItem[], now: number, trust?: Trust): Story | null {
+  const sorted = [...items]
+    .filter((item) => !trust || trust.outlet(item.link) !== null)
+    .sort((a, b) => {
+      const googlePenalty = (item: FeedItem) => (isGoogleNewsLink(item.link) ? 1 : 0);
+      return googlePenalty(a) - googlePenalty(b) || b.publishedAt - a.publishedAt;
+    });
+  if (sorted.length === 0) return null;
   const lead = sorted[0];
-  const sources: StorySource[] = sorted.slice(0, SOURCES_PER_STORY).map((item) => ({ name: item.source, url: item.link }));
+  const sources: StorySource[] = [];
+  for (const item of sorted) {
+    if (sources.length >= SOURCES_PER_STORY) break;
+    const name = trust?.outlet(item.link) ?? item.source;
+    if (sources.some((source) => source.name === name)) continue;
+    sources.push({ name, url: item.link });
+  }
   const publishedAt = Math.max(...sorted.map((item) => item.publishedAt).filter(Boolean), now);
   return {
     id: storyId(teamId, lead.link),
@@ -156,6 +171,8 @@ export interface PreparedTeam {
   /** Stories whose articles could not be read: they only ever become the feed's headline. */
   bare: StoryInput[];
   articleFetches: number;
+  /** Which outlets may be credited (the feed-headline fall-back uses it too). */
+  trust: Trust;
 }
 
 /** Read the article text for a team's biggest stories (no AI yet). */
@@ -179,13 +196,15 @@ export async function prepareTeam(team: PressBoxTeam, ranked: Cluster[], wanted:
       // (never the feed's free text), so an odd <source> can no longer be credited.
       const outlet = trust.outlet(article.url);
       if (!outlet || isNonStoryUrl(article.url) || looksLikeStatsPage(article.text) || !isEnglishText(article.text)) continue;
+      // About this team: its name is in the opening of the page, not just somewhere in a list or a roundup.
+      if (!mentionsTeam(article.text.slice(0, OPENING_CHARS), team)) continue;
       if (seenOutlets.has(outlet)) continue;
       seenOutlets.add(outlet);
       articles.push({ source: outlet, url: article.url, text: article.text, embeddable: article.embeddable, publishedAt: item.publishedAt });
     }
     (articles.length > 0 ? inputs : bare).push({ cluster, items, articles });
   }
-  return { team, ranked, inputs, bare, articleFetches };
+  return { team, ranked, inputs, bare, articleFetches, trust };
 }
 
 /** The shared rules every request carries, whether it is for one team or several. */
@@ -274,8 +293,11 @@ function assembleStories(prepared: PreparedTeam, results: (SummaryResult | null)
       });
       aiStories += 1;
     } else if (input.items.length > 0) {
-      stories.push(fallbackStoryFromItems(team.id, input.items, now));
-      fallbackStories += 1;
+      const fallback = fallbackStoryFromItems(team.id, input.items, now, prepared.trust);
+      if (fallback) {
+        stories.push(fallback);
+        fallbackStories += 1;
+      }
     }
   }
   return { stories, aiStories, fallbackStories };
