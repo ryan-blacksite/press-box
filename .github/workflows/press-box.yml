@@ -44,7 +44,7 @@ jobs:
     if: github.repository == 'ryan-blacksite/press-box'
     runs-on: ubuntu-latest
     # The writer stops starting AI requests after RUN_BUDGET_MINUTES (default 12); this is only the backstop.
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 

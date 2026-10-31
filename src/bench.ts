@@ -22,10 +22,10 @@ import { cleanReply, type ChatMessage } from './ai';
 
 const KEY = process.env.OPENROUTER_API_KEY ?? '';
 const BASE = process.env.AI_BASE_URL?.trim() || 'https://openrouter.ai/api/v1';
-const MODELS = (process.env.BENCH_MODELS || 'nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3.5-super-vl:free,nvidia/nemotron-3.5-lightning:free,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,google/gemma-4-31b-it:free,google/gemma-4-26b-a4b-it:free,xingchen-agi/xing4.0-29b-a4b:free,recursive/flint-v1.0:free,openrouter/free')
+const MODELS = (process.env.BENCH_MODELS || 'nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3.5-super-vl:free,nvidia/nemotron-3.5-lightning:free,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,google/gemma-4-31b-it:free,xingchen-agi/xing4.0-29b-a4b:free,openrouter/free')
   .split(',').map((id) => id.trim()).filter(Boolean);
 const TEAM_IDS = (process.env.BENCH_TEAMS || 'nhl-stars,nfl-cowboys,nba-mavericks,mlb-rangers,nfl-lions,nhl-bruins').split(',').map((id) => id.trim());
-const STORIES = Math.max(2, Number(process.env.BENCH_STORIES || 6));
+const STORIES = Math.max(2, Number(process.env.BENCH_STORIES || 5));
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 if (!KEY) throw new Error('OPENROUTER_API_KEY is not set');
@@ -88,7 +88,11 @@ const FACTS_SYSTEM = [
 
 interface Outcome { ok: boolean; issues: string[]; headline: string; summary: string; ms: number; calls: number; error?: string }
 
+const downModels = new Set<string>();
+const strikes = new Map<string, number>();
+
 async function runOne(model: string, strategy: 'one-step' | 'two-step', { team, input }: Case): Promise<Outcome> {
+  if (downModels.has(model)) return { ok: false, issues: ['model unavailable (skipped after repeated errors)'], headline: '', summary: '', ms: 0, calls: 0, error: 'down' };
   const articleTexts = input.articles.map((article) => article.text);
   let ms = 0;
   let calls = 0;
@@ -127,7 +131,12 @@ async function main(): Promise<void> {
     for (const strategy of ['one-step', 'two-step'] as const) {
       const results: Outcome[] = [];
       for (const entry of cases) {
-        results.push(await runOne(model, strategy, entry));
+        const outcome = await runOne(model, strategy, entry);
+        results.push(outcome);
+        // Two clean answers in a row from HTTP trouble means the model is not usable for this account right now.
+        strikes.set(model, outcome.error && /HTTP|empty/.test(outcome.error) ? (strikes.get(model) ?? 0) + 1 : 0);
+        if ((strikes.get(model) ?? 0) >= 3) downModels.add(model);
+        console.log(JSON.stringify({ event: 'bench-progress', model, strategy, ok: outcome.ok, issues: outcome.issues.slice(0, 2), seconds: Math.round(outcome.ms / 100) / 10 }));
         await sleep(3_500);
       }
       rows[`${model} | ${strategy}`] = results;
