@@ -49,14 +49,17 @@ export function longestSharedRun(summary: string, articles: string[]): number {
 }
 
 /** Every number in the summary must appear in the articles ("27-24", "$40 million", "3"). Words like "one" are ignored. */
+const NUMBER_WORDS: Record<string, string> = { '1': 'one', '2': 'two', '3': 'three', '4': 'four', '5': 'five', '6': 'six', '7': 'seven', '8': 'eight', '9': 'nine', '10': 'ten', '11': 'eleven', '12': 'twelve', '13': 'thirteen', '14': 'fourteen', '15': 'fifteen', '16': 'sixteen', '17': 'seventeen', '18': 'eighteen', '19': 'nineteen', '20': 'twenty', '30': 'thirty', '40': 'forty', '50': 'fifty' };
+
 export function unsupportedNumbers(summary: string, articles: string[]): string[] {
   const haystack = articles.join(' ').replace(/,/g, '');
+  const spelledOut = (number: string) => NUMBER_WORDS[number] !== undefined && new RegExp(`\\b${NUMBER_WORDS[number]}\\b`, 'i').test(haystack);
   const found = summary.replace(/,/g, '').match(/\d+(?:\.\d+)?/g) ?? [];
-  return Array.from(new Set(found)).filter((number) => !new RegExp(`(^|[^\\d.])${number.replace('.', '\\.')}([^\\d]|$)`).test(haystack));
+  return Array.from(new Set(found)).filter((number) => !spelledOut(number) && !new RegExp(`(^|[^\\d.])${number.replace('.', '\\.')}([^\\d]|$)`).test(haystack));
 }
 
 /** Words that make a claim of their own ("second straight win", "first loss", "back-to-back"): each must be in the articles if the summary uses it. */
-const CLAIM_WORDS = /\b(first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|back-to-back|consecutive|straight|in a row|undefeated|unbeaten|winless|sweep|swept|record-breaking|franchise record|career-high|season-high|walk-off|shutout|comeback)\b/gi;
+const CLAIM_WORDS = /\b(second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|back-to-back|consecutive|straight|in a row|undefeated|unbeaten|winless|sweep|swept|record-breaking|franchise record|career-high|season-high|walk-off|shutout|comeback)\b/gi;
 
 /** Capitalized words that are not names: days, months, and words a sentence can carry without being a person or team. */
 const NOT_NAMES = new Set(['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december', 'according', 'coach', 'head', 'general', 'manager', 'league', 'season', 'conference', 'division', 'playoffs', 'playoff', 'overtime', 'american', 'national', 'eastern', 'western', 'central']);
@@ -128,7 +131,7 @@ export function validateSummary(result: SummaryResult, articles: string[]): stri
   // Facts must match the articles: claim words ("second straight", "undefeated") and names, as numbers above.
   const claims = unsupportedClaims(`${result.headline} ${result.summary}`, articles);
   if (claims.length > 0) problems.push(`it says "${claims.join('", "')}", which the articles do not; remove or correct it`);
-  const names = unsupportedNames(`${result.headline}. ${result.summary}`, articles);
+  const names = unsupportedNames(result.summary, articles);
   if (names.length > 0) problems.push(`it names ${names.join(', ')}, which the articles do not mention; use only names in the text`);
   return problems;
 }

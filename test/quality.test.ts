@@ -349,3 +349,9 @@ describe('FV2-154 round three: facts match the article, no teaser blurbs, one st
     expect(build.fallbackStories).toBe(1);
   });
 });
+
+describe('FV2-154 round three: the facts check does not punish honest writing', () => {
+  it('a Title Case headline is not a list of names, and “20” is supported by “twenty”', () => {
+    expect(validateSummary({ headline: 'Cowboys Face Cardinals Amid Decade-Long NFC Struggles', summary: 'Dallas has not beaten Arizona at home in over 20 years. Coach Brian Schottenheimer faces the same question again.' }, ['Dallas has not beaten Arizona at home in over twenty years, and coach Brian Schottenheimer faces the same question again this week, the team said Friday in Texas.'])).toEqual([]);
+  });
+});

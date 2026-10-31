@@ -22,10 +22,10 @@ import { cleanReply, type ChatMessage } from './ai';
 
 const KEY = process.env.OPENROUTER_API_KEY ?? '';
 const BASE = process.env.AI_BASE_URL?.trim() || 'https://openrouter.ai/api/v1';
-const MODELS = (process.env.BENCH_MODELS || 'google/gemma-4-31b-it:free,google/gemma-4-26b-a4b-it:free,nvidia/nemotron-3-ultra-550b-a55b:free,thinkingmachines/inkling:free,openrouter/free')
+const MODELS = (process.env.BENCH_MODELS || 'nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3.5-super-vl:free,nvidia/nemotron-3.5-lightning:free,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,google/gemma-4-31b-it:free,google/gemma-4-26b-a4b-it:free,xingchen-agi/xing4.0-29b-a4b:free,recursive/flint-v1.0:free,openrouter/free')
   .split(',').map((id) => id.trim()).filter(Boolean);
 const TEAM_IDS = (process.env.BENCH_TEAMS || 'nhl-stars,nfl-cowboys,nba-mavericks,mlb-rangers,nfl-lions,nhl-bruins').split(',').map((id) => id.trim());
-const STORIES = Math.max(2, Number(process.env.BENCH_STORIES || 8));
+const STORIES = Math.max(2, Number(process.env.BENCH_STORIES || 6));
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 if (!KEY) throw new Error('OPENROUTER_API_KEY is not set');
@@ -53,7 +53,7 @@ interface Call { content: string; ms: number }
 async function callModel(model: string, messages: ChatMessage[], maxTokens: number): Promise<Call | { error: string }> {
   const started = Date.now();
   let lastError = '';
-  for (let attempt = 1; attempt <= 3; attempt += 1) {
+  for (let attempt = 1; attempt <= 4; attempt += 1) {
     try {
       const res = await fetch(`${BASE}/chat/completions`, {
         method: 'POST',
@@ -63,7 +63,7 @@ async function callModel(model: string, messages: ChatMessage[], maxTokens: numb
       });
       if (res.status === 429 || res.status >= 500) {
         lastError = `HTTP ${res.status}`;
-        await sleep(Number(res.headers.get('retry-after')) * 1_000 || 15_000 * attempt);
+        await sleep(Number(res.headers.get('retry-after')) * 1_000 || 20_000 * attempt);
         continue;
       }
       if (!res.ok) return { error: `HTTP ${res.status}` };
@@ -96,7 +96,7 @@ async function runOne(model: string, strategy: 'one-step' | 'two-step', { team, 
   if (strategy === 'two-step') {
     const facts: StoryInput['articles'] = [];
     for (const article of input.articles) {
-      const reply = await callModel(model, [{ role: 'system', content: FACTS_SYSTEM }, { role: 'user', content: article.text.slice(0, 2_500) }], 700);
+      const reply = await callModel(model, [{ role: 'system', content: FACTS_SYSTEM }, { role: 'user', content: article.text.slice(0, 2_500) }], 1_500);
       calls += 1;
       if ('error' in reply) return { ok: false, issues: [`facts step: ${reply.error}`], headline: '', summary: '', ms, calls, error: reply.error };
       ms += reply.ms;
@@ -105,7 +105,7 @@ async function runOne(model: string, strategy: 'one-step' | 'two-step', { team, 
     source = { ...input, articles: facts };
   }
   const messages = buildBatchMessages([{ team, inputs: [source], objections: [null], which: [0] }]);
-  const reply = await callModel(model, messages, 900);
+  const reply = await callModel(model, messages, 2_500);
   calls += 1;
   if ('error' in reply) return { ok: false, issues: [reply.error], headline: '', summary: '', ms, calls, error: reply.error };
   ms += reply.ms;
