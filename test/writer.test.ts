@@ -526,6 +526,13 @@ describe('settings', () => {
     expect(loadConfig({ OPENROUTER_API_KEY: 'k', DRY_RUN: '1' }).dryRun).toBe(true);
     expect(() => loadConfig({ ...secrets, TEAM_SITE_FEEDS: '{nope' })).toThrow(/TEAM_SITE_FEEDS/);
   });
+
+  it('removes pasted whitespace from credentials before constructing requests', () => {
+    const config = loadConfig({ AI_API_KEY: ' \n ', OPENROUTER_API_KEY: '  ai\nkey  ', CLOUDFLARE_ACCOUNT_ID: ' ac\tcount ', CLOUDFLARE_API_TOKEN: ' tok\r\nen ' });
+    expect(config.ai.apiKey).toBe('aikey');
+    expect(config.kv).toMatchObject({ accountId: 'account', apiToken: 'token' });
+    expect(new Headers({ authorization: `Bearer ${config.kv.apiToken}` }).get('authorization')).toBe('Bearer token');
+  });
 });
 
 // ---- after-game ---------------------------------------------------------------------------------

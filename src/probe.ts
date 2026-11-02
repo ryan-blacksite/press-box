@@ -5,10 +5,10 @@
  *   records the status, latency and any rate-limit headers. That is about a dozen requests, so run it by hand, not on a schedule.
  */
 import { appendFileSync } from 'node:fs';
-import { DEFAULT_FREE_MODELS } from './config';
+import { cleanSecret, DEFAULT_FREE_MODELS } from './config';
 
 const baseUrl = (process.env.AI_BASE_URL || 'https://openrouter.ai/api/v1').replace(/\/$/, '');
-const apiKey = (process.env.AI_API_KEY || process.env.OPENROUTER_API_KEY || '').trim();
+const apiKey = cleanSecret(process.env.AI_API_KEY) || cleanSecret(process.env.OPENROUTER_API_KEY);
 
 async function main(): Promise<void> {
   if (!apiKey) {

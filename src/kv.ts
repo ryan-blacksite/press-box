@@ -51,7 +51,7 @@ export function createKv(settings: KvSettings, deps: KvDeps): KvStore {
       try {
         last = await deps.fetcher(url, init);
       } catch (error) {
-        if (attempt === MAX_TRIES - 1) throw new KvError(`Cloudflare could not be reached: ${error instanceof Error ? error.message : String(error)}`, 0);
+        if (attempt === MAX_TRIES - 1) throw new KvError(`Cloudflare could not be reached (${error instanceof Error ? error.name : 'unknown error'})`, 0);
         await deps.sleep(1_000 * 2 ** attempt);
         continue;
       }
