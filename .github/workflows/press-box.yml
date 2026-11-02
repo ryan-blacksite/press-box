@@ -19,7 +19,7 @@ on:
         required: false
         default: 'daily'
         type: choice
-        options: [daily, after-game, cleanup, bench]
+        options: [daily, after-game, cleanup, bench, diagnose-cloudflare]
       teams:
         description: 'Only these team ids, comma separated (for a first test, e.g. nfl-lions). Empty = every team in the teams file.'
         required: false
@@ -39,9 +39,25 @@ permissions:
   contents: read
 
 jobs:
+  diagnose:
+    name: Diagnose Cloudflare access
+    if: github.repository == 'ryan-blacksite/press-box' && github.event_name == 'workflow_dispatch' && inputs.mode == 'diagnose-cloudflare'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Check token and namespace
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          PRESS_BOX_KV_NAMESPACE_ID: ${{ vars.PRESS_BOX_KV_NAMESPACE_ID }}
+        run: node scripts/diagnose-cloudflare.mjs
+
   write:
     name: Write stories
-    if: github.repository == 'ryan-blacksite/press-box' && (github.event_name != 'workflow_dispatch' || inputs.mode != 'bench')
+    if: github.repository == 'ryan-blacksite/press-box' && (github.event_name != 'workflow_dispatch' || (inputs.mode != 'bench' && inputs.mode != 'diagnose-cloudflare'))
     runs-on: ubuntu-latest
     # The writer stops starting AI requests after RUN_BUDGET_MINUTES (default 12); this is only the backstop.
     timeout-minutes: 20
