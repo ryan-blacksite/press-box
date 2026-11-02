@@ -10,7 +10,8 @@ async function check(path) {
   try {
     const response = await fetch(base + path, { headers: { authorization: `Bearer ${token}` }, signal: AbortSignal.timeout(15000) });
     const body = await response.json().catch(() => ({}));
-    return { status: response.status, success: body.success === true, result: body.result, codes: Array.isArray(body.errors) ? body.errors.map(e => e.code).filter(Number.isInteger) : [] };
+    const codes = Array.isArray(body.errors) ? body.errors.flatMap(e => [e.code, ...(Array.isArray(e.error_chain) ? e.error_chain.map(nested => nested.code) : [])]).filter(Number.isInteger) : [];
+    return { status: response.status, success: body.success === true, result: body.result, codes };
   } catch {
     return { status: 0, success: false, codes: [] };
   }
@@ -31,7 +32,9 @@ if (!token || !account) {
   const lines = [show('User token verification', user), show('Account token verification', accountToken), show('KV namespace', kv), show('Account listing', accounts)];
   const listed = accounts.success && Array.isArray(accounts.result) ? accounts.result.some(item => item.id === account) : null;
   if (kv.success) lines.push('Result: token can access the configured KV namespace.');
-  else if (active(user) || active(accountToken)) {
+  else if (user.codes.includes(6111) && accountToken.codes.includes(6111)) {
+    lines.push('Result: Cloudflare rejects the authorization header format. Fix CLOUDFLARE_API_TOKEN: use the raw API token only, without a Bearer prefix, quotes, or other pasted text.');
+  } else if (active(user) || active(accountToken)) {
     if (listed === false) lines.push('Result: the configured account is not among accounts visible to this token; account ID or token account scope needs correction.');
     else lines.push('Result: token is active, but namespace access failed. Check KV permissions, account scope and namespace ID; these responses cannot distinguish them.');
   } else if (user.status === 401 && accountToken.status === 401) {
