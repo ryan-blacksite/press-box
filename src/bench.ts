@@ -9,6 +9,7 @@
  *   only. Output goes to the log and to $GITHUB_STEP_SUMMARY. Nothing is stored anywhere.
  */
 import { appendFileSync } from 'node:fs';
+import { cleanSecret } from './config';
 import { collectItems } from './feeds';
 import { clusterItems, rankClusters } from './rank';
 import { createRobotsFetcher } from './robots';
@@ -20,7 +21,7 @@ import { buildBatchMessages, parseStoriesReply, prepareTeam, type StoryInput } f
 import { validateSummary } from './guard';
 import { cleanReply, type ChatMessage } from './ai';
 
-const KEY = process.env.OPENROUTER_API_KEY ?? '';
+const KEY = cleanSecret(process.env.OPENROUTER_API_KEY);
 const BASE = process.env.AI_BASE_URL?.trim() || 'https://openrouter.ai/api/v1';
 const MODELS = (process.env.BENCH_MODELS || 'nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3.5-super-vl:free,nvidia/nemotron-3.5-lightning:free,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,google/gemma-4-31b-it:free,xingchen-agi/xing4.0-29b-a4b:free,openrouter/free')
   .split(',').map((id) => id.trim()).filter(Boolean);

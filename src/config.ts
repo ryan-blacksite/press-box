@@ -90,12 +90,14 @@ const positive = (value: string | undefined, fallback: number): number => {
 };
 
 /** Settings from environment variables. Throws ConfigError naming every missing required one. */
+export const cleanSecret = (value: string | undefined): string => (value ?? '').replace(/\s+/g, '');
+
 export function loadConfig(env: Record<string, string | undefined> = process.env): WriterConfig {
   const mode: RunMode = env.PRESS_BOX_MODE === 'after-game' ? 'after-game' : env.PRESS_BOX_MODE === 'cleanup' ? 'cleanup' : 'daily';
   const dryRun = /^(1|true|yes)$/i.test(env.DRY_RUN ?? '');
-  const apiKey = (env.AI_API_KEY || env.OPENROUTER_API_KEY || '').trim();
-  const accountId = (env.CLOUDFLARE_ACCOUNT_ID || '').trim();
-  const apiToken = (env.CLOUDFLARE_API_TOKEN || '').trim();
+  const apiKey = cleanSecret(env.AI_API_KEY) || cleanSecret(env.OPENROUTER_API_KEY);
+  const accountId = cleanSecret(env.CLOUDFLARE_ACCOUNT_ID);
+  const apiToken = cleanSecret(env.CLOUDFLARE_API_TOKEN);
 
   const missing: string[] = [];
   if (mode !== 'cleanup' && !apiKey) missing.push('OPENROUTER_API_KEY (or AI_API_KEY)');
