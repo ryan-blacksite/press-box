@@ -20,7 +20,8 @@
  *   (RETRY_PASSES), while time remains, and only then kept as yesterday's. A run is red only when something FAILED (exitCodeFor), never
  *   because the free models were slow: that is a warning in the summary.
  */
-import { collectItems } from './feeds';
+import { collectItems, memoizeFeeds } from './feeds';
+import { trustFor } from './outlets';
 import { finishedTeamIds } from './afterGame';
 import { AiAuthError, type AiClient } from './ai';
 import { createBundles } from './bundles';
@@ -148,12 +149,20 @@ export async function runPressBox(config: WriterConfig, deps: RunDeps): Promise<
 
   // FV2-47: the store is one bundle per league. Load each league's once, work the teams, write each league once when both phases are done.
   const bundles = createBundles(deps.kv, { dryRun: config.dryRun });
+  // FV2-154: the sources a story may be read from and credited to.
+  const trust = trustFor(config.teamSiteFeeds, config.extraOutlets);
+  // Each league-wide feed is read once per run, not once per team.
+  const feedFetcher = memoizeFeeds(deps.fetcher);
   const leagueNames = Array.from(new Set(teams.map((team) => team.league)));
   const leagueTeams = new Map(leagueNames.map((league) => [league, coveredTeams().filter((team) => team.league === league)]));
   await Promise.all(leagueNames.map((league) => bundles.load(league, leagueTeams.get(league) ?? [])));
 
   /** Stage a team's new value; the league's item is written once, below. */
   function stage(team: PressBoxTeam, value: TeamStories): void {
+    // A dry run writes nothing, so show what WOULD be stored: that is what a person reads to judge the quality.
+    if (config.dryRun && value.stories.length > 0) {
+      deps.log(JSON.stringify({ event: 'press-box-dry-story', team: team.id, stories: value.stories.map((story) => ({ headline: story.headline, summary: story.summary, sources: story.sources.map((source) => `${source.name} ${source.url}`) })) }));
+    }
     bundles.set(team, value);
   }
 
@@ -228,7 +237,7 @@ export async function runPressBox(config: WriterConfig, deps: RunDeps): Promise<
         return;
       }
 
-      const { items } = await collectItems(team, config.teamSiteFeeds, deps.fetcher, now, (message) => deps.log(JSON.stringify({ event: 'press-box-warn', team: team.id, message })));
+      const { items } = await collectItems(team, config.teamSiteFeeds, feedFetcher, now, trust, (message) => deps.log(JSON.stringify({ event: 'press-box-warn', team: team.id, message })));
       report.feedItems = items.length;
       summary.checked += 1;
 
@@ -251,7 +260,7 @@ export async function runPressBox(config: WriterConfig, deps: RunDeps): Promise<
       }
 
       const ranked = rankClusters(clusterItems(items), now);
-      const prepared = await prepareTeam(team, ranked, config.storiesPerTeam, deps.fetcher);
+      const prepared = await prepareTeam(team, ranked, config.storiesPerTeam, deps.fetcher, trust);
       ready.push({ team, report, prepared, prev, removedOffSport, now });
       queued = true;
       nudge();
@@ -318,6 +327,9 @@ export async function runPressBox(config: WriterConfig, deps: RunDeps): Promise<
     }
     batch.forEach((entry, position) => {
       const build = builds[position];
+      // Why a draft was turned down (or why no draft came), so a story that fell back to the feed's blurb can be explained.
+      for (const rejection of build.rejections) deps.log(JSON.stringify({ event: 'press-box-ai-reject', team: entry.team.id, ...rejection }));
+      if (build.aiError) deps.log(JSON.stringify({ event: 'press-box-warn', team: entry.team.id, message: `AI unavailable: ${build.aiError}` }));
       if (build.aiFailed) retryLater.push({ entry, build });
       else finishEntry(entry, build);
     });

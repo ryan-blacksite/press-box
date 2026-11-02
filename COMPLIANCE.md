@@ -1,6 +1,6 @@
 # Compliance notes
 
-Checked 2026-10-30. Re-check before adding a source or turning this into a product for other people.
+Checked 2026-10-30 (feeds added 2026-10-31). Re-check before adding a source or turning this into a product for other people.
 
 ## Sources
 
@@ -8,6 +8,10 @@ Checked 2026-10-30. Re-check before adding a source or turning this into a produ
 |---|---|---|---|
 | ESPN league RSS (`www.espn.com/espn/rss/...`) | headlines, links | allowed for all bots (only `/espn/now` and a few paths disallowed) | OK |
 | ESPN team news JSON (`site.web.api.espn.com`) | headlines, links | host's robots.txt answers 403 (treated as no rules) | Tolerated: an unofficial but widely used endpoint with no written permission |
+| CBS Sports league RSS (`www.cbssports.com/rss/headlines/<league>/`) | headlines, links | allowed for all bots (only `/info/search`, `/data/*`, login and similar disallowed) | OK (FV2-154 6d) |
+| Yahoo Sports league RSS (`sports.yahoo.com/<league>/rss/`) | headlines, links | allowed for all bots (only internal paths disallowed) | OK (FV2-154 6d) |
+| MLB.com news RSS (`www.mlb.com/feeds/news/rss.xml`) | headlines, links | allowed (`/api/`, `/test/` etc. disallowed) | OK (FV2-154 6d) |
+| Daily Faceoff RSS (`www.dailyfaceoff.com/feed`) | headlines, links | `Allow: /` (only `/api/`, `/cms/` disallowed) | OK (FV2-154 6d) |
 | Google News RSS search (`news.google.com/rss/search`) | headlines, links | **disallowed** for `*` (`Disallow: /`, only a few paths allowed) | **Blocked automatically** by `src/robots.ts`. The article-link resolving that followed it is blocked too |
 | Publisher article pages | text read to write a summary | each site's own robots.txt, checked per host | Respected; no text stored |
 | Team-site feeds (optional `TEAM_SITE_FEEDS`) | headlines | each site's own | Respected |

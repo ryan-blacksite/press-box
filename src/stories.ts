@@ -12,21 +12,31 @@
  *   (buildTeamsBatch, buildBatchMessages): one request carries each team's numbered stories under a "TEAM:" heading and the reply
  *   numbers them straight through. Every story is still checked on its own, the failures of a whole batch are asked for once more
  *   together, and a story that still fails becomes the feed's headline, exactly as for a single team (buildTeamStories is a batch of one).
+ *   FV2-154 item 6: only articles from a trusted English sports outlet (outlets.ts) are read, and the credit is that outlet's own name
+ *   from the article's real address; stat pages and line-combination pages are skipped, not summarized; the prompt asks for what
+ *   happened and nothing about the article, and guard.ts rejects a summary that talks about it (fallback: the headline alone).
  */
 import { fetchArticle, isGoogleNewsLink } from './article';
-import { stripTags } from './feeds';
+import { mentionsTeam, stripTags } from './feeds';
+import { isEnglishText, isNonStoryUrl, looksLikeStatsPage, type Trust } from './outlets';
 import { APP_NAME } from './httpClient';
 import { AiAuthError, AiBudgetError, AiUnavailableError, type AiClient, type ChatMessage } from './ai';
-import { validateSummary, type SummaryResult } from './guard';
-import type { Cluster } from './rank';
+import { talksAboutTheArticle, validateSummary, type SummaryResult } from './guard';
+import { similarity, titleTokens, type Cluster } from './rank';
 import type { FeedItem, Story, StorySource } from './shared/types';
 import type { PressBoxTeam } from './shared/teams';
 import { isStoryForTeamSport, sportForLeague } from './shared/storySport';
 
 const SOURCES_PER_STORY = 2;
+/** Outlets credited on a story after two stories about one event are merged. */
+const MAX_SOURCES_SHOWN = 3;
 /** Articles fetched per team per run. */
 const MAX_ARTICLE_FETCHES = 8;
 const MAX_ARTICLE_PROMPT_CHARS = 2_500;
+/** How much of the start of an article must name the team for it to count as that team's story. */
+const OPENING_CHARS = 700;
+/** A feed blurb shorter than this is a teaser ("Spooky Rangers links."), not a summary. */
+const MIN_BLURB_CHARS = 40;
 
 type Fetcher = (url: string, init?: RequestInit) => Promise<Response>;
 
@@ -46,17 +56,61 @@ export function snippetFromItem(item: FeedItem): string {
   const lead = item.title.replace(/[.\s]+$/, '').toLowerCase();
   // Starts with the headline: what is left after it is at most the outlet's name, which adds nothing.
   if (lead && blurb.toLowerCase().startsWith(lead) && blurb.slice(lead.length).replace(/^[.\s:–—-]+/, '').length < 40) return '';
-  return blurb.length >= 20 ? blurb.slice(0, 900) : '';
+  // Too short to say anything, a question put to the reader ("How nervous are you?"), or talk about the article: no summary at all.
+  if (blurb.length < MIN_BLURB_CHARS || /\?\s*$/.test(blurb) || talksAboutTheArticle(blurb).length > 0) return '';
+  return blurb.slice(0, 900);
 }
 
-/** Headline + link + feed snippet when the article or the AI is unavailable. */
-export function fallbackStoryFromItems(teamId: string, items: FeedItem[], now: number): Story {
-  const sorted = [...items].sort((a, b) => {
-    const googlePenalty = (item: FeedItem) => (isGoogleNewsLink(item.link) ? 1 : 0);
-    return googlePenalty(a) - googlePenalty(b) || b.publishedAt - a.publishedAt;
-  });
+/** The final scores in a text ("116-111", "5-2"); a record like 7-5-1 is skipped because of the third number. */
+function scoresIn(text: string): Set<string> {
+  const found = new Set<string>();
+  for (const match of text.matchAll(/(?<![\d-])(\d{1,3})\s?[-–]\s?(\d{1,3})(?![\d-])/g)) found.add(`${match[1]}-${match[2]}`);
+  return found;
+}
+
+/** The names (capitalized words of 4+ letters) a text uses, folded to lower case. */
+function namesIn(text: string): Set<string> {
+  return new Set((text.match(/\b[A-Z][a-z]{3,}\b/g) ?? []).map((word) => word.toLowerCase()));
+}
+
+/**
+ * Two stories about one event: the same final score between at least two of the same names, or nearly the same headline and names.
+ * Conservative on purpose: two different games between the same teams have different scores.
+ */
+export function sameEvent(a: Pick<Story, 'headline' | 'summary'>, b: Pick<Story, 'headline' | 'summary'>): boolean {
+  const textA = `${a.headline}. ${a.summary}`;
+  const textB = `${b.headline}. ${b.summary}`;
+  const namesA = namesIn(textA);
+  const namesB = namesIn(textB);
+  const shared = [...namesA].filter((name) => namesB.has(name)).length;
+  const overlap = shared / Math.max(1, Math.min(namesA.size, namesB.size));
+  const scoresA = scoresIn(textA);
+  const sameScore = [...scoresIn(textB)].some((score) => scoresA.has(score) && score.split('-').some((part) => part.length >= 2));
+  if (sameScore && shared >= 2) return true;
+  return similarity(titleTokens(a.headline), titleTokens(b.headline)) >= 0.7 && overlap >= 0.5;
+}
+
+/**
+ * Headline + link + feed snippet when the article or the AI is unavailable. With `trust` (the real run), the same rules as for an
+ * AI-written story hold: only items from a trusted outlet are used, the credit is that outlet's own name (once per outlet, never the
+ * feed's free text), and a story with no trusted item at all is not written (null).
+ */
+export function fallbackStoryFromItems(teamId: string, items: FeedItem[], now: number, trust?: Trust): Story | null {
+  const sorted = [...items]
+    .filter((item) => !trust || trust.outlet(item.link) !== null)
+    .sort((a, b) => {
+      const googlePenalty = (item: FeedItem) => (isGoogleNewsLink(item.link) ? 1 : 0);
+      return googlePenalty(a) - googlePenalty(b) || b.publishedAt - a.publishedAt;
+    });
+  if (sorted.length === 0) return null;
   const lead = sorted[0];
-  const sources: StorySource[] = sorted.slice(0, SOURCES_PER_STORY).map((item) => ({ name: item.source, url: item.link }));
+  const sources: StorySource[] = [];
+  for (const item of sorted) {
+    if (sources.length >= SOURCES_PER_STORY) break;
+    const name = trust?.outlet(item.link) ?? item.source;
+    if (sources.some((source) => source.name === name)) continue;
+    sources.push({ name, url: item.link });
+  }
   const publishedAt = Math.max(...sorted.map((item) => item.publishedAt).filter(Boolean), now);
   return {
     id: storyId(teamId, lead.link),
@@ -90,7 +144,8 @@ export function buildMessages(team: Pick<PressBoxTeam, 'name' | 'league'>, input
     'Use ONLY the article text provided for that story. Do not add any fact, number, name, date or quote that is not in that text. Do not use outside knowledge.',
     'Write in your own words. Never copy more than a few words in a row from an article, and never use a long quotation.',
     'If the articles disagree or only some of them say something, say "reports" or "according to reports" instead of stating it as certain.',
-    'Each summary is 4 to 6 sentences: what happened, why it matters to the team and its fans, and what is next or still unknown. If the text does not say what is next, say what is not yet known; do not guess.',
+    'Each summary is 2 to 6 sentences: what happened and why it matters to the team and its fans. Say what is next only if the text says it. Shorter is fine: never pad to reach a length.',
+    'State only what happened. NEVER write about the article or text itself or about what it leaves out: no "the article", "the text", "does not specify", "is not mentioned", "no information", "it is unclear from". If something is not in the text, leave it out of the summary; do not mention that it is missing.',
     `Each headline is a short, plain, factual headline in your own words, no clickbait, no trailing period. Write only about ${team.name}'s ${sportForLeague(team.league) ?? team.league} program; reject any source about another sport or a women's program and return no entry for it.`,
     'Reply with JSON only, no other text: {"stories": [{"n": 1, "headline": string, "summary": string}, ...]} with exactly one entry per story, using the story numbers given.',
   ].join('\n');
@@ -138,6 +193,20 @@ export interface TeamBuild {
   articleFetches: number;
   /** The AI could not be used at all (every model failed, or the budget is spent): the caller keeps yesterday's stories. */
   aiFailed: boolean;
+  /** Every draft the checks turned down (and every story the AI left out), so a run can show WHY a story fell back to the feed's blurb. */
+  rejections: Rejection[];
+  /** Why the AI could not be used, when `aiFailed`. */
+  aiError?: string;
+}
+
+export interface Rejection {
+  /** The feed headline of the story the draft was for. */
+  story: string;
+  /** 1 = first answer, 2 = the answer to the retry. */
+  attempt: number;
+  issues: string[];
+  /** What the AI wrote, when it wrote something. */
+  draft?: SummaryResult;
 }
 
 /** A team whose feeds and articles have been read and is ready to be written up. */
@@ -150,10 +219,12 @@ export interface PreparedTeam {
   /** Stories whose articles could not be read: they only ever become the feed's headline. */
   bare: StoryInput[];
   articleFetches: number;
+  /** Which outlets may be credited (the feed-headline fall-back uses it too). */
+  trust: Trust;
 }
 
 /** Read the article text for a team's biggest stories (no AI yet). */
-export async function prepareTeam(team: PressBoxTeam, ranked: Cluster[], wanted: number, fetcher: Fetcher): Promise<PreparedTeam> {
+export async function prepareTeam(team: PressBoxTeam, ranked: Cluster[], wanted: number, fetcher: Fetcher, trust: Trust): Promise<PreparedTeam> {
   let articleFetches = 0;
   const inputs: StoryInput[] = [];
   const bare: StoryInput[] = [];
@@ -169,12 +240,19 @@ export async function prepareTeam(team: PressBoxTeam, ranked: Cluster[], wanted:
       articleFetches += 1;
       const article = await fetchArticle(item.link, fetcher);
       if (!article) continue;
-      seenOutlets.add(item.source);
-      articles.push({ source: item.source, url: article.url, text: article.text, embeddable: article.embeddable, publishedAt: item.publishedAt });
+      // The page actually read must be a trusted English sports outlet and a story; the credit is the outlet's own name for that address
+      // (never the feed's free text), so an odd <source> can no longer be credited.
+      const outlet = trust.outlet(article.url);
+      if (!outlet || isNonStoryUrl(article.url) || looksLikeStatsPage(article.text) || !isEnglishText(article.text)) continue;
+      // About this team: its name is in the opening of the page, not just somewhere in a list or a roundup.
+      if (!mentionsTeam(article.text.slice(0, OPENING_CHARS), team)) continue;
+      if (seenOutlets.has(outlet)) continue;
+      seenOutlets.add(outlet);
+      articles.push({ source: outlet, url: article.url, text: article.text, embeddable: article.embeddable, publishedAt: item.publishedAt });
     }
     (articles.length > 0 ? inputs : bare).push({ cluster, items, articles });
   }
-  return { team, ranked, inputs, bare, articleFetches };
+  return { team, ranked, inputs, bare, articleFetches, trust };
 }
 
 /** The shared rules every request carries, whether it is for one team or several. */
@@ -184,7 +262,8 @@ function rulesFor(subject: string, sportRule: string): string {
     'Use ONLY the article text provided for that story. Do not add any fact, number, name, date or quote that is not in that text. Do not use outside knowledge.',
     'Write in your own words. Never copy more than a few words in a row from an article, and never use a long quotation.',
     'If the articles disagree or only some of them say something, say "reports" or "according to reports" instead of stating it as certain.',
-    'Each summary is 4 to 6 sentences: what happened, why it matters to the team and its fans, and what is next or still unknown. If the text does not say what is next, say what is not yet known; do not guess.',
+    'Each summary is 2 to 6 sentences: what happened and why it matters to the team and its fans. Say what is next only if the text says it. Shorter is fine: never pad to reach a length.',
+    'State only what happened. NEVER write about the article or text itself or about what it leaves out: no "the article", "the text", "does not specify", "is not mentioned", "no information", "it is unclear from". If something is not in the text, leave it out of the summary; do not mention that it is missing.',
     `Each headline is a short, plain, factual headline in your own words, no clickbait, no trailing period. ${sportRule}`,
     'Reply with JSON only, no other text: {"stories": [{"n": 1, "headline": string, "summary": string}, ...]} with exactly one entry per story, using the story numbers given.',
   ].join('\n');
@@ -224,6 +303,8 @@ export function buildBatchMessages(entries: { team: Pick<PressBoxTeam, 'name' | 
 
 export interface BuildDeps {
   fetcher: Fetcher;
+  /** Which outlets may be read and credited (outlets.ts). */
+  trust: Trust;
   ai: AiClient;
   now: number;
 }
@@ -244,12 +325,13 @@ function assembleStories(prepared: PreparedTeam, results: (SummaryResult | null)
   const ordered = [...inputs.map((input, index) => ({ input, index })), ...bare.map((input) => ({ input, index: -1 }))].sort(
     (a, b) => ranked.indexOf(a.input.cluster) - ranked.indexOf(b.input.cluster),
   );
+  const written = new Set<Story>();
   for (const { input, index } of ordered) {
-    if (stories.length >= wanted) break;
     const result = index >= 0 ? results[index] : null;
+    let story: Story | null = null;
     if (result) {
       const lead = input.articles[0];
-      stories.push({
+      story = {
         id: storyId(team.id, lead.url),
         headline: result.headline,
         summary: result.summary,
@@ -257,13 +339,26 @@ function assembleStories(prepared: PreparedTeam, results: (SummaryResult | null)
         url: lead.url,
         embeddable: lead.embeddable,
         publishedAt: new Date(Math.max(...input.articles.map((article) => article.publishedAt), input.cluster.newestAt) || now).toISOString(),
-      });
-      aiStories += 1;
+      };
+      written.add(story);
     } else if (input.items.length > 0) {
-      stories.push(fallbackStoryFromItems(team.id, input.items, now));
-      fallbackStories += 1;
+      story = fallbackStoryFromItems(team.id, input.items, now, prepared.trust);
     }
+    if (!story) continue;
+    // The same game told twice (two recaps of one score) is one story with both outlets credited, not two.
+    const twin = stories.find((other) => sameEvent(other, story!));
+    if (!twin) {
+      stories.push(story);
+      continue;
+    }
+    for (const source of story.sources) if (!twin.sources.some((existing) => existing.name === source.name)) twin.sources.push(source);
+    twin.sources.splice(MAX_SOURCES_SHOWN);
+    // A written summary beats a blurb; otherwise the first (biggest) story stands.
+    if (written.has(story) && !written.has(twin) && story.summary.length > twin.summary.length) Object.assign(twin, { headline: story.headline, summary: story.summary, id: story.id, url: story.url, embeddable: story.embeddable }), written.add(twin);
   }
+  stories.splice(wanted);
+  aiStories = stories.filter((story) => written.has(story)).length;
+  fallbackStories = stories.length - aiStories;
   return { stories, aiStories, fallbackStories };
 }
 
@@ -277,7 +372,10 @@ export async function buildTeamsBatch(batch: PreparedTeam[], wanted: number, dep
   const results = batch.map((prepared) => prepared.inputs.map((): SummaryResult | null => null));
   const problems = batch.map((prepared) => prepared.inputs.map((): string[] | null => null));
   const calls = batch.map(() => 0);
+  const rejections = batch.map((): Rejection[] => []);
   let aiFailed = false;
+  let aiError: string | undefined;
+  let attempt = 1;
 
   async function ask(refs: BatchRef[]): Promise<void> {
     const entries = batch.map((prepared, slot) => ({
@@ -299,14 +397,19 @@ export async function buildTeamsBatch(batch: PreparedTeam[], wanted: number, dep
   const check = (ref: BatchRef): boolean => {
     const { team, inputs } = batch[ref.slot];
     const result = results[ref.slot][ref.input];
+    const story = inputs[ref.input].cluster.items[0]?.title ?? '';
     if (!result) {
       problems[ref.slot][ref.input] = ['it was missing or not valid JSON with "headline" and "summary"'];
+      rejections[ref.slot].push({ story, attempt, issues: problems[ref.slot][ref.input]! });
       return false;
     }
     const issues = validateSummary(result, inputs[ref.input].articles.map((article) => article.text));
     if (!isStoryForTeamSport(result, team)) issues.push('it is about another sport or a women\'s program');
     problems[ref.slot][ref.input] = issues.length > 0 ? issues : null;
-    if (issues.length > 0) results[ref.slot][ref.input] = null;
+    if (issues.length > 0) {
+      rejections[ref.slot].push({ story, attempt, issues, draft: result });
+      results[ref.slot][ref.input] = null;
+    }
     return issues.length === 0;
   };
 
@@ -317,19 +420,22 @@ export async function buildTeamsBatch(batch: PreparedTeam[], wanted: number, dep
       const failed = all.filter((ref) => !check(ref));
       if (failed.length > 0) {
         // One more try for just the stories that broke the rules, with the objections.
+        attempt = 2;
         await ask(failed);
         failed.forEach((ref) => { check(ref); });
       }
     } catch (error) {
       if (error instanceof AiAuthError) throw error;
-      if (error instanceof AiUnavailableError || error instanceof AiBudgetError) aiFailed = true;
-      else throw error;
+      if (error instanceof AiUnavailableError || error instanceof AiBudgetError) {
+        aiFailed = true;
+        aiError = error.message;
+      } else throw error;
     }
   }
 
   return batch.map((prepared, slot) => {
     const { stories, aiStories, fallbackStories } = assembleStories(prepared, results[slot], wanted, now);
-    return { stories, aiCalls: calls[slot], aiStories, fallbackStories, articleFetches: prepared.articleFetches, aiFailed: aiFailed && prepared.inputs.length > 0 };
+    return { stories, aiCalls: calls[slot], aiStories, fallbackStories, articleFetches: prepared.articleFetches, aiFailed: aiFailed && prepared.inputs.length > 0, rejections: rejections[slot], ...(aiFailed && aiError ? { aiError } : {}) };
   });
 }
 
@@ -338,7 +444,7 @@ export async function buildTeamsBatch(batch: PreparedTeam[], wanted: number, dep
  * an AI problem: that is `aiFailed` (an AiAuthError, a bad key, is the one exception, because nothing after it can work).
  */
 export async function buildTeamStories(team: PressBoxTeam, ranked: Cluster[], wanted: number, deps: BuildDeps): Promise<TeamBuild> {
-  const prepared = await prepareTeam(team, ranked, wanted, deps.fetcher);
+  const prepared = await prepareTeam(team, ranked, wanted, deps.fetcher, deps.trust);
   const [build] = await buildTeamsBatch([prepared], wanted, { ai: deps.ai, now: deps.now });
   return build;
 }

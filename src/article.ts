@@ -108,6 +108,7 @@ function decodeBasicEntities(text: string): string {
     .replace(/&quot;/g, '"')
     .replace(/&#0?39;|&apos;/g, "'")
     .replace(/&nbsp;/g, ' ')
+    .replace(/&#x([0-9a-f]+);/gi, (_m, code: string) => String.fromCodePoint(parseInt(code, 16) || 32))
     .replace(/&#(\d+);/g, (_m, code: string) => String.fromCodePoint(Number(code) || 32));
 }
 
@@ -127,12 +128,20 @@ export function extractArticleText(html: string): string {
     }
   }
   const stripped = source.replace(/<(script|style|noscript|svg|nav|header|footer|aside|form|figure)[\s\S]*?<\/\1>/gi, ' ');
-  const scope = /<article[\s\S]*?<\/article>/i.exec(stripped)?.[0] ?? /<main[\s\S]*?<\/main>/i.exec(stripped)?.[0] ?? stripped;
-  const paragraphs = Array.from(scope.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi))
+  // A page can hold several <article> blocks (ESPN and Yahoo put teasers for other stories in one ahead of the story), so take the
+  // <article>/<main> block with the most prose rather than the first one; the whole page is the last resort.
+  const blocks = [...(stripped.match(/<article[\s\S]*?<\/article>/gi) ?? []), ...(stripped.match(/<main[\s\S]*?<\/main>/gi) ?? [])].map(proseOf);
+  const best = blocks.reduce<string>((most, text) => (text.length > most.length ? text : most), '');
+  return (best.length >= MIN_ARTICLE_CHARS ? best : proseOf(stripped)).slice(0, MAX_ARTICLE_CHARS);
+}
+
+/** The prose paragraphs of a piece of markup, one per line. */
+function proseOf(scope: string): string {
+  return Array.from(scope.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi))
     .map((match) => cleanText(match[1]))
     // Real prose, not captions, bylines, share buttons or "Subscribe" strips.
-    .filter((paragraph) => paragraph.length >= 60 && /[.!?"”]$/.test(paragraph));
-  return paragraphs.join('\n').slice(0, MAX_ARTICLE_CHARS);
+    .filter((paragraph) => paragraph.length >= 40 && /[.!?"”]$/.test(paragraph) && !/[{};]\s|function\s*\(|=>/.test(paragraph))
+    .join('\n');
 }
 
 function findArticleBody(node: unknown): string | null {

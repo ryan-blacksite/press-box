@@ -64,3 +64,16 @@ DRY_RUN=1 OPENROUTER_API_KEY=... PRESS_BOX_TEAMS=nfl-lions npm run write
 ```
 
 No secret is ever in the repo. Licence: not chosen yet (all rights reserved until one is added).
+
+## Quality rules (FV2-154 item 6)
+
+- **Summaries state what happened and nothing about the article.** The prompt forbids it and `src/guard.ts` rejects "the article", "does not specify", "is not mentioned", "no information" and the like; a rejected summary is asked for once more with the objection, then the story keeps only the feed's headline. Summaries are 2 to 6 sentences, so the model is never pushed to pad.
+- **Only real English sports outlets are read and credited.** `src/outlets.ts` holds the allowlist (ESPN, NHL.com and other league sites, CBS Sports, Yahoo Sports, AP, Daily Faceoff and more). The credit is the allowlist's name for the article's real address, never the feed's free text. Non-English text and unlisted hosts are dropped. Team-site feeds you configure (`TEAM_SITE_FEEDS`) are trusted by their host; add others with `EXTRA_OUTLETS="host=Name,host=Name"`.
+- **Non-stories are skipped.** Line combinations, depth charts, stats, standings, schedule, betting and odds guides, predictions, power rankings, trackers, how-to-watch guides, uniform roundups, polls, trivia lists, video highlights, galleries and link roundups are recognised by title, address and content and never become a story.
+- **The story is about the team.** A league-wide feed item counts for a team only when its name is in the headline or the first words of the blurb, and an article only when its name is in the opening of the page.
+- **A headline-only story follows the same credit rules.** When the article or the AI is unavailable, the story is the feed's headline and blurb, but still only from a trusted outlet, credited by the allowlist's name, once per outlet; with no trusted item there is no story.
+- **Article text is read from the page's own prose.** The `<article>` or `<main>` block with the most prose wins (ESPN and Yahoo put teasers for other stories in an earlier one). Every page is still fetched through the robots.txt-checking fetcher, so a page robots.txt disallows is never read.
+
+## Choosing the free AI model (model bench)
+
+`AI_MODELS` is a fall-back chain, best first: the first model that is not resting is used, the next only when it is rate-limited or gone. `AI_ROTATE=1` spreads requests over all of them in turn instead. To re-test the field, run the **Press Box** workflow with `mode=bench` (optionally `teams` = a comma list of `:free` model ids): it writes the same real stories with each free model, one-step and two-step (extract the facts, then write from only those), judges every answer with the writer's own checks, and prints a table. It stores nothing and only ever calls free models. The order in `DEFAULT_FREE_MODELS` comes from the 2026-10-31 run.
