@@ -3,9 +3,7 @@
  *   report what happened.
  * Owns: coveredTeams(), runPressBox() (the whole run) and formatSummary().
  * Notes: For each team: read what is stored, pull the news feeds, and SKIP the team (no AI call) when nothing new has been
- *   published since its last write. Otherwise build up to 3 stories with ONE AI call (stories.ts) and write them. If the AI cannot be
- *   used the stored stories are kept (re-saved so they do not expire) rather than writing nothing; a team with nothing stored
- *   yet gets the feed headlines. Daily mode covers every team (early morning, US Eastern); after-game mode only the covered teams whose
+ *   published since its last write. Otherwise build up to 3 stories with ONE AI call (stories.ts) and write them. If AI cannot be used, fresh trusted feed headlines are saved alongside existing stories; existing stories are kept when no replacement is available. Daily mode covers every team (early morning, US Eastern); after-game mode only the covered teams whose
  *   game went final today (afterGame.ts), so the result is in the store that night. Per team and per run it logs JSON lines (event
  *   press-box-team / press-box-run) with teams checked, skipped, AI calls and failures. Nothing here logs a key or a token.
  *   FV2-47: NOTHING is written per team. Stories are staged in memory and a league's bundle (bundle:<league>, bundles.ts) is written
@@ -37,6 +35,12 @@ type Fetcher = (url: string, init?: RequestInit) => Promise<Response>;
 /** Every team Press Box covers: the whole list in the teams file (config/teams.fly.json for FLY). */
 export function coveredTeams(): PressBoxTeam[] {
   return [...TEAMS];
+}
+
+/** Each consecutive set of four UTC hours visits every team exactly once. */
+export function hourlyTeams(teams: PressBoxTeam[], now: number): PressBoxTeam[] {
+  const shard = Math.floor(now / 3_600_000) % 4;
+  return teams.filter((_team, index) => index % 4 === shard);
 }
 
 export type TeamOutcome = 'written' | 'cleaned' | 'would-clean' | 'skipped-no-news' | 'kept-yesterday' | 'fallback-written' | 'empty-written' | 'failed';
@@ -112,6 +116,9 @@ export async function runPressBox(config: WriterConfig, deps: RunDeps): Promise<
   if (config.teamIds) {
     const wanted = new Set(config.teamIds);
     teams = teams.filter((team) => wanted.has(team.id));
+  }
+  if (config.hourlyShard && config.mode === 'daily' && !config.teamIds) {
+    teams = hourlyTeams(teams, startedAt);
   }
   if (config.mode === 'after-game') {
     const finished = await finishedTeamIds(teams, deps.fetcher, deps.now(), (message) => deps.log(JSON.stringify({ event: 'press-box-warn', message })));
@@ -283,14 +290,17 @@ export async function runPressBox(config: WriterConfig, deps: RunDeps): Promise<
       report.fallbackStories = build.fallbackStories;
       report.stories = build.stories.length;
 
-      if ((build.aiFailed || build.stories.length === 0) && prev) {
-        // Keep yesterday's stories rather than writing nothing (or only headlines).
+      if (build.stories.length === 0 && prev) {
+        // Keep the existing stories only when there is no usable replacement.
         if (removedOffSport > 0) stage(team, prev as TeamStories);
         summary.keptYesterday += 1;
         report.outcome = 'kept-yesterday';
         return;
       }
-      const value: TeamStories = { teamId: team.id, updatedAt: new Date(now).toISOString(), stories: build.stories };
+      const stories = [...build.stories, ...(build.aiFailed ? prev?.stories ?? [] : [])]
+        .filter((story, index, all) => all.findIndex((other) => other.id === story.id || other.url === story.url) === index)
+        .slice(0, config.storiesPerTeam);
+      const value: TeamStories = { teamId: team.id, updatedAt: new Date(now).toISOString(), stories };
       stage(team, value);
       if (build.aiFailed) {
         summary.fallbackWritten += 1;

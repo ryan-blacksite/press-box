@@ -128,6 +128,7 @@ export function createAiClient(config: WriterConfig['ai'], models: string[], dep
     if (calls >= config.callBudget) throw new AiBudgetError(`AI call budget of ${config.callBudget} reached`);
     if (pastDeadline()) throw new AiBudgetError('The run\'s time budget is spent');
     await pace();
+    if (calls >= config.callBudget) throw new AiBudgetError(`AI call budget of ${config.callBudget} reached`);
     if (pastDeadline()) throw new AiBudgetError('The run\'s time budget is spent');
     calls += 1;
     const controller = new AbortController();

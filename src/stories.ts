@@ -111,7 +111,7 @@ export function fallbackStoryFromItems(teamId: string, items: FeedItem[], now: n
     if (sources.some((source) => source.name === name)) continue;
     sources.push({ name, url: item.link });
   }
-  const publishedAt = Math.max(...sorted.map((item) => item.publishedAt).filter(Boolean), now);
+  const publishedAt = Math.max(0, ...sorted.map((item) => item.publishedAt)) || now;
   return {
     id: storyId(teamId, lead.link),
     headline: lead.title,

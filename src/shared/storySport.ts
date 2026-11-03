@@ -30,7 +30,7 @@ const sportTerms: Record<string, RegExp> = {
 const leagueSport: Record<string, string> = {
   NFL: 'football', NCAAF: 'football',
   NBA: 'basketball', NCAAMB: 'basketball',
-  MLB: 'baseball', NHL: 'hockey', MLS: 'soccer', EPL: 'soccer',
+  MLB: 'baseball', NHL: 'hockey', MLS: 'soccer', EPL: 'soccer', FIFA: 'soccer',
 };
 
 export function sportForLeague(league: string): string | null {

@@ -1,0 +1,6 @@
+name = "press-box-hourly-dispatch"
+main = "src/index.ts"
+compatibility_date = "2026-11-01"
+
+[triggers]
+crons = ["2 * * * *"]

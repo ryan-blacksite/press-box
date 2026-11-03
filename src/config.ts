@@ -7,9 +7,9 @@
  *   is any OpenAI-compatible chat-completions API: AI_BASE_URL (default OpenRouter), AI_API_KEY (falls back to
  *   OPENROUTER_API_KEY) and AI_MODELS (comma list tried in order). Pointing at another provider later is those three
  *   settings and no code. The defaults are OpenRouter's ":free" models, which cost no credits; with credits purchased the free
- *   limit is about 1,000 requests a day and 20 a minute, so one AI call writes several teams' stories (BATCH_TEAMS, default 3), request
+ *   limit depends on account credits; the workflow caps calls at one per run. One AI call writes several teams' stories (BATCH_TEAMS, default 3), request
  *   starts are paced, several requests run at once (AI_CONCURRENCY, default 10), and each run has its own call budget (AI_CALL_BUDGET, default 40,
- *   run hourly = 960 a day) that stays under the daily limit. FV2-47: the whole run has a time budget (RUN_BUDGET_MINUTES, default 13)
+ *   when run outside the workflow). Account-wide limits also depend on other uses. FV2-47: the whole run has a time budget (RUN_BUDGET_MINUTES, default 13)
  *   so it finishes in under 15 minutes however slow the free models are.
  */
 
@@ -49,6 +49,8 @@ export interface WriterConfig {
   dryRun: boolean;
   /** Only these team ids (manual runs); null for every covered team. */
   teamIds: string[] | null;
+  /** Rotate automatic daily runs over four hourly partitions. */
+  hourlyShard?: boolean;
   /** Teams whose feeds and articles are read at once. */
   concurrency: number;
   /** Teams written up by one AI request (FV2-47): fewer, bigger requests keep a full run inside the free rate limit. */
@@ -122,6 +124,7 @@ export function loadConfig(env: Record<string, string | undefined> = process.env
     storiesPerTeam: Math.min(5, Math.floor(positive(env.STORIES_PER_TEAM, 4))),
     dryRun,
     teamIds: teamIds.length > 0 ? teamIds : null,
+    hourlyShard: /^(1|true|yes)$/i.test(env.PRESS_BOX_HOURLY_SHARD ?? ''),
     concurrency: Math.min(24, Math.floor(positive(env.CONCURRENCY, 12))),
     batchTeams: Math.min(8, Math.floor(positive(env.BATCH_TEAMS, 3))),
     runBudgetMs: Math.round(positive(env.RUN_BUDGET_MINUTES, 12) * 60_000),

@@ -29,6 +29,11 @@ on:
         required: false
         default: false
         type: boolean
+      full_scan:
+        description: 'Check every team in a manual daily run (may defer teams if the time budget is spent)'
+        required: false
+        default: false
+        type: boolean
 
 # One run at a time: a slow run must not overlap the next one.
 concurrency:
@@ -59,6 +64,7 @@ jobs:
         env:
           PRESS_BOX_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'daily' }}
           PRESS_BOX_TEAMS: ${{ github.event_name == 'workflow_dispatch' && inputs.teams || '' }}
+          PRESS_BOX_HOURLY_SHARD: ${{ (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'daily' && inputs.teams == '' && !inputs.full_scan)) && '1' || '' }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '' }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -70,7 +76,7 @@ jobs:
           PRESS_BOX_APP_NAME: ${{ vars.PRESS_BOX_APP_NAME }}
           PRESS_BOX_SITE_URL: ${{ vars.PRESS_BOX_SITE_URL }}
           STORIES_PER_TEAM: ${{ vars.STORIES_PER_TEAM }}
-          AI_CALL_BUDGET: ${{ vars.AI_CALL_BUDGET }}
+          AI_CALL_BUDGET: '1'
         run: npx vite-node src/main.ts
 
       # Read back what the live Worker serves, so a run that "succeeded" can be checked against what the app shows. Never fails the job.
