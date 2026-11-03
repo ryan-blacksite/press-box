@@ -316,6 +316,8 @@ export async function collectItems(
     for (const item of result.value) {
       // Every feed but Google (whose own query is the team) must name the team up front: ESPN's team feed also lists other clubs' stories that merely mention it.
       if (item.feed !== 'google' && !mentionsTeam(`${item.title} ${item.description.slice(0, ITEM_OPENING_CHARS)}`, team)) continue;
+      // College league roundups often mention many schools in their opening. Require this school in the headline.
+      if (item.feed !== 'google' && (team.league === 'NCAAF' || team.league === 'NCAAMB') && !mentionsTeam(item.title, team)) continue;
       if (!isStoryForTeamSport({ headline: item.title, summary: item.description }, team)) continue;
       // FV2-154: not a Japanese office or a stat page, and not an outlet we do not trust. A Google link is judged on the article it forwards to.
       if (!isEnglishText(`${item.title} ${item.source}`) || isNonStoryTitle(item.title) || isNonStoryUrl(item.link)) continue;
