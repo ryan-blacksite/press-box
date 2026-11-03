@@ -15,7 +15,7 @@
  */
 import { FEED_FETCH_TIMEOUT_MS, PRESS_BOX_USER_AGENT } from './httpClient';
 import type { FeedItem } from './shared/types';
-import type { PressBoxTeam } from './shared/teams';
+import { TEAMS, type PressBoxTeam } from './shared/teams';
 import { isStoryForTeamSport, sportForLeague } from './shared/storySport';
 import { isEnglishText, isNonStoryTitle, isNonStoryUrl, type Trust } from './outlets';
 
@@ -210,10 +210,32 @@ export function nickname(team: PressBoxTeam): string {
   return parts[parts.length - 1];
 }
 
+const collegeTeams = TEAMS.filter((team) => team.league === 'NCAAF');
+const schoolName = (team: PressBoxTeam): string => (/\b(?:state|tech|university|college)$/i.test(team.name) ? team.name : team.name.replace(/\s+\S+$/, '')).toLowerCase();
+const hasWords = (text: string, phrase: string): boolean => new RegExp(`(^|[^a-z])${phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([^a-z]|$)`).test(text);
+const collegeSchools = collegeTeams.map(schoolName);
+const nicknameCounts = new Map<string, number>();
+for (const team of collegeTeams) {
+  const nick = nickname(team).toLowerCase();
+  nicknameCounts.set(nick, (nicknameCounts.get(nick) ?? 0) + 1);
+}
+
 /** Whether a headline/blurb is about the team: its full name, or its nickname as a whole word. */
 export function mentionsTeam(text: string, team: PressBoxTeam): boolean {
   const haystack = text.toLowerCase();
   if (haystack.includes(team.name.toLowerCase())) return true;
+  if (team.league === 'NCAAF' || team.league === 'NCAAMB') {
+    // Indiana's standard initialism is common in local coverage; do not apply arbitrary two-letter abbreviations globally.
+    if (/^ncaaf-ih$|^ncaamb-ih$/.test(team.id) && /\bIU\b/.test(text)) return true;
+    const school = schoolName(team);
+    if (school.length >= 4 && hasWords(haystack, school)) {
+      // A shorter school name must not claim a longer one (Indiana / Indiana State).
+      const collision = collegeSchools.some((other) => other !== school && other.startsWith(`${school} `) && hasWords(haystack, other));
+      if (!collision) return true;
+    }
+    const nick = nickname(team).toLowerCase();
+    return nick.length >= 4 && nicknameCounts.get(nick) === 1 && hasWords(haystack, nick);
+  }
   const nick = nickname(team).toLowerCase();
   if (nick.length < 4) return false;
   return new RegExp(`(^|[^a-z])${nick.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([^a-z]|$)`).test(haystack);

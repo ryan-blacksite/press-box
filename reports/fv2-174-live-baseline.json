@@ -1,0 +1,6081 @@
+{
+  "checkedAt": "2026-11-03T06:01:14.287Z",
+  "teams": [
+    {
+      "id": "nfl-cardinals",
+      "name": "Arizona Cardinals",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:52.679Z"
+    },
+    {
+      "id": "nfl-falcons",
+      "name": "Atlanta Falcons",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:52.133Z"
+    },
+    {
+      "id": "nfl-ravens",
+      "name": "Baltimore Ravens",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:52.768Z"
+    },
+    {
+      "id": "nfl-bills",
+      "name": "Buffalo Bills",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T00:22:32.000Z"
+    },
+    {
+      "id": "nfl-panthers",
+      "name": "Carolina Panthers",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-02T19:25:13.035Z"
+    },
+    {
+      "id": "nfl-bears",
+      "name": "Chicago Bears",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-02T20:43:16.417Z"
+    },
+    {
+      "id": "nfl-bengals",
+      "name": "Cincinnati Bengals",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-02T20:43:16.033Z"
+    },
+    {
+      "id": "nfl-browns",
+      "name": "Cleveland Browns",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:52.370Z"
+    },
+    {
+      "id": "nfl-cowboys",
+      "name": "Dallas Cowboys",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-02T19:25:17.255Z"
+    },
+    {
+      "id": "nfl-broncos",
+      "name": "Denver Broncos",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:52.266Z"
+    },
+    {
+      "id": "nfl-lions",
+      "name": "Detroit Lions",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T00:15:18.000Z"
+    },
+    {
+      "id": "nfl-packers",
+      "name": "Green Bay Packers",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:52.370Z"
+    },
+    {
+      "id": "nfl-texans",
+      "name": "Houston Texans",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-02T19:25:13.035Z"
+    },
+    {
+      "id": "nfl-colts",
+      "name": "Indianapolis Colts",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:52.133Z"
+    },
+    {
+      "id": "nfl-jaguars",
+      "name": "Jacksonville Jaguars",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:52.679Z"
+    },
+    {
+      "id": "nfl-chiefs",
+      "name": "Kansas City Chiefs",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-10-25T13:40:03.131Z"
+    },
+    {
+      "id": "nfl-raiders",
+      "name": "Las Vegas Raiders",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:52.266Z"
+    },
+    {
+      "id": "nfl-chargers",
+      "name": "Los Angeles Chargers",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-10-26T16:03:08.269Z"
+    },
+    {
+      "id": "nfl-rams",
+      "name": "Los Angeles Rams",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-02T20:43:16.417Z"
+    },
+    {
+      "id": "nfl-dolphins",
+      "name": "Miami Dolphins",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:52.266Z"
+    },
+    {
+      "id": "nfl-vikings",
+      "name": "Minnesota Vikings",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:52.679Z"
+    },
+    {
+      "id": "nfl-patriots",
+      "name": "New England Patriots",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T00:15:18.000Z"
+    },
+    {
+      "id": "nfl-saints",
+      "name": "New Orleans Saints",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:52.370Z"
+    },
+    {
+      "id": "nfl-giants",
+      "name": "New York Giants",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:53.032Z"
+    },
+    {
+      "id": "nba-bulls",
+      "name": "Chicago Bulls",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:53.337Z"
+    },
+    {
+      "id": "nba-cavaliers",
+      "name": "Cleveland Cavaliers",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-01T15:56:25.524Z"
+    },
+    {
+      "id": "nba-mavericks",
+      "name": "Dallas Mavericks",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:27:00.197Z"
+    },
+    {
+      "id": "nba-nuggets",
+      "name": "Denver Nuggets",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:27:00.197Z"
+    },
+    {
+      "id": "nba-pistons",
+      "name": "Detroit Pistons",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:27:28.740Z"
+    },
+    {
+      "id": "nba-warriors",
+      "name": "Golden State Warriors",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T20:08:15.000Z"
+    },
+    {
+      "id": "nba-rockets",
+      "name": "Houston Rockets",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:27:17.069Z"
+    },
+    {
+      "id": "nba-pacers",
+      "name": "Indiana Pacers",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:27:17.069Z"
+    },
+    {
+      "id": "nba-clippers",
+      "name": "Los Angeles Clippers",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T20:43:18.251Z"
+    },
+    {
+      "id": "nba-lakers",
+      "name": "Los Angeles Lakers",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:28:18.716Z"
+    },
+    {
+      "id": "nba-grizzlies",
+      "name": "Memphis Grizzlies",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:27:28.740Z"
+    },
+    {
+      "id": "nba-heat",
+      "name": "Miami Heat",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:53.337Z"
+    },
+    {
+      "id": "nfl-jets",
+      "name": "New York Jets",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-02T20:43:17.491Z"
+    },
+    {
+      "id": "nfl-eagles",
+      "name": "Philadelphia Eagles",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-02T20:43:16.851Z"
+    },
+    {
+      "id": "nfl-steelers",
+      "name": "Pittsburgh Steelers",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:52.768Z"
+    },
+    {
+      "id": "nfl-49ers",
+      "name": "San Francisco 49ers",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-02T10:53:25.683Z"
+    },
+    {
+      "id": "nfl-seahawks",
+      "name": "Seattle Seahawks",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-03T02:52:53.337Z"
+    },
+    {
+      "id": "nfl-buccaneers",
+      "name": "Tampa Bay Buccaneers",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-02T09:33:31.000Z"
+    },
+    {
+      "id": "nfl-titans",
+      "name": "Tennessee Titans",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-02T23:06:32.000Z"
+    },
+    {
+      "id": "nfl-commanders",
+      "name": "Washington Commanders",
+      "league": "NFL",
+      "status": "ready",
+      "newest": "2026-11-02T20:43:16.778Z"
+    },
+    {
+      "id": "nba-hawks",
+      "name": "Atlanta Hawks",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T20:43:17.491Z"
+    },
+    {
+      "id": "nba-celtics",
+      "name": "Boston Celtics",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T20:44:12.075Z"
+    },
+    {
+      "id": "nba-nets",
+      "name": "Brooklyn Nets",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:27:00.197Z"
+    },
+    {
+      "id": "nba-hornets",
+      "name": "Charlotte Hornets",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:26:56.463Z"
+    },
+    {
+      "id": "nba-bucks",
+      "name": "Milwaukee Bucks",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:28:32.618Z"
+    },
+    {
+      "id": "nba-timberwolves",
+      "name": "Minnesota Timberwolves",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-01T16:01:18.126Z"
+    },
+    {
+      "id": "nba-pelicans",
+      "name": "New Orleans Pelicans",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-10-26T16:07:53.678Z"
+    },
+    {
+      "id": "nba-knicks",
+      "name": "New York Knicks",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:30:53.234Z"
+    },
+    {
+      "id": "nba-thunder",
+      "name": "Oklahoma City Thunder",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T20:43:17.491Z"
+    },
+    {
+      "id": "nba-magic",
+      "name": "Orlando Magic",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:28:32.618Z"
+    },
+    {
+      "id": "nba-76ers",
+      "name": "Philadelphia 76ers",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:30:53.234Z"
+    },
+    {
+      "id": "nba-suns",
+      "name": "Phoenix Suns",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:28:52.779Z"
+    },
+    {
+      "id": "nba-trailblazers",
+      "name": "Portland Trail Blazers",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-01T16:01:32.889Z"
+    },
+    {
+      "id": "nba-kings",
+      "name": "Sacramento Kings",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-03T02:53:43.114Z"
+    },
+    {
+      "id": "nba-spurs",
+      "name": "San Antonio Spurs",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-03T02:53:43.114Z"
+    },
+    {
+      "id": "nba-raptors",
+      "name": "Toronto Raptors",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:29:55.923Z"
+    },
+    {
+      "id": "nba-jazz",
+      "name": "Utah Jazz",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-02T19:29:55.923Z"
+    },
+    {
+      "id": "nba-wizards",
+      "name": "Washington Wizards",
+      "league": "NBA",
+      "status": "ready",
+      "newest": "2026-11-03T02:53:43.114Z"
+    },
+    {
+      "id": "nhl-ducks",
+      "name": "Anaheim Ducks",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-01T16:03:10.943Z"
+    },
+    {
+      "id": "nhl-utah",
+      "name": "Utah Mammoth",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:28:52.779Z"
+    },
+    {
+      "id": "nhl-bruins",
+      "name": "Boston Bruins",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-03T02:54:38.741Z"
+    },
+    {
+      "id": "nhl-sabres",
+      "name": "Buffalo Sabres",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-03T02:54:38.741Z"
+    },
+    {
+      "id": "nhl-flames",
+      "name": "Calgary Flames",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T20:44:12.075Z"
+    },
+    {
+      "id": "nhl-hurricanes",
+      "name": "Carolina Hurricanes",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:30:53.234Z"
+    },
+    {
+      "id": "nhl-blackhawks",
+      "name": "Chicago Blackhawks",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T20:43:18.251Z"
+    },
+    {
+      "id": "nhl-avalanche",
+      "name": "Colorado Avalanche",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-01T16:03:10.943Z"
+    },
+    {
+      "id": "nhl-bluejackets",
+      "name": "Columbus Blue Jackets",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T20:43:18.091Z"
+    },
+    {
+      "id": "nhl-stars",
+      "name": "Dallas Stars",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:31:38.638Z"
+    },
+    {
+      "id": "nhl-redwings",
+      "name": "Detroit Red Wings",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-10-25T13:46:18.954Z"
+    },
+    {
+      "id": "nhl-oilers",
+      "name": "Edmonton Oilers",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-10-26T16:12:03.062Z"
+    },
+    {
+      "id": "nhl-panthers",
+      "name": "Florida Panthers",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T20:44:44.842Z"
+    },
+    {
+      "id": "nhl-kings",
+      "name": "Los Angeles Kings",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T17:00:04.000Z"
+    },
+    {
+      "id": "nhl-wild",
+      "name": "Minnesota Wild",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-03T02:54:38.741Z"
+    },
+    {
+      "id": "nhl-canadiens",
+      "name": "Montreal Canadiens",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T20:44:44.842Z"
+    },
+    {
+      "id": "nhl-predators",
+      "name": "Nashville Predators",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:31:53.035Z"
+    },
+    {
+      "id": "nhl-devils",
+      "name": "New Jersey Devils",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:31:56.169Z"
+    },
+    {
+      "id": "nhl-islanders",
+      "name": "New York Islanders",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:31:56.169Z"
+    },
+    {
+      "id": "nhl-rangers",
+      "name": "New York Rangers",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:31:56.169Z"
+    },
+    {
+      "id": "nhl-senators",
+      "name": "Ottawa Senators",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-10-26T16:13:41.682Z"
+    },
+    {
+      "id": "nhl-flyers",
+      "name": "Philadelphia Flyers",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:34:17.278Z"
+    },
+    {
+      "id": "nhl-penguins",
+      "name": "Pittsburgh Penguins",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:34:13.440Z"
+    },
+    {
+      "id": "nhl-sharks",
+      "name": "San Jose Sharks",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:34:15.739Z"
+    },
+    {
+      "id": "nhl-kraken",
+      "name": "Seattle Kraken",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T20:44:44.842Z"
+    },
+    {
+      "id": "nhl-blues",
+      "name": "St. Louis Blues",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:34:13.440Z"
+    },
+    {
+      "id": "nhl-lightning",
+      "name": "Tampa Bay Lightning",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:34:13.440Z"
+    },
+    {
+      "id": "nhl-mapleleafs",
+      "name": "Toronto Maple Leafs",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:36:34.921Z"
+    },
+    {
+      "id": "nhl-canucks",
+      "name": "Vancouver Canucks",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:34:15.739Z"
+    },
+    {
+      "id": "nhl-goldenknights",
+      "name": "Vegas Golden Knights",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T02:34:36.028Z"
+    },
+    {
+      "id": "nhl-capitals",
+      "name": "Washington Capitals",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-11-02T19:34:15.739Z"
+    },
+    {
+      "id": "nhl-jets",
+      "name": "Winnipeg Jets",
+      "league": "NHL",
+      "status": "ready",
+      "newest": "2026-10-25T13:47:24.358Z"
+    },
+    {
+      "id": "mlb-diamondbacks",
+      "name": "Arizona Diamondbacks",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-03T02:55:23.951Z"
+    },
+    {
+      "id": "mlb-braves",
+      "name": "Atlanta Braves",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.569Z"
+    },
+    {
+      "id": "mlb-orioles",
+      "name": "Baltimore Orioles",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-02T20:45:19.743Z"
+    },
+    {
+      "id": "mlb-redsox",
+      "name": "Boston Red Sox",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-03T02:55:23.951Z"
+    },
+    {
+      "id": "mlb-cubs",
+      "name": "Chicago Cubs",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-10-25T13:49:28.579Z"
+    },
+    {
+      "id": "mlb-whitesox",
+      "name": "Chicago White Sox",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-03T02:55:23.952Z"
+    },
+    {
+      "id": "mlb-reds",
+      "name": "Cincinnati Reds",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-02T19:35:07.078Z"
+    },
+    {
+      "id": "mlb-guardians",
+      "name": "Cleveland Guardians",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-02T19:35:07.078Z"
+    },
+    {
+      "id": "mlb-rockies",
+      "name": "Colorado Rockies",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-02T19:35:07.078Z"
+    },
+    {
+      "id": "mlb-tigers",
+      "name": "Detroit Tigers",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-10-24T13:24:09.109Z"
+    },
+    {
+      "id": "mlb-astros",
+      "name": "Houston Astros",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-10-25T13:49:28.579Z"
+    },
+    {
+      "id": "mlb-royals",
+      "name": "Kansas City Royals",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-02T19:36:34.921Z"
+    },
+    {
+      "id": "mlb-angels",
+      "name": "Los Angeles Angels",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.570Z"
+    },
+    {
+      "id": "mlb-dodgers",
+      "name": "Los Angeles Dodgers",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-10-21T14:27:35.614Z"
+    },
+    {
+      "id": "mlb-marlins",
+      "name": "Miami Marlins",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.847Z"
+    },
+    {
+      "id": "mlb-brewers",
+      "name": "Milwaukee Brewers",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-03T02:55:23.953Z"
+    },
+    {
+      "id": "mlb-twins",
+      "name": "Minnesota Twins",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-02T19:36:45.252Z"
+    },
+    {
+      "id": "mlb-mets",
+      "name": "New York Mets",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-10-25T13:50:01.124Z"
+    },
+    {
+      "id": "mlb-yankees",
+      "name": "New York Yankees",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-10-25T13:50:32.217Z"
+    },
+    {
+      "id": "mlb-athletics",
+      "name": "Athletics",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-10-25T13:50:24.502Z"
+    },
+    {
+      "id": "mlb-phillies",
+      "name": "Philadelphia Phillies",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-02T10:56:03.274Z"
+    },
+    {
+      "id": "mlb-pirates",
+      "name": "Pittsburgh Pirates",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-10-25T13:50:24.502Z"
+    },
+    {
+      "id": "mlb-padres",
+      "name": "San Diego Padres",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-10-25T13:50:59.041Z"
+    },
+    {
+      "id": "mlb-giants",
+      "name": "San Francisco Giants",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-10-21T14:27:37.488Z"
+    },
+    {
+      "id": "mlb-mariners",
+      "name": "Seattle Mariners",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-02T02:34:36.032Z"
+    },
+    {
+      "id": "mlb-cardinals",
+      "name": "St. Louis Cardinals",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-03T02:55:23.955Z"
+    },
+    {
+      "id": "mls-philadelphia",
+      "name": "Philadelphia Union",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-21T14:27:53.798Z"
+    },
+    {
+      "id": "mls-portland",
+      "name": "Portland Timbers",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.853Z"
+    },
+    {
+      "id": "mls-real-salt-lake",
+      "name": "Real Salt Lake",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-25T13:52:51.739Z"
+    },
+    {
+      "id": "mls-san-diego",
+      "name": "San Diego FC",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.855Z"
+    },
+    {
+      "id": "mls-san-jose",
+      "name": "San Jose Earthquakes",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-16T06:47:16.765Z"
+    },
+    {
+      "id": "mls-seattle",
+      "name": "Seattle Sounders",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-19T16:36:50.051Z"
+    },
+    {
+      "id": "mls-kansas-city",
+      "name": "Sporting Kansas City",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.901Z"
+    },
+    {
+      "id": "mls-st-louis",
+      "name": "St. Louis City SC",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-16T06:47:20.050Z"
+    },
+    {
+      "id": "mls-toronto",
+      "name": "Toronto FC",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-16T06:47:21.356Z"
+    },
+    {
+      "id": "mls-vancouver",
+      "name": "Vancouver Whitecaps",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.855Z"
+    },
+    {
+      "id": "ncaaf-aff",
+      "name": "Air Force Falcons",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-az",
+      "name": "Akron Zips",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "mlb-rays",
+      "name": "Tampa Bay Rays",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-10-21T14:27:41.811Z"
+    },
+    {
+      "id": "mlb-rangers",
+      "name": "Texas Rangers",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-11-02T02:34:36.033Z"
+    },
+    {
+      "id": "mlb-bluejays",
+      "name": "Toronto Blue Jays",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-10-24T13:25:27.255Z"
+    },
+    {
+      "id": "mlb-nationals",
+      "name": "Washington Nationals",
+      "league": "MLB",
+      "status": "ready",
+      "newest": "2026-10-25T13:51:36.718Z"
+    },
+    {
+      "id": "mls-atlanta",
+      "name": "Atlanta United",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-16T06:46:37.213Z"
+    },
+    {
+      "id": "mls-austin",
+      "name": "Austin FC",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-20T14:27:38.344Z"
+    },
+    {
+      "id": "mls-montreal",
+      "name": "CF Montréal",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.849Z"
+    },
+    {
+      "id": "mls-charlotte",
+      "name": "Charlotte FC",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.849Z"
+    },
+    {
+      "id": "mls-chicago",
+      "name": "Chicago Fire",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.850Z"
+    },
+    {
+      "id": "mls-colorado",
+      "name": "Colorado Rapids",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.850Z"
+    },
+    {
+      "id": "mls-columbus",
+      "name": "Columbus Crew",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.894Z"
+    },
+    {
+      "id": "mls-dc",
+      "name": "D.C. United",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-25T13:52:51.743Z"
+    },
+    {
+      "id": "mls-cincinnati",
+      "name": "FC Cincinnati",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-16T06:46:47.570Z"
+    },
+    {
+      "id": "mls-dallas",
+      "name": "FC Dallas",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-16T06:46:47.996Z"
+    },
+    {
+      "id": "mls-houston",
+      "name": "Houston Dynamo",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.851Z"
+    },
+    {
+      "id": "mls-inter-miami",
+      "name": "Inter Miami",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.851Z"
+    },
+    {
+      "id": "mls-la-galaxy",
+      "name": "LA Galaxy",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-20T14:27:38.347Z"
+    },
+    {
+      "id": "mls-lafc",
+      "name": "Los Angeles FC",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-16T06:46:54.463Z"
+    },
+    {
+      "id": "mls-minnesota",
+      "name": "Minnesota United",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.897Z"
+    },
+    {
+      "id": "mls-nashville",
+      "name": "Nashville SC",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.852Z"
+    },
+    {
+      "id": "mls-new-england",
+      "name": "New England Revolution",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-20T14:27:38.350Z"
+    },
+    {
+      "id": "mls-nycfc",
+      "name": "New York City FC",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.852Z"
+    },
+    {
+      "id": "mls-red-bulls",
+      "name": "New York Red Bulls",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-10-16T06:47:03.351Z"
+    },
+    {
+      "id": "mls-orlando",
+      "name": "Orlando City",
+      "league": "MLS",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.852Z"
+    },
+    {
+      "id": "ncaaf-act",
+      "name": "Alabama Crimson Tide",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.900Z"
+    },
+    {
+      "id": "ncaaf-aab",
+      "name": "Alabama A&M Bulldogs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ash",
+      "name": "Alabama State Hornets",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-agd",
+      "name": "Albany Great Danes",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-asb",
+      "name": "Alcorn State Braves",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-aue",
+      "name": "American University Eagles",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-asm",
+      "name": "Appalachian State Mountaineers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-aw",
+      "name": "Arizona Wildcats",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.577Z"
+    },
+    {
+      "id": "ncaaf-assd",
+      "name": "Arizona State Sun Devils",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.900Z"
+    },
+    {
+      "id": "ncaaf-ar",
+      "name": "Arkansas Razorbacks",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.901Z"
+    },
+    {
+      "id": "ncaaf-apbgl",
+      "name": "Arkansas Pine-Bluff Golden Lions",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-asrw",
+      "name": "Arkansas State Red Wolves",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-bgf",
+      "name": "Bowling Green Falcons",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-bb3",
+      "name": "Bradley Braves",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-byc",
+      "name": "Brigham Young Cougars",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-02T20:45:48.933Z"
+    },
+    {
+      "id": "ncaaf-bb4",
+      "name": "Brown Bears",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-bub",
+      "name": "Bryant University Bulldogs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-bb5",
+      "name": "Bucknell Bison",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-bb6",
+      "name": "Buffalo Bulls",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-bb7",
+      "name": "Butler Bulldogs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cpm",
+      "name": "Cal Poly Mustangs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-csbr",
+      "name": "Cal State Bakersfield Roadrunners",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-csft",
+      "name": "Cal State Fullerton Titans",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-csnm",
+      "name": "Cal State Northridge Matadors",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-alrt",
+      "name": "Arkansas-Little Rock Trojans",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-abk",
+      "name": "Army Black Knights",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-at",
+      "name": "Auburn Tigers",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.579Z"
+    },
+    {
+      "id": "ncaaf-apg",
+      "name": "Austin Peay Governors",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-bsc",
+      "name": "Ball State Cardinals",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-bb",
+      "name": "Baylor Bears",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:27:59.921Z"
+    },
+    {
+      "id": "ncaaf-bb1",
+      "name": "Belmont Bruins",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-bcw",
+      "name": "Bethune-Cookman Wildcats",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-bb2",
+      "name": "Binghamton Bearcats",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-bsb",
+      "name": "Boise State Broncos",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-bce",
+      "name": "Boston College Eagles",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:27:59.921Z"
+    },
+    {
+      "id": "ncaaf-but",
+      "name": "Boston University Terriers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cgb",
+      "name": "California Golden Bears",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.856Z"
+    },
+    {
+      "id": "ncaaf-cfc",
+      "name": "Campbell Fighting Camels",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cgg",
+      "name": "Canisius Golden Griffins",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cg",
+      "name": "Centenary Gentlemen",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cab",
+      "name": "Central Arkansas Bears",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ccsbd",
+      "name": "Central Connecticut State Blue Devils",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cmc",
+      "name": "Central Michigan Chippewas",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cc",
+      "name": "Charleston Cougars",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-csb",
+      "name": "Charleston Southern Buccaneers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-c4",
+      "name": "Charlotte 49ers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cm",
+      "name": "Chattanooga Mocs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-csc",
+      "name": "Chicago State Cougars",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cb",
+      "name": "Cincinnati Bearcats",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.903Z"
+    },
+    {
+      "id": "ncaaf-cb1",
+      "name": "Citadel Bulldogs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ct",
+      "name": "Clemson Tigers",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.581Z"
+    },
+    {
+      "id": "ncaaf-csv",
+      "name": "Cleveland State Vikings",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ccc",
+      "name": "Coastal Carolina Chanticleers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cr",
+      "name": "Colgate Raiders",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cb2",
+      "name": "Colorado Buffaloes",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:01.536Z"
+    },
+    {
+      "id": "ncaaf-csr",
+      "name": "Colorado State Rams",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cl",
+      "name": "Columbia Lions",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ch",
+      "name": "Connecticut Huskies",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cse",
+      "name": "Coppin State Eagles",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cbr",
+      "name": "Cornell Big Red",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-far",
+      "name": "Florida A&M Rattlers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-fao",
+      "name": "Florida Atlantic Owls",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-fgce",
+      "name": "Florida Gulf Coast Eagles",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-figp",
+      "name": "Florida International Golden Panthers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-fss",
+      "name": "Florida State Seminoles",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.579Z"
+    },
+    {
+      "id": "ncaaf-fr",
+      "name": "Fordham Rams",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-fsb",
+      "name": "Fresno State Bulldogs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-fp",
+      "name": "Furman Paladins",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-gwrb",
+      "name": "Gardner-Webb Runnin' Bulldogs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-gmp",
+      "name": "George Mason Patriots",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-gwc",
+      "name": "George Washington Colonials",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-gh",
+      "name": "Georgetown Hoyas",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-cb3",
+      "name": "Creighton Bluejays",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-dbg",
+      "name": "Dartmouth Big Green",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-dw",
+      "name": "Davidson Wildcats",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-df",
+      "name": "Dayton Flyers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-dfbh",
+      "name": "Delaware Fightin Blue Hens",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-dsh",
+      "name": "Delaware State Hornets",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-dp",
+      "name": "Denver Pioneers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-dbd",
+      "name": "DePaul Blue Demons",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-dt",
+      "name": "Detroit Titans",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-db",
+      "name": "Drake Bulldogs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-dd",
+      "name": "Drexel Dragons",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-dbd1",
+      "name": "Duke Blue Devils",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:01.536Z"
+    },
+    {
+      "id": "ncaaf-dd1",
+      "name": "Duquesne Dukes",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ecp",
+      "name": "East Carolina Pirates",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-etsb",
+      "name": "East Tennessee State Buccaneers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-eip",
+      "name": "Eastern Illinois Panthers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ekc",
+      "name": "Eastern Kentucky Colonels",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-eme",
+      "name": "Eastern Michigan Eagles",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ewe",
+      "name": "Eastern Washington Eagles",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ep",
+      "name": "Elon Phoenix",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ea",
+      "name": "Evansville Aces",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-fs",
+      "name": "Fairfield Stags",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-fdk",
+      "name": "Fairleigh Dickinson Knights",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-fg",
+      "name": "Florida Gators",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:01.536Z"
+    },
+    {
+      "id": "ncaaf-gb",
+      "name": "Georgia Bulldogs",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:05.553Z"
+    },
+    {
+      "id": "ncaaf-gse",
+      "name": "Georgia Southern Eagles",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-gsp",
+      "name": "Georgia State Panthers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-gtyj",
+      "name": "Georgia Tech Yellow Jackets",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:05.819Z"
+    },
+    {
+      "id": "ncaaf-gb1",
+      "name": "Gonzaga Bulldogs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-gst",
+      "name": "Grambling State Tigers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-gbp",
+      "name": "Green Bay Phoenix",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-hp",
+      "name": "Hampton Pirates",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-hh",
+      "name": "Hartford Hawks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-hc",
+      "name": "Harvard Crimson",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-hw",
+      "name": "Hawaii Warriors",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-hpp",
+      "name": "High Point Panthers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-hp1",
+      "name": "Hofstra Pride",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-hcc",
+      "name": "Holy Cross Crusaders",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-hc1",
+      "name": "Houston Cougars",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.857Z"
+    },
+    {
+      "id": "ncaaf-hbh",
+      "name": "Houston Baptist Huskies",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-hb",
+      "name": "Howard Bison",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-iv",
+      "name": "Idaho Vandals",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-isb",
+      "name": "Idaho State Bengals",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ifi",
+      "name": "Illinois Fighting Illini",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:06.460Z"
+    },
+    {
+      "id": "ncaaf-isr",
+      "name": "Illinois State Redbirds",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-icf",
+      "name": "Illinois-Chicago Flames",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ih",
+      "name": "Indiana Hoosiers",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:05.553Z"
+    },
+    {
+      "id": "ncaaf-iss",
+      "name": "Indiana State Sycamores",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ig",
+      "name": "Iona Gaels",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ih1",
+      "name": "Iowa Hawkeyes",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:05.819Z"
+    },
+    {
+      "id": "ncaaf-isc",
+      "name": "Iowa State Cyclones",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:06.460Z"
+    },
+    {
+      "id": "ncaaf-im",
+      "name": "IPFW Mastodons",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ij",
+      "name": "IUPUI Jaguars",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-jst",
+      "name": "Jackson State Tigers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-jd",
+      "name": "Jacksonville Dolphins",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-jsg",
+      "name": "Jacksonville State Gamecocks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-jmd",
+      "name": "James Madison Dukes",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-kj",
+      "name": "Kansas Jayhawks",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:06.460Z"
+    },
+    {
+      "id": "ncaaf-ksw",
+      "name": "Kansas State Wildcats",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.906Z"
+    },
+    {
+      "id": "ncaaf-kso",
+      "name": "Kennesaw State Owls",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mt",
+      "name": "Maryland Terrapins",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:11.485Z"
+    },
+    {
+      "id": "ncaaf-mesh",
+      "name": "Maryland-Eastern Shore Hawks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mm",
+      "name": "Massachusetts Minutemen",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-msc",
+      "name": "McNeese State Cowboys",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mt1",
+      "name": "Memphis Tigers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mb",
+      "name": "Mercer Bears",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-m(h",
+      "name": "Miami (FL) Hurricanes",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.906Z"
+    },
+    {
+      "id": "ncaaf-m(r",
+      "name": "Miami (OH) RedHawks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mw",
+      "name": "Michigan Wolverines",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-02T02:34:36.037Z"
+    },
+    {
+      "id": "ncaaf-mss",
+      "name": "Michigan State Spartans",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.861Z"
+    },
+    {
+      "id": "ncaaf-mtbr",
+      "name": "Middle Tennessee Blue Raiders",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mp",
+      "name": "Milwaukee Panthers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-llrc",
+      "name": "Louisiana-Lafayette Ragin' Cajuns",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-lmw",
+      "name": "Louisiana-Monroe Warhawks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-lc1",
+      "name": "Louisville Cardinals",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:07.543Z"
+    },
+    {
+      "id": "ncaaf-l(r",
+      "name": "Loyola (IL) Ramblers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-l(g",
+      "name": "Loyola (MD) Greyhounds",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-lml",
+      "name": "Loyola Marymount Lions",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-lt",
+      "name": "LSU Tigers",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.861Z"
+    },
+    {
+      "id": "ncaaf-mbb",
+      "name": "Maine Black Bears",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mj",
+      "name": "Manhattan Jaspers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mrf",
+      "name": "Marist Red Foxes",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mge",
+      "name": "Marquette Golden Eagles",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mth",
+      "name": "Marshall Thundering Herd",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ksgf",
+      "name": "Kent State Golden Flashes",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-kw",
+      "name": "Kentucky Wildcats",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:07.543Z"
+    },
+    {
+      "id": "ncaaf-lse",
+      "name": "La Salle Explorers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ll",
+      "name": "Lafayette Leopards",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-lc",
+      "name": "Lamar Cardinals",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-lmh",
+      "name": "Lehigh Mountain Hawks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-lf",
+      "name": "Liberty Flames",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-lb",
+      "name": "Lipscomb Bisons",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-lbs4",
+      "name": "Long Beach State 49ers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-lib",
+      "name": "Long Island Blackbirds",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ll1",
+      "name": "Longwood Lancers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ltb",
+      "name": "Louisiana Tech Bulldogs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mgg",
+      "name": "Minnesota Golden Gophers",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.910Z"
+    },
+    {
+      "id": "ncaaf-mr",
+      "name": "Mississippi Rebels",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-16T06:47:55.614Z"
+    },
+    {
+      "id": "ncaaf-msb",
+      "name": "Mississippi State Bulldogs",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.909Z"
+    },
+    {
+      "id": "ncaaf-mvsdd",
+      "name": "Mississippi Valley State Delta Devils",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mt2",
+      "name": "Missouri Tigers",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-23T14:23:59.409Z"
+    },
+    {
+      "id": "ncaaf-msb1",
+      "name": "Missouri State Bears",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mh",
+      "name": "Monmouth Hawks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mg",
+      "name": "Montana Grizzlies",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-msb2",
+      "name": "Montana State Bobcats",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-mse",
+      "name": "Morehead State Eagles",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-msb3",
+      "name": "Morgan State Bears",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-msmm",
+      "name": "Mount St. Mary's Mountaineers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-msr",
+      "name": "Murray State Racers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nh",
+      "name": "N.J.I.T Highlanders",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nm",
+      "name": "Navy Midshipmen",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nc",
+      "name": "Nebraska Cornhuskers",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-02T02:34:36.037Z"
+    },
+    {
+      "id": "ncaaf-nwp",
+      "name": "Nevada Wolf Pack",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nhw",
+      "name": "New Hampshire Wildcats",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nml",
+      "name": "New Mexico Lobos",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nmsa",
+      "name": "New Mexico State Aggies",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nop",
+      "name": "New Orleans Privateers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-npe",
+      "name": "Niagara Purple Eagles",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nsc",
+      "name": "Nicholls State Colonels",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nss",
+      "name": "Norfolk State Spartans",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ncth",
+      "name": "North Carolina Tar Heels",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.582Z"
+    },
+    {
+      "id": "ncaaf-ncaa",
+      "name": "North Carolina A&T Aggies",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ncce",
+      "name": "North Carolina Central Eagles",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ncsw",
+      "name": "North Carolina State Wolfpack",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:16.640Z"
+    },
+    {
+      "id": "ncaaf-ncab",
+      "name": "North Carolina-Asheville Bulldogs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ncws",
+      "name": "North Carolina-Wilmington Seahawks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ndfh",
+      "name": "North Dakota Fighting Hawks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ndsb",
+      "name": "North Dakota State Bison",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nfo",
+      "name": "North Florida Ospreys",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ntmg",
+      "name": "North Texas Mean Green",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nh1",
+      "name": "Northeastern Huskies",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nal",
+      "name": "Northern Arizona Lumberjacks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-odm",
+      "name": "Old Dominion Monarchs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-orge",
+      "name": "Oral Roberts Golden Eagles",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-od",
+      "name": "Oregon Ducks",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-23T14:23:59.409Z"
+    },
+    {
+      "id": "ncaaf-osb1",
+      "name": "Oregon State Beavers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-pt",
+      "name": "Pacific Tigers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-psnl",
+      "name": "Penn State Nittany Lions",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:18.036Z"
+    },
+    {
+      "id": "ncaaf-pq",
+      "name": "Pennsylvania Quakers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-pw",
+      "name": "Pepperdine Waves",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-pp",
+      "name": "Pittsburgh Panthers",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.863Z"
+    },
+    {
+      "id": "ncaaf-pp1",
+      "name": "Portland Pilots",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-psv",
+      "name": "Portland State Vikings",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-pvap",
+      "name": "Prairie View A&M Panthers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ncb",
+      "name": "Northern Colorado Bears",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nih",
+      "name": "Northern Illinois Huskies",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nip",
+      "name": "Northern Iowa Panthers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nkun",
+      "name": "Northern Kentucky University Norse",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-nw",
+      "name": "Northwestern Wildcats",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.582Z"
+    },
+    {
+      "id": "ncaaf-nsd",
+      "name": "Northwestern State Demons",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ndfi",
+      "name": "Notre Dame Fighting Irish",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.583Z"
+    },
+    {
+      "id": "ncaaf-ogg",
+      "name": "Oakland Golden Grizzlies",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ob",
+      "name": "Ohio Bobcats",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-osb",
+      "name": "Ohio State",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-18T13:21:51.534Z"
+    },
+    {
+      "id": "ncaaf-os",
+      "name": "Oklahoma Sooners",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.910Z"
+    },
+    {
+      "id": "ncaaf-osc",
+      "name": "Oklahoma State Cowboys",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.583Z"
+    },
+    {
+      "id": "ncaaf-pbh",
+      "name": "Presbyterian Blue Hose",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-pt1",
+      "name": "Princeton Tigers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-pf",
+      "name": "Providence Friars",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-pb",
+      "name": "Purdue Boilermakers",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-22T14:41:11.443Z"
+    },
+    {
+      "id": "ncaaf-qb",
+      "name": "Quinnipiac Bobcats",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-rh",
+      "name": "Radford Highlanders",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-rir",
+      "name": "Rhode Island Rams",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ro",
+      "name": "Rice Owls",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-rs",
+      "name": "Richmond Spiders",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-rb",
+      "name": "Rider Broncs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-rmc",
+      "name": "Robert Morris Colonials",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-rsk",
+      "name": "Rutgers Scarlet Knights",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.912Z"
+    },
+    {
+      "id": "ncaaf-ssh",
+      "name": "Sacramento State Hornets",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-shp",
+      "name": "Sacred Heart Pioneers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sjh",
+      "name": "Saint Joseph's Hawks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-slb",
+      "name": "Saint Louis Billikens",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-smg",
+      "name": "Saint Mary's Gaels",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-shsb",
+      "name": "Sam Houston State Bearkats",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sb",
+      "name": "Samford Bulldogs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sdt",
+      "name": "San Diego Toreros",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sdsa",
+      "name": "San Diego State Aztecs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sfd",
+      "name": "San Francisco Dons",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sjss",
+      "name": "San Jose State Spartans",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-scb",
+      "name": "Santa Clara Broncos",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sll",
+      "name": "Southeastern Louisiana Lions",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sis",
+      "name": "Southern Illinois Salukis",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-smm",
+      "name": "Southern Methodist Mustangs",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.863Z"
+    },
+    {
+      "id": "ncaaf-smge",
+      "name": "Southern Miss Golden Eagles",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-suj",
+      "name": "Southern University Jaguars",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sut",
+      "name": "Southern Utah Thunderbirds",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sbb",
+      "name": "St. Bonaventure Bonnies",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sf(t",
+      "name": "St. Francis (NY) Terriers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sf(rf",
+      "name": "St. Francis (PA) Red Flash",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sjrs",
+      "name": "St. John's Red Storm",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-spp",
+      "name": "St. Peter's Peacocks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sc",
+      "name": "Stanford Cardinal",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:22.874Z"
+    },
+    {
+      "id": "ncaaf-sst",
+      "name": "Savannah State Tigers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sr",
+      "name": "Seattle Redhawks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-shp1",
+      "name": "Seton Hall Pirates",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ss",
+      "name": "Siena Saints",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sec",
+      "name": "SIU-Edwardsville Cougars",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-saj",
+      "name": "South Alabama Jaguars",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-scg",
+      "name": "South Carolina Gamecocks",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.584Z"
+    },
+    {
+      "id": "ncaaf-scsb",
+      "name": "South Carolina State Bulldogs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sdc",
+      "name": "South Dakota Coyotes",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sdsj",
+      "name": "South Dakota State Jackrabbits",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sfb",
+      "name": "South Florida Bulls",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-smsr",
+      "name": "Southeast Missouri State Redhawks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sfal",
+      "name": "Stephen F. Austin Lumberjacks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sh",
+      "name": "Stetson Hatters",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-sbs",
+      "name": "Stony Brook Seawolves",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-so",
+      "name": "Syracuse Orange",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-02T20:45:48.934Z"
+    },
+    {
+      "id": "ncaaf-thf",
+      "name": "TCU Horned Frogs",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-23T14:23:59.409Z"
+    },
+    {
+      "id": "ncaaf-to",
+      "name": "Temple Owls",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-tv",
+      "name": "Tennessee Volunteers",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.917Z"
+    },
+    {
+      "id": "ncaaf-tst",
+      "name": "Tennessee State Tigers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ttge",
+      "name": "Tennessee Tech Golden Eagles",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-tms",
+      "name": "Tennessee-Martin Skyhawks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-tl",
+      "name": "Texas Longhorns",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-23T14:23:59.409Z"
+    },
+    {
+      "id": "ncaaf-taa",
+      "name": "Texas A&M Aggies",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.913Z"
+    },
+    {
+      "id": "ncaaf-taci",
+      "name": "Texas A&M-CC Islanders",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-tst1",
+      "name": "Texas Southern Tigers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-tsb",
+      "name": "Texas State Bobcats",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ttrr",
+      "name": "Texas Tech Red Raiders",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.913Z"
+    },
+    {
+      "id": "ncaaf-tam",
+      "name": "Texas-Arlington Mavericks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-tpab",
+      "name": "Texas-Pan American Broncs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-tsar",
+      "name": "Texas-San Antonio Roadrunners",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-tr",
+      "name": "Toledo Rockets",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-tt",
+      "name": "Towson Tigers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-tt1",
+      "name": "Troy Trojans",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-tgw",
+      "name": "Tulane Green Wave",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-tgh",
+      "name": "Tulsa Golden Hurricane",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ub",
+      "name": "UAB Blazers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-uda",
+      "name": "UC Davis Aggies",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-uia",
+      "name": "UC Irvine Anteaters",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-urh",
+      "name": "UC Riverside Highlanders",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-usbg",
+      "name": "UC Santa Barbara Gauchos",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-uk",
+      "name": "UCF Knights",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-23T14:23:59.409Z"
+    },
+    {
+      "id": "ncaaf-ub1",
+      "name": "UCLA Bruins",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.585Z"
+    },
+    {
+      "id": "ncaaf-ur",
+      "name": "UMBC Retrievers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-uk1",
+      "name": "UMKC Kangaroos",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ugs",
+      "name": "UNC Greensboro Spartans",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ur1",
+      "name": "UNLV Rebels",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ut",
+      "name": "USC",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.914Z"
+    },
+    {
+      "id": "ncaaf-uus",
+      "name": "USC Upstate Spartans",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-uu",
+      "name": "Utah Utes",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.914Z"
+    },
+    {
+      "id": "ncaaf-usa",
+      "name": "Utah State Aggies",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-uvw",
+      "name": "Utah Valley Wolverines",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-um",
+      "name": "UTEP Miners",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-vc",
+      "name": "Valparaiso Crusaders",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-vc1",
+      "name": "Vanderbilt Commodores",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:28.663Z"
+    },
+    {
+      "id": "ncaaf-vc2",
+      "name": "Vermont Catamounts",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-vw",
+      "name": "Villanova Wildcats",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-vc3",
+      "name": "Virginia Cavaliers",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:28.663Z"
+    },
+    {
+      "id": "ncaaf-vcr",
+      "name": "Virginia Commonwealth Rams",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-vmik",
+      "name": "Virginia Military Institute Keydets",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-vth",
+      "name": "Virginia Tech Hokies",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-23T14:23:59.409Z"
+    },
+    {
+      "id": "ncaaf-ws",
+      "name": "Wagner Seahawks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-wfdd",
+      "name": "Wake Forest Demon Deacons",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-21T14:28:29.449Z"
+    },
+    {
+      "id": "ncaaf-wh",
+      "name": "Washington Huskies",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.586Z"
+    },
+    {
+      "id": "ncaaf-wsc",
+      "name": "Washington State Cougars",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-wsw",
+      "name": "Weber State Wildcats",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-wvm",
+      "name": "West Virginia Mountaineers",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-10-23T14:23:59.409Z"
+    },
+    {
+      "id": "ncaaf-wcc",
+      "name": "Western Carolina Catamounts",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-wil",
+      "name": "Western Illinois Leathernecks",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-wkh",
+      "name": "Western Kentucky Hilltoppers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-wmb",
+      "name": "Western Michigan Broncos",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-wss",
+      "name": "Wichita State Shockers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-abk",
+      "name": "Army Black Knights",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-at",
+      "name": "Auburn Tigers",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.916Z"
+    },
+    {
+      "id": "ncaamb-apg",
+      "name": "Austin Peay Governors",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-bsc",
+      "name": "Ball State Cardinals",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-bb",
+      "name": "Baylor Bears",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-bb1",
+      "name": "Belmont Bruins",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-bcw",
+      "name": "Bethune-Cookman Wildcats",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-bb2",
+      "name": "Binghamton Bearcats",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-bsb",
+      "name": "Boise State Broncos",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-bce",
+      "name": "Boston College Eagles",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-16T06:48:41.171Z"
+    },
+    {
+      "id": "ncaamb-but",
+      "name": "Boston University Terriers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-bgf",
+      "name": "Bowling Green Falcons",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-wamt",
+      "name": "William & Mary Tribe",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-we",
+      "name": "Winthrop Eagles",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-wb",
+      "name": "Wisconsin Badgers",
+      "league": "NCAAF",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.586Z"
+    },
+    {
+      "id": "ncaaf-wt",
+      "name": "Wofford Terriers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-wsr",
+      "name": "Wright State Raiders",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-wc",
+      "name": "Wyoming Cowboys",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-xm",
+      "name": "Xavier Musketeers",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-yb",
+      "name": "Yale Bulldogs",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaaf-ysp",
+      "name": "Youngstown State Penguins",
+      "league": "NCAAF",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-aff",
+      "name": "Air Force Falcons",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-az",
+      "name": "Akron Zips",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-act",
+      "name": "Alabama Crimson Tide",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-17T22:53:01.443Z"
+    },
+    {
+      "id": "ncaamb-aab",
+      "name": "Alabama A&M Bulldogs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ash",
+      "name": "Alabama State Hornets",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-agd",
+      "name": "Albany Great Danes",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-asb",
+      "name": "Alcorn State Braves",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-aue",
+      "name": "American University Eagles",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-asm",
+      "name": "Appalachian State Mountaineers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-aw",
+      "name": "Arizona Wildcats",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-02T20:45:48.935Z"
+    },
+    {
+      "id": "ncaamb-assd",
+      "name": "Arizona State Sun Devils",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ar",
+      "name": "Arkansas Razorbacks",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-apbgl",
+      "name": "Arkansas Pine-Bluff Golden Lions",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-asrw",
+      "name": "Arkansas State Red Wolves",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-alrt",
+      "name": "Arkansas-Little Rock Trojans",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-bb3",
+      "name": "Bradley Braves",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-byc",
+      "name": "Brigham Young Cougars",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-02T19:37:42.866Z"
+    },
+    {
+      "id": "ncaamb-bb4",
+      "name": "Brown Bears",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-bub",
+      "name": "Bryant University Bulldogs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-bb5",
+      "name": "Bucknell Bison",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-bb6",
+      "name": "Buffalo Bulls",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-bb7",
+      "name": "Butler Bulldogs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cpm",
+      "name": "Cal Poly Mustangs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-csbr",
+      "name": "Cal State Bakersfield Roadrunners",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-csft",
+      "name": "Cal State Fullerton Titans",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-csnm",
+      "name": "Cal State Northridge Matadors",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cgb",
+      "name": "California Golden Bears",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.917Z"
+    },
+    {
+      "id": "ncaamb-dbg",
+      "name": "Dartmouth Big Green",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-dw",
+      "name": "Davidson Wildcats",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-df",
+      "name": "Dayton Flyers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-dfbh",
+      "name": "Delaware Fightin Blue Hens",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-dsh",
+      "name": "Delaware State Hornets",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-dp",
+      "name": "Denver Pioneers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-dbd",
+      "name": "DePaul Blue Demons",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-dt",
+      "name": "Detroit Titans",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-db",
+      "name": "Drake Bulldogs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-dd",
+      "name": "Drexel Dragons",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-dbd1",
+      "name": "Duke Blue Devils",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-23T14:23:59.410Z"
+    },
+    {
+      "id": "ncaamb-dd1",
+      "name": "Duquesne Dukes",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ecp",
+      "name": "East Carolina Pirates",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-etsb",
+      "name": "East Tennessee State Buccaneers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-eip",
+      "name": "Eastern Illinois Panthers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ekc",
+      "name": "Eastern Kentucky Colonels",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-eme",
+      "name": "Eastern Michigan Eagles",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ewe",
+      "name": "Eastern Washington Eagles",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ep",
+      "name": "Elon Phoenix",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ea",
+      "name": "Evansville Aces",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-fs",
+      "name": "Fairfield Stags",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-fdk",
+      "name": "Fairleigh Dickinson Knights",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-fg",
+      "name": "Florida Gators",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-far",
+      "name": "Florida A&M Rattlers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cfc",
+      "name": "Campbell Fighting Camels",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cgg",
+      "name": "Canisius Golden Griffins",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cg",
+      "name": "Centenary Gentlemen",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cab",
+      "name": "Central Arkansas Bears",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ccsbd",
+      "name": "Central Connecticut State Blue Devils",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cmc",
+      "name": "Central Michigan Chippewas",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cc",
+      "name": "Charleston Cougars",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-csb",
+      "name": "Charleston Southern Buccaneers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-c4",
+      "name": "Charlotte 49ers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cm",
+      "name": "Chattanooga Mocs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-csc",
+      "name": "Chicago State Cougars",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cb",
+      "name": "Cincinnati Bearcats",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.920Z"
+    },
+    {
+      "id": "ncaamb-cb1",
+      "name": "Citadel Bulldogs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ct",
+      "name": "Clemson Tigers",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.918Z"
+    },
+    {
+      "id": "ncaamb-csv",
+      "name": "Cleveland State Vikings",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ccc",
+      "name": "Coastal Carolina Chanticleers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cr",
+      "name": "Colgate Raiders",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cb2",
+      "name": "Colorado Buffaloes",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-25T13:52:51.761Z"
+    },
+    {
+      "id": "ncaamb-csr",
+      "name": "Colorado State Rams",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cl",
+      "name": "Columbia Lions",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ch",
+      "name": "Connecticut Huskies",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cse",
+      "name": "Coppin State Eagles",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cbr",
+      "name": "Cornell Big Red",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-cb3",
+      "name": "Creighton Bluejays",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-fao",
+      "name": "Florida Atlantic Owls",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-fgce",
+      "name": "Florida Gulf Coast Eagles",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-figp",
+      "name": "Florida International Golden Panthers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-fss",
+      "name": "Florida State Seminoles",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.593Z"
+    },
+    {
+      "id": "ncaamb-fr",
+      "name": "Fordham Rams",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-fsb",
+      "name": "Fresno State Bulldogs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-fp",
+      "name": "Furman Paladins",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-gwrb",
+      "name": "Gardner-Webb Runnin' Bulldogs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-gmp",
+      "name": "George Mason Patriots",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-gwc",
+      "name": "George Washington Colonials",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-gh",
+      "name": "Georgetown Hoyas",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-gb",
+      "name": "Georgia Bulldogs",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-03T02:55:23.964Z"
+    },
+    {
+      "id": "ncaamb-hcc",
+      "name": "Holy Cross Crusaders",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-hc1",
+      "name": "Houston Cougars",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-hbh",
+      "name": "Houston Baptist Huskies",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-hb",
+      "name": "Howard Bison",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-iv",
+      "name": "Idaho Vandals",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-isb",
+      "name": "Idaho State Bengals",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ifi",
+      "name": "Illinois Fighting Illini",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-02T02:34:36.039Z"
+    },
+    {
+      "id": "ncaamb-isr",
+      "name": "Illinois State Redbirds",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-icf",
+      "name": "Illinois-Chicago Flames",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ih",
+      "name": "Indiana Hoosiers",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-iss",
+      "name": "Indiana State Sycamores",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ig",
+      "name": "Iona Gaels",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-gse",
+      "name": "Georgia Southern Eagles",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-gsp",
+      "name": "Georgia State Panthers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-gtyj",
+      "name": "Georgia Tech Yellow Jackets",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-24T13:26:00.836Z"
+    },
+    {
+      "id": "ncaamb-gb1",
+      "name": "Gonzaga Bulldogs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-gst",
+      "name": "Grambling State Tigers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-gbp",
+      "name": "Green Bay Phoenix",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-hp",
+      "name": "Hampton Pirates",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-hh",
+      "name": "Hartford Hawks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-hc",
+      "name": "Harvard Crimson",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-hw",
+      "name": "Hawaii Warriors",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-hpp",
+      "name": "High Point Panthers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-hp1",
+      "name": "Hofstra Pride",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ih1",
+      "name": "Iowa Hawkeyes",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-16T14:02:13.421Z"
+    },
+    {
+      "id": "ncaamb-isc",
+      "name": "Iowa State Cyclones",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-16T06:48:52.504Z"
+    },
+    {
+      "id": "ncaamb-im",
+      "name": "IPFW Mastodons",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ij",
+      "name": "IUPUI Jaguars",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-jst",
+      "name": "Jackson State Tigers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-jd",
+      "name": "Jacksonville Dolphins",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-jsg",
+      "name": "Jacksonville State Gamecocks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-jmd",
+      "name": "James Madison Dukes",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-kj",
+      "name": "Kansas Jayhawks",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ksw",
+      "name": "Kansas State Wildcats",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-02T20:45:48.935Z"
+    },
+    {
+      "id": "ncaamb-kso",
+      "name": "Kennesaw State Owls",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ksgf",
+      "name": "Kent State Golden Flashes",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-lmw",
+      "name": "Louisiana-Monroe Warhawks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-lc1",
+      "name": "Louisville Cardinals",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-16T06:48:56.391Z"
+    },
+    {
+      "id": "ncaamb-l(r",
+      "name": "Loyola (IL) Ramblers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-l(g",
+      "name": "Loyola (MD) Greyhounds",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-lml",
+      "name": "Loyola Marymount Lions",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-lt",
+      "name": "LSU Tigers",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-23T14:23:59.410Z"
+    },
+    {
+      "id": "ncaamb-mbb",
+      "name": "Maine Black Bears",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mj",
+      "name": "Manhattan Jaspers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mrf",
+      "name": "Marist Red Foxes",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mge",
+      "name": "Marquette Golden Eagles",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mth",
+      "name": "Marshall Thundering Herd",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mt",
+      "name": "Maryland Terrapins",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-25T13:52:51.762Z"
+    },
+    {
+      "id": "ncaamb-mesh",
+      "name": "Maryland-Eastern Shore Hawks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mm",
+      "name": "Massachusetts Minutemen",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-msc",
+      "name": "McNeese State Cowboys",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mt1",
+      "name": "Memphis Tigers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mb",
+      "name": "Mercer Bears",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-m(h",
+      "name": "Miami (FL) Hurricanes",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-m(r",
+      "name": "Miami (OH) RedHawks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mw",
+      "name": "Michigan Wolverines",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-03T02:55:23.965Z"
+    },
+    {
+      "id": "ncaamb-mss",
+      "name": "Michigan State Spartans",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mtbr",
+      "name": "Middle Tennessee Blue Raiders",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mp",
+      "name": "Milwaukee Panthers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mgg",
+      "name": "Minnesota Golden Gophers",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.591Z"
+    },
+    {
+      "id": "ncaamb-kw",
+      "name": "Kentucky Wildcats",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-02T20:45:48.936Z"
+    },
+    {
+      "id": "ncaamb-lse",
+      "name": "La Salle Explorers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ll",
+      "name": "Lafayette Leopards",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-lc",
+      "name": "Lamar Cardinals",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-lmh",
+      "name": "Lehigh Mountain Hawks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-lf",
+      "name": "Liberty Flames",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-lb",
+      "name": "Lipscomb Bisons",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-lbs4",
+      "name": "Long Beach State 49ers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-lib",
+      "name": "Long Island Blackbirds",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ll1",
+      "name": "Longwood Lancers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ltb",
+      "name": "Louisiana Tech Bulldogs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-llrc",
+      "name": "Louisiana-Lafayette Ragin' Cajuns",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mr",
+      "name": "Mississippi Rebels",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-msb",
+      "name": "Mississippi State Bulldogs",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-03T02:55:23.964Z"
+    },
+    {
+      "id": "ncaamb-mvsdd",
+      "name": "Mississippi Valley State Delta Devils",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mt2",
+      "name": "Missouri Tigers",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-msb1",
+      "name": "Missouri State Bears",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mh",
+      "name": "Monmouth Hawks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mg",
+      "name": "Montana Grizzlies",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-msb2",
+      "name": "Montana State Bobcats",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-mse",
+      "name": "Morehead State Eagles",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-msb3",
+      "name": "Morgan State Bears",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-msmm",
+      "name": "Mount St. Mary's Mountaineers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-msr",
+      "name": "Murray State Racers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nh",
+      "name": "N.J.I.T Highlanders",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nm",
+      "name": "Navy Midshipmen",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nc",
+      "name": "Nebraska Cornhuskers",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nwp",
+      "name": "Nevada Wolf Pack",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nhw",
+      "name": "New Hampshire Wildcats",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nml",
+      "name": "New Mexico Lobos",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nmsa",
+      "name": "New Mexico State Aggies",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nop",
+      "name": "New Orleans Privateers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-npe",
+      "name": "Niagara Purple Eagles",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nsc",
+      "name": "Nicholls State Colonels",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nss",
+      "name": "Norfolk State Spartans",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ncth",
+      "name": "North Carolina Tar Heels",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-21T14:29:04.076Z"
+    },
+    {
+      "id": "ncaamb-ncaa",
+      "name": "North Carolina A&T Aggies",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ncce",
+      "name": "North Carolina Central Eagles",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ncsw",
+      "name": "North Carolina State Wolfpack",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-19T16:36:50.066Z"
+    },
+    {
+      "id": "ncaamb-ncab",
+      "name": "North Carolina-Asheville Bulldogs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ncws",
+      "name": "North Carolina-Wilmington Seahawks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ndfh",
+      "name": "North Dakota Fighting Hawks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ndsb",
+      "name": "North Dakota State Bison",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nfo",
+      "name": "North Florida Ospreys",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ntmg",
+      "name": "North Texas Mean Green",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nh1",
+      "name": "Northeastern Huskies",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nal",
+      "name": "Northern Arizona Lumberjacks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ncb",
+      "name": "Northern Colorado Bears",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nih",
+      "name": "Northern Illinois Huskies",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nip",
+      "name": "Northern Iowa Panthers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nkun",
+      "name": "Northern Kentucky University Norse",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-nw",
+      "name": "Northwestern Wildcats",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-02T20:45:48.936Z"
+    },
+    {
+      "id": "ncaamb-nsd",
+      "name": "Northwestern State Demons",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ndfi",
+      "name": "Notre Dame Fighting Irish",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ogg",
+      "name": "Oakland Golden Grizzlies",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ob",
+      "name": "Ohio Bobcats",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-osb",
+      "name": "Ohio State",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-os",
+      "name": "Oklahoma Sooners",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-25T13:52:51.761Z"
+    },
+    {
+      "id": "ncaamb-osc",
+      "name": "Oklahoma State Cowboys",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.922Z"
+    },
+    {
+      "id": "ncaamb-odm",
+      "name": "Old Dominion Monarchs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-orge",
+      "name": "Oral Roberts Golden Eagles",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-od",
+      "name": "Oregon Ducks",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-osb1",
+      "name": "Oregon State Beavers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-pt",
+      "name": "Pacific Tigers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-psnl",
+      "name": "Penn State Nittany Lions",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-pq",
+      "name": "Pennsylvania Quakers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-pw",
+      "name": "Pepperdine Waves",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-pp",
+      "name": "Pittsburgh Panthers",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-pp1",
+      "name": "Portland Pilots",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-psv",
+      "name": "Portland State Vikings",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-pvap",
+      "name": "Prairie View A&M Panthers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-pbh",
+      "name": "Presbyterian Blue Hose",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-pt1",
+      "name": "Princeton Tigers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-pf",
+      "name": "Providence Friars",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-pb",
+      "name": "Purdue Boilermakers",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-02T02:34:36.039Z"
+    },
+    {
+      "id": "ncaamb-qb",
+      "name": "Quinnipiac Bobcats",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-rh",
+      "name": "Radford Highlanders",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-rir",
+      "name": "Rhode Island Rams",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ro",
+      "name": "Rice Owls",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-rs",
+      "name": "Richmond Spiders",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-rb",
+      "name": "Rider Broncs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-rmc",
+      "name": "Robert Morris Colonials",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-rsk",
+      "name": "Rutgers Scarlet Knights",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-02T10:56:03.286Z"
+    },
+    {
+      "id": "ncaamb-ssh",
+      "name": "Sacramento State Hornets",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sr",
+      "name": "Seattle Redhawks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-shp1",
+      "name": "Seton Hall Pirates",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ss",
+      "name": "Siena Saints",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sec",
+      "name": "SIU-Edwardsville Cougars",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-saj",
+      "name": "South Alabama Jaguars",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-scg",
+      "name": "South Carolina Gamecocks",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-scsb",
+      "name": "South Carolina State Bulldogs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sdc",
+      "name": "South Dakota Coyotes",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sdsj",
+      "name": "South Dakota State Jackrabbits",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sfb",
+      "name": "South Florida Bulls",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-smsr",
+      "name": "Southeast Missouri State Redhawks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sll",
+      "name": "Southeastern Louisiana Lions",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-shp",
+      "name": "Sacred Heart Pioneers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sjh",
+      "name": "Saint Joseph's Hawks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-slb",
+      "name": "Saint Louis Billikens",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-smg",
+      "name": "Saint Mary's Gaels",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-shsb",
+      "name": "Sam Houston State Bearkats",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sb",
+      "name": "Samford Bulldogs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sdt",
+      "name": "San Diego Toreros",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sdsa",
+      "name": "San Diego State Aztecs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sfd",
+      "name": "San Francisco Dons",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sjss",
+      "name": "San Jose State Spartans",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-scb",
+      "name": "Santa Clara Broncos",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sst",
+      "name": "Savannah State Tigers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sh",
+      "name": "Stetson Hatters",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sbs",
+      "name": "Stony Brook Seawolves",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-so",
+      "name": "Syracuse Orange",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-16T06:49:21.452Z"
+    },
+    {
+      "id": "ncaamb-thf",
+      "name": "TCU Horned Frogs",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-25T13:52:51.762Z"
+    },
+    {
+      "id": "ncaamb-to",
+      "name": "Temple Owls",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-tv",
+      "name": "Tennessee Volunteers",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-16T06:49:21.850Z"
+    },
+    {
+      "id": "ncaamb-tst",
+      "name": "Tennessee State Tigers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ttge",
+      "name": "Tennessee Tech Golden Eagles",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-tms",
+      "name": "Tennessee-Martin Skyhawks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-tl",
+      "name": "Texas Longhorns",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-taa",
+      "name": "Texas A&M Aggies",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.923Z"
+    },
+    {
+      "id": "ncaamb-taci",
+      "name": "Texas A&M-CC Islanders",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sis",
+      "name": "Southern Illinois Salukis",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-smm",
+      "name": "Southern Methodist Mustangs",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.594Z"
+    },
+    {
+      "id": "ncaamb-smge",
+      "name": "Southern Miss Golden Eagles",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-suj",
+      "name": "Southern University Jaguars",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sut",
+      "name": "Southern Utah Thunderbirds",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sbb",
+      "name": "St. Bonaventure Bonnies",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sf(t",
+      "name": "St. Francis (NY) Terriers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sf(rf",
+      "name": "St. Francis (PA) Red Flash",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sjrs",
+      "name": "St. John's Red Storm",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-spp",
+      "name": "St. Peter's Peacocks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sc",
+      "name": "Stanford Cardinal",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-sfal",
+      "name": "Stephen F. Austin Lumberjacks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-tst1",
+      "name": "Texas Southern Tigers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-tsb",
+      "name": "Texas State Bobcats",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ttrr",
+      "name": "Texas Tech Red Raiders",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-16T06:49:26.042Z"
+    },
+    {
+      "id": "ncaamb-tam",
+      "name": "Texas-Arlington Mavericks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-tpab",
+      "name": "Texas-Pan American Broncs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-tsar",
+      "name": "Texas-San Antonio Roadrunners",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-tr",
+      "name": "Toledo Rockets",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-tt",
+      "name": "Towson Tigers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-tt1",
+      "name": "Troy Trojans",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-tgw",
+      "name": "Tulane Green Wave",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-tgh",
+      "name": "Tulsa Golden Hurricane",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ub",
+      "name": "UAB Blazers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-uda",
+      "name": "UC Davis Aggies",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-uia",
+      "name": "UC Irvine Anteaters",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-urh",
+      "name": "UC Riverside Highlanders",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-usbg",
+      "name": "UC Santa Barbara Gauchos",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-uk",
+      "name": "UCF Knights",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-02T10:56:03.284Z"
+    },
+    {
+      "id": "ncaamb-ub1",
+      "name": "UCLA Bruins",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.923Z"
+    },
+    {
+      "id": "ncaamb-ur",
+      "name": "UMBC Retrievers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-uk1",
+      "name": "UMKC Kangaroos",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ugs",
+      "name": "UNC Greensboro Spartans",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ur1",
+      "name": "UNLV Rebels",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ut",
+      "name": "USC",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-21T14:29:04.076Z"
+    },
+    {
+      "id": "ncaamb-uus",
+      "name": "USC Upstate Spartans",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-uu",
+      "name": "Utah Utes",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-11-01T16:08:56.596Z"
+    },
+    {
+      "id": "ncaamb-usa",
+      "name": "Utah State Aggies",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-uvw",
+      "name": "Utah Valley Wolverines",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-um",
+      "name": "UTEP Miners",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-vc",
+      "name": "Valparaiso Crusaders",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-vc1",
+      "name": "Vanderbilt Commodores",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-vc2",
+      "name": "Vermont Catamounts",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-vw",
+      "name": "Villanova Wildcats",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-vc3",
+      "name": "Virginia Cavaliers",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-vcr",
+      "name": "Virginia Commonwealth Rams",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-vmik",
+      "name": "Virginia Military Institute Keydets",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-vth",
+      "name": "Virginia Tech Hokies",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-26T16:15:35.924Z"
+    },
+    {
+      "id": "ncaamb-ws",
+      "name": "Wagner Seahawks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-wfdd",
+      "name": "Wake Forest Demon Deacons",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-25T13:52:51.764Z"
+    },
+    {
+      "id": "ncaamb-wh",
+      "name": "Washington Huskies",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-16T06:49:37.732Z"
+    },
+    {
+      "id": "ncaamb-wsc",
+      "name": "Washington State Cougars",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-wsw",
+      "name": "Weber State Wildcats",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-wvm",
+      "name": "West Virginia Mountaineers",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-wcc",
+      "name": "Western Carolina Catamounts",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-wil",
+      "name": "Western Illinois Leathernecks",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-wkh",
+      "name": "Western Kentucky Hilltoppers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-wmb",
+      "name": "Western Michigan Broncos",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-wss",
+      "name": "Wichita State Shockers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-wamt",
+      "name": "William & Mary Tribe",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-we",
+      "name": "Winthrop Eagles",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-wb",
+      "name": "Wisconsin Badgers",
+      "league": "NCAAMB",
+      "status": "ready",
+      "newest": "2026-10-17T22:53:39.852Z"
+    },
+    {
+      "id": "ncaamb-wt",
+      "name": "Wofford Terriers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-wsr",
+      "name": "Wright State Raiders",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-wc",
+      "name": "Wyoming Cowboys",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-xm",
+      "name": "Xavier Musketeers",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-yb",
+      "name": "Yale Bulldogs",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "ncaamb-ysp",
+      "name": "Youngstown State Penguins",
+      "league": "NCAAMB",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-arsenal",
+      "name": "Arsenal",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-villa",
+      "name": "Aston Villa",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-bournemouth",
+      "name": "Bournemouth",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-brentford",
+      "name": "Brentford",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-brighton",
+      "name": "Brighton and Hove Albion",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-chelsea",
+      "name": "Chelsea",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-coventry",
+      "name": "Coventry City",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-crystalpalace",
+      "name": "Crystal Palace",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-everton",
+      "name": "Everton",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-fulham",
+      "name": "Fulham",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-hull",
+      "name": "Hull City",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-ipswich",
+      "name": "Ipswich Town",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-leeds",
+      "name": "Leeds United",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-liverpool",
+      "name": "Liverpool",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-mancity",
+      "name": "Manchester City",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-manunited",
+      "name": "Manchester United",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-newcastle",
+      "name": "Newcastle United",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-forest",
+      "name": "Nottingham Forest",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-sunderland",
+      "name": "Sunderland",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    },
+    {
+      "id": "epl-tottenham",
+      "name": "Tottenham Hotspur",
+      "league": "EPL",
+      "status": "not-covered",
+      "newest": null
+    }
+  ]
+}
