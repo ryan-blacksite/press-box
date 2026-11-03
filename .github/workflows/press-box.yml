@@ -29,6 +29,11 @@ on:
         required: false
         default: false
         type: boolean
+      full_scan:
+        description: 'Check every team in a manual daily run (may defer teams if the time budget is spent)'
+        required: false
+        default: false
+        type: boolean
 
 # One run at a time: a slow run must not overlap the next one.
 concurrency:
@@ -59,7 +64,7 @@ jobs:
         env:
           PRESS_BOX_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'daily' }}
           PRESS_BOX_TEAMS: ${{ github.event_name == 'workflow_dispatch' && inputs.teams || '' }}
-          PRESS_BOX_HOURLY_SHARD: ${{ (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'daily' && inputs.teams == '')) && '1' || '' }}
+          PRESS_BOX_HOURLY_SHARD: ${{ (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'daily' && inputs.teams == '' && !inputs.full_scan)) && '1' || '' }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '' }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

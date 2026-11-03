@@ -1078,6 +1078,370 @@
     "city": "Vancouver"
   },
   {
+    "id": "f1-series",
+    "league": "F1",
+    "name": "Formula 1",
+    "abbreviation": "F1",
+    "city": "London"
+  },
+  {
+    "id": "nascar-series",
+    "league": "NASCAR",
+    "name": "NASCAR Cup Series",
+    "abbreviation": "NASCAR",
+    "city": "Charlotte"
+  },
+  {
+    "id": "indycar-series",
+    "league": "INDYCAR",
+    "name": "IndyCar Series",
+    "abbreviation": "INDYCAR",
+    "city": "Indianapolis"
+  },
+  {
+    "id": "motogp-series",
+    "league": "MOTOGP",
+    "name": "MotoGP",
+    "abbreviation": "MOTOGP",
+    "city": "Barcelona"
+  },
+  {
+    "id": "fifa-algeria",
+    "league": "FIFA",
+    "name": "Algeria",
+    "abbreviation": "ALG",
+    "city": "Algeria"
+  },
+  {
+    "id": "fifa-argentina",
+    "league": "FIFA",
+    "name": "Argentina",
+    "abbreviation": "ARG",
+    "city": "Argentina"
+  },
+  {
+    "id": "fifa-australia",
+    "league": "FIFA",
+    "name": "Australia",
+    "abbreviation": "AUS",
+    "city": "Australia"
+  },
+  {
+    "id": "fifa-austria",
+    "league": "FIFA",
+    "name": "Austria",
+    "abbreviation": "AUT",
+    "city": "Austria"
+  },
+  {
+    "id": "fifa-belgium",
+    "league": "FIFA",
+    "name": "Belgium",
+    "abbreviation": "BEL",
+    "city": "Belgium"
+  },
+  {
+    "id": "fifa-bosnia-herzegovina",
+    "league": "FIFA",
+    "name": "Bosnia-Herzegovina",
+    "abbreviation": "BIH",
+    "city": "Bosnia-Herzegovina"
+  },
+  {
+    "id": "fifa-brazil",
+    "league": "FIFA",
+    "name": "Brazil",
+    "abbreviation": "BRA",
+    "city": "Brazil"
+  },
+  {
+    "id": "fifa-canada",
+    "league": "FIFA",
+    "name": "Canada",
+    "abbreviation": "CAN",
+    "city": "Canada"
+  },
+  {
+    "id": "fifa-cape-verde",
+    "league": "FIFA",
+    "name": "Cape Verde",
+    "abbreviation": "CPV",
+    "city": "Cape Verde"
+  },
+  {
+    "id": "fifa-colombia",
+    "league": "FIFA",
+    "name": "Colombia",
+    "abbreviation": "COL",
+    "city": "Colombia"
+  },
+  {
+    "id": "fifa-congo-dr",
+    "league": "FIFA",
+    "name": "Congo DR",
+    "abbreviation": "COD",
+    "city": "Congo DR"
+  },
+  {
+    "id": "fifa-croatia",
+    "league": "FIFA",
+    "name": "Croatia",
+    "abbreviation": "CRO",
+    "city": "Croatia"
+  },
+  {
+    "id": "fifa-cura-ao",
+    "league": "FIFA",
+    "name": "Curaçao",
+    "abbreviation": "CUW",
+    "city": "Curaçao"
+  },
+  {
+    "id": "fifa-czechia",
+    "league": "FIFA",
+    "name": "Czechia",
+    "abbreviation": "CZE",
+    "city": "Czechia"
+  },
+  {
+    "id": "fifa-ecuador",
+    "league": "FIFA",
+    "name": "Ecuador",
+    "abbreviation": "ECU",
+    "city": "Ecuador"
+  },
+  {
+    "id": "fifa-egypt",
+    "league": "FIFA",
+    "name": "Egypt",
+    "abbreviation": "EGY",
+    "city": "Egypt"
+  },
+  {
+    "id": "fifa-england",
+    "league": "FIFA",
+    "name": "England",
+    "abbreviation": "ENG",
+    "city": "England"
+  },
+  {
+    "id": "fifa-france",
+    "league": "FIFA",
+    "name": "France",
+    "abbreviation": "FRA",
+    "city": "France"
+  },
+  {
+    "id": "fifa-germany",
+    "league": "FIFA",
+    "name": "Germany",
+    "abbreviation": "GER",
+    "city": "Germany"
+  },
+  {
+    "id": "fifa-ghana",
+    "league": "FIFA",
+    "name": "Ghana",
+    "abbreviation": "GHA",
+    "city": "Ghana"
+  },
+  {
+    "id": "fifa-haiti",
+    "league": "FIFA",
+    "name": "Haiti",
+    "abbreviation": "HAI",
+    "city": "Haiti"
+  },
+  {
+    "id": "fifa-iran",
+    "league": "FIFA",
+    "name": "Iran",
+    "abbreviation": "IRN",
+    "city": "Iran"
+  },
+  {
+    "id": "fifa-iraq",
+    "league": "FIFA",
+    "name": "Iraq",
+    "abbreviation": "IRQ",
+    "city": "Iraq"
+  },
+  {
+    "id": "fifa-ivory-coast",
+    "league": "FIFA",
+    "name": "Ivory Coast",
+    "abbreviation": "CIV",
+    "city": "Ivory Coast"
+  },
+  {
+    "id": "fifa-japan",
+    "league": "FIFA",
+    "name": "Japan",
+    "abbreviation": "JPN",
+    "city": "Japan"
+  },
+  {
+    "id": "fifa-jordan",
+    "league": "FIFA",
+    "name": "Jordan",
+    "abbreviation": "JOR",
+    "city": "Jordan"
+  },
+  {
+    "id": "fifa-mexico",
+    "league": "FIFA",
+    "name": "Mexico",
+    "abbreviation": "MEX",
+    "city": "Mexico"
+  },
+  {
+    "id": "fifa-morocco",
+    "league": "FIFA",
+    "name": "Morocco",
+    "abbreviation": "MAR",
+    "city": "Morocco"
+  },
+  {
+    "id": "fifa-netherlands",
+    "league": "FIFA",
+    "name": "Netherlands",
+    "abbreviation": "NED",
+    "city": "Netherlands"
+  },
+  {
+    "id": "fifa-new-zealand",
+    "league": "FIFA",
+    "name": "New Zealand",
+    "abbreviation": "NZL",
+    "city": "New Zealand"
+  },
+  {
+    "id": "fifa-norway",
+    "league": "FIFA",
+    "name": "Norway",
+    "abbreviation": "NOR",
+    "city": "Norway"
+  },
+  {
+    "id": "fifa-panama",
+    "league": "FIFA",
+    "name": "Panama",
+    "abbreviation": "PAN",
+    "city": "Panama"
+  },
+  {
+    "id": "fifa-paraguay",
+    "league": "FIFA",
+    "name": "Paraguay",
+    "abbreviation": "PAR",
+    "city": "Paraguay"
+  },
+  {
+    "id": "fifa-portugal",
+    "league": "FIFA",
+    "name": "Portugal",
+    "abbreviation": "POR",
+    "city": "Portugal"
+  },
+  {
+    "id": "fifa-qatar",
+    "league": "FIFA",
+    "name": "Qatar",
+    "abbreviation": "QAT",
+    "city": "Qatar"
+  },
+  {
+    "id": "fifa-saudi-arabia",
+    "league": "FIFA",
+    "name": "Saudi Arabia",
+    "abbreviation": "KSA",
+    "city": "Saudi Arabia"
+  },
+  {
+    "id": "fifa-scotland",
+    "league": "FIFA",
+    "name": "Scotland",
+    "abbreviation": "SCO",
+    "city": "Scotland"
+  },
+  {
+    "id": "fifa-senegal",
+    "league": "FIFA",
+    "name": "Senegal",
+    "abbreviation": "SEN",
+    "city": "Senegal"
+  },
+  {
+    "id": "fifa-south-africa",
+    "league": "FIFA",
+    "name": "South Africa",
+    "abbreviation": "RSA",
+    "city": "South Africa"
+  },
+  {
+    "id": "fifa-south-korea",
+    "league": "FIFA",
+    "name": "South Korea",
+    "abbreviation": "KOR",
+    "city": "South Korea"
+  },
+  {
+    "id": "fifa-spain",
+    "league": "FIFA",
+    "name": "Spain",
+    "abbreviation": "ESP",
+    "city": "Spain"
+  },
+  {
+    "id": "fifa-sweden",
+    "league": "FIFA",
+    "name": "Sweden",
+    "abbreviation": "SWE",
+    "city": "Sweden"
+  },
+  {
+    "id": "fifa-switzerland",
+    "league": "FIFA",
+    "name": "Switzerland",
+    "abbreviation": "SUI",
+    "city": "Switzerland"
+  },
+  {
+    "id": "fifa-tunisia",
+    "league": "FIFA",
+    "name": "Tunisia",
+    "abbreviation": "TUN",
+    "city": "Tunisia"
+  },
+  {
+    "id": "fifa-t-rkiye",
+    "league": "FIFA",
+    "name": "Türkiye",
+    "abbreviation": "TUR",
+    "city": "Türkiye"
+  },
+  {
+    "id": "fifa-united-states",
+    "league": "FIFA",
+    "name": "United States",
+    "abbreviation": "USA",
+    "city": "United States"
+  },
+  {
+    "id": "fifa-uruguay",
+    "league": "FIFA",
+    "name": "Uruguay",
+    "abbreviation": "URU",
+    "city": "Uruguay"
+  },
+  {
+    "id": "fifa-uzbekistan",
+    "league": "FIFA",
+    "name": "Uzbekistan",
+    "abbreviation": "UZB",
+    "city": "Uzbekistan"
+  },
+  {
     "id": "ncaaf-aff",
     "league": "NCAAF",
     "name": "Air Force Falcons",

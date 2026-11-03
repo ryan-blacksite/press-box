@@ -12,6 +12,7 @@
 /** host (no "www."), matched exactly or as the parent of a subdomain -> the name credited on a story. */
 export const OUTLETS: Readonly<Record<string, string>> = {
   'espn.com': 'ESPN',
+  'motorsport.com': 'Motorsport.com',
   'espn.co.uk': 'ESPN',
   'nhl.com': 'NHL.com',
   'nfl.com': 'NFL.com',

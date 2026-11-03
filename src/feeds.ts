@@ -105,6 +105,9 @@ const ESPN_FEEDS: Record<string, string> = {
   EPL: 'https://www.espn.com/espn/rss/soccer/news',
   NCAAF: 'https://www.espn.com/espn/rss/ncf/news',
   NCAAMB: 'https://www.espn.com/espn/rss/ncb/news',
+  FIFA: 'https://www.espn.com/espn/rss/soccer/news',
+  F1: 'https://www.espn.com/espn/rss/f1/news',
+  NASCAR: 'https://www.espn.com/espn/rss/rpm/news',
 };
 
 /** site.web.api.espn.com sport path per league — team news filtered by abbreviation. */
@@ -139,6 +142,11 @@ export const LEAGUE_FEEDS: Record<string, { name: string; url: string }[]> = {
   MLS: [{ name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines/soccer/' }, { name: 'Yahoo Sports', url: 'https://sports.yahoo.com/soccer/rss/' }],
   EPL: [{ name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines/soccer/' }, { name: 'Yahoo Sports', url: 'https://sports.yahoo.com/soccer/rss/' }],
   NCAAF: [{ name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines/college-football/' }, { name: 'Yahoo Sports', url: 'https://sports.yahoo.com/college-football/rss/' }],
+  FIFA: [{ name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines/soccer/' }, { name: 'Yahoo Sports', url: 'https://sports.yahoo.com/soccer/rss/' }],
+  F1: [{ name: 'Motorsport.com', url: 'https://www.motorsport.com/rss/f1/news/' }],
+  NASCAR: [{ name: 'Motorsport.com', url: 'https://www.motorsport.com/rss/nascar-cup/news/' }],
+  INDYCAR: [{ name: 'Motorsport.com', url: 'https://www.motorsport.com/rss/indycar/news/' }],
+  MOTOGP: [{ name: 'Motorsport.com', url: 'https://www.motorsport.com/rss/motogp/news/' }],
   NCAAMB: [{ name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines/college-basketball/' }, { name: 'Yahoo Sports', url: 'https://sports.yahoo.com/college-basketball/rss/' }],
 };
 
@@ -319,7 +327,9 @@ export async function collectItems(
     const teamFiltered = job.key === 'espn-team';
     for (const item of result.value) {
       // Every feed but Google (whose own query is the team) must name the team up front: ESPN's team feed also lists other clubs' stories that merely mention it.
-      if (item.feed !== 'google' && !mentionsTeam(`${item.title} ${item.description.slice(0, ITEM_OPENING_CHARS)}`, team)) continue;
+      const dedicatedRacingFeed = job.source === 'Motorsport.com' && ['F1', 'NASCAR', 'INDYCAR', 'MOTOGP'].includes(team.league);
+      if (item.feed !== 'google' && !dedicatedRacingFeed && !mentionsTeam(`${item.title} ${item.description.slice(0, ITEM_OPENING_CHARS)}`, team)) continue;
+      if (team.league === 'FIFA' && (!mentionsTeam(item.title, team) || !/\b(?:soccer|football|fifa|world cup|national team|qualifiers?)\b/i.test(`${item.title} ${item.description}`))) continue;
       // College league roundups often mention many schools in their opening. Require this school in the headline.
       if (item.feed !== 'google' && (team.league === 'NCAAF' || team.league === 'NCAAMB') && !mentionsTeam(item.title, team)) continue;
       if (!isStoryForTeamSport({ headline: item.title, summary: item.description }, team)) continue;

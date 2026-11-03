@@ -26,6 +26,20 @@ describe('college and freshness regressions', () => {
     const result = await collectItems(team, undefined, fetcher, Date.now(), trustFor(undefined, undefined));
     expect(result.items).toEqual([]);
   });
+  it('uses a series-specific racing feed without requiring a series name in every headline', async () => {
+    const team = coveredTeams().find((entry) => entry.id === 'motogp-series')!;
+    const xml = `<rss><channel><item><title>Rider wins the Qatar Grand Prix</title><link>https://www.motorsport.com/motogp/news/example</link><pubDate>${new Date().toUTCString()}</pubDate><description>A race report.</description></item></channel></rss>`;
+    const fetcher = async (url: string) => new Response(url.includes('/rss/motogp/') ? xml : '', { status: 200 });
+    const result = await collectItems(team, undefined, fetcher, Date.now(), trustFor(undefined, undefined));
+    expect(result.items.map((item) => item.title)).toEqual(['Rider wins the Qatar Grand Prix']);
+  });
+  it('does not treat country news outside soccer as national team news', async () => {
+    const team = coveredTeams().find((entry) => entry.id === 'fifa-argentina')!;
+    const xml = `<rss><channel><item><title>Argentina basketball coach announces roster</title><link>https://www.cbssports.com/a</link><pubDate>${new Date().toUTCString()}</pubDate><description>Basketball news.</description></item></channel></rss>`;
+    const fetcher = async (url: string) => new Response(url.includes('cbssports.com') ? xml : '', { status: 200 });
+    const result = await collectItems(team, undefined, fetcher, Date.now(), trustFor(undefined, undefined));
+    expect(result.items).toEqual([]);
+  });
   it('keeps the source publication time on fallback stories', () => {
     const story = fallbackStoryFromItems('x', [{ title: 'Headline', link: 'https://example.com/a', source: 'Example', description: '', feed: 'league', publishedAt: 1000 }], 100000)!;
     expect(story.publishedAt).toBe(new Date(1000).toISOString());

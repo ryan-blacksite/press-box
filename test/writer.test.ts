@@ -81,7 +81,7 @@ const GOOD_SUMMARY = {
 describe('coverage', () => {
   it('covers the teams in the teams file (the FLY list: 290 teams in seven leagues)', () => {
     const covered = coveredTeams();
-    expect(covered).toHaveLength(868);
+    expect(covered).toHaveLength(920);
     for (const league of ['NFL', 'NBA', 'NHL', 'MLB', 'MLS', 'NCAAF', 'NCAAMB']) expect(covered.some((team) => team.league === league)).toBe(true);
     expect(covered.filter((team) => team.league === 'NCAAF')).toHaveLength(347);
     expect(covered.filter((team) => team.league === 'NCAAMB')).toHaveLength(347);
@@ -124,7 +124,7 @@ describe('feeds', () => {
     expect(googleNewsUrl(LIONS)).toContain('news.google.com/rss/search?q=%22Detroit%20Lions%22%20football%20when%3A3d');
     expect(espnFeedUrl(LIONS)).toBe('https://www.espn.com/espn/rss/nfl/news');
     expect(espnTeamNewsUrl(LIONS)).toBe('https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/news?team=8');
-    expect(espnFeedUrl({ ...LIONS, league: 'F1' })).toBeNull();
+    expect(espnFeedUrl({ ...LIONS, league: 'F1' })).toBe('https://www.espn.com/espn/rss/f1/news');
   });
 
   it('parses ESPN team JSON news', () => {
@@ -904,32 +904,32 @@ describe('a run', () => {
     expect(logs.join('\n')).not.toMatch(/"(a|t|k)"|Bearer/);
   });
 
-  it('a covered team count of 868 means a daily run is 868 teams in scope', async () => {
+  it('a covered team count of 920 means a daily run is 920 teams in scope', async () => {
     const { ai } = fakeAi();
     const empty = vi.fn(async () => new Response('<rss></rss>', { status: 200 })) as unknown as typeof fetch;
     const { kv } = memoryKv();
     const summary = await runPressBox(loadConfig({ ...secrets, DRY_RUN: '1' }), deps({ kv, ai, fetcher: empty }));
-    expect(summary.teamsInScope).toBe(868);
-    expect(summary.checked).toBe(868);
-    expect(summary.emptyWritten).toBe(868);
+    expect(summary.teamsInScope).toBe(920);
+    expect(summary.checked).toBe(920);
+    expect(summary.emptyWritten).toBe(920);
     expect(summary.aiCalls).toBe(0);
   });
 
   // ---- FV2-47: the store is one bundle per league, so a run costs a handful of KV writes ----------------------------------
 
-  it('a full 868-team run writes one bundle per league: 8 KV writes, not ~868', async () => {
+  it('a full 920-team run writes one bundle per league: 13 KV writes, not ~920', async () => {
     const empty = vi.fn(async () => new Response('<rss></rss>', { status: 200 })) as unknown as typeof fetch;
     const { kv, puts, store } = memoryKv();
     const summary = await runPressBox(loadConfig({ ...secrets }), deps({ kv, fetcher: empty }));
-    expect(summary.teamsInScope).toBe(868);
-    expect(summary.emptyWritten).toBe(868);
-    expect(summary.kvWrites).toBe(8);
-    expect(puts.map((put) => put.key).sort()).toEqual(['bundle:epl', 'bundle:mlb', 'bundle:mls', 'bundle:nba', 'bundle:ncaaf', 'bundle:ncaamb', 'bundle:nfl', 'bundle:nhl']);
+    expect(summary.teamsInScope).toBe(920);
+    expect(summary.emptyWritten).toBe(920);
+    expect(summary.kvWrites).toBe(13);
+    expect(puts.map((put) => put.key).sort()).toEqual(['bundle:epl', 'bundle:f1', 'bundle:fifa', 'bundle:indycar', 'bundle:mlb', 'bundle:mls', 'bundle:motogp', 'bundle:nascar', 'bundle:nba', 'bundle:ncaaf', 'bundle:ncaamb', 'bundle:nfl', 'bundle:nhl']);
     expect(puts.every((put) => put.ttl === undefined)).toBe(true);
-    expect(Object.keys(summary.kvBundlesWritten)).toHaveLength(8);
+    expect(Object.keys(summary.kvBundlesWritten)).toHaveLength(13);
     // Every team is in its league's bundle.
     const stored = Array.from(store.keys()).reduce((sum, key) => sum + Object.keys(parseBundle(store.get(key)!)!.teams).length, 0);
-    expect(stored).toBe(868);
+    expect(stored).toBe(920);
   });
 
   it('a second run with nothing new writes NOTHING: unchanged bundles are not rewritten, skipped teams are not re-saved', async () => {
@@ -938,7 +938,7 @@ describe('a run', () => {
     await runPressBox(loadConfig({ ...secrets }), deps({ kv, fetcher: empty }));
     puts.length = 0;
     const second = await runPressBox(loadConfig({ ...secrets }), deps({ kv, fetcher: empty }));
-    expect(second.skippedNoNews).toBe(868);
+    expect(second.skippedNoNews).toBe(920);
     expect(second.kvWrites).toBe(0);
     expect(puts).toHaveLength(0);
   });
