@@ -188,7 +188,7 @@ export function espnTeamNewsUrl(team: PressBoxTeam): string | null {
   if (!sportPath) return null;
   const identifier = ESPN_TEAM_IDS[team.id] ?? team.abbreviation.trim().toLowerCase();
   if (!identifier) return null;
-  return `https://site.web.api.espn.com/apis/site/v2/sports/${sportPath}/news?team=${encodeURIComponent(identifier)}`;
+  return `https://site.web.api.espn.com/apis/site/v2/sports/${sportPath}/news?team=${encodeURIComponent(identifier)}&limit=50`;
 }
 
 /** Parse ESPN's JSON team/league news payload into FeedItems. */

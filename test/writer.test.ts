@@ -123,7 +123,7 @@ describe('feeds', () => {
   it('builds the Google and ESPN URLs', () => {
     expect(googleNewsUrl(LIONS)).toContain('news.google.com/rss/search?q=%22Detroit%20Lions%22%20football%20when%3A3d');
     expect(espnFeedUrl(LIONS)).toBe('https://www.espn.com/espn/rss/nfl/news');
-    expect(espnTeamNewsUrl(LIONS)).toBe('https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/news?team=8');
+    expect(espnTeamNewsUrl(LIONS)).toBe('https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/news?team=8&limit=50');
     expect(espnFeedUrl({ ...LIONS, league: 'F1' })).toBe('https://www.espn.com/espn/rss/f1/news');
   });
 
