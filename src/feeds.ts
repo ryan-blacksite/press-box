@@ -13,6 +13,7 @@
  *   Yahoo Sports by league, MLB.com's news, and Daily Faceoff for the NHL (LEAGUE_FEEDS). They are league-wide, so items are
  *   filtered to the team by name like ESPN's, and memoizeFeeds() fetches each once per run however many teams read it.
  */
+import { readFileSync } from 'node:fs';
 import { FEED_FETCH_TIMEOUT_MS, PRESS_BOX_USER_AGENT } from './httpClient';
 import type { FeedItem } from './shared/types';
 import { TEAMS, type PressBoxTeam } from './shared/teams';
@@ -118,6 +119,9 @@ export const ESPN_SPORT_PATH: Record<string, string> = {
   NCAAMB: 'basketball/mens-college-basketball',
 };
 
+/** Exact display-name matches from ESPN's public team directories, captured 2026-11-03. */
+const ESPN_TEAM_IDS = JSON.parse(readFileSync(new URL('../config/espn-team-ids.json', import.meta.url), 'utf8')) as Record<string, string>;
+
 /** FV2-154 item 6d: allowed league-wide feeds beyond ESPN's (each host's robots.txt allows them; checked 2026-10-31, see COMPLIANCE.md). */
 export const LEAGUE_FEEDS: Record<string, { name: string; url: string }[]> = {
   NFL: [{ name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines/nfl/' }, { name: 'Yahoo Sports', url: 'https://sports.yahoo.com/nfl/rss/' }],
@@ -174,9 +178,9 @@ export function espnFeedUrl(team: PressBoxTeam): string | null {
 export function espnTeamNewsUrl(team: PressBoxTeam): string | null {
   const sportPath = ESPN_SPORT_PATH[team.league];
   if (!sportPath) return null;
-  const abbr = team.abbreviation.trim().toLowerCase();
-  if (!abbr) return null;
-  return `https://site.web.api.espn.com/apis/site/v2/sports/${sportPath}/news?team=${encodeURIComponent(abbr)}`;
+  const identifier = ESPN_TEAM_IDS[team.id] ?? team.abbreviation.trim().toLowerCase();
+  if (!identifier) return null;
+  return `https://site.web.api.espn.com/apis/site/v2/sports/${sportPath}/news?team=${encodeURIComponent(identifier)}`;
 }
 
 /** Parse ESPN's JSON team/league news payload into FeedItems. */
