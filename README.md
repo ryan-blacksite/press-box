@@ -77,3 +77,7 @@ No secret is ever in the repo. Licence: not chosen yet (all rights reserved unti
 ## Choosing the free AI model (model bench)
 
 `AI_MODELS` is a fall-back chain, best first: the first model that is not resting is used, the next only when it is rate-limited or gone. `AI_ROTATE=1` spreads requests over all of them in turn instead. To re-test the field, run the **Press Box** workflow with `mode=bench` (optionally `teams` = a comma list of `:free` model ids): it writes the same real stories with each free model, one-step and two-step (extract the facts, then write from only those), judges every answer with the writer's own checks, and prints a table. It stores nothing and only ever calls free models. The order in `DEFAULT_FREE_MODELS` comes from the 2026-10-31 run.
+
+## Team facts (FV2-234)
+
+Short, checked facts about a team live apart from the news: `data/rivalfacts/<league>.json` (written by people, never by the hourly job; each fact keeps its source page, the claim checked, a proof snippet and the date checked), the KV item `rivalfacts:<league>` (never inside a `bundle:<league>`), and their own read-only Worker `workers/rival-facts` (`GET /v1/rival-facts?team=nfl-lions`). Publish after changing a data file: `npm run rivalfacts -- nfl` (`DRY_RUN=1` to look first), and deploy the Worker with wrangler. `test/rivalfacts.test.ts` checks 5 facts for each of the 32 NFL teams and fails if a fact ever reaches a story bundle. Adding a league: a new data file, its team ids in `LEAGUES` in the Worker.

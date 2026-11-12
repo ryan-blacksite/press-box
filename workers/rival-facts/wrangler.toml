@@ -1,0 +1,16 @@
+name = "fly-rival-facts"
+main = "src/index.ts"
+compatibility_date = "2026-11-01"
+
+# Same visibility rules as fly-press-box: the workers.dev URL is the endpoint; no preview URLs. READ-ONLY: no cron, no AI, no KV writes.
+workers_dev = true
+preview_urls = false
+
+[vars]
+# Exact-match origins: the web app, the two native shells, the Arena dev site and the Arena demo.
+ALLOWED_ORIGIN = "https://app.fanslikeyou.com,capacitor://localhost,https://localhost,https://demo-arena.fly-frontend-1ps.pages.dev,https://dev.fanslikeyou.com"
+
+# The facts live in the Press Box namespace under their own key (rivalfacts:nfl), never inside a story bundle (bundle:nfl).
+[[kv_namespaces]]
+binding = "RIVAL_FACTS_KV"
+id = "d9995262f8404a659e3ea0b880d8493a"
