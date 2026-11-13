@@ -96,6 +96,100 @@
         "checkedOn": "2026-11-13"
       }
     ],
+    "mlb-astros": [
+      {
+        "text": "Fun fact. The Astros' first-ever World Series appearance, 2005, ended in a sweep — the White Sox dispatched them in four straight.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Houston_Astros",
+        "claim": "Verified on the Houston Astros Wikipedia page: their first World Series appearance (2005) ended in a sweep by the White Sox.",
+        "proof": "culminating in their first World Series appearance in 2005 where they were swept by the Chicago White Sox.",
+        "asOf": "2005 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Astros lost more than 100 games three years in a row, ending with a franchise-worst 51–111 and a 15-game season-ending losing streak.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Houston_Astros",
+        "claim": "Verified on the Houston Astros Wikipedia page (2013 season section): three straight 100-loss seasons, 51–111 franchise-worst record, season-ending 15-game losing streak.",
+        "proof": "The Astros finished the season with a 51–111 record (a franchise-worst) with a season-ending 15-game losing streak, again surpassing their worst record from the previous season. The team finished 45 games behind the division winner Oakland Athletics, further adding to their futility. This marked three consecutive years that the Astros had lost more than 100 games in a single season.",
+        "asOf": "2013 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Houston's first World Series title, 2017, came with controversy and backlash from fans after the team was implicated in a sign stealing scandal.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Houston_Astros",
+        "claim": "Verified on the Houston Astros Wikipedia page: the 2017 World Series win (their first championship) drew controversy and backlash after the team was implicated in a sign stealing scandal.",
+        "proof": "During this era, the Astros won the 2017 World Series, their first championship, against the Los Angeles Dodgers; however, this win drew controversy and backlash from fans after the Astros were implicated in a sign stealing scandal.",
+        "asOf": "2017 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2019 World Series: the Astros went 0-4 at home against the Nationals, only winning the three games they played in Washington.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Houston_Astros",
+        "claim": "Verified on the Houston Astros Wikipedia page: lost the 2019 World Series in seven games, losing all four home games while winning three in Washington.",
+        "proof": "However, they lost the 2019 World Series to the Washington Nationals in seven games, taking three games in Washington but losing all four of their games at home.",
+        "asOf": "2019 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Astros didn't post their first winning record until 1972 — and their first-ever playoff appearance didn't come until 1980.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Houston_Astros",
+        "claim": "Verified on the Houston Astros Wikipedia page: first winning record in 1972, first playoff appearance in 1980.",
+        "proof": "The Astros posted their first winning record in 1972 and made the playoffs for the first time in 1980",
+        "asOf": "1980 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-angels": [
+      {
+        "text": "Fun fact. The Angels have not appeared in the postseason since 2014 — the longest active playoff drought of any MLB team.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Angels",
+        "claim": "Verified on the Los Angeles Angels Wikipedia page: no postseason appearance since 2014, the longest active playoff drought of any MLB team.",
+        "proof": "Despite this, they have not appeared in the postseason since 2014, the longest active playoff drought of any MLB team.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Angels became the last active MLB franchise to lose 100 games in a season, doing so in 2026. Better late than never?",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Angels",
+        "claim": "Verified on the Los Angeles Angels Wikipedia page: they became the last active MLB franchise to lose 100 games in a season, doing so in 2026.",
+        "proof": "The Angels also became the last active MLB franchise to lose 100 games in a season, doing so in 2026.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Angels' founding owner never saw them win a World Series in his 38 years as owner — he'd been dead four years when they finally won in 2002.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Angels",
+        "claim": "Verified on the Los Angeles Angels Wikipedia page: Gene Autry never saw the Angels win a World Series in 38 years as owner; they won in 2002, four years after his death.",
+        "proof": "The saying refers to the Angels' founder and previous owner, Gene Autry, who never saw his Angels win a World Series in his 38 years as owner. Years went by as the team experienced many losses just strikes away from American League pennants. By the time the Angels won their first World Series in 2002, Autry had been dead for four years.",
+        "asOf": "2002 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 1982 and 1986 the Angels came within one game of reaching the World Series — and in both years, they didn't get there.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Angels",
+        "claim": "Verified on the Los Angeles Angels Wikipedia page: came within one game of the World Series in both 1982 and 1986.",
+        "proof": "The Angels came within one game of reaching the World Series in 1982 and 1986.",
+        "asOf": "1986 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Angels' entire World Series résumé is a single entry: 2002, their only championship appearance to date. One and done.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Angels",
+        "claim": "Verified on the Los Angeles Angels Wikipedia page: the 2002 World Series is their only championship appearance to date.",
+        "proof": "they would eventually achieve their first Wild Card spot in 2002 for their first postseason appearance since 1986 and used this momentum to win the 2002 World Series, their only championship appearance to date.",
+        "asOf": "2002 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
     "mlb-yankees": [
       {
         "text": "Fun fact. The Yankees fell to the Dodgers in the 2024 World Series — their 14th World Series loss, tying the Dodgers for the most in MLB history.",
@@ -143,6 +237,100 @@
         "checkedOn": "2026-11-13"
       }
     ],
+    "mlb-athletics": [
+      {
+        "text": "Fun fact. The Athletics' most recent World Series championship came in 1989. Their fans have been waiting a while for the next one.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Athletics_(baseball)",
+        "claim": "Verified on the Athletics Wikipedia page: the 1989 World Series is the Athletics' most recent championship.",
+        "proof": "the 1989 World Series in which the Athletics won their most recent championship",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The A's have called four different cities home — the most home cities of any MLB team. Pick a city, guys.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Athletics_(baseball)",
+        "claim": "Verified on the Athletics Wikipedia page: with four locations, the A's have had the most home cities of any MLB team.",
+        "proof": "With four locations, the A's have had the most home cities of any MLB team.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Athletics play their home games in a Triple-A ballpark — Sutter Health Park, home of the Giants' Triple-A affiliate — until 2028.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Athletics_(baseball)",
+        "claim": "Verified on the Athletics Wikipedia page: the team plays at Sutter Health Park, home of the Giants' Triple-A affiliate, through 2027 before a planned 2028 Las Vegas move.",
+        "proof": "Before the scheduled move to Las Vegas in 2028, the team is playing in West Sacramento, California, at Sutter Health Park (home of the San Francisco Giants' Triple-A affiliate, the Sacramento River Cats) for the 2025–2027 seasons (with an option for the 2028 season if necessary).",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Since 1901 the A's all-time record is 9,405–9,945 — a franchise with more losses than wins across its entire history.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Athletics_(baseball)",
+        "claim": "Verified on the Athletics Wikipedia page: franchise all-time record from 1901 through end of 2025 is 9,405–9,945–87 (.486), i.e. more losses than wins.",
+        "proof": "From 1901 through the end of 2025, the franchise's overall win–loss record is 9,405–9,945–87 (.486)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 2026 the U.S. Patent and Trademark Office denied the A's request to trademark 'Las Vegas Athletics', leaving the franchise's future name in doubt.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Athletics_(baseball)",
+        "claim": "Verified on the Athletics Wikipedia page: USPTO denied the 'Las Vegas Athletics' / 'Vegas Athletics' trademark request on Jan 6, 2026, leaving the future of the franchise's name in doubt.",
+        "proof": "On January 6, 2026, the Associated Press reported that the U.S. Patent and Trademark Office had denied the A's request to trademark the names \"Las Vegas Athletics\" and \"Vegas Athletics\", leaving the future of the franchise's name in doubt.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-mariners": [
+      {
+        "text": "Fun fact. The Mariners are the only active MLB franchise to never appear in the World Series — they hold the sport's longest active World Series appearance drought.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Mariners",
+        "claim": "Verified on the Seattle Mariners Wikipedia page: only active MLB franchise to never appear in the World Series; longest active WS appearance drought.",
+        "proof": "The Mariners are the only active MLB franchise to never appear in the World Series, holding the sport's longest active World Series appearance drought.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Following the 2001 season, the Mariners franchise entered a long period of mediocrity and would not make the postseason again until 2022. Mediocrity — their words.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Mariners",
+        "claim": "Verified on the Seattle Mariners Wikipedia page: after the 2001 season the franchise entered a long period of mediocrity and did not make the postseason again until 2022.",
+        "proof": "Following the 2001 season, the franchise entered a long period of mediocrity and would not make the postseason again until 2022.",
+        "asOf": "2022 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. After high expectations, the Mariners flopped in 2010, finishing 61–101 (.377) — the worst record in the American League.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Mariners",
+        "claim": "Verified on the Seattle Mariners Wikipedia page: 2010 team flopped at 61–101 (.377), worst record in the American League.",
+        "proof": "After its busy offseason and high expectations, the team flopped in 2010 and finishing at 61–101 (.377), the worst record in the American League.",
+        "asOf": "2010 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. 2025 ALCS: the Mariners lost a 3-1 lead in Game 7 — the first Game 7 in franchise history and the closest they've ever been to a World Series.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Mariners",
+        "claim": "Verified on the Seattle Mariners Wikipedia page: lost a 3-1 lead in ALCS Game 7 vs the Blue Jays; first Game 7 in franchise history and closest ever to a World Series appearance.",
+        "proof": "In the playoffs, they defeated the Tigers in the ALDS in five games and had a 2-0 ALCS lead against the Blue Jays until they ultimately lost a 3-1 lead in Game 7. This was the first time the franchise ever played in a Game 7, also meaning this is the closest they have ever been to a World Series appearance.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Mariners have finished with a losing record in 30 of 49 seasons. Consistency!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Mariners",
+        "claim": "Verified on the Seattle Mariners Wikipedia page: losing record in 30 of 49 seasons, as of 2025.",
+        "proof": "The franchise has finished with a losing record in 30 of 49 seasons, as of 2025",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
     "mlb-rays": [
       {
         "text": "Fun fact. The Rays are one of just four MLB teams without a World Series title — and currently hold the most World Series appearances without winning one, at three.",
@@ -187,6 +375,53 @@
         "claim": "Rays all-time record through 2026 is 2,266-2,328 (.493), a losing record",
         "proof": "Through 2026, the Rays' all-time record is 2,266–2,328 (.493).",
         "asOf": "through 2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-rangers": [
+      {
+        "text": "Fun fact. In 2011 the Rangers were one strike away from winning the World Series — twice, in game six — and still lost the series to the Cardinals in seven.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Texas_Rangers_(baseball)",
+        "claim": "Verified on the Texas Rangers Wikipedia page: lost the 2011 World Series in seven games after twice being one strike away from winning it in game six.",
+        "proof": "They repeated as American League champions in 2011, but lost the World Series to the St. Louis Cardinals in seven games after twice being one strike away from winning the series in game six.",
+        "asOf": "2011 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In the Rangers' first-ever World Series appearance, 2010, they fell to the San Francisco Giants in five games.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Texas_Rangers_(baseball)",
+        "claim": "Verified on the Texas Rangers Wikipedia page: in their first World Series appearance (2010) they fell to the Giants in five games.",
+        "proof": "In their first appearance in a World Series, the Rangers fell to the San Francisco Giants in five games.",
+        "asOf": "2010 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Back when this franchise was the Washington Senators, it never made the postseason — not once. Zero October trips in D.C.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Texas_Rangers_(baseball)",
+        "claim": "Verified on the Texas Rangers Wikipedia page: in the franchise's iteration as the Washington Senators, the team never made the postseason.",
+        "proof": "The Rangers have made nine appearances in the MLB postseason (all as the Rangers—in their iteration as the Washington Senators, the team never made the postseason).",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. From 1961 through 2025, the Rangers franchise's all-time record is 4,899–5,383–6 (.476) — more losses than wins across its entire history.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Texas_Rangers_(baseball)",
+        "claim": "Verified on the Texas Rangers Wikipedia page: franchise all-time win-loss record from 1961 through 2025 is 4,899–5,383–6 (.476), a losing record.",
+        "proof": "From 1961 through 2025, the franchise's overall win–loss record is 4,899–5,383–6 (.476).",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Rangers finished last in both 1972 and 1973 — the franchise's first winning season didn't arrive until 1974.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Texas_Rangers_(baseball)",
+        "claim": "Verified on the Texas Rangers Wikipedia page: finished last in both 1972 and 1973; first winning season in 1974.",
+        "proof": "In 1974, the Rangers had their first winning season after finishing last in both 1972 and 1973.",
+        "asOf": "1974 season",
         "checkedOn": "2026-11-13"
       }
     ],
