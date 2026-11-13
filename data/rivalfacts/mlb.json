@@ -190,6 +190,53 @@
         "checkedOn": "2026-11-13"
       }
     ],
+    "mlb-cubs": [
+      {
+        "text": "Fun fact. The Cubs once went 108 years without a World Series title — a record drought in MLB that wasn't snapped until 2016.",
+        "sourceName": "Wikipedia – Chicago Cubs",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Cubs",
+        "claim": "The Cubs' 108-year World Series championship drought was a record drought in Major League Baseball and was ended in 2016.",
+        "proof": "the Cubs won the 2016 National League Championship Series and 2016 World Series, which ended a 71-year National League pennant drought and a 108-year World Series championship drought,[6] both of which are record droughts in Major League Baseball.[7][8]",
+        "asOf": "2016 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In the 2015 NLCS the Cubs were swept in four games by the Mets, keeping them from their first World Series since 1945.",
+        "sourceName": "Wikipedia – Chicago Cubs",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Cubs",
+        "claim": "The Cubs were swept in four games by the Mets in the 2015 NLCS and were unable to reach their first World Series since 1945.",
+        "proof": "However, they were swept in four games by the Mets and were unable to make it to their first World Series since 1945.[77]",
+        "asOf": "2015 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2019 Cubs lost nine straight games in late September, missed the playoffs entirely — the first time they'd failed to qualify since 2014.",
+        "sourceName": "Wikipedia – Chicago Cubs",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Cubs",
+        "claim": "A nine-game losing streak in late September 2019 contributed to the Cubs being eliminated from playoff contention — the first time they had failed to qualify since 2014.",
+        "proof": "The team's postseason chances were compromised after suffering a nine-game losing streak in late September.[97] The Cubs were eliminated from playoff contention on September 25, marking the first time the team had failed to qualify for the playoffs since 2014.[98]",
+        "asOf": "2019 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2026 Cubs went 89-73 and finished second in their division behind the Brewers — for the second year in a row.",
+        "sourceName": "Wikipedia – Chicago Cubs",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Cubs",
+        "claim": "In the 2026 season the Cubs finished 89-73, second in their division behind the Brewers for the second consecutive year.",
+        "proof": "The 2026 season saw the Cubs finish with a record of 89-73, placing second in their division behind the Brewers for the second year in a row.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2012 Cubs lost 101 games — their worst record since 1966.",
+        "sourceName": "Wikipedia – Chicago Cubs",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Cubs",
+        "claim": "The 2012 Cubs lost 101 games, their worst record since 1966.",
+        "proof": "Although the team had a dismal 2012 season, losing 101 games (the worst record since 1966), it was largely expected.",
+        "asOf": "2012 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
     "mlb-whitesox": [
       {
         "text": "Fun fact. The White Sox lost their 121st game in 2024 — the most losses in modern MLB history — and the record-breaker came against Detroit. You're welcome, Mets fans.",
@@ -234,6 +281,53 @@
         "claim": "White Sox clinched their third consecutive losing season in August 2025 (after a 1–0 loss on August 20).",
         "proof": "Despite this, the team clinched their third consecutive losing season after a 1–0 loss on August 20 to the Atlanta Braves.",
         "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-reds": [
+      {
+        "text": "Fun fact. No MLB team has gone longer without winning a playoff series than the Reds — their last series win came back in 1995.",
+        "sourceName": "Wikipedia – Cincinnati Reds",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cincinnati_Reds",
+        "claim": "The Reds currently have the longest drought of not winning a playoff series of any MLB team, with their last series win coming in 1995.",
+        "proof": "currently have the longest drought of not winning a playoff series of any MLB team, with their last win coming in 1995.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Reds haven't won a World Series in 36 years — their last title came all the way back in 1990.",
+        "sourceName": "Wikipedia – MLB franchise postseason droughts",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Major_League_Baseball_franchise_postseason_droughts",
+        "claim": "The World Series championship droughts table lists the Reds at 36 years with their last title in 1990 (current through the 2026 season).",
+        "proof": "36 Cincinnati Reds 1990",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In the 2012 NLDS the Reds took a 2–0 lead, then lost three straight at home — the first NL team since the 1984 Cubs to lose a division series after leading 2–0.",
+        "sourceName": "Wikipedia – Cincinnati Reds",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cincinnati_Reds",
+        "claim": "In the 2012 NLDS the Reds led 2-0, then lost three straight at their home ballpark, becoming the first NL team since the 1984 Cubs to lose a division series after leading 2-0.",
+        "proof": "However, they lost three straight at their home ballpark, becoming the first National League team since the Chicago Cubs in 1984 to lose a division series after leading 2–0.",
+        "asOf": "2012 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Reds closed 2013 with six consecutive losses — including a wild-card playoff loss to the Pirates at PNC Park — and then fired Dusty Baker.",
+        "sourceName": "Wikipedia – Cincinnati Reds",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cincinnati_Reds",
+        "claim": "The Reds ended the 2013 season with six consecutive losses, including the NL wild-card loss to Pittsburgh at PNC Park, and then fired Dusty Baker.",
+        "proof": "Following six consecutive losses to close out the 2013 season, including a loss to the Pittsburgh Pirates at PNC Park in the National League wild-card playoff game, the Reds decided to fire Dusty Baker.",
+        "asOf": "2013 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Reds haven't won the NL Central since 2012 — a 14-year division-title drought.",
+        "sourceName": "Wikipedia – MLB franchise postseason droughts",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Major_League_Baseball_franchise_postseason_droughts",
+        "claim": "The division-champion droughts table lists the Reds at 14 years in the NL Central with their last division title in 2012 (current through the 2026 season).",
+        "proof": "14 Cincinnati Reds NL Central 2012",
+        "asOf": "2026 season",
         "checkedOn": "2026-11-13"
       }
     ],
@@ -613,6 +707,53 @@
         "checkedOn": "2026-11-13"
       }
     ],
+    "mlb-brewers": [
+      {
+        "text": "Fun fact. In the 2025 NLCS the Brewers hit .118 as a team — the worst batting average by any team in any postseason series of at least three games in MLB history.",
+        "sourceName": "Wikipedia – 2025 National League Championship Series",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_National_League_Championship_Series",
+        "claim": "The Brewers hit .118 as a team in the 2025 NLCS, the worst batting average by any team in any MLB postseason series of at least three games.",
+        "proof": "As a team, the Brewers hit .118 in the NLCS, which was the worst batting average by any team in any postseason series of at least three games in MLB history.[26]",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. That 2025 NLCS was also the Brewers' eleventh straight road postseason loss.",
+        "sourceName": "Wikipedia – 2025 National League Championship Series",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_National_League_Championship_Series",
+        "claim": "The 2025 NLCS marked the Brewers' eleventh consecutive road postseason loss.",
+        "proof": "This was the Brewers' eleventh straight road postseason loss.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 2023 the Brewers won the NL Central at 92–70, then were swept in the Wild Card series by the eventual NL champion Diamondbacks.",
+        "sourceName": "Wikipedia – Milwaukee Brewers",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Milwaukee_Brewers",
+        "claim": "The Brewers won the 2023 NL Central with a 92-70 record but were swept in the best-of-three Wild Card series by Arizona, the eventual NL champion.",
+        "proof": "In 2023, the Brewers won the NL Central with a 92–70 record, but were swept in the best-of-three Wild Card series by the eventual NL Champion Arizona Diamondbacks.",
+        "asOf": "2023 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Brewers' first-ever World Series appearance, in 1982, ended with a loss to the St. Louis Cardinals in seven games.",
+        "sourceName": "Wikipedia – Milwaukee Brewers",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Milwaukee_Brewers",
+        "claim": "Milwaukee's first World Series appearance, in 1982, ended with a loss to the St. Louis Cardinals in seven games.",
+        "proof": "In 1982, Milwaukee, led by AL MVP Robin Yount, won the American League East Division and the American League Pennant, earning their first World Series appearance and only American League pennant. In the Series, they lost to the St. Louis Cardinals in seven games.",
+        "asOf": "1982 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Through 2026 the Brewers' all-time regular-season record is 4,508–4,654–4 — a .492 winning percentage.",
+        "sourceName": "Wikipedia – Milwaukee Brewers",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Milwaukee_Brewers",
+        "claim": "Through 2026 the Brewers' all-time regular-season record is 4,508-4,654-4, a .492 winning percentage.",
+        "proof": "From 1969 through 2026, the Brewers' overall regular-season win–loss record is 4,508–4,654–4 (.492).",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
     "mlb-twins": [
       {
         "text": "Fun fact. Minnesota snapped an 18-game playoff losing streak in 2023 — their first postseason win since 2004. The streak could legally drink.",
@@ -848,6 +989,53 @@
         "checkedOn": "2026-11-13"
       }
     ],
+    "mlb-pirates": [
+      {
+        "text": "Fun fact. From 1993 to 2012 the Pirates had a losing record 20 straight seasons — a record streak in MLB and all four major North American pro sports leagues.",
+        "sourceName": "Wikipedia – Pittsburgh Pirates",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Pirates",
+        "claim": "The Pirates posted a losing record in 20 consecutive seasons from 1993 to 2012, a record streak in both MLB and the four major North American professional sports leagues.",
+        "proof": "The Pirates additionally posted a losing record in 20 consecutive seasons from 1993 to 2012, a record streak in both MLB and the four major North American professional sports leagues.[5]",
+        "asOf": "2012 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Pirates own the longest pennant drought in the National League, plus the longest LCS-appearance and division-title droughts in all of baseball.",
+        "sourceName": "Wikipedia – Pittsburgh Pirates",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Pirates",
+        "claim": "The Pirates currently have the longest pennant drought in the National League and the longest League Championship Series appearance and division championship droughts in all of baseball.",
+        "proof": "the longest pennant drought in the National League,[6] and the longest League Championship Series appearance and division championship drought in all of baseball.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Pirates reached the postseason in 2014 and 2015, lost the Wild Card game both times — and haven't made the playoffs since.",
+        "sourceName": "Wikipedia – Pittsburgh Pirates",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Pirates",
+        "claim": "The Pirates returned to the postseason in 2014 and 2015, lost the Wild Card game both times, and have not qualified for the playoffs since then.",
+        "proof": "The Pirates returned to the postseason in 2014 and 2015 and lost the Wild Card game both times and have not qualified for the playoffs since then.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. PNC Park's biggest crowd ever — 40,889 fans — gathered to watch the Cubs shut out the Pirates 4–0 in the 2015 Wild Card Game.",
+        "sourceName": "Wikipedia – Pittsburgh Pirates",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Pirates",
+        "claim": "The biggest crowd in PNC Park history, 40,889 fans, watched the Cubs defeat the Pirates 4-0 in the 2015 National League Wild Card Game.",
+        "proof": "the biggest crowd in stadium history was the 2015 National League Wild Card Game, when 40,889 fans saw the Cubs defeat the Pirates 4–0.",
+        "asOf": "2015 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Since 1882 the Pirates have an all-time record of 10,992–10,990–140 — a dead-even .500 winning percentage.",
+        "sourceName": "Wikipedia – Pittsburgh Pirates",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Pirates",
+        "claim": "From 1882 to 2026 the Pirates have an all-time record of 10,992-10,990-140, a .500 winning percentage.",
+        "proof": "From 1882 to 2026, the Pirates have an overall record of 10,992–10,990–140 (.500 winning percentage).[7]",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
     "mlb-padres": [
       {
         "text": "Fun fact. San Diego's 2025 season ended with a Wild Card loss to the Cubs — so abrupt the manager retired on the spot.",
@@ -986,6 +1174,53 @@
         "claim": "Verified on the Seattle Mariners Wikipedia page: losing record in 30 of 49 seasons, as of 2025.",
         "proof": "The franchise has finished with a losing record in 30 of 49 seasons, as of 2025",
         "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-cardinals": [
+      {
+        "text": "Fun fact. In 2023 the Cardinals finished last in their division for the first time since 1990 — with the Pirates finishing above them in fourth.",
+        "sourceName": "Wikipedia – 2023 St. Louis Cardinals season",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2023_St._Louis_Cardinals_season",
+        "claim": "The 2023 Cardinals secured their first last-place finish since 1990, with the Pittsburgh Pirates finishing above them in fourth place.",
+        "proof": "After their 89th loss on September 27, they secured their first last-place finish since 1990 (70–92), with the Pittsburgh Pirates finishing above them in fourth place.",
+        "asOf": "2023 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Cardinals' worst season ever came back in 1897: a 29–102 record and a franchise-worst .221 winning percentage.",
+        "sourceName": "Wikipedia – St. Louis Cardinals",
+        "sourceUrl": "https://en.wikipedia.org/wiki/St._Louis_Cardinals",
+        "claim": "The Cardinals' franchise-worst season was 1897: a 29-102 record and a .221 winning percentage.",
+        "proof": "The nadir was the 1897 season: a 29–102 record for a franchise-worst .221 winning percentage.[7]",
+        "asOf": "1897 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Through August 2026, the Cubs lead the all-time Cardinals–Cubs series 1,295-1,241.",
+        "sourceName": "Wikipedia – St. Louis Cardinals",
+        "sourceUrl": "https://en.wikipedia.org/wiki/St._Louis_Cardinals",
+        "claim": "The Cubs lead the all-time Cardinals-Cubs series 1,295-1,241 through August 2026.",
+        "proof": "The Cubs lead the series 1,295-1,241, through August 2026",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. St. Louis hasn't won a postseason series since the 2019 NLDS — seven years and counting.",
+        "sourceName": "Wikipedia – MLB franchise postseason droughts",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Major_League_Baseball_franchise_postseason_droughts",
+        "claim": "The postseason series-win droughts table lists the Cardinals at 7 years with their last series win the 2019 NLDS (current through the 2026 season).",
+        "proof": "7 St. Louis Cardinals 2019 NLDS",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Cardinals haven't reached a World Series since 2013 — a 13-year pennant drought and counting.",
+        "sourceName": "Wikipedia – MLB franchise postseason droughts",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Major_League_Baseball_franchise_postseason_droughts",
+        "claim": "The pennant (World Series appearance) droughts table lists the Cardinals at 13 years with their last pennant in 2013 (current through the 2026 season).",
+        "proof": "13 St. Louis Cardinals 2013",
+        "asOf": "2026 season",
         "checkedOn": "2026-11-13"
       }
     ],
