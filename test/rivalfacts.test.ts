@@ -110,12 +110,14 @@ describe('the MLB rival facts file', () => {
   it('every fact is in the "Fun fact." voice and names its team', () => {
     for (const { teamId, fact } of mlbFacts) {
       const team = MLB.find((candidate) => candidate.id === teamId)!;
-      // "Boston Red Sox" -> "Red Sox"; "Athletics" has no city in its name.
-      const nickname = team.name.replace(team.city, '').trim();
+      // "Boston Red Sox" -> "Red Sox"; others use the last word ("Diamondbacks", "Rangers").
+      const nickname = team.name.endsWith('Sox') ? team.name.split(' ').slice(-2).join(' ') : team.name.split(' ').slice(-1)[0];
       expect(fact.text.startsWith(FACT_PREFIX), fact.text).toBe(true);
       expect(
         fact.text.includes(nickname) ||
           (nickname === 'Athletics' && fact.text.includes("A's")) ||
+          (nickname === 'Guardians' && fact.text.includes('Indians')) ||
+          (nickname === 'Rangers' && fact.text.includes('Senators')) ||
           (nickname === 'Nationals' && fact.text.includes('Nats')) ||
           (nickname === 'Red Sox' && fact.text.includes('Sox')) ||
           (nickname === 'White Sox' && fact.text.includes('Sox')) ||
