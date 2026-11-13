@@ -371,8 +371,8 @@ describe('the facts Worker', () => {
 
   it('says not-covered for another league or team, pending when nothing is stored or the read fails, and gives no CORS to a stranger', async () => {
     const kv = memoryKv({ 'rivalfacts:nfl': published });
-    const other = (await (await call(kv, '/v1/rival-facts?teams=nba-pistons,nfl-nope')).json()) as { teams: Record<string, { status: string }> };
-    expect(other.teams['nba-pistons'].status).toBe('not-covered');
+    const other = (await (await call(kv, '/v1/rival-facts?teams=cfb-ohiostate,nfl-nope')).json()) as { teams: Record<string, { status: string }> };
+    expect(other.teams['cfb-ohiostate'].status).toBe('not-covered');
     expect(other.teams['nfl-nope'].status).toBe('not-covered');
     const empty = (await (await call(memoryKv(), '/v1/rival-facts?team=nfl-lions')).json()) as { teams: Record<string, { status: string }> };
     expect(empty.teams['nfl-lions'].status).toBe('pending');
@@ -397,7 +397,7 @@ describe('the facts Worker', () => {
   });
 });
 
-describe('the NHL facts stay apart from the news and are not served until the Worker is switched on (FV2-235)', () => {
+describe('the NHL facts stay apart from the news (FV2-235)', () => {
   it('have their own key, a canonical public payload without the proof, and read back the same', () => {
     expect(rivalFactsKey('NHL')).toBe('rivalfacts:nhl');
     expect(rivalFactsKey('nhl')).not.toBe(bundleKey('nhl'));
@@ -430,12 +430,20 @@ describe('the NHL facts stay apart from the news and are not served until the Wo
     expect(kv.data.get(bundleKey('nhl'))).toBe('{"stories":"untouched"}');
   });
 
-  it('the facts Worker still says not-covered for NHL teams: turning NHL on there is a separate, deliberate change', async () => {
-    const kv = memoryKv({ 'rivalfacts:nhl': serializeRivalFacts(toPublicPayload(nhlFile)) });
+  it('the facts Worker serves one team from each of NFL, MLB, NHL and NBA, reading only the four facts items', async () => {
+    const kv = memoryKv({
+      'rivalfacts:nfl': serializeRivalFacts(toPublicPayload(file)),
+      'rivalfacts:mlb': serializeRivalFacts(toPublicPayload(mlbFile)),
+      'rivalfacts:nhl': serializeRivalFacts(toPublicPayload(nhlFile)),
+      'rivalfacts:nba': serializeRivalFacts(toPublicPayload(nbaFile)),
+    });
     const env: Env = { RIVAL_FACTS_KV: kv, ALLOWED_ORIGIN: 'https://dev.fanslikeyou.com' };
-    const response = await handle(new Request('https://rival.test/v1/rival-facts?team=nhl-bruins', { headers: { origin: 'https://dev.fanslikeyou.com' } }), env);
-    const body = (await response.json()) as { teams: Record<string, { status: string }> };
-    expect(body.teams['nhl-bruins'].status).toBe('not-covered');
-    expect(kv.gets).toEqual([]);
+    const response = await handle(new Request('https://rival.test/v1/rival-facts?teams=nfl-lions,mlb-cubs,nhl-bruins,nba-pistons', { headers: { origin: 'https://dev.fanslikeyou.com' } }), env);
+    const body = (await response.json()) as { teams: Record<string, { status: string; facts: unknown[] }> };
+    for (const id of ['nfl-lions', 'mlb-cubs', 'nhl-bruins', 'nba-pistons']) {
+      expect(body.teams[id].status, id).toBe('ready');
+      expect(body.teams[id].facts, id).toHaveLength(5);
+    }
+    expect([...kv.gets].sort()).toEqual(['rivalfacts:mlb', 'rivalfacts:nba', 'rivalfacts:nfl', 'rivalfacts:nhl']);
   });
 });
