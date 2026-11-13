@@ -1,0 +1,1416 @@
+{
+  "v": 1,
+  "league": "nba",
+  "teams": {
+    "nba-hawks": [
+      {
+        "text": "Fun fact. The Atlanta Hawks were swept 4–0 by the Cavaliers in the 2015–16 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Atlanta_Hawks_seasons",
+        "claim": "The Atlanta Hawks were swept 4–0 by the Cavaliers in the 2015–16 playoffs!",
+        "proof": "2015–16NBAEastern4thSoutheast2nd4834.585—Won First round (Celtics) 4–2 Lost conference semifinals (Cavaliers) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Atlanta Hawks were swept 4–0 by the Cavaliers in the 2014–15 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Atlanta_Hawks_seasons",
+        "claim": "The Atlanta Hawks were swept 4–0 by the Cavaliers in the 2014–15 playoffs!",
+        "proof": "2014–15NBAEastern1stSoutheast1st6022.732—Won First round (Nets) 4–2Won conference semifinals (Wizards) 4–2Lost conference finals (Cavaliers) 4–0Mike Budenholzer (COY)Kyle Korver (SPOR)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Atlanta Hawks were swept 4–0 by the Magic in the 2009–10 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Atlanta_Hawks_seasons",
+        "claim": "The Atlanta Hawks were swept 4–0 by the Magic in the 2009–10 playoffs!",
+        "proof": "2009–10NBAEastern3rdSoutheast2nd5329.6466Won First round (Bucks) 4–3 Lost conference semifinals (Magic) 4–0Jamal Crawford (SIX)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Atlanta Hawks were swept 4–0 by the Cavaliers in the 2008–09 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Atlanta_Hawks_seasons",
+        "claim": "The Atlanta Hawks were swept 4–0 by the Cavaliers in the 2008–09 playoffs!",
+        "proof": "2008–09NBAEastern4thSoutheast2nd4735.57312Won First round (Heat) 4–3Lost conference semifinals (Cavaliers) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Atlanta Hawks were swept 4–0 by the Knicks in the 1998–99 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Atlanta_Hawks_seasons",
+        "claim": "The Atlanta Hawks were swept 4–0 by the Knicks in the 1998–99 playoffs!",
+        "proof": "1998–99[e]NBAEastern4thCentral2nd3119.6202Won First round (Pistons) 3–2 Lost conference semifinals (Knicks) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-celtics": [
+      {
+        "text": "Fun fact. The Boston Celtics were swept 4–0 by the Cavaliers in the 2014–15 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Boston_Celtics_seasons",
+        "claim": "The Boston Celtics were swept 4–0 by the Cavaliers in the 2014–15 playoffs!",
+        "proof": "2014–15 Eastern 7th Atlantic 2nd 40 42 .488 9 Lost first round (Cavaliers) 4–0 — [69]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Boston Celtics were swept 4–0 by the Pacers in the 2003–04 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Boston_Celtics_seasons",
+        "claim": "The Boston Celtics were swept 4–0 by the Pacers in the 2003–04 playoffs!",
+        "proof": "2003–04 Eastern 8th Atlantic 4th 36 46 .439 11 Lost first round (Pacers) 4–0 — Jim O'BrienJohn Carroll [58]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Boston Celtics were swept 4–0 by the Nets in the 2002–03 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Boston_Celtics_seasons",
+        "claim": "The Boston Celtics were swept 4–0 by the Nets in the 2002–03 playoffs!",
+        "proof": "2002–03 Eastern 6th Atlantic 3rd 44 38 .537 5 Won first round (Pacers) 4–2Lost conference semifinals (Nets) 4–0 — [57]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Boston Celtics were swept 3–0 by the Pistons in the 1988–89 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Boston_Celtics_seasons",
+        "claim": "The Boston Celtics were swept 3–0 by the Pistons in the 1988–89 playoffs!",
+        "proof": "1988–89 Eastern 8th Atlantic 3rd 42 40 .512 10 Lost first round (Pistons) 3–0 — Jimmy Rodgers [43]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Boston Celtics were swept 4–0 by the Bucks in the 1982–83 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Boston_Celtics_seasons",
+        "claim": "The Boston Celtics were swept 4–0 by the Bucks in the 1982–83 playoffs!",
+        "proof": "1982–83 Eastern 3rd Atlantic 2nd 56 26 .683 9 Won first round (Hawks) 2–1Lost conference semifinals (Bucks) 4–0 — [37]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-nets": [
+      {
+        "text": "Fun fact. The Brooklyn Nets were swept 4–0 by the 76ers in the 2022–23 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Brooklyn_Nets_seasons",
+        "claim": "The Brooklyn Nets were swept 4–0 by the 76ers in the 2022–23 playoffs!",
+        "proof": "2022–23NBAEastern6thAtlantic4th4537.549Lost first round (76ers) 4–0Steve NashJacque Vaughn",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Brooklyn Nets were swept 4–0 by the Celtics in the 2021–22 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Brooklyn_Nets_seasons",
+        "claim": "The Brooklyn Nets were swept 4–0 by the Celtics in the 2021–22 playoffs!",
+        "proof": "2021–22NBAEastern7thAtlantic4th4438.537Lost first round (Celtics) 4–0Patty Mills (SPOR)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Brooklyn Nets were swept 4–0 by the Raptors in the 2019–20 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Brooklyn_Nets_seasons",
+        "claim": "The Brooklyn Nets were swept 4–0 by the Raptors in the 2019–20 playoffs!",
+        "proof": "2019–20NBA[f]Eastern7thAtlantic4th3537.486Lost first round (Raptors) 4–0Kenny AtkinsonJacque Vaughn",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Brooklyn Nets lost 4–3 to the Bucks in the 2020–21 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Brooklyn_Nets_seasons",
+        "claim": "The Brooklyn Nets lost 4–3 to the Bucks in the 2020–21 playoffs!",
+        "proof": "2020–21NBA[f]Eastern2ndAtlantic2nd4824.667Won first round (Celtics) 4–1Lost conference semifinals (Bucks) 4–3Steve Nash",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Brooklyn Nets lost 4–1 to the 76ers in the 2018–19 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Brooklyn_Nets_seasons",
+        "claim": "The Brooklyn Nets lost 4–1 to the 76ers in the 2018–19 first round!",
+        "proof": "2018–19NBAEastern6thAtlantic4th4240.512Lost first round (76ers) 4–1",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-hornets": [
+      {
+        "text": "Fun fact. The Charlotte Bobcats were swept 4–0 by the Heat in the 2013–14 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Charlotte_Hornets_seasons",
+        "claim": "The Charlotte Bobcats were swept 4–0 by the Heat in the 2013–14 playoffs!",
+        "proof": "2013–14 2013–14 NBA Eastern 7th Southeast 3rd 43 39 .524 13 Lost first round (Heat) 4–0 — Steve Clifford",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Charlotte Bobcats were swept 4–0 by the Magic in the 2009–10 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Charlotte_Hornets_seasons",
+        "claim": "The Charlotte Bobcats were swept 4–0 by the Magic in the 2009–10 playoffs!",
+        "proof": "2009–10 2009–10 NBA Eastern 7th Southeast 4th 44 38 .537 17 Lost first round (Magic) 4–0 —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Charlotte Hornets were swept 3–0 by the Knicks in the 1996–97 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Charlotte_Hornets_seasons",
+        "claim": "The Charlotte Hornets were swept 3–0 by the Knicks in the 1996–97 playoffs!",
+        "proof": "1996–97 1996–97 NBA Eastern 6th Central 4th 54 28 .659 15 Lost first round (Knicks) 3–0 Bob Bass (EOY)Glen Rice (ASG MVP) Dave Cowens",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Charlotte Hornets lost 4–3 to the Heat in the 2015–16 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Charlotte_Hornets_seasons",
+        "claim": "The Charlotte Hornets lost 4–3 to the Heat in the 2015–16 first round!",
+        "proof": "2015–16 2015–16 NBA Eastern 6th Southeast 3rd 48 34 .585 9 Lost first round (Heat) 4–3 —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Charlotte Hornets lost 4–1 to the Nets in the 2001–02 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Charlotte_Hornets_seasons",
+        "claim": "The Charlotte Hornets lost 4–1 to the Nets in the 2001–02 playoffs!",
+        "proof": "2001–02 2001–02 NBA Eastern 4th Central 2nd 44 38 .537 8 Won first round (Magic) 3–1 Lost conference semifinals (Nets) 4–1 —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-bulls": [
+      {
+        "text": "Fun fact. The Chicago Bulls were swept 3–0 by the Celtics in the 1986–87 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Chicago_Bulls_seasons",
+        "claim": "The Chicago Bulls were swept 3–0 by the Celtics in the 1986–87 playoffs!",
+        "proof": "1986–87 1986–87 Eastern 8th Central 5th 40 42 .488 17 Lost First round (Celtics) 3–0[34] — Doug Collins",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Chicago Bulls were swept 3–0 by the Celtics in the 1985–86 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Chicago_Bulls_seasons",
+        "claim": "The Chicago Bulls were swept 3–0 by the Celtics in the 1985–86 playoffs!",
+        "proof": "1985–86 1985–86 Eastern 8th Central 4th 30 52 .366 27 Lost First round (Celtics) 3–0[33] — Stan Albeck",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Chicago Bulls were swept 4–0 by the Celtics in the 1980–81 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Chicago_Bulls_seasons",
+        "claim": "The Chicago Bulls were swept 4–0 by the Celtics in the 1980–81 playoffs!",
+        "proof": "1980–81 1980–81 Eastern 5th Central[g] 2nd 45 37 .549 15 Won First round (Knicks) 2–0 Lost conference semifinals (Celtics) 4–0[31] —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Chicago Bulls lost 4–1 to the Bucks in the 2021–22 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Chicago_Bulls_seasons",
+        "claim": "The Chicago Bulls lost 4–1 to the Bucks in the 2021–22 first round!",
+        "proof": "2021–22 2021–22 Eastern 6th Central 2nd 46 36 .561 7 Lost First round (Bucks) 4–1",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Chicago Bulls lost 4–2 to the Celtics in the 2016–17 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Chicago_Bulls_seasons",
+        "claim": "The Chicago Bulls lost 4–2 to the Celtics in the 2016–17 first round!",
+        "proof": "2016–17 2016–17 Eastern 8th Central 4th 41 41 .500 10 Lost First round (Celtics) 4–2",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-cavaliers": [
+      {
+        "text": "Fun fact. The Cleveland Cavaliers were swept 4–0 by the Warriors in the 2017–18 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Cleveland_Cavaliers_seasons",
+        "claim": "The Cleveland Cavaliers were swept 4–0 by the Warriors in the 2017–18 playoffs!",
+        "proof": "2017–18 2017–18 NBA Eastern 4th Central 1st 50 32 .610 — Won First round (Pacers) 4–3 Won ECSF (Raptors) 4–0 Won ECF (Celtics) 4–3 Lost NBA Finals (Warriors) 4–0 LeBron James (ASG MVP) [60]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Cleveland Cavaliers were swept 4–0 by the Spurs in the 2006–07 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Cleveland_Cavaliers_seasons",
+        "claim": "The Cleveland Cavaliers were swept 4–0 by the Spurs in the 2006–07 playoffs!",
+        "proof": "2006–07 2006–07 NBA Eastern 2nd Central 2nd 50 32 .610 3 Won First round (Wizards) 4–0Won ECSF (Nets) 4–2Won ECF (Pistons) 4–2Lost NBA Finals (Spurs) 4–0 — [49]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Cleveland Cavaliers were swept 3–0 by the Knicks in the 1995–96 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Cleveland_Cavaliers_seasons",
+        "claim": "The Cleveland Cavaliers were swept 3–0 by the Knicks in the 1995–96 playoffs!",
+        "proof": "1995–96 1995–96 NBA Eastern 4th Central 3rd 47 35 .573 25 Lost First round (Knicks) 3–0 — [38]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Cleveland Cavaliers were swept 3–0 by the Bulls in the 1993–94 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Cleveland_Cavaliers_seasons",
+        "claim": "The Cleveland Cavaliers were swept 3–0 by the Bulls in the 1993–94 playoffs!",
+        "proof": "1993–94 1993–94 NBA Eastern 6th Central 4th[nb 5] 47 35 .573 10 Lost First round (Bulls) 3–0 — Mike Fratello [36]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Cleveland Cavaliers were swept 4–0 by the Bulls in the 1992–93 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Cleveland_Cavaliers_seasons",
+        "claim": "The Cleveland Cavaliers were swept 4–0 by the Bulls in the 1992–93 playoffs!",
+        "proof": "1992–93 1992–93 NBA Eastern 3rd Central 2nd 54 28 .658 3 Won First round (Nets) 3–2Lost ECSF (Bulls) 4–0 — [34]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-mavericks": [
+      {
+        "text": "Fun fact. The Dallas Mavericks were swept 4–0 by the Thunder in the 2011–12 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Dallas_Mavericks_seasons",
+        "claim": "The Dallas Mavericks were swept 4–0 by the Thunder in the 2011–12 playoffs!",
+        "proof": "2011–12[d] NBA Western 7th Southwest 3rd 36 30 .545 14 Lost First round (Thunder) 4–0 Jason Kidd (SPOR) [37]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Dallas Mavericks were swept 3–0 by the Trail Blazers in the 1989–90 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Dallas_Mavericks_seasons",
+        "claim": "The Dallas Mavericks were swept 3–0 by the Trail Blazers in the 1989–90 playoffs!",
+        "proof": "1989–90 NBA Western 6th Midwest 3rd 47 35 .573 9 Lost First round (Trail Blazers) 3–0 — John MacLeodRichie Adubato [11]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Dallas Mavericks lost 4–1 to the Celtics in the 2023–24 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Dallas_Mavericks_seasons",
+        "claim": "The Dallas Mavericks lost 4–1 to the Celtics in the 2023–24 playoffs!",
+        "proof": "2023–24 NBA Western 5th Southwest 1st 50 32 .610 7 Won First round (Clippers) 4–2 Won conference semifinals (Thunder) 4–2 Won conference finals (Timberwolves) 4–1 Lost NBA Finals (Celtics) 4–1 — [49]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Dallas Mavericks lost 4–1 to the Warriors in the 2021–22 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Dallas_Mavericks_seasons",
+        "claim": "The Dallas Mavericks lost 4–1 to the Warriors in the 2021–22 playoffs!",
+        "proof": "2021–22 NBA Western 4th Southwest 2nd 52 30 .634 4 Won First round (Jazz) 4–2 Won conference semifinals (Suns) 4–3 Lost conference finals (Warriors) 4–1 — Jason Kidd [47]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Dallas Mavericks lost 4–3 to the Clippers in the 2020–21 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Dallas_Mavericks_seasons",
+        "claim": "The Dallas Mavericks lost 4–3 to the Clippers in the 2020–21 first round!",
+        "proof": "2020–21 NBA Western 5th Southwest 1st 42 30 .583 — Lost First round (Clippers) 4–3 — [46]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-nuggets": [
+      {
+        "text": "Fun fact. The Denver Nuggets were swept 4–0 by the Suns in the 2020–21 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Denver_Nuggets_seasons",
+        "claim": "The Denver Nuggets were swept 4–0 by the Suns in the 2020–21 playoffs!",
+        "proof": "2020–21NBAWestern3rdNorthwest2nd4725.6535Won First round (Trail Blazers) 4–2 Lost conference semifinals (Suns) 4–0Nikola Jokić (MVP)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Denver Nuggets were swept 4–0 by the Lakers in the 2007–08 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Denver_Nuggets_seasons",
+        "claim": "The Denver Nuggets were swept 4–0 by the Lakers in the 2007–08 playoffs!",
+        "proof": "2007–08NBAWestern8thNorthwest2nd5032.6104Lost First round (Lakers) 4–0—",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Denver Nuggets were swept 3–0 by the Spurs in the 1994–95 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Denver_Nuggets_seasons",
+        "claim": "The Denver Nuggets were swept 3–0 by the Spurs in the 1994–95 playoffs!",
+        "proof": "1994–95NBAWestern8thMidwest4th4141.50021Lost First round (Spurs) 3–0Dikembe Mutombo (DPOY)Dan IsselGene LittlesBernie Bickerstaff",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Denver Nuggets were swept 3–0 by the Spurs in the 1989–90 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Denver_Nuggets_seasons",
+        "claim": "The Denver Nuggets were swept 3–0 by the Spurs in the 1989–90 playoffs!",
+        "proof": "1989–90NBAWestern7thMidwest4th4339.52413Lost First round (Spurs) 3–0—",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Denver Nuggets were swept 3–0 by the Suns in the 1988–89 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Denver_Nuggets_seasons",
+        "claim": "The Denver Nuggets were swept 3–0 by the Suns in the 1988–89 playoffs!",
+        "proof": "1988–89NBAWestern6thMidwest3rd4438.5377Lost First round (Suns) 3–0—",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-pistons": [
+      {
+        "text": "Fun fact. The Detroit Pistons were swept 4–0 by the Bucks in the 2018–19 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Detroit_Pistons_seasons",
+        "claim": "The Detroit Pistons were swept 4–0 by the Bucks in the 2018–19 playoffs!",
+        "proof": "2018–192018–19Eastern8thCentral3rd4141.50019Lost First round (Bucks) 4–0Dwane Casey",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Detroit Pistons were swept 4–0 by the Cavaliers in the 2015–16 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Detroit_Pistons_seasons",
+        "claim": "The Detroit Pistons were swept 4–0 by the Cavaliers in the 2015–16 playoffs!",
+        "proof": "2015–162015–16Eastern8thCentral3rd4438.53713Lost First round (Cavaliers) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Detroit Pistons were swept 4–0 by the Cavaliers in the 2008–09 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Detroit_Pistons_seasons",
+        "claim": "The Detroit Pistons were swept 4–0 by the Cavaliers in the 2008–09 playoffs!",
+        "proof": "2008–092008–09Eastern8thCentral3rd3943.47627Lost First round (Cavaliers) 4–0Michael Curry",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Detroit Pistons were swept 4–0 by the Nets in the 2002–03 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Detroit_Pistons_seasons",
+        "claim": "The Detroit Pistons were swept 4–0 by the Nets in the 2002–03 playoffs!",
+        "proof": "2002–032002–03Eastern1stCentral1st5032.610—Won First round (Magic) 4–3 Won conference semifinals (76ers) 4–2 Lost conference finals (Nets) 4–0Ben Wallace (DPOY)Joe Dumars (EOY)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Detroit Pistons were swept 3–0 by the Heat in the 1999–00 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Detroit_Pistons_seasons",
+        "claim": "The Detroit Pistons were swept 3–0 by the Heat in the 1999–00 playoffs!",
+        "proof": "1999–001999–00Eastern7thCentral5th4240.51214Lost First round (Heat) 3–0Alvin GentryGeorge Irvine",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-warriors": [
+      {
+        "text": "Fun fact. The Golden State Warriors were swept 3–0 by the Suns in the 1993–94 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Golden_State_Warriors_seasons",
+        "claim": "The Golden State Warriors were swept 3–0 by the Suns in the 1993–94 playoffs!",
+        "proof": "1993–94 1993–94 NBA Western 6th Pacific 3rd 50 32 .610 13 Lost First round (Suns) 3–0[33] Chris Webber (ROY)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Golden State Warriors lost 4–1 to the Timberwolves in the 2024–25 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Golden_State_Warriors_seasons",
+        "claim": "The Golden State Warriors lost 4–1 to the Timberwolves in the 2024–25 playoffs!",
+        "proof": "2024–25 2024–25 NBA Western 7th Pacific 3rd 48 34 .585 20 Won First round (Rockets) 4–3Lost conference semifinals (Timberwolves) 4–1 Stephen Curry (ASG MVP)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Golden State Warriors lost 4–2 to the Lakers in the 2022–23 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Golden_State_Warriors_seasons",
+        "claim": "The Golden State Warriors lost 4–2 to the Lakers in the 2022–23 playoffs!",
+        "proof": "2022–23 2022–23 NBA Western 6th Pacific 4th 44 38 .537 9 Won First round (Kings) 4–3 Lost conference semifinals (Lakers) 4–2 Stephen Curry (JWKC)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Golden State Warriors lost 4–2 to the Raptors in the 2018–19 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Golden_State_Warriors_seasons",
+        "claim": "The Golden State Warriors lost 4–2 to the Raptors in the 2018–19 playoffs!",
+        "proof": "2018–19 2018–19 NBA Western 1st Pacific 1st 57 25 .695 — Won First round (Clippers) 4–2 Won conference semifinals (Rockets) 4–2 Won conference finals (Trail Blazers) 4–0 Lost NBA Finals (Raptors) 4–2[41] Kevin Durant (ASG MVP)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Golden State Warriors lost 4–3 to the Cavaliers in the 2015–16 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Golden_State_Warriors_seasons",
+        "claim": "The Golden State Warriors lost 4–3 to the Cavaliers in the 2015–16 playoffs!",
+        "proof": "2015–16 2015–16 NBA Western 1st Pacific 1st 73 9 .890 — Won First round (Rockets) 4–1Won conference semifinals (Trail Blazers) 4–1Won conference finals (Thunder) 4–3Lost NBA Finals (Cavaliers) 4–3[38] Stephen Curry (MVP)Steve Kerr (COY)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-rockets": [
+      {
+        "text": "Fun fact. The Houston Rockets were swept 4–0 by the SuperSonics in the 1995–96 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Houston_Rockets_seasons",
+        "claim": "The Houston Rockets were swept 4–0 by the SuperSonics in the 1995–96 playoffs!",
+        "proof": "1995–96 NBA Western 5th Midwest 3rd 48 34 .585 11 Won First round (Lakers) 3–1Lost conference semifinals (SuperSonics) 4–0[25] —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Houston Rockets were swept 3–0 by the Lakers in the 1990–91 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Houston_Rockets_seasons",
+        "claim": "The Houston Rockets were swept 3–0 by the Lakers in the 1990–91 playoffs!",
+        "proof": "1990–91 NBA Western 6th Midwest 3rd 52 30 .634 3 Lost First round (Lakers) 3–0[21] Don Chaney (COY)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Houston Rockets were swept 4–0 by the Celtics in the 1979–80 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Houston_Rockets_seasons",
+        "claim": "The Houston Rockets were swept 4–0 by the Celtics in the 1979–80 playoffs!",
+        "proof": "1979–80 NBA Eastern 4th Central 2nd 41 41 .500 9 Won First round (Spurs) 2–1Lost conference semifinals (Celtics) 4–0[10] — Del Harris",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Houston Rockets lost 4–3 to the Warriors in the 2024–25 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Houston_Rockets_seasons",
+        "claim": "The Houston Rockets lost 4–3 to the Warriors in the 2024–25 first round!",
+        "proof": "2024–25 NBA Western 2nd Southwest 1st 52 30 .634 — Lost First round (Warriors) 4–3[46] —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Houston Rockets lost 4–1 to the Lakers in the 2019–20 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Houston_Rockets_seasons",
+        "claim": "The Houston Rockets lost 4–1 to the Lakers in the 2019–20 playoffs!",
+        "proof": "2019–20[h] NBA Western 4th Southwest 1st 44 28 .611 — Won First round (Thunder) 4–3Lost conference semifinals (Lakers) 4–1[45] —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-pacers": [
+      {
+        "text": "Fun fact. The Indiana Pacers were swept 4–0 by the Celtics in the 2023–24 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Indiana_Pacers_seasons",
+        "claim": "The Indiana Pacers were swept 4–0 by the Celtics in the 2023–24 playoffs!",
+        "proof": "2023–24 NBA Eastern 6th Central 3rd 47 35 .573 2 Won first round (Bucks) 4–2 Won conference semifinals (Knicks) 4–3 Lost conference finals (Celtics) 4–0[58]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Indiana Pacers were swept 4–0 by the Heat in the 2019–20 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Indiana_Pacers_seasons",
+        "claim": "The Indiana Pacers were swept 4–0 by the Heat in the 2019–20 playoffs!",
+        "proof": "2019–20 NBA Eastern 4th Central 2nd 45 28 .616 11 Lost first round (Heat) 4–0[56] Malcolm Brogdon (JWKC)[57]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Indiana Pacers were swept 4–0 by the Celtics in the 2018–19 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Indiana_Pacers_seasons",
+        "claim": "The Indiana Pacers were swept 4–0 by the Celtics in the 2018–19 playoffs!",
+        "proof": "2018–19 NBA Eastern 5th Central 2nd 48 34 .585 12 Lost first round (Celtics) 4–0[55]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Indiana Pacers were swept 4–0 by the Cavaliers in the 2016–17 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Indiana_Pacers_seasons",
+        "claim": "The Indiana Pacers were swept 4–0 by the Cavaliers in the 2016–17 playoffs!",
+        "proof": "2016–17 NBA Eastern 7th Central 3rd 42 40 .512 9 Lost first round (Cavaliers) 4–0[52] Nate McMillan",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Indiana Pacers were swept 3–0 by the Celtics in the 1991–92 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Indiana_Pacers_seasons",
+        "claim": "The Indiana Pacers were swept 3–0 by the Celtics in the 1991–92 playoffs!",
+        "proof": "1991–92 NBA Eastern 7th Central 4th 40 42 .488 27 Lost first round (Celtics) 3–0[26] Detlef Schrempf (SIX)[25] Bob Hill",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-clippers": [
+      {
+        "text": "Fun fact. The Los Angeles Clippers were swept 4–0 by the Spurs in the 2011–12 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Clippers_seasons",
+        "claim": "The Los Angeles Clippers were swept 4–0 by the Spurs in the 2011–12 playoffs!",
+        "proof": "2011–12[e] 2011–12 NBA Western 5th Pacific 2nd 40 26 .606 1 Won First round (Grizzlies) 4–3 Lost conference semifinals (Spurs) 4–0[18] —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Los Angeles Clippers were swept 3–0 by the Jazz in the 1996–97 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Clippers_seasons",
+        "claim": "The Los Angeles Clippers were swept 3–0 by the Jazz in the 1996–97 playoffs!",
+        "proof": "1996–97 1996–97 NBA Western 8th Pacific 5th 36 46 .439 21 Lost First round (Jazz) 3–0[14] —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Los Angeles Clippers lost 4–3 to the Nuggets in the 2024–25 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Clippers_seasons",
+        "claim": "The Los Angeles Clippers lost 4–3 to the Nuggets in the 2024–25 first round!",
+        "proof": "2024–25 2024–25 NBA Western 5th Pacific 2nd 50 32 .610 – Lost First round (Nuggets) 4–3[30] —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Los Angeles Clippers lost 4–2 to the Mavericks in the 2023–24 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Clippers_seasons",
+        "claim": "The Los Angeles Clippers lost 4–2 to the Mavericks in the 2023–24 first round!",
+        "proof": "2023–24 2023–24 NBA Western 4th Pacific 1st 51 31 .622 – Lost First round (Mavericks) 4–2[29] —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Los Angeles Clippers lost 4–1 to the Suns in the 2022–23 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Clippers_seasons",
+        "claim": "The Los Angeles Clippers lost 4–1 to the Suns in the 2022–23 first round!",
+        "proof": "2022–23 2022–23 NBA Western 5th Pacific 3rd 44 38 .537 4 Lost First round (Suns) 4–1[28] —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-lakers": [
+      {
+        "text": "Fun fact. The Los Angeles Lakers were swept 4–0 by the Nuggets in the 2022–23 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Lakers_seasons",
+        "claim": "The Los Angeles Lakers were swept 4–0 by the Nuggets in the 2022–23 playoffs!",
+        "proof": "2022–23 NBA Western 7th Pacific 5th 43 39 .524 5 Won first round (Grizzlies) 4–2Won conference semifinals (Warriors) 4–2Lost conference finals (Nuggets) 4–0[160] — Darvin Ham [161]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Los Angeles Lakers were swept 4–0 by the Spurs in the 2012–13 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Lakers_seasons",
+        "claim": "The Los Angeles Lakers were swept 4–0 by the Spurs in the 2012–13 playoffs!",
+        "proof": "2012–13 NBA Western 7th Pacific 3rd 45 37 .549 11 Lost first round (Spurs) 4–0[147] — Mike BrownBernie BickerstaffMike D'Antoni [148]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Los Angeles Lakers were swept 4–0 by the Mavericks in the 2010–11 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Lakers_seasons",
+        "claim": "The Los Angeles Lakers were swept 4–0 by the Mavericks in the 2010–11 playoffs!",
+        "proof": "2010–11 NBA Western 2nd Pacific 1st 57 25 .695 — Won first round (Hornets) 4–2Lost conference semifinals (Mavericks) 4–0[141] Kobe Bryant (ASG MVP)Lamar Odom (SIX)Ron Artest (JWKC) [142]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Los Angeles Lakers were swept 4–0 by the Spurs in the 1998–99 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Lakers_seasons",
+        "claim": "The Los Angeles Lakers were swept 4–0 by the Spurs in the 1998–99 playoffs!",
+        "proof": "1998–99[j] NBA Western 4th Pacific 2nd 31 19 .620 4 Won first round (Rockets) 3–1Lost conference semifinals (Spurs) 4–0[115] — Del HarrisBill BertkaKurt Rambis [116]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Los Angeles Lakers were swept 4–0 by the Jazz in the 1997–98 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Lakers_seasons",
+        "claim": "The Los Angeles Lakers were swept 4–0 by the Jazz in the 1997–98 playoffs!",
+        "proof": "1997–98 NBA Western 3rd Pacific 2nd[i] 61 21 .744 — Won first round (Trail Blazers) 3–1Won conference semifinals (SuperSonics) 4–1Lost conference finals (Jazz) 4–0[112] — [113]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-grizzlies": [
+      {
+        "text": "Fun fact. The Memphis Grizzlies were swept 4–0 by the Thunder in the 2024–25 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Memphis_Grizzlies_seasons",
+        "claim": "The Memphis Grizzlies were swept 4–0 by the Thunder in the 2024–25 playoffs!",
+        "proof": "2024–25 Western8thSouthwest2nd4834.5854Lost First round (Thunder) 4–0Taylor JenkinsTuomas Iisalo",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Memphis Grizzlies were swept 4–0 by the Spurs in the 2015–16 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Memphis_Grizzlies_seasons",
+        "claim": "The Memphis Grizzlies were swept 4–0 by the Spurs in the 2015–16 playoffs!",
+        "proof": "2015–16 Western7thSouthwest3rd4240.51225Lost First round (Spurs) 4–0Mike Conley (SPOR)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Memphis Grizzlies were swept 4–0 by the Spurs in the 2012–13 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Memphis_Grizzlies_seasons",
+        "claim": "The Memphis Grizzlies were swept 4–0 by the Spurs in the 2012–13 playoffs!",
+        "proof": "2012–13 Western5thSouthwest2nd5626.6832Won First round (Clippers) 4–2 Won Conference semifinals (Thunder) 4–1 Lost Conference finals (Spurs) 4–0Marc Gasol (DPOY)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Memphis Grizzlies were swept 4–0 by the Mavericks in the 2005–06 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Memphis_Grizzlies_seasons",
+        "claim": "The Memphis Grizzlies were swept 4–0 by the Mavericks in the 2005–06 playoffs!",
+        "proof": "2005–06 Western5thSouthwest3rd4933.59814Lost First round (Mavericks) 4–0Mike Miller (SIX)Mike Fratello",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Memphis Grizzlies were swept 4–0 by the Suns in the 2004–05 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Memphis_Grizzlies_seasons",
+        "claim": "The Memphis Grizzlies were swept 4–0 by the Suns in the 2004–05 playoffs!",
+        "proof": "2004–05 Western8thSouthwest4th4537.54914Lost First round (Suns) 4–0Hubie BrownLionel HollinsMike Fratello",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-heat": [
+      {
+        "text": "Fun fact. The Miami Heat were swept 4–0 by the Cavaliers in the 2024–25 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Miami_Heat_seasons",
+        "claim": "The Miami Heat were swept 4–0 by the Cavaliers in the 2024–25 playoffs!",
+        "proof": "2024–25 NBA Eastern 8th[g] Southeast 3rd 37 45 .451 27 Lost first round (Cavaliers) 4–0 —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Miami Heat were swept 4–0 by the Bucks in the 2020–21 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Miami_Heat_seasons",
+        "claim": "The Miami Heat were swept 4–0 by the Bucks in the 2020–21 playoffs!",
+        "proof": "2020–21[e] NBA Eastern 6th Southeast 2nd 40 32 .556 9 Lost first round (Bucks) 4–0 —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Miami Heat were swept 4–0 by the Bulls in the 2006–07 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Miami_Heat_seasons",
+        "claim": "The Miami Heat were swept 4–0 by the Bulls in the 2006–07 playoffs!",
+        "proof": "2006–07 NBA Eastern 4th Southeast 1st 44 38 .537 9 Lost first round (Bulls) 4–0 — Pat Riley",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Miami Heat were swept 3–0 by the Hornets in the 2000–01 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Miami_Heat_seasons",
+        "claim": "The Miami Heat were swept 3–0 by the Hornets in the 2000–01 playoffs!",
+        "proof": "2000–01 NBA Eastern 3rd Atlantic 2nd 50 32 .610 6 Lost first round (Hornets) 3–0 —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Miami Heat were swept 3–0 by the Bulls in the 1995–96 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Miami_Heat_seasons",
+        "claim": "The Miami Heat were swept 3–0 by the Bulls in the 1995–96 playoffs!",
+        "proof": "1995–96 NBA Eastern 8th Atlantic 3rd 42 40 .512 30 Lost first round (Bulls) 3–0 — Pat Riley",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-bucks": [
+      {
+        "text": "Fun fact. The Milwaukee Bucks were swept 4–0 by the Heat in the 2012–13 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Milwaukee_Bucks_seasons",
+        "claim": "The Milwaukee Bucks were swept 4–0 by the Heat in the 2012–13 playoffs!",
+        "proof": "2012–13NBAEastern8thCentral3rd3844.46311½Lost First round (Heat) 4–0Scott SkilesJim Boylan",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Milwaukee Bucks were swept 3–0 by the Pacers in the 1998–99 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Milwaukee_Bucks_seasons",
+        "claim": "The Milwaukee Bucks were swept 3–0 by the Pacers in the 1998–99 playoffs!",
+        "proof": "1998–99NBAEastern7thCentral4th2822.5605Lost First round (Pacers) 3–0George Karl",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Milwaukee Bucks were swept 3–0 by the 76ers in the 1990–91 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Milwaukee_Bucks_seasons",
+        "claim": "The Milwaukee Bucks were swept 3–0 by the 76ers in the 1990–91 playoffs!",
+        "proof": "1990–91NBAEastern4thCentral3rd4834.58513Lost First round (76ers) 3–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Milwaukee Bucks were swept 4–0 by the Pistons in the 1988–89 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Milwaukee_Bucks_seasons",
+        "claim": "The Milwaukee Bucks were swept 4–0 by the Pistons in the 1988–89 playoffs!",
+        "proof": "1988–89NBAEastern5thCentral4th4933.59814Won First round (Hawks) 3–2Lost conference semifinals (Pistons) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Milwaukee Bucks were swept 4–0 by the Celtics in the 1985–86 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Milwaukee_Bucks_seasons",
+        "claim": "The Milwaukee Bucks were swept 4–0 by the Celtics in the 1985–86 playoffs!",
+        "proof": "1985–86NBAEastern2ndCentral1st5725.695—Won First round (Nets) 3–0Won conference semifinals (76ers) 4–3Lost conference finals (Celtics) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-timberwolves": [
+      {
+        "text": "Fun fact. The Minnesota Timberwolves were swept 3–0 by the Mavericks in the 2001–02 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Minnesota_Timberwolves_seasons",
+        "claim": "The Minnesota Timberwolves were swept 3–0 by the Mavericks in the 2001–02 playoffs!",
+        "proof": "2001–02NBAWestern5thMidwest3rd5032.6108Lost First round (Mavericks) 3–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Minnesota Timberwolves were swept 3–0 by the Rockets in the 1996–97 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Minnesota_Timberwolves_seasons",
+        "claim": "The Minnesota Timberwolves were swept 3–0 by the Rockets in the 1996–97 playoffs!",
+        "proof": "1996–97NBAWestern6thMidwest3rd4042.48824Lost First round (Rockets) 3–0Flip Saunders",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Minnesota Timberwolves lost 4–1 to the Thunder in the 2024–25 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Minnesota_Timberwolves_seasons",
+        "claim": "The Minnesota Timberwolves lost 4–1 to the Thunder in the 2024–25 playoffs!",
+        "proof": "2024–25NBAWestern6thNorthwest3rd4933.59819Won First round (Lakers) 4–1Won conference semifinals (Warriors) 4–1Lost conference finals (Thunder) 4–1",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Minnesota Timberwolves lost 4–1 to the Mavericks in the 2023–24 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Minnesota_Timberwolves_seasons",
+        "claim": "The Minnesota Timberwolves lost 4–1 to the Mavericks in the 2023–24 playoffs!",
+        "proof": "2023–24NBAWestern3rdNorthwest3rd5626.6831Won First round (Suns) 4–0 Won conference semifinals (Nuggets) 4–3 Lost conference finals (Mavericks) 4–1Rudy Gobert (DPOY)Naz Reid (SIX)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Minnesota Timberwolves lost 4–1 to the Nuggets in the 2022–23 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Minnesota_Timberwolves_seasons",
+        "claim": "The Minnesota Timberwolves lost 4–1 to the Nuggets in the 2022–23 first round!",
+        "proof": "2022–23NBAWestern8thNorthwest2nd4240.51211Lost First round (Nuggets) 4–1Mike Conley (SPOR)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-pelicans": [
+      {
+        "text": "Fun fact. The New Orleans Pelicans were swept 4–0 by the Thunder in the 2023–24 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_Orleans_Pelicans_seasons",
+        "claim": "The New Orleans Pelicans were swept 4–0 by the Thunder in the 2023–24 playoffs!",
+        "proof": "2023–24 2023–24 NBA Western 7th[D] Southwest 2nd 49 33 .598 1 Lost first round (Thunder) 4–0 CJ McCollum (JWKC)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The New Orleans Pelicans were swept 4–0 by the Warriors in the 2014–15 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_Orleans_Pelicans_seasons",
+        "claim": "The New Orleans Pelicans were swept 4–0 by the Warriors in the 2014–15 playoffs!",
+        "proof": "2014–15 2014–15 NBA Western 8th Southwest 5th 45 37 .549 11 Lost first round (Warriors) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The New Orleans Pelicans lost 4–2 to the Suns in the 2021–22 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_Orleans_Pelicans_seasons",
+        "claim": "The New Orleans Pelicans lost 4–2 to the Suns in the 2021–22 first round!",
+        "proof": "2021–22 2021–22 NBA Western 9th[C] Southwest 3rd 36 46 .439 20 Lost first round (Suns) 4–2 Willie Green",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The New Orleans Pelicans lost 4–1 to the Warriors in the 2017–18 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_Orleans_Pelicans_seasons",
+        "claim": "The New Orleans Pelicans lost 4–1 to the Warriors in the 2017–18 playoffs!",
+        "proof": "2017–18 2017–18 NBA Western 6th Southwest 2nd 48 34 .585 17 Won first round (Trail Blazers) 4–0Lost conference semifinals (Warriors) 4–1",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The New Orleans Pelicans once finished a season with a franchise-worst 18–64 record!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_Orleans_Pelicans",
+        "claim": "The New Orleans Pelicans once finished a season with a franchise-worst 18–64 record!",
+        "proof": "In a season marred by injuries to the team's three all-stars, the team finished the year with a franchise-worst record of 18–64.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-knicks": [
+      {
+        "text": "Fun fact. The New York Knicks were swept 4–0 by the Boston Celtics in the 2010–11 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_York_Knicks_seasons",
+        "claim": "The New York Knicks were swept 4–0 by the Boston Celtics in the 2010–11 playoffs!",
+        "proof": "2010–11 Eastern 6th ¤ Atlantic 2nd 42 40 .512 Lost first round to Boston Celtics, 4–0[119] — Mike D'Antoni [120]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The New York Knicks were swept 4–0 by the New Jersey Nets in the 2003–04 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_York_Knicks_seasons",
+        "claim": "The New York Knicks were swept 4–0 by the New Jersey Nets in the 2003–04 playoffs!",
+        "proof": "2003–04 Eastern 7th ¤ Atlantic 3rd 39 43 .476 Lost first round to New Jersey Nets, 4–0[111] — Don ChaneyHerb WilliamsLenny Wilkens [112]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The New York Knicks were swept 3–0 by the Chicago Bulls in the 1990–91 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_York_Knicks_seasons",
+        "claim": "The New York Knicks were swept 3–0 by the Chicago Bulls in the 1990–91 playoffs!",
+        "proof": "1990–91 Eastern 8th ¤ Atlantic 3rd 39 43 .476 Lost first round to Chicago Bulls, 3–0[84] — Stu JacksonJohn MacLeod [85]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The New York Knicks were swept 4–0 by the Philadelphia 76ers in the 1982–83 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_York_Knicks_seasons",
+        "claim": "The New York Knicks were swept 4–0 by the Philadelphia 76ers in the 1982–83 playoffs!",
+        "proof": "1982–83 Eastern 5th ¤ Atlantic 4th 44 38 .537 Won first round vs. New Jersey Nets, 2–0Lost conference semifinals to Philadelphia 76ers, 4–0[69] — Hubie Brown [70]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The New York Knicks were swept 4–0 by the Philadelphia 76ers in the 1977–78 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_York_Knicks_seasons",
+        "claim": "The New York Knicks were swept 4–0 by the Philadelphia 76ers in the 1977–78 playoffs!",
+        "proof": "1977–78 Eastern 5th ¤ Atlantic 2nd 43 39 .524 Won first round vs. Cleveland Cavaliers, 2–0Lost conference semifinals to Philadelphia 76ers, 4–0[61] — Willis Reed [62]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-thunder": [
+      {
+        "text": "Fun fact. The Oklahoma City Thunder lost 4–2 to the Mavericks in the 2023–24 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Oklahoma_City_Thunder_seasons",
+        "claim": "The Oklahoma City Thunder lost 4–2 to the Mavericks in the 2023–24 playoffs!",
+        "proof": "2023–24 2023–24 Western 1st Northwest 1st 57 25 .695 — Won First round (Pelicans) 4–0 Lost Conference semifinals (Mavericks) 4–2 Mark Daigneault (COY)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Oklahoma City Thunder lost 4–3 to the Rockets in the 2019–20 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Oklahoma_City_Thunder_seasons",
+        "claim": "The Oklahoma City Thunder lost 4–3 to the Rockets in the 2019–20 first round!",
+        "proof": "2019–20[j] 2019–20 Western 5th Northwest 2nd 44 28 .611 1.5 Lost First round (Rockets) 4–3",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Oklahoma City Thunder lost 4–1 to the Trail Blazers in the 2018–19 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Oklahoma_City_Thunder_seasons",
+        "claim": "The Oklahoma City Thunder lost 4–1 to the Trail Blazers in the 2018–19 first round!",
+        "proof": "2018–19 2018–19 Western 6th Northwest 4th 49 33 .598 5 Lost First round (Trail Blazers) 4–1",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Oklahoma City Thunder lost 4–2 to the Jazz in the 2017–18 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Oklahoma_City_Thunder_seasons",
+        "claim": "The Oklahoma City Thunder lost 4–2 to the Jazz in the 2017–18 first round!",
+        "proof": "2017–18 2017–18 Western 4th Northwest 2nd 48 34 .585 1 Lost First round (Jazz) 4–2",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Oklahoma City Thunder lost 4–1 to the Rockets in the 2016–17 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Oklahoma_City_Thunder_seasons",
+        "claim": "The Oklahoma City Thunder lost 4–1 to the Rockets in the 2016–17 first round!",
+        "proof": "2016–17 2016–17 Western 6th Northwest 2nd 47 35 .573 4 Lost First round (Rockets) 4–1 Russell Westbrook (MVP)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-magic": [
+      {
+        "text": "Fun fact. The Orlando Magic were swept 4–0 by the Pistons in the 2006–07 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Orlando_Magic_seasons",
+        "claim": "The Orlando Magic were swept 4–0 by the Pistons in the 2006–07 playoffs!",
+        "proof": "2006–07 2006–07 Eastern 8th Southeast 3rd 40 42 .488 4 Lost First round (Pistons) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Orlando Magic were swept 4–0 by the Bulls in the 1995–96 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Orlando_Magic_seasons",
+        "claim": "The Orlando Magic were swept 4–0 by the Bulls in the 1995–96 playoffs!",
+        "proof": "1995–96 1995–96 Eastern 2nd Atlantic 1st 60 22 .732 — Won First round (Pistons) 3–0 Won Conference semifinals (Hawks) 4–1 Lost Conference finals (Bulls) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Orlando Magic were swept 4–0 by the Rockets in the 1994–95 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Orlando_Magic_seasons",
+        "claim": "The Orlando Magic were swept 4–0 by the Rockets in the 1994–95 playoffs!",
+        "proof": "1994–95 1994–95 Eastern 1st Atlantic 1st 57 25 .695 — Won First round (Celtics) 3–1 Won Conference semifinals (Bulls) 4–2 Won Conference finals (Pacers) 4–3 Lost NBA Finals (Rockets) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Orlando Magic were swept 3–0 by the Pacers in the 1993–94 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Orlando_Magic_seasons",
+        "claim": "The Orlando Magic were swept 3–0 by the Pacers in the 1993–94 playoffs!",
+        "proof": "1993–94 1993–94 Eastern 4th Atlantic 2nd 50 32 .610 7 Lost First round (Pacers) 3–0 Brian Hill",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Orlando Magic lost 4–1 to the Celtics in the 2024–25 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Orlando_Magic_seasons",
+        "claim": "The Orlando Magic lost 4–1 to the Celtics in the 2024–25 first round!",
+        "proof": "2024–25 2024–25 Eastern 7th Southeast 1st 41 41 .500 — Lost First round (Celtics) 4–1",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-76ers": [
+      {
+        "text": "Fun fact. The Philadelphia 76ers were swept 4–0 by the Celtics in the 2019–20 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Philadelphia_76ers_seasons",
+        "claim": "The Philadelphia 76ers were swept 4–0 by the Celtics in the 2019–20 playoffs!",
+        "proof": "2019–20[f] 2019–20 NBA Eastern 6th Atlantic 3rd 43 30 .589 10.5 Lost First round (Celtics) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Philadelphia 76ers were swept 4–0 by the Pacers in the 1998–99 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Philadelphia_76ers_seasons",
+        "claim": "The Philadelphia 76ers were swept 4–0 by the Pacers in the 1998–99 playoffs!",
+        "proof": "1998–99[d] 1998–99 NBA Eastern 6th Atlantic 3rd 28 22 .560 5 Won First round (Magic) 3–1Lost conference semifinals (Pacers) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Philadelphia 76ers were swept 3–0 by the Knicks in the 1988–89 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Philadelphia_76ers_seasons",
+        "claim": "The Philadelphia 76ers were swept 3–0 by the Knicks in the 1988–89 playoffs!",
+        "proof": "1988–89 1988–89 NBA Eastern 7th Atlantic 2nd 46 36 .561 6 Lost First round (Knicks) 3–0 Jim Lynam",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Philadelphia 76ers lost 4–2 to the Knicks in the 2023–24 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Philadelphia_76ers_seasons",
+        "claim": "The Philadelphia 76ers lost 4–2 to the Knicks in the 2023–24 first round!",
+        "proof": "2023–24 2023–24 NBA Eastern 7th Atlantic 3rd 47 35 .573 17 Lost First round (Knicks) 4–2 Tyrese Maxey (MIP, SPOR) Nick Nurse",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Philadelphia 76ers lost 4–3 to the Celtics in the 2022–23 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Philadelphia_76ers_seasons",
+        "claim": "The Philadelphia 76ers lost 4–3 to the Celtics in the 2022–23 playoffs!",
+        "proof": "2022–23 2022–23 NBA Eastern 3rd Atlantic 2nd 54 28 .659 3 Won First round (Nets) 4–0 Lost conference semifinals (Celtics) 4–3 Joel Embiid (MVP)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-suns": [
+      {
+        "text": "Fun fact. The Phoenix Suns were swept 4–0 by the Timberwolves in the 2023–24 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Phoenix_Suns_seasons",
+        "claim": "The Phoenix Suns were swept 4–0 by the Timberwolves in the 2023–24 playoffs!",
+        "proof": "2023–24NBAWestern6thPacific2nd4933.5982Lost First round (Timberwolves) 4–0Frank Vogel",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Phoenix Suns were swept 3–0 by the Trail Blazers in the 1998–99 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Phoenix_Suns_seasons",
+        "claim": "The Phoenix Suns were swept 3–0 by the Trail Blazers in the 1998–99 playoffs!",
+        "proof": "1998–99[b]NBAWestern7thPacific3rd2723.5408Lost First round (Trail Blazers) 3–0[27]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Phoenix Suns were swept 4–0 by the Lakers in the 1988–89 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Phoenix_Suns_seasons",
+        "claim": "The Phoenix Suns were swept 4–0 by the Lakers in the 1988–89 playoffs!",
+        "proof": "1988–89NBAWestern3rdPacific2nd5527.6712Won First round (Nuggets) 3–0 Won conference semifinals (Warriors) 4–1 Lost conference finals (Lakers) 4–0[17]Eddie Johnson (SIX) Kevin Johnson (MIP)Cotton Fitzsimmons (COY) Jerry Colangelo (EOY)Cotton Fitzsimmons",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Phoenix Suns were swept 3–0 by the Lakers in the 1984–85 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Phoenix_Suns_seasons",
+        "claim": "The Phoenix Suns were swept 3–0 by the Lakers in the 1984–85 playoffs!",
+        "proof": "1984–85NBAWestern8thPacific3rd3646.43926Lost First round (Lakers) 3–0[16]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Phoenix Suns were swept 4–0 by the Lakers in the 1981–82 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Phoenix_Suns_seasons",
+        "claim": "The Phoenix Suns were swept 4–0 by the Lakers in the 1981–82 playoffs!",
+        "proof": "1981–82NBAWestern5thPacific3rd4636.56111Won First round (Nuggets) 2–1 Lost conference semifinals (Lakers) 4–0[13]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-trailblazers": [
+      {
+        "text": "Fun fact. The Portland Trail Blazers were swept 4–0 by the Warriors in the 2018–19 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Portland_Trail_Blazers_seasons",
+        "claim": "The Portland Trail Blazers were swept 4–0 by the Warriors in the 2018–19 playoffs!",
+        "proof": "2018–19 Western 3rd ¤ Northwest 2nd 53 29 .646 1 Won first round vs. Thunder, 4–1Won conference semifinals vs. Nuggets, 4–3Lost conference finals vs. Warriors, 4–0 Damian Lillard (JWKC)[97] [34]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Portland Trail Blazers were swept 4–0 by the Pelicans in the 2017–18 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Portland_Trail_Blazers_seasons",
+        "claim": "The Portland Trail Blazers were swept 4–0 by the Pelicans in the 2017–18 playoffs!",
+        "proof": "2017–18 Western 3rd ¤ Northwest 1st ^ 49 33 .598 — Lost first round vs. Pelicans, 4–0 — [96]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Portland Trail Blazers were swept 4–0 by the Warriors in the 2016–17 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Portland_Trail_Blazers_seasons",
+        "claim": "The Portland Trail Blazers were swept 4–0 by the Warriors in the 2016–17 playoffs!",
+        "proof": "2016–17 Western 8th ¤ Northwest 3rd 41 41 .500 10 Lost first round vs. Warriors, 4–0 — [95]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Portland Trail Blazers were swept 3–0 by the Lakers in the 2001–02 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Portland_Trail_Blazers_seasons",
+        "claim": "The Portland Trail Blazers were swept 3–0 by the Lakers in the 2001–02 playoffs!",
+        "proof": "2001–02 Western 6th ¤ Pacific 3rd 49 33 .598 12 Lost first round vs. Lakers, 3–0 — Maurice Cheeks [76]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Portland Trail Blazers were swept 3–0 by the Lakers in the 2000–01 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Portland_Trail_Blazers_seasons",
+        "claim": "The Portland Trail Blazers were swept 3–0 by the Lakers in the 2000–01 playoffs!",
+        "proof": "2000–01 Western 7th ¤ Pacific 4th 50 32 .610 6 Lost first round vs. Lakers, 3–0 — [75]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-kings": [
+      {
+        "text": "Fun fact. The Sacramento Kings were swept 4–0 by the Lakers in the 2000–01 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Sacramento_Kings_seasons",
+        "claim": "The Sacramento Kings were swept 4–0 by the Lakers in the 2000–01 playoffs!",
+        "proof": "2000–01NBAWestern3rdPacific2nd5527.6721Won First round (Suns) 3–1Lost conference semifinals (Lakers) 4–0Geoff Petrie (EOY)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Sacramento Kings were swept 3–0 by the Rockets in the 1985–86 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Sacramento_Kings_seasons",
+        "claim": "The Sacramento Kings were swept 3–0 by the Rockets in the 1985–86 playoffs!",
+        "proof": "1985–86NBAWestern7thMidwest5th3745.45114Lost First round (Rockets) 3–0Phil Johnson",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Sacramento Kings lost 4–3 to the Warriors in the 2022–23 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Sacramento_Kings_seasons",
+        "claim": "The Sacramento Kings lost 4–3 to the Warriors in the 2022–23 first round!",
+        "proof": "2022–23NBAWestern3rdPacific1st4834.585—Lost First round (Warriors) 4–3Mike Brown (COY)Monte McNair (EOY) Mike Brown",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Sacramento Kings lost 4–2 to the Spurs in the 2005–06 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Sacramento_Kings_seasons",
+        "claim": "The Sacramento Kings lost 4–2 to the Spurs in the 2005–06 first round!",
+        "proof": "2005–06NBAWestern8thPacific4th4438.53710Lost First round (Spurs) 4–2",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Sacramento Kings lost 4–1 to the SuperSonics in the 2004–05 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Sacramento_Kings_seasons",
+        "claim": "The Sacramento Kings lost 4–1 to the SuperSonics in the 2004–05 first round!",
+        "proof": "2004–05NBAWestern6thPacific2nd5032.61012Lost First round (SuperSonics) 4–1",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-spurs": [
+      {
+        "text": "Fun fact. The San Antonio Spurs were swept 4–0 by the Warriors in the 2016–17 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_San_Antonio_Spurs_seasons",
+        "claim": "The San Antonio Spurs were swept 4–0 by the Warriors in the 2016–17 playoffs!",
+        "proof": "2016–17 NBA Western 2nd Southwest 1st 61 21 .744 — Won First round (Grizzlies) 4–2Won conference semifinals (Rockets) 4–2Lost conference finals (Warriors) 4–0 —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The San Antonio Spurs were swept 4–0 by the Suns in the 2009–10 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_San_Antonio_Spurs_seasons",
+        "claim": "The San Antonio Spurs were swept 4–0 by the Suns in the 2009–10 playoffs!",
+        "proof": "2009–10 NBA Western 7th Southwest 2nd 50 32 .610 5 Won First round (Mavericks) 4–2Lost conference semifinals (Suns) 4–0[49] —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The San Antonio Spurs were swept 4–0 by the Lakers in the 2000–01 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_San_Antonio_Spurs_seasons",
+        "claim": "The San Antonio Spurs were swept 4–0 by the Lakers in the 2000–01 playoffs!",
+        "proof": "2000–01 NBA Western 1st Midwest 1st 58 24 .707 — Won First round (Timberwolves) 3–1Won conference semifinals (Mavericks) 4–1Lost conference finals (Lakers) 4–0[40] David Robinson (SPOR)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The San Antonio Spurs were swept 3–0 by the Suns in the 1991–92 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_San_Antonio_Spurs_seasons",
+        "claim": "The San Antonio Spurs were swept 3–0 by the Suns in the 1991–92 playoffs!",
+        "proof": "1991–92 NBA Western 5th Midwest 2nd 47 35 .573 8 Lost First round (Suns) 3–0[31] David Robinson (DPOY) Larry BrownBob Bass",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The San Antonio Spurs were swept 3–0 by the Lakers in the 1987–88 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_San_Antonio_Spurs_seasons",
+        "claim": "The San Antonio Spurs were swept 3–0 by the Lakers in the 1987–88 playoffs!",
+        "proof": "1987–88 NBA Western 8th Midwest 5th 31 51 .378 23 Lost First round (Lakers) 3–0[27] —",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-raptors": [
+      {
+        "text": "Fun fact. The Toronto Raptors were swept 4–0 by the Cavaliers in the 2017–18 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Toronto_Raptors_seasons",
+        "claim": "The Toronto Raptors were swept 4–0 by the Cavaliers in the 2017–18 playoffs!",
+        "proof": "2017–18NBAEastern1stAtlantic1st825923.720Won First round (Wizards) 4–2Lost conference semifinals (Cavaliers) 4–0Dwane Casey (COY)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Toronto Raptors were swept 4–0 by the Cavaliers in the 2016–17 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Toronto_Raptors_seasons",
+        "claim": "The Toronto Raptors were swept 4–0 by the Cavaliers in the 2016–17 playoffs!",
+        "proof": "2016–17NBAEastern3rdAtlantic2nd825131.622Won First round (Bucks) 4–2 Lost conference semifinals (Cavaliers) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Toronto Raptors were swept 4–0 by the Wizards in the 2014–15 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Toronto_Raptors_seasons",
+        "claim": "The Toronto Raptors were swept 4–0 by the Wizards in the 2014–15 playoffs!",
+        "proof": "2014–15NBAEastern4thAtlantic 1st824933.598Lost First round (Wizards) 4–0Lou Williams (SIX)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Toronto Raptors were swept 3–0 by the Knicks in the 1999–2000 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Toronto_Raptors_seasons",
+        "claim": "The Toronto Raptors were swept 3–0 by the Knicks in the 1999–2000 playoffs!",
+        "proof": "1999–2000NBAEastern6thCentral3rd824537.549Lost First round (Knicks) 3–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Toronto Raptors lost 4–2 to the 76ers in the 2021–22 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Toronto_Raptors_seasons",
+        "claim": "The Toronto Raptors lost 4–2 to the 76ers in the 2021–22 first round!",
+        "proof": "2021–22NBAEastern5thAtlantic3rd824834.585Lost First round (76ers) 4–2Scottie Barnes (ROY)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-jazz": [
+      {
+        "text": "Fun fact. The Utah Jazz were swept 4–0 by the Warriors in the 2016–17 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Utah_Jazz_seasons",
+        "claim": "The Utah Jazz were swept 4–0 by the Warriors in the 2016–17 playoffs!",
+        "proof": "2016–17NBAWestern5thNorthwest1st5131.622—Won First round (Clippers) 4–3 Lost conference semifinals (Warriors) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Utah Jazz were swept 4–0 by the Spurs in the 2011–12 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Utah_Jazz_seasons",
+        "claim": "The Utah Jazz were swept 4–0 by the Spurs in the 2011–12 playoffs!",
+        "proof": "2011–12NBA[11]Western8thNorthwest3rd3630.54511Lost First round (Spurs) 4–0Tyrone Corbin",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Utah Jazz were swept 4–0 by the Lakers in the 2009–10 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Utah_Jazz_seasons",
+        "claim": "The Utah Jazz were swept 4–0 by the Lakers in the 2009–10 playoffs!",
+        "proof": "2009–10NBAWestern5thNorthwest2nd5329.646—Won First round (Nuggets) 4–2 Lost conference semifinals (Lakers) 4–0",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Utah Jazz were swept 3–0 by the Warriors in the 1988–89 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Utah_Jazz_seasons",
+        "claim": "The Utah Jazz were swept 3–0 by the Warriors in the 1988–89 playoffs!",
+        "proof": "1988–89NBAWestern2ndMidwest1st5131.622—Lost First round (Warriors) 3–0Mark Eaton (DPOY)Karl Malone (ASG MVP)Thurl Bailey (JWKC)Frank LaydenJerry Sloan[6]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Utah Jazz lost 4–2 to the Mavericks in the 2021–22 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Utah_Jazz_seasons",
+        "claim": "The Utah Jazz lost 4–2 to the Mavericks in the 2021–22 first round!",
+        "proof": "2021–22NBAWestern5thNorthwest1st4933.598—Lost First round (Mavericks) 4–2",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "nba-wizards": [
+      {
+        "text": "Fun fact. The Washington Wizards were swept 4–0 by the Cavaliers in the 2006–07 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Washington_Wizards_seasons",
+        "claim": "The Washington Wizards were swept 4–0 by the Cavaliers in the 2006–07 playoffs!",
+        "proof": "2006–072006–07Eastern7thSoutheast2nd4141.5003Lost First round (Cavaliers) 4–0[25]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Washington Wizards were swept 4–0 by the Heat in the 2004–05 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Washington_Wizards_seasons",
+        "claim": "The Washington Wizards were swept 4–0 by the Heat in the 2004–05 playoffs!",
+        "proof": "2004–052004–05Eastern5thSoutheast2nd4537.54914Won First round (Bulls) 4–2 Lost conference semifinals (Heat) 4–0[23]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Washington Wizards were swept 3–0 by the Bulls in the 1996–97 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Washington_Wizards_seasons",
+        "claim": "The Washington Wizards were swept 3–0 by the Bulls in the 1996–97 playoffs!",
+        "proof": "1996–971996–97Eastern8thAtlantic4th4438.53717Lost First round (Bulls) 3–0[21]Jim LynamBob StaakBernie Bickerstaff",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Washington Wizards were swept 3–0 by the Pistons in the 1986–87 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Washington_Wizards_seasons",
+        "claim": "The Washington Wizards were swept 3–0 by the Pistons in the 1986–87 playoffs!",
+        "proof": "1986–871986–87Eastern6thAtlantic3rd4240.51217Lost First round (Pistons) 3–0[19]Kevin Loughery",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Washington Wizards lost 4–1 to the 76ers in the 2020–21 first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Washington_Wizards_seasons",
+        "claim": "The Washington Wizards lost 4–1 to the 76ers in the 2020–21 first round!",
+        "proof": "2020–212020–21Eastern8thSoutheast3rd3438.4727Lost First round (76ers) 4–1[31]",
+        "asOf": "historical",
+        "checkedOn": "2026-11-13"
+      }
+    ]
+  }
+}
