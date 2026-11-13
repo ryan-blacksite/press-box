@@ -97,6 +97,8 @@ export function createBundles(kv: KvStore | null, options: { dryRun: boolean }):
       if (!state) return null;
       const text = serializeBundle(league, state.teams);
       const key = bundleKey(league);
+      // FV2-234: rival facts (rivalfacts:<league>, shared/rivalfacts.ts) are never news. A story in the "Fun fact." voice means a fact got into the writer's path: stop, do not store it.
+      if (/"(?:headline|summary)":"\s*Fun fact\./.test(text)) throw new Error(`${key}: a rival fact is in a story bundle; facts live only in their own item (rivalfacts:${league.toLowerCase()})`);
       if (!state.dirty || text === state.base) return { key, wrote: false, bytes: text.length };
       if (!options.dryRun && kv) {
         await kv.put(key, text);

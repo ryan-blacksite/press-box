@@ -9,7 +9,8 @@
     "probe": "vite-node src/probe.ts",
     "nfl": "vite-node src/nfl/main.ts",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "rivalfacts": "vite-node src/rivalfacts/main.ts"
   },
   "devDependencies": {
     "@types/node": "^20.14.0",
@@ -18,5 +19,7 @@
     "vite-node": "^1.6.0",
     "vitest": "^1.6.0"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  }
 }

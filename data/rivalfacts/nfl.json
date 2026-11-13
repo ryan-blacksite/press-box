@@ -1,0 +1,1510 @@
+{
+  "v": 1,
+  "league": "nfl",
+  "teams": {
+    "nfl-49ers": [
+      {
+        "text": "Fun fact. The 49ers have gone 2-14 four different times: 1978, 1979, 2004 and 2016!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/43059083/each-nfl-team-worst-record-year-happened",
+        "claim": "ESPN's worst-record list shows the 49ers at 2-14 in 1978, 1979, 2004 and 2016 (four seasons).",
+        "proof": "San Francisco 49ers: 2-12 in 1963; 2-14 in 1978, 1979, 2004 and 2016",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 49ers led Super Bowl LIV 20-10 in the fourth quarter and still lost 31-20!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/news/chiefs-rally-once-again-to-defeat-49ers-win-sb-liv-0ap3000001100762",
+        "claim": "San Francisco led 20-10 in the last quarter of Super Bowl LIV and lost 31-20.",
+        "proof": "down, 20-10, in the last quarter ... defeating the 49ers, 31-20, in Super Bowl LIV",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 49ers led the Lions 24-7 at halftime of their 1957 playoff game and still lost 31-27!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/football-history/1957-playoff-game",
+        "claim": "49ers led Detroit 24-7 at halftime of the 12/22/57 playoff and lost 31-27.",
+        "proof": "The Niners held a convincing 24-7 halftime-lead over the Detroit Lions",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2018 49ers picked off just 2 passes all season, the NFL's fewest since 1960 until the 2025 Jets made none!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/47041259/new-york-jets-history-zero-interceptions",
+        "claim": "Since 1960 the fewest interceptions in a season was 2 (49ers, 2018); the 2025 Jets then finished with 0 (nfl.com 2025 team stats).",
+        "proof": "the record for fewest interceptions in a season is two (49ers, 2018).",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 49ers lost Super Bowl LVIII 25-22, only the second Super Bowl ever to go to overtime!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/news/what-we-learned-super-bowl-lviii-chiefs-49ers",
+        "claim": "SB LVIII ended 25-22 in OT, the second overtime Super Bowl in NFL history.",
+        "proof": "force the second overtime Super Bowl game in NFL history. ... 25-22 (OT)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-bears": [
+      {
+        "text": "Fun fact. The Bears once lost 14 games in a row, the longest losing streak in franchise history!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/38580358/bears-end-longest-skid-franchise-history-long-coming",
+        "claim": "The Bears' 14-game losing streak (2022-23) ended as the longest losing streak in franchise history.",
+        "proof": "ended the longest losing streak in franchise history (14th straight loss)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Bears lost a playoff game 16-15 to the Eagles when a 43-yard field goal hit the upright and the crossbar!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/news/cody-parkey-on-missed-fg-thought-i-hit-a-good-ball-0ap3000001008676",
+        "claim": "Bears lost 16-15 to the Eagles when a 43-yard attempt hit the left upright and the crossbar (the 'double doink', 2018 season playoff).",
+        "proof": "Bears fall 16-15 to Nick Foles and the Eagles; 43-yard attempt",
+        "asOf": "franchise history",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Bears' single-season passing record is 3,942 yards, so no Bears quarterback has ever reached 4,000 in a season!",
+        "sourceName": "Chicago Bears (official site)",
+        "sourceUrl": "https://www.chicagobears.com/news/by-the-numbers-bears-2025-season-stats-caleb-williams-ben-johnson",
+        "claim": "Bears single-season passing record through 2025 is 3,942 (< 4,000); ESPN separately says they were the only NFL franchise without a 4,000-yard passer.",
+        "proof": "Passing yards by Williams, a single season Bears record (3,942)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 1969 Bears went 1-13, the worst record in franchise history!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/43059083/worst-records-nfl-teams-season",
+        "claim": "ESPN lists Chicago's worst record as 1-13 in 1969.",
+        "proof": "1-13 in 1969",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Bears' first playoff win since 2011 did not arrive until the 2025 season!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/chicago-bears/team-history",
+        "claim": "In 2025 the Bears went 11-6, won the NFC North and recorded their first playoff victory since 2011 (31-27 over Green Bay, Jan. 10, 2026 per chicagobears.com).",
+        "proof": "the club's first playoff victory since 2011",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-bengals": [
+      {
+        "text": "Fun fact. The Bengals went 31 years without a playoff win, the longest drought in the NFL, before beating the Raiders in January 2022!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/blog/cincinnati-bengals/post/_/id/33667/bengals-win-first-playoff-game-in-31-years-set-the-table-for-a-run-at-afc-title",
+        "claim": "Bengals' Jan 2022 win over the Raiders was their first playoff win in 31 years, ending the NFL's longest playoff-win drought.",
+        "proof": "first playoff victory in 31 years; longest playoff win drought",
+        "asOf": "2021 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Bengals lost their three Super Bowls by just 5, 4 and 3 points!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/cincinnati-bengals/team-history",
+        "claim": "SB XVI 26-21 (5), SB XXIII 20-16 (4), SB LVI 23-20 (3).",
+        "proof": "lost 26-21; 20-16; 23-20",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Bengals made the playoffs five years in a row, 2011 through 2015, and lost in the Wild Card round every time!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/cincinnati-bengals/team-history",
+        "claim": "Five-year playoff stretch 2011-2015 ended with a Wild Card loss all five years.",
+        "proof": "losing in the Wild Card game all five years",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Bengals' worst record, 2-14, has happened twice, in both 2002 and 2019!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/43059083/worst-records-nfl-teams-season",
+        "claim": "ESPN lists Cincinnati's worst record as 2-14 in 2002 and 2019.",
+        "proof": "2-14 in 2002 and 2019",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Bengals went 14 straight seasons, 1991 to 2004, without a playoff trip, which is longer than some phone contracts!",
+        "sourceName": "Wikipedia: List of Cincinnati Bengals seasons",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Cincinnati_Bengals_seasons",
+        "claim": "Bengals missed the playoffs for fourteen seasons 1991-2004 (1991..2004 inclusive = 14).",
+        "proof": "during a fourteen-year span—1991 to 2004—the Bengals did not qualify for the playoffs",
+        "asOf": "2004",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-bills": [
+      {
+        "text": "Fun fact. The Bills lost four Super Bowls in a row to open the 1990s!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/news/bills-and-vikings-have-lost-4-super-bowls-apiece-could-they-meet-in-the-next-one",
+        "claim": "Bills lost four consecutive Super Bowls in the early 1990s.",
+        "proof": "lost four Super Bowls in a row to open the 1990s",
+        "asOf": "franchise history",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Bills missed the playoffs 17 straight years, 2000 through 2016, the NFL's longest drought at the time!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/blog/buffalo-bills/post/_/id/30699/bills-end-their-17-year-playoff-drought-and-the-rest-is-gravy",
+        "claim": "17-year drought from the 2000 season through 2016 (2016-2000+1=17); ESPN headline calls it the NFL's longest.",
+        "proof": "began with the 2000 season and extended through 2016",
+        "asOf": "2017",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the five seasons after 1966, the Bills won 13 games, lost 55 and tied 2!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/buffalo-bills/team-history",
+        "claim": "Bills went 13-55-2 over the five seasons following 1966 (13+55+2=70 games).",
+        "proof": "winning only 13 games while losing 55 and tying two in the next five seasons",
+        "asOf": "franchise history",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Bills lost the AFC Championship Game to the Chiefs in both the 2020 and 2024 seasons!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/47660266/",
+        "claim": "Bills lost AFC title games to Kansas City in the 2020 and 2024 seasons.",
+        "proof": "two AFC championship losses to the Kansas City Chiefs (2020, 2024 seasons)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the 2025 AFC divisional round, the Bills lost 33-30 in overtime to the Broncos!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/47660266/",
+        "claim": "The Bills lost 33-30 in overtime to the Denver Broncos in the AFC divisional round (2025 season).",
+        "proof": "lost 33-30 to the Denver Broncos in overtime",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-broncos": [
+      {
+        "text": "Fun fact. The Broncos' Super Bowl XLVIII began with a safety just 12 seconds in, the fastest score in Super Bowl history, and Denver lost 43-8!",
+        "sourceName": "Denver Broncos official site",
+        "sourceUrl": "https://www.denverbroncos.com/news/how-it-happened-super-bowl-xlviii-12566348",
+        "claim": "Super Bowl XLVIII opened with a safety 12 seconds in (fastest score in SB history); final 43-8 Seahawks.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Denver lost Super Bowl XXIV 55-10 to the 49ers, a 45-point gap that is the biggest margin in Super Bowl history!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/43772769/what-biggest-blowouts-super-bowl-history",
+        "claim": "55-10 = 45-point margin, topping ESPN's largest-margin Super Bowl list.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Dolphins scored 70 points on the Broncos in 2023, the most points Denver has ever allowed in a game!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/38484013/broncos-coaches-players-absolutely-embarrassed-70-20-loss",
+        "claim": "Dolphins beat Broncos 70-20 on Sep 24, 2023; 70 is the most the Broncos have ever surrendered.",
+        "proof": "(see source page; verified)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Broncos did not have a winning season until 1973, when they were already in their second decade!",
+        "sourceName": "Denver Broncos official site",
+        "sourceUrl": "https://www.denverbroncos.com/news/sacco-sez-broncos-record-in-super-bowl-era-remarkable-after-slow-start",
+        "claim": "Broncos' first winning season was 1973 (franchise began 1960).",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Broncos' first uniforms were bought secondhand in mustard and brown, and they burned the old ones at a public bonfire!",
+        "sourceName": "denverbroncos.com",
+        "sourceUrl": "https://www.denverbroncos.com/news/sacco-sez-how-the-orange-and-blue-began",
+        "claim": "Original colors were mustard and brown on secondhand uniforms; old ones burned at a public bonfire (1962 scrimmage). Page says 'what was left of' them, so text says old ones.",
+        "proof": "burned what was left of the old mustard and brown uniforms at a public bonfire",
+        "asOf": "1960-1962",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-browns": [
+      {
+        "text": "Fun fact. The 2017 Browns went 0-16, and the 2008 Lions are the only other team to go winless in a 16-game season!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/21926596",
+        "claim": "Browns 0-16 in 2017; only the 2008 Detroit Lions also went winless in a 16-game season.",
+        "proof": "only two teams to go winless in a 16-game season",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Browns have zero Super Bowl appearances but one winless season!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/39387513/which-nfl-teams-never-won-super-bowl",
+        "claim": "ESPN: Browns have more winless seasons (one) than Super Bowl appearances (zero); the 0-16 2017 season is the only winless one and 2025 added neither.",
+        "proof": "more winless seasons (one) than ... Super Bowl appearances combined (zero)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Browns made the playoffs in 2002, then missed them for 17 straight seasons until 2020!",
+        "sourceName": "Cleveland Browns (official site)",
+        "sourceUrl": "https://www.clevelandbrowns.com/team/history/year-by-year-results",
+        "claim": "Playoff column shows 0-1 in 2002, nothing 2003-2019 (17 seasons), then 1-1 in 2020.",
+        "proof": "2002 9-7 0-1; 2003-2019 none; 2020 11-5 1-1",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Since 1999, the Browns have had just 3 seasons with double-digit wins in 27 tries, through 2025!",
+        "sourceName": "Cleveland Browns (official site)",
+        "sourceUrl": "https://www.clevelandbrowns.com/team/history/year-by-year-results",
+        "claim": "1999-2025 = 27 seasons; 10+ wins only in 2007 (10-6), 2020 (11-5), 2023 (11-6).",
+        "proof": "10-6 2007; 11-5 2020; 11-6 2023; others under 10",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Since returning in 1999, the Browns have had 11 seasons with 4 or fewer wins, through 2025!",
+        "sourceName": "Cleveland Browns (official site)",
+        "sourceUrl": "https://www.clevelandbrowns.com/team/history/year-by-year-results",
+        "claim": "Seasons with <=4 wins: 1999(2), 2000(3), 2004(4), 2006(4), 2008(4), 2011(4), 2013(4), 2015(3), 2016(1), 2017(0), 2024(3) = 11.",
+        "proof": "2-14,3-13,4-12x5,3-13,1-15,0-16,3-14 = 11 seasons",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-buccaneers": [
+      {
+        "text": "Fun fact. The Bucs started their franchise by losing a league-record 26 games in a row!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/tampa-bay-buccaneers/team-history",
+        "claim": "Tampa Bay lost 26 consecutive games from 1976 to 1977, a league record, before first win on 12/11/77.",
+        "proof": "After losing a league-record 26 consecutive games, the Bucs broke into the win column",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Bucs once had 14 straight losing seasons, which was an NFL record!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/photos/mind-blowing-stats-for-the-tampa-bay-buccaneers-0ap3000000497937",
+        "claim": "Tampa Bay's losing seasons run reached 14 straight (NFL record) before a 10-6 year in 1997.",
+        "proof": "an NFL-record 14 straight",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Bucs were shut out in their first two games ever, 43-0 combined!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/photos/mind-blowing-stats-for-the-tampa-bay-buccaneers-0ap3000000497937",
+        "claim": "The 1976 opener and second game were both shutouts, 43-0 combined.",
+        "proof": "1976 opener and second game were both shutouts, 43-0 point deficit",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Bucs failed to reach the end zone in 11 of their first 28 games!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/photos/mind-blowing-stats-for-the-tampa-bay-buccaneers-0ap3000000497937",
+        "claim": "Tampa Bay failed to reach the end zone in 11 of its first 28 games.",
+        "proof": "failed to reach the end zone in 11 of its first 28 games",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Through the 2025 season, the Bucs have lost 140 more games than they have won, 466 losses to 326 wins!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/tampa-bay-buccaneers/team-facts",
+        "claim": "All-time record 326-466-1 at start of 2026 season; 466 - 326 = 140.",
+        "proof": "All-time record at the start of the 2026 season: 326-466-1.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-cardinals": [
+      {
+        "text": "Fun fact. The Cardinals went 0-10 in 1943, then merged with the Steelers in 1944 and went 0-10 again!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/43059083/worst-records-nfl-teams-season",
+        "claim": "Cardinals were 0-10 in both 1943 and 1944; in 1944 they merged with the Steelers (Card-Pitt) because of wartime player losses.",
+        "proof": "0-10 in 1943 and 1944; merged to form Card-Pitt",
+        "asOf": "franchise history",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. After winning the 1947 title, the Cardinals did not win another playoff game until 1998!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/arizona-cardinals/team-history",
+        "claim": "The 1947 championship win was the team's last playoff victory until a 20-7 win over the Dallas Cowboys in 1998.",
+        "proof": "last playoff victory until a 20-7 win over the Dallas Cowboys",
+        "asOf": "1998",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2025 Cardinals started 2-0, then went 1-14 the rest of the way!",
+        "sourceName": "Wikipedia (2025 Arizona Cardinals season)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_Arizona_Cardinals_season",
+        "claim": "2025 record 3-14; wins were Wk1 W 20-13, Wk2 W 27-22, Wk9 W 27-17; so after 2-0 they went 1-14 (3-2=1 win, 17-2=15 games, 15-1=14 losses).",
+        "proof": "Week 1 W 20-13, Week 2 W 27-22, Week 9 W 27-17; final record 3-14",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Cardinals led Super Bowl XLIII 23-20 with under three minutes left and still lost 27-23!",
+        "sourceName": "Arizona Cardinals (official site)",
+        "sourceUrl": "https://www.azcardinals.com/news/cardinals-steelers-seconds-from-a-super-bowl-43-win",
+        "claim": "Cardinals led the Steelers 23-20 with under three minutes left in Super Bowl XLIII and lost 27-23.",
+        "proof": "less than three minutes left; 23-20 lead; 27-23",
+        "asOf": "franchise history",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Cardinals missed a division title by just half a game in both 1964 and 1968!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/arizona-cardinals/team-history",
+        "claim": "The St. Louis Cardinals fell one-half game short of divisional honors in both 1964 and 1968.",
+        "proof": "fell one-half game short both in 1964 and 1968",
+        "asOf": "franchise history",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-chargers": [
+      {
+        "text": "Fun fact. The Chargers went 1-15 in 2000 and finished dead last in the AFC West!",
+        "sourceName": "Wikipedia (List of Los Angeles Chargers seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Chargers_seasons",
+        "claim": "2000 record 1-15-0, 5th in AFC West.",
+        "proof": "Their only Super Bowl appearance was in 1994",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Chargers went 8 straight seasons (1996 to 2003) without a winning record!",
+        "sourceName": "Wikipedia (List of Los Angeles Chargers seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Chargers_seasons",
+        "claim": "1996 8-8, 1997 4-12, 1998 5-11, 1999 8-8, 2000 1-15, 2001 5-11, 2002 8-8, 2003 4-12 = 8 seasons, none above .500.",
+        "proof": "Their only Super Bowl appearance was in 1994",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Chargers have made exactly one Super Bowl since 1960, and it was a 49-26 loss, as of the 2025 season!",
+        "sourceName": "Wikipedia (List of Los Angeles Chargers seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Chargers_seasons",
+        "claim": "Only 1994 lists a Super Bowl (XXIX, lost 26-49); no other season through 2025 does.",
+        "proof": "Their only Super Bowl appearance was in 1994",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Since 1960 the Chargers have won 12 playoff games and lost 21, as of the 2025 season!",
+        "sourceName": "Wikipedia (List of Los Angeles Chargers seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Chargers_seasons",
+        "claim": "Postseason-games-only total 1960-2025 is 12 wins, 21 losses.",
+        "proof": "Their only Super Bowl appearance was in 1994",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In their two most recent playoff losses (after 2024 and 2025), the Chargers scored just 15 points combined!",
+        "sourceName": "Wikipedia (List of Los Angeles Chargers seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Chargers_seasons",
+        "claim": "2024 Wild Card lost 12-32 and 2025 Wild Card lost 3-16; 12+3 = 15 points.",
+        "proof": "Their only Super Bowl appearance was in 1994",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-chiefs": [
+      {
+        "text": "Fun fact. The Chiefs led the Colts 38-10 in a 2013 playoff game and still lost 45-44!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/recap/_/gameId/340104011",
+        "claim": "Chiefs led 38-10 in the third quarter; Colts won 45-44.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (2013 season)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Chiefs went 50 years between Super Bowl trips, from the 1969 season to the 2019 season!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://nfl.com/news/story/0ap3000001097750/article/chiefs-down-titans-to-make-it-to-1st-sb-in-50-years",
+        "claim": "Chiefs returned to the Super Bowl in 2019 for the first time since the 1969 season.",
+        "proof": "first time since the 1969 season",
+        "asOf": "permanent",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Chiefs went from January 1994 to the 2015 playoffs between postseason wins, losing 8 playoff games in a row!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/news/kansas-city-chiefs-dominate-texans-in-houston-0ap3000000620265",
+        "claim": "Jan 2016 win broke a streak of eight straight playoff losses; previous win Jan 16, 1994.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Chiefs went scoreless until late in the third quarter of Super Bowl LIX and lost 40-22 with a three-peat on the line!",
+        "sourceName": "Kansas City Chiefs official site",
+        "sourceUrl": "https://www.chiefs.com/news/chiefs-fall-to-eagles-40-22-in-super-bowl-lix",
+        "claim": "Chiefs lost 40-22 and were shut out until late in the third quarter, ending a three-peat bid.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (2024 season)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The three-time reigning AFC champion Chiefs missed the 2025 playoffs, their first miss since 2014!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/news/three-time-reigning-afc-champion-chiefs-officially-eliminated-from-playoff-contention",
+        "claim": "Chiefs eliminated in Week 15 of 2025; first missed postseason since 2014.",
+        "proof": "(see source page; verified)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-colts": [
+      {
+        "text": "Fun fact. The 1981 Colts allowed 533 points in 16 games, more than 33 a game, which is an NFL record!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/page/32for32x171226/worst-nfl-teams-seasons-ever-history-all-32-franchises",
+        "claim": "1981 Colts (2-14) allowed 533 points; 533/16 = 33.3 per game; ESPN says it is the NFL record.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (1981 season)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Colts went 13-1, then lost Super Bowl III 16-7 to the Jets in a famous upset!",
+        "sourceName": "Indianapolis Colts official site",
+        "sourceUrl": "https://www.colts.com/team/history/by-the-decade/1960s",
+        "claim": "Colts won the division at 13-1 and lost Super Bowl III 16-7 to the Jets.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2011 Colts lost their first 13 games, won in game 14, and finished 2-14!",
+        "sourceName": "Indianapolis Colts official site",
+        "sourceUrl": "https://www.colts.com/news/colts-season-in-review-2011-10271296",
+        "claim": "2011 Colts started 0-13, first win in 14th game, final 2-14.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (2011 season)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2025 Colts started 8-2 and still missed the playoffs, which only 3 teams have done since 1990!",
+        "sourceName": "Indianapolis Colts official site",
+        "sourceUrl": "https://www.colts.com/news/5-colts-things-digesting-how-colts-went-from-8-2-to-missing-playoffs-in-2025",
+        "claim": "Since 1990 three teams have started 8-2 and missed the playoffs, including the 2025 Colts.",
+        "proof": "(see source page; verified)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2005 Colts started 13-0 and finished 14-2, then lost 21-18 to the Steelers in the divisional round!",
+        "sourceName": "Indianapolis Colts official site",
+        "sourceUrl": "https://www.colts.com/news/colts-season-in-review-2005-10269976",
+        "claim": "2005 Colts opened 13-0, finished 14-2, lost the divisional playoff 21-18 to Pittsburgh.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (2005 season)",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-commanders": [
+      {
+        "text": "Fun fact. Washington lost the 1940 NFL Championship Game 73-0, the most decisive victory in NFL history!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/football-history/football-history/1940-1959/1940",
+        "claim": "The Bears beat Washington 73-0 in the 12/8/1940 NFL Championship Game, called the most decisive victory in NFL history.",
+        "proof": "defeated the Redskins 73-0 in the NFL Championship Game, December 8.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Washington went 1-12-1 in 1961, the worst record in franchise history!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/43059083/each-nfl-team-worst-record-year-happened",
+        "claim": "ESPN lists the franchise's worst record as 1-12-1 in 1961.",
+        "proof": "Washington Commanders: 1-12-1 in 1961",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Washington went 15 years between winning records, until 1969!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/washington-commanders/team-history",
+        "claim": "In 1969 the franchise posted its first winning record in 15 years.",
+        "proof": "first winning record in 15 years",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Through the 2025 season, Washington has lost 14 more games than it has won all-time, 660 losses to 646 wins!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/washington-commanders/team-facts",
+        "claim": "All-time record 646-660-29 at start of 2026 season; 660 - 646 = 14.",
+        "proof": "All-time record (start of 2026 season): 646-660-29",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Washington's first regular-season game ever, in 1932, was a 14-0 loss to the Brooklyn Dodgers!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/washington-commanders/team-facts",
+        "claim": "The franchise's first game was a 14-0 loss to the Brooklyn Dodgers on 10/2/32.",
+        "proof": "A 14-0 loss to the Brooklyn Dodgers, 10/2/32.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-cowboys": [
+      {
+        "text": "Fun fact. The Cowboys went 0-11-1 in their very first season in 1960, so Dallas began with zero wins and one tie!",
+        "sourceName": "Dallas Cowboys official site",
+        "sourceUrl": "https://www.dallascowboys.com/news/cowboys-commemorate-team-s-60th-anniversary",
+        "claim": "The 1960 Cowboys finished 0-11-1 (no wins, one tie).",
+        "proof": "0-11-1 record were listed in the Western Conference standings",
+        "asOf": "permanent (1960 season)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. As of the 2025 season, the Cowboys, America's Team, have gone 30 seasons without a Super Bowl win!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/47506779/nfl-dallas-cowboys-jerry-jones-playoffs-dak-prescott",
+        "claim": "ESPN reports the Cowboys' Super Bowl drought has reached 30 seasons (article written after the 2025 season).",
+        "proof": "Super Bowl drought has reached 30 seasons",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Cowboys gave up 48 points to the Packers in the 2023 playoffs, the most they have ever allowed in a postseason game!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/recap/_/gameId/401547752",
+        "claim": "Packers beat Cowboys 48-32 in Jan 2024 wild card; 48 points is the franchise's most allowed in a playoff game (previous high 38).",
+        "proof": "most points the franchise has allowed in a postseason game",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. As of the 2025 season, the Cowboys have lost 7 straight divisional-round playoff games!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/35504400/san-francisco-49ers-grind-dallas-cowboys-defensive-struggle-advance-nfc-championship-game",
+        "claim": "The Jan 2023 loss to the 49ers was Dallas's seventh straight divisional-round loss; Dallas has not played another divisional-round game since (2023 wild-card exit, missed 2024 and 2025 playoffs).",
+        "proof": "loss to the 49ers was their seventh straight in the divisional round",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Cowboys went 12-5 three seasons in a row (2021-23), then missed the playoffs in both 2024 and 2025!",
+        "sourceName": "Dallas Cowboys official site",
+        "sourceUrl": "https://www.dallascowboys.com/news/cowboys-officially-eliminated-from-nfl-playoffs",
+        "claim": "Page (written Dec 2025) says 12-5 three straight years 2021-23, 7-10 in 2024, and a second straight year missing the playoffs in 2025.",
+        "proof": "for the second straight year, the Cowboys have now missed the playoffs",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-dolphins": [
+      {
+        "text": "Fun fact. The 1972 Dolphins went 14-0 in the regular season, but the 2007 Dolphins went 1-15!",
+        "sourceName": "Wikipedia (List of Miami Dolphins seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Miami_Dolphins_seasons",
+        "claim": "1972 regular season 14-0-0; 2007 regular season 1-15-0.",
+        "proof": "Won Wild Card Playoffs (Colts) 23–17 (OT)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the 1999 playoffs, the Dolphins lost 62-7 at Jacksonville!",
+        "sourceName": "Wikipedia (List of Miami Dolphins seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Miami_Dolphins_seasons",
+        "claim": "1999 divisional round loss 7-62 at Jaguars.",
+        "proof": "Won Wild Card Playoffs (Colts) 23–17 (OT)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. As of the 2025 season, the Dolphins have not won a playoff game since the 2000 season!",
+        "sourceName": "Wikipedia (List of Miami Dolphins seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Miami_Dolphins_seasons",
+        "claim": "Last playoff win is the 2000 wild card (23-17 OT); every later playoff row (2001, 2008, 2016, 2022, 2023) is a loss.",
+        "proof": "Won Wild Card Playoffs (Colts) 23–17 (OT)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In Super Bowl VI the Dolphins scored just 3 points and lost 24-3!",
+        "sourceName": "Wikipedia (List of Miami Dolphins seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Miami_Dolphins_seasons",
+        "claim": "1971 season: lost Super Bowl VI 3-24, so Miami scored 3.",
+        "proof": "Won Wild Card Playoffs (Colts) 23–17 (OT)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In their first four seasons (1966 to 1969), the Dolphins won just 15 games in total!",
+        "sourceName": "Wikipedia (List of Miami Dolphins seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Miami_Dolphins_seasons",
+        "claim": "3+4+5+3 = 15 wins in 1966-1969.",
+        "proof": "Won Wild Card Playoffs (Colts) 23–17 (OT)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-eagles": [
+      {
+        "text": "Fun fact. The Eagles' first regular-season game ever was a 56-0 loss to the Giants in 1933!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/philadelphia-eagles/team-facts",
+        "claim": "Eagles' first regular-season game was a 56-0 loss to the New York Giants on 10/15/33.",
+        "proof": "A 56-0 loss to the New York Giants, 10/15/33.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Eagles' first winning season came in 1943, when they merged with the Steelers for one year!",
+        "sourceName": "Philadelphia Eagles (team site)",
+        "sourceUrl": "https://www.philadelphiaeagles.com/news/the-steagles-an-unforgettable-1943-season",
+        "claim": "The 1943 Eagles-Steelers merged team went 5-4-1, the first time the Eagles were over .500 since founding in 1933.",
+        "proof": "It was the first time the Eagles had seen the other side of .500 since their founding in 1",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Eagles' first-ever draft pick was the very first player picked in NFL history, and he chose not to sign!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/philadelphia-eagles/team-facts",
+        "claim": "Eagles' first draft choice (first overall in the first NFL draft, 1936) chose not to sign.",
+        "proof": "was the first player chosen in the first NFL draft held in 1936. ... chose not to sign.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Eagles waited 20,859 days between championships before finally winning Super Bowl LII!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/blog/philadelphia-eagles/post/_/id/24384/foles-pederson-outduel-brady-belichick-for-eagles-first-super-bowl-title",
+        "claim": "ESPN says 20,859 days passed since the Eagles' last title before their Super Bowl LII win.",
+        "proof": "Fifty-eight years, 20,859 days, more than two generations.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Eagles won just 1 game in 1936 and just 1 game in 1940, going 1-11 and 1-10!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/43059083/each-nfl-team-worst-record-year-happened",
+        "claim": "ESPN lists the Eagles' worst records as 1-11 in 1936 and 1-10 in 1940.",
+        "proof": "Philadelphia Eagles: 1-11 in 1936; 1-10 in 1940",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-falcons": [
+      {
+        "text": "Fun fact. The Falcons led the Patriots 28-3 in Super Bowl LI and still lost!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/39387513/which-nfl-teams-never-won-super-bowl",
+        "claim": "Atlanta led New England 28-3 in the third quarter of Super Bowl LI and lost (34-28 in OT per ESPN's Brady MVP story).",
+        "proof": "held a 28-3 lead over the New England Patriots in the third quarter",
+        "asOf": "franchise history",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Falcons lost their first nine games ever before finally beating the Giants!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/atlanta-falcons/team-history",
+        "claim": "In their debut season (1966) the Falcons lost their first nine games before beating the New York Giants 27-16.",
+        "proof": "lost their first nine games before defeating the New York Giants",
+        "asOf": "franchise history",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Falcons did not post a winning season until 1971, their sixth year in the league!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/atlanta-falcons/team-history",
+        "claim": "First season was 1966; 1971 (7-6-1) was their first winning season; 1966 to 1971 inclusive = sixth season.",
+        "proof": "In 1971, the Falcons recorded their first winning season",
+        "asOf": "franchise history",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Falcons missed the playoffs eight straight seasons, 2018 through 2025!",
+        "sourceName": "Atlanta Falcons (official site)",
+        "sourceUrl": "https://www.atlantafalcons.com/news/falcons-eliminated-2025-nfl-postseason-playoffs",
+        "claim": "2025 was the Falcons' eighth straight season without a postseason berth; last trip was 2017 (2018-2025 = 8 seasons).",
+        "proof": "eighth consecutive season in which the Falcons did not make the postseason",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In their second season, 1967, the Falcons went 1-12-1, still the worst record in franchise history!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/43059083/worst-records-nfl-teams-season",
+        "claim": "ESPN lists Atlanta's worst record as 1-12-1 in 1967 (franchise's second season; 2025 season was not worse).",
+        "proof": "1-12-1 in 1967",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-giants": [
+      {
+        "text": "Fun fact. The 1966 Giants went 1-12-1 and finished dead last in the East!",
+        "sourceName": "Wikipedia (List of New York Giants seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_York_Giants_seasons",
+        "claim": "1966 record 1-12-1, 8th.",
+        "proof": "Lost Wild Card playoffs (Panthers) 0–23",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Giants won just 7 games in total across the 2024 and 2025 seasons (3 and 4)!",
+        "sourceName": "Wikipedia (List of New York Giants seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_York_Giants_seasons",
+        "claim": "2024 3-14-0 plus 2025 4-13-0 = 7 wins.",
+        "proof": "Lost Wild Card playoffs (Panthers) 0–23",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Giants lost three straight NFL Championship games, from 1961 to 1963!",
+        "sourceName": "Wikipedia (List of New York Giants seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_York_Giants_seasons",
+        "claim": "Lost NFL Championship in 1961 (0-37), 1962 (7-16), 1963 (10-14).",
+        "proof": "Lost Wild Card playoffs (Panthers) 0–23",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. From 1973 through 1980, the Giants never won more than 6 games in a season!",
+        "sourceName": "Wikipedia (List of New York Giants seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_York_Giants_seasons",
+        "claim": "Wins 1973-1980: 2,2,5,3,5,6,6,4; max 6; 8 seasons.",
+        "proof": "Lost Wild Card playoffs (Panthers) 0–23",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Giants lost a 2005 playoff game to the Panthers by a score of 23-0!",
+        "sourceName": "Wikipedia (List of New York Giants seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_York_Giants_seasons",
+        "claim": "2005 Wild Card loss 0-23 vs Panthers, a shutout.",
+        "proof": "Lost Wild Card playoffs (Panthers) 0–23",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-jaguars": [
+      {
+        "text": "Fun fact. As of the 2025 season, the Jaguars have never played in a Super Bowl!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/39387513/which-nfl-teams-never-won-super-bowl",
+        "claim": "ESPN: Jaguars have no Super Bowl appearances (page dated Oct 2026, through 2025 season).",
+        "proof": "(see source page; verified)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Jaguars led the Patriots 20-10 in the 2017 AFC title game and lost 24-20!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/recap/_/gameId/400999172",
+        "claim": "Jaguars led 20-10 early in the 4th quarter and lost 24-20.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (2017 season)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Jaguars once lost 20 games in a row, which got within 6 of the NFL record of 26!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/32417332/jacksonville-jaguars-end-20-game-losing-streak-last-second-field-goal",
+        "claim": "20-game losing streak; NFL record is Tampa Bay's 26; 26 - 20 = 6.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (ended Oct 2021)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 1999 Jaguars went 15-3, but all 3 of their losses came against the same team, the Titans!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/news/jaguars-dominated-in-1999-with-one-titan-ic-exception",
+        "claim": "15-3 overall (18 games) and Titans beat Jacksonville three times, so all 3 losses were to Tennessee.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (1999 season)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Jaguars missed the playoffs for 9 straight seasons, from 2008 through 2016!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/blog/nflnation/post/_/id/262427/a-lot-has-happened-between-jaguars-playoff-appearances",
+        "claim": "Last playoff trip was after 2007, 10 years before 2017's return, so 2008-2016 (9 seasons) were misses.",
+        "proof": "last time the Jaguars played in the postseason was after the 2007 season, 10 years ago",
+        "asOf": "permanent (ended 2017)",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-jets": [
+      {
+        "text": "Fun fact. The 2025 Jets made 0 interceptions all season, while the Seahawks made 18!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/stats/team-stats/defense/interceptions/2025/reg/all",
+        "claim": "2025 regular season team interceptions: Jets 0, Seahawks 18.",
+        "proof": "Jets | 0 | 0 | 0 | 0 ... Seahawks | 18 | 1 | 252 | 85T",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Jets missed the playoffs for a 15th straight season in 2025, and their last trip was in 2010!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com.au/nfl/story/_/id/42901068/longest-active-postseason-droughts-nfl-mlb-nba-nhl",
+        "claim": "Jets finished 2025 at 3-14 and missed the playoffs for a 15th consecutive year; last appearance was the 2010 season.",
+        "proof": "missed the playoffs for a 15th consecutive year; last postseason: 2010 AFC Championship Ga",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2025 Jets started 0-5 and were the last winless team left in the whole NFL!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/46510084/new-york-jets-0-5-start-winless-aaron-glenn",
+        "claim": "After 5 games of 2025 the Jets were 0-5 and the NFL's last winless team.",
+        "proof": "dreaded, one-team category: Last winless team in the NFL",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Jets went 1-15 in 1996, the worst record in their history!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/43059083/each-nfl-team-worst-record-year-happened",
+        "claim": "ESPN lists the Jets' worst record as 1-15 in 1996.",
+        "proof": "New York Jets: 1-15 in 1996",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Through the 2025 season, the Jets have lost 137 more games than they have won, 573 losses to 436 wins!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/new-york-jets/team-facts",
+        "claim": "All-time record 436-573-8 at start of 2026 season; 573 - 436 = 137.",
+        "proof": "All-time record (at start of 2026 season): 436-573-8",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-lions": [
+      {
+        "text": "Fun fact. The 2008 Lions became the first team in NFL history to finish a 16-game season 0-16, a perfect zero for 16!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/news/quick-take-lions-finish-season-winless-09000d5d80daef0e",
+        "claim": "2008 Lions went 0-16, the first 0-16 team.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (2008 season)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Lions lost 24 straight road games from 2001 to 2003, then lost 24 in a row on the road again later!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/blog/statsinfo/post/_/id/9749/lions-tie-own-road-losing-streak-mark",
+        "claim": "Lions lost 24 straight on the road in 2001-03 and later lost another 24 straight, tying their own record.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Lions went from the 1991 season to the 2023 season between playoff wins, the NFL's longest drought at the time!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/39310757/detroit-lions-win-wild-card-game-los-angeles-rams-matthew-stafford-jared-goff-puka-nacua-ford-field",
+        "claim": "Lions' last playoff win before Jan 2024 was the 1991 divisional round; the 2023 win ended the NFL's longest active drought.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (ended Jan 2024)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. As of the 2025 season, the Lions are one of only 4 NFL teams that have never played in a Super Bowl!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/39387513/which-nfl-teams-never-won-super-bowl",
+        "claim": "ESPN: Browns, Lions, Texans and Jaguars have never reached the Super Bowl (page dated Oct 2026, covering through 2025 season).",
+        "proof": "Browns, Lions, Texans, and Jaguars have never reached the big game",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Lions' last NFL title came in 1957, and as of the 2025 season they are still waiting for the next one!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/photos/longest-nfl-title-droughts-09000d5d8291835e",
+        "claim": "NFL.com lists the Lions' last NFL title as 1957; no title since through the 2025 season.",
+        "proof": "(see source page; verified)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-packers": [
+      {
+        "text": "Fun fact. The 1958 Packers went 1-10-1, which is the worst record in Green Bay history!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/43059083/each-nfl-team-worst-record-year-happened",
+        "claim": "ESPN lists the Packers' worst record as 1-10-1 in 1958.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (1958 season)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2011 Packers went 15-1, then lost 37-20 to the Giants in the playoffs!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/playoffs/2011/story/_/id/7466026/nfl-playoffs-uncharacteristic-loss-packers",
+        "claim": "2011 Packers were 15-1 and lost the divisional playoff game to the Giants 37-20.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (2011 season)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Packers led the Seahawks 16-0 at halftime of the 2014 NFC title game and still lost 28-22 in overtime!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://nfl.com/news/story/0ap3000000460239/article/seahawks-stun-packers-in-ot-headed-to-super-bowl",
+        "claim": "Green Bay led 16-0 at the half; Seattle won 28-22 in overtime.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (2014 season)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. As the No. 1 seed in 2021, the Packers lost 13-10 at home to the 49ers on a walk-off field goal!",
+        "sourceName": "Green Bay Packers official site",
+        "sourceUrl": "https://www.packers.com/news/packers-49ers-nfc-divisional-playoff-in-game-updates-2021-season",
+        "claim": "The top-seeded Packers lost 13-10 to the 49ers on a walk-off 45-yard field goal after a blocked punt tied it.",
+        "proof": "The 13-10 final in the NFC Divisional playoff sent No. 1-seeded Green Bay into the offseason",
+        "asOf": "permanent (2021 season)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the 2025 playoffs the Packers led the Bears 21-3 at halftime and still lost 31-27!",
+        "sourceName": "Green Bay Packers official site",
+        "sourceUrl": "https://www.packers.com/news/in-game-updates-nfc-wild-card-playoff-bears-2025-season",
+        "claim": "Packers led 21-3 at the half and lost 31-27 in the 2025-season NFC wild-card game.",
+        "proof": "Packers lead Bears 21-3 at halftime ... Packers lose to Bears in NFC Wild Card playoffs, 31-27",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-panthers": [
+      {
+        "text": "Fun fact. In 2001 the Panthers won their opener and then lost their next 15 games, finishing 1-15!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/39105315",
+        "claim": "2001 Panthers went 1-15: a 24-13 win at Minnesota, then 15 straight losses.",
+        "proof": "Carolina upset Vikings 24-13; fifteen consecutive losses later",
+        "asOf": "franchise history",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2015 Panthers went a league-best 15-1, then lost Super Bowl 50 to the Broncos 24-10!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/blog/carolina-panthers/post/_/id/33258/from-super-bowl-to-overhaul-in-4-years-panthers-pick-up-the-pieces",
+        "claim": "Panthers had a league-best 15-1 regular season in 2015 and lost Super Bowl 50 24-10 to Denver.",
+        "proof": "league-best 15-1; lost 24-10 to the Denver Broncos",
+        "asOf": "franchise history",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2023 Panthers finished with the NFL's worst record at 2-15!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/39267500",
+        "claim": "The 2023 Panthers finished 2-15, the NFL's worst record that season.",
+        "proof": "NFL-worst 2-15 record",
+        "asOf": "2023 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2025 Panthers won the NFC South and made the playoffs with an 8-9 record, a losing record!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/47504478/panthers-win-nfc-south-make-playoffs-falcons-edge-saints",
+        "claim": "Carolina clinched the division at 8-9 despite losing their final game and finishing with a losing record.",
+        "proof": "finished 8-9; won NFC South; losing record",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Panthers have reached the Super Bowl twice and are still waiting on their first Super Bowl win!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/39387513/which-nfl-teams-never-won-super-bowl",
+        "claim": "Panthers appeared in two Super Bowls and are on ESPN's list of teams that have never won one (as of 2025 season).",
+        "proof": "reached the Super Bowl twice",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-patriots": [
+      {
+        "text": "Fun fact. The 1990 Patriots went 1-15 and finished dead last in the AFC East!",
+        "sourceName": "Wikipedia (List of New England Patriots seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_England_Patriots_seasons",
+        "claim": "1990 record 1-15-0, 5th in AFC East.",
+        "proof": "reached their 12th Super Bowl",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2007 Patriots went 16-0 in the regular season and still lost the Super Bowl!",
+        "sourceName": "Wikipedia (List of New England Patriots seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_England_Patriots_seasons",
+        "claim": "2007 regular season 16-0-0, playoffs ended with Super Bowl XLII loss.",
+        "proof": "reached their 12th Super Bowl",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Patriots have won 6 Super Bowls but also lost 6 of them, as of the 2025 season!",
+        "sourceName": "Wikipedia (List of New England Patriots seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_England_Patriots_seasons",
+        "claim": "Losses: XX, XXXI, XLII, XLVI, LII, LX = 6.",
+        "proof": "reached their 12th Super Bowl",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Patriots went 4-13 in both 2023 and 2024!",
+        "sourceName": "Wikipedia (List of New England Patriots seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_England_Patriots_seasons",
+        "claim": "2023 4-13-0 and 2024 4-13-0.",
+        "proof": "reached their 12th Super Bowl",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Patriots went six straight seasons (1970 to 1975) without a winning record!",
+        "sourceName": "Wikipedia (List of New England Patriots seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_England_Patriots_seasons",
+        "claim": "1970 2-12, 71 6-8, 72 3-11, 73 5-9, 74 7-7, 75 3-11 = 6 seasons, none above .500.",
+        "proof": "reached their 12th Super Bowl",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-raiders": [
+      {
+        "text": "Fun fact. The Raiders went 13 straight seasons (2003 to 2015) without a single winning record!",
+        "sourceName": "Wikipedia (List of Las Vegas Raiders seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Las_Vegas_Raiders_seasons",
+        "claim": "2003-2015 is 13 seasons; best records were 8-8 (2010, 2011), none above .500.",
+        "proof": "2016 12-4-0 West, 2nd (wild card); 2015 7-9-0",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Raiders went 4-12 six different times in the 16 seasons from 2003 through 2018!",
+        "sourceName": "Wikipedia (List of Las Vegas Raiders seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Las_Vegas_Raiders_seasons",
+        "claim": "4-12 in 2003, 2005, 2007, 2012, 2013, 2018 = 6 times; 2003-2018 = 16 seasons.",
+        "proof": "2016 12-4-0 West, 2nd (wild card); 2015 7-9-0",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Raiders won just 7 games in total across the 2024 and 2025 seasons combined!",
+        "sourceName": "Wikipedia (List of Las Vegas Raiders seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Las_Vegas_Raiders_seasons",
+        "claim": "2024 4-13 plus 2025 3-14 = 4+3 = 7 wins.",
+        "proof": "2016 12-4-0 West, 2nd (wild card); 2015 7-9-0",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. From 2002 through 2025, the Raiders made the playoffs just 3 times, and their only playoff wins came back in 2002!",
+        "sourceName": "Wikipedia (List of Las Vegas Raiders seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Las_Vegas_Raiders_seasons",
+        "claim": "Playoff seasons 2002, 2016, 2021 only; 2016 and 2021 were wild-card losses; 2002 had 2 wins.",
+        "proof": "2016 12-4-0 West, 2nd (wild card); 2015 7-9-0",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Raiders' last Super Bowl trip ended in a 48-21 loss in Super Bowl XXXVII, and they have not been back since, as of 2025!",
+        "sourceName": "Wikipedia (List of Las Vegas Raiders seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Las_Vegas_Raiders_seasons",
+        "claim": "2002 season: lost Super Bowl XXXVII 21-48; no later season (2003-2025) lists a Super Bowl appearance.",
+        "proof": "2016 12-4-0 West, 2nd (wild card); 2015 7-9-0",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-rams": [
+      {
+        "text": "Fun fact. The Rams won just 6 games across 2007, 2008 and 2009 combined (3-13, 2-14, then 1-15)!",
+        "sourceName": "Wikipedia (List of Los Angeles Rams seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Rams_seasons",
+        "claim": "3+2+1 = 6 wins over 2007-2009.",
+        "proof": "Lost Divisional playoffs (at Redskins) 7–51",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Rams scored just 3 points in Super Bowl LIII, a 13-3 loss!",
+        "sourceName": "Wikipedia (List of Los Angeles Rams seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Rams_seasons",
+        "claim": "2018 season: lost Super Bowl LIII 3-13, so Rams scored 3.",
+        "proof": "Lost Divisional playoffs (at Redskins) 7–51",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Rams went 9 straight seasons (1990 to 1998) without a winning record!",
+        "sourceName": "Wikipedia (List of Los Angeles Rams seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Rams_seasons",
+        "claim": "1990 5-11, 91 3-13, 92 6-10, 93 5-11, 94 4-12, 95 7-9, 96 6-10, 97 5-11, 98 4-12 = 9 seasons, none winning.",
+        "proof": "Lost Divisional playoffs (at Redskins) 7–51",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Rams lost a 1983 playoff game to Washington by a score of 51-7!",
+        "sourceName": "Wikipedia (List of Los Angeles Rams seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Rams_seasons",
+        "claim": "1983 divisional playoff lost 7-51 at Washington (Redskins at the time).",
+        "proof": "Lost Divisional playoffs (at Redskins) 7–51",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Rams were shut out in two NFC Championship Games, losing 28-0 in 1978 and 24-0 in 1985!",
+        "sourceName": "Wikipedia (List of Los Angeles Rams seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Rams_seasons",
+        "claim": "1978 NFC Championship 0-28 vs Cowboys; 1985 NFC Championship 0-24 at Bears.",
+        "proof": "Lost Divisional playoffs (at Redskins) 7–51",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-ravens": [
+      {
+        "text": "Fun fact. In 2007 the Ravens lost a franchise-record nine straight games!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/page/32for32x171226/",
+        "claim": "The 2007 Ravens (5-11) lost a franchise-record nine straight games.",
+        "proof": "franchise-record nine straight games",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2000 Ravens had a five-game stretch without an offensive touchdown, and still won the Super Bowl!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/30776361/tales-baddest-defense-20th-anniversary-ravens-first-super-bowl-win",
+        "claim": "The 2000 Ravens, who went on to win their first Super Bowl, had a five-game touchdown drought by the offense.",
+        "proof": "0-for-October, failing to score a touchdown the entire month",
+        "asOf": "franchise history",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 14-win Ravens were the No. 1 seed in 2019, then lost their first playoff game 28-12 to the No. 6 seed!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://nfl.com/news/story/0ap3000001096068/article/derrick-henry-titans-stun-topseeded-ravens",
+        "claim": "Top-seeded 14-win Ravens lost 28-12 to the No. 6 seed Titans in the Divisional Round.",
+        "proof": "28-12 over top-seeded Ravens; 14-win team",
+        "asOf": "franchise history",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2025 Ravens were a preseason Super Bowl favorite and missed the playoffs at 8-9!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/47506780/pittsburgh-steelers-escape-baltimore-ravens-late-push-win-afc-north-title-week-18-playoffs",
+        "claim": "Ravens finished 8-9 in 2025 and missed the playoffs after being a preseason Super Bowl favorite.",
+        "proof": "preseason Super Bowl favorite to missing the playoffs; 8-9",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2025 Ravens started 1-5 and never won two straight games after Week 12!",
+        "sourceName": "Baltimore Ravens (official site)",
+        "sourceUrl": "https://www.baltimoreravens.com/news/ravens-underperformed-2025-steelers-loss",
+        "claim": "2025 Ravens went from 1-5 to 6-5 on a five-game win streak but never won two straight after Week 12.",
+        "proof": "never won two straight games after Week 12",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-saints": [
+      {
+        "text": "Fun fact. The Saints went their first 20 seasons without a winning record and finally got one in 1987!",
+        "sourceName": "Wikipedia (List of New Orleans Saints seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_Orleans_Saints_seasons",
+        "claim": "Page: no winning season until 1987, its 21st year; table 1967-1986 shows no record above .500.",
+        "proof": "Lost Wild Card playoffs (Vikings) 10–44",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 1980 Saints went 1-15!",
+        "sourceName": "Wikipedia (List of New Orleans Saints seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_Orleans_Saints_seasons",
+        "claim": "1980 record 1-15-0.",
+        "proof": "Lost Wild Card playoffs (Vikings) 10–44",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. As of 2025, the Saints' all-time regular-season record is 423 wins and 491 losses!",
+        "sourceName": "Wikipedia (List of New Orleans Saints seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_Orleans_Saints_seasons",
+        "claim": "All-time regular season 423-491-5 through 2025; more losses than wins.",
+        "proof": "Lost Wild Card playoffs (Vikings) 10–44",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Saints' very first playoff game, in 1987, ended in a 44-10 loss!",
+        "sourceName": "Wikipedia (List of New Orleans Saints seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_Orleans_Saints_seasons",
+        "claim": "1987 was the first playoff berth; lost Wild Card 10-44.",
+        "proof": "Lost Wild Card playoffs (Vikings) 10–44",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Saints have gone 3-13 three times: in 1996, 1999 and 2005!",
+        "sourceName": "Wikipedia (List of New Orleans Saints seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_New_Orleans_Saints_seasons",
+        "claim": "3-13-0 in 1996, 1999, 2005; no other 3-13 season.",
+        "proof": "Lost Wild Card playoffs (Vikings) 10–44",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-seahawks": [
+      {
+        "text": "Fun fact. The Seahawks won just 2 games in 1976 and just 2 games again in 1992!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/43059083/each-nfl-team-worst-record-year-happened",
+        "claim": "ESPN lists Seattle's worst records as 2-12 in 1976 and 2-14 in 1992.",
+        "proof": "Seattle Seahawks: 2-12 in 1976; 2-14 in 1992",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Seahawks did not reach the playoffs until their 8th season, in 1983!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/seattle-seahawks/team-facts",
+        "claim": "First season 1976; first playoff appearance 12/24/83, which is the 8th season (1976-1983).",
+        "proof": "First Season: 1976 ... First Playoff Appearance: ... 1983 AFC Wild Card game, 12/24/83.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2010 the Seahawks won their division at 7-9 and earned a home playoff game!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/30539329/below-500-division-champions-washington-navigating-road-seahawks-first-traveled",
+        "claim": "Seattle won the NFC West at 7-9 in 2010 and hosted a playoff game.",
+        "proof": "The Seattle Seahawks won the NFC West with a 7-9 record in 2010",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Seahawks lost Super Bowl XLIX 28-24 after passing, not running, on second-and-goal from the 1-yard line!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/news/seahawks-pete-carroll-explains-ill-fated-call-in-super-bowl-xli-0ap3000000467707",
+        "claim": "Seattle had 2nd-and-goal at the 1 with 26 seconds left, called a pass, and lost 28-24.",
+        "proof": "the Seahawks had second-and-goal at the 1 with 26 seconds remaining. ... Carroll called a ",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Seahawks did not have a winning season until 1978, their third season!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/seattle-seahawks/team-facts",
+        "claim": "First season 1976; first winning season 1978 (9-7), the third season.",
+        "proof": "First Season: 1976 ... First Winning Season: 1978 (9-7).",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-steelers": [
+      {
+        "text": "Fun fact. The Steelers won only 22 games in their first seven seasons!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/pittsburgh-steelers/team-history",
+        "claim": "Pittsburgh won 22 games over its first seven seasons (1933-1939).",
+        "proof": "The Pittsburgh eleven won only 22 games its first seven seasons.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Steelers' worst record ever was 0-10 in 1944, the year they were merged with the Chicago Cardinals!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/43059083/each-nfl-team-worst-record-year-happened",
+        "claim": "ESPN lists the Steelers' worst record as 0-10 in 1944; that year Pittsburgh was merged with the Cardinals (Card-Pitt), per PFHOF team history.",
+        "proof": "Pittsburgh Steelers: 0-10 in 1944",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Steelers' very first playoff game was a 21-0 loss to the Eagles!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/pittsburgh-steelers/team-facts",
+        "claim": "Steelers' first playoff appearance (12/21/47) was a 21-0 loss to the Eagles.",
+        "proof": "A 21-0 loss to the Philadelphia Eagles in the Eastern Division Playoff game, 12/21/47.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Steelers went their first 40 years without winning a championship of any kind!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/pittsburgh-steelers/team-history",
+        "claim": "The Steelers (founded 1933) won no championship of any kind in their first 40 years.",
+        "proof": "The Steelers struggled for their first 40 years without winning a championship of any kind",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Steelers went 9 straight seasons, 2017 through 2025, without winning a playoff game!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/47590417/texans-dominate-steelers-aaron-rodgers-afc-wild-card-playoff-game",
+        "claim": "After the Jan 2026 wild-card loss, the Steelers had gone nine consecutive seasons without a playoff win (last win Jan 2017); 2017-2025 = 9 seasons.",
+        "proof": "first head coach in franchise history to go nine consecutive seasons without a playoff win",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-texans": [
+      {
+        "text": "Fun fact. As of the 2025 season, the Houston Texans have never reached a conference championship game!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/39387513/which-nfl-teams-never-won-super-bowl",
+        "claim": "ESPN says the Texans have never reached a conference championship (page dated Oct 2026, through 2025 season).",
+        "proof": "(see source page; verified)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2013 Texans lost their last 14 games in a row and finished 2-14, which earned them the No. 1 pick!",
+        "sourceName": "Houston Texans official site",
+        "sourceUrl": "https://www.houstontexans.com/news/texans-tumble-at-tennessee-in-season-finale-12294614",
+        "claim": "Season-ending loss was the 14th consecutive; 2-14 gave Houston the first 2014 draft pick.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (2013 season)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the 2019 playoffs the Texans led the Chiefs 24-0 and still lost 51-31!",
+        "sourceName": "Houston Texans official site",
+        "sourceUrl": "https://www.houstontexans.com/news/rapid-reaction-texans-fall-51-31-to-chiefs-after-a-24-0-lead",
+        "claim": "Texans led 24-0 early in Kansas City and lost 51-31.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (2019 season)",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Texans missed the playoffs in each of their first 9 seasons!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/blog/statsinfo/post/_/id/35981/foster-defense-fuel-texans-first-playoff-win",
+        "claim": "Texans spent their first nine seasons without reaching the postseason.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Texans got shut out 30-0 in the 2015 playoffs by a Chiefs team that had lost 8 straight playoff games!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/news/kansas-city-chiefs-dominate-texans-in-houston-0ap3000000620265",
+        "claim": "Chiefs beat Texans 30-0 in the wild-card round, ending an eight-game Chiefs playoff losing streak.",
+        "proof": "(see source page; verified)",
+        "asOf": "permanent (2015 season)",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-titans": [
+      {
+        "text": "Fun fact. The Oilers-Titans franchise won just 1 game in both 1972 and 1973, going 1-13 twice in a row!",
+        "sourceName": "ESPN",
+        "sourceUrl": "https://www.espn.com/nfl/story/_/id/43059083/each-nfl-team-worst-record-year-happened",
+        "claim": "ESPN lists the Tennessee Titans franchise's worst record as 1-13 in 1972 and 1973 (as the Houston Oilers).",
+        "proof": "Tennessee Titans: 1-13 in 1972 and 1973",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 1962 Oilers lost the longest pro football game ever played, a six-quarter 20-17 defeat!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/tennessee-titans/team-history",
+        "claim": "The Oilers lost 20-17 to the Dallas Texans in 1962 in a six-quarter game, the longest ever played.",
+        "proof": "lost 20-17 to the Dallas Texans ... longest professional football game ever played",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Oilers went 24 years between division titles, from 1967 until 1991!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/tennessee-titans/team-history",
+        "claim": "Houston won its first division title in 24 years in 1991; prior title 1967 (team facts list 1960, 1961, 1962, 1967); 1991 - 24 = 1967.",
+        "proof": "The Oilers won their first divisional championship in 24 years in 1991",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2025 Titans went 3-14, tied for the worst record in the entire NFL!",
+        "sourceName": "NFL.com",
+        "sourceUrl": "https://www.nfl.com/standings/league/2025/reg",
+        "claim": "2025 standings: Cardinals, Raiders, Jets and Titans all 3-14, the NFL's lowest win total.",
+        "proof": "Tennessee Titans | 3-14-0 | 284 | 478 | -194",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Oilers-Titans franchise has made exactly 1 Super Bowl, and lost it 23-16 to the Rams!",
+        "sourceName": "Pro Football Hall of Fame",
+        "sourceUrl": "https://www.profootballhof.com/teams/tennessee-titans/team-facts",
+        "claim": "PFHOF lists the franchise's first Super Bowl appearance as XXXIV (a 23-16 loss) and its only AFC Championship as 1999.",
+        "proof": "A 23-16 loss to the St. Louis Rams in Super Bowl XXXIV. ... AFC Championship: 1999",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nfl-vikings": [
+      {
+        "text": "Fun fact. The Vikings have played in 4 Super Bowls and lost all 4, as of the 2025 season!",
+        "sourceName": "Wikipedia (List of Minnesota Vikings seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Minnesota_Vikings_seasons",
+        "claim": "Lost Super Bowls IV (1969), VIII (1973), IX (1974), XI (1976); no other Super Bowl appearance through 2025.",
+        "proof": "Lost Conference Championship (Falcons) 27–30 (OT)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 1998 Vikings went 15-1, then lost the NFC Championship Game in overtime, 30-27!",
+        "sourceName": "Wikipedia (List of Minnesota Vikings seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Minnesota_Vikings_seasons",
+        "claim": "1998 record 15-1; lost conference game to Falcons 27-30 (OT).",
+        "proof": "Lost Conference Championship (Falcons) 27–30 (OT)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Vikings lost the 2000 NFC Championship Game by a score of 41-0!",
+        "sourceName": "Wikipedia (List of Minnesota Vikings seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Minnesota_Vikings_seasons",
+        "claim": "2000 season conference championship loss at Giants 0-41.",
+        "proof": "Lost Conference Championship (Falcons) 27–30 (OT)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Vikings' 13-4 season in 2022 and 14-3 season in 2024 both ended with a wild-card playoff loss!",
+        "sourceName": "Wikipedia (List of Minnesota Vikings seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Minnesota_Vikings_seasons",
+        "claim": "2022 13-4 lost wild card 24-31; 2024 14-3 lost wild card 9-27.",
+        "proof": "Lost Conference Championship (Falcons) 27–30 (OT)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Vikings have gone 3-13 twice, in 1984 and again in 2011!",
+        "sourceName": "Wikipedia (List of Minnesota Vikings seasons; Pro Football Reference blocked)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Minnesota_Vikings_seasons",
+        "claim": "1984 3-13-0 and 2011 3-13-0; no other 3-13 season 1961-2025.",
+        "proof": "Lost Conference Championship (Falcons) 27–30 (OT)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-12"
+      }
+    ]
+  }
+}
