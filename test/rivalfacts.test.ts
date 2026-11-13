@@ -1,9 +1,10 @@
 /**
  * FV2-234: the rival facts dataset and its separation from the news stories.
  * 1. data/rivalfacts/nfl.json: 5 facts for each of the 32 NFL teams, in the "Fun fact." voice, each with its source page.
- *    data/rivalfacts/nhl.json (FV2-235): the same for the 32 NHL teams, checked the same way, plus teams-only / no-stat-line guards.
- * 2. Facts and stories never mix: a fact is never in a story bundle (bundle:nfl), the writer's code never touches the facts, and the
- *    facts Worker never reads a bundle.
+ * 2. FV2-239: data/rivalfacts/mlb.json does the same for the 30 MLB teams, in its own `rivalfacts:mlb` item.
+ *    FV2-235: data/rivalfacts/nhl.json does the same for the 32 NHL teams, plus teams-only / no-stat-line guards.
+ * 3. Facts and stories never mix: a fact is never in a story bundle (bundle:nfl, bundle:mlb), the writer's code never touches the
+ *    facts, and the facts Worker never reads a bundle.
  */
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -31,20 +32,6 @@ const NFL = TEAMS.filter((team) => team.league === 'NFL');
 const NFL_IDS = NFL.map((team) => team.id);
 const file: RivalFactsFile = JSON.parse(readFileSync(rivalFactsFile('nfl'), 'utf8'));
 const allFacts = Object.entries(file.teams).flatMap(([teamId, facts]) => facts.map((fact) => ({ teamId, fact })));
-
-const NHL = TEAMS.filter((team) => team.league === 'NHL');
-const NHL_IDS = NHL.map((team) => team.id);
-const nhlFile: RivalFactsFile = JSON.parse(readFileSync(rivalFactsFile('nhl'), 'utf8'));
-const nhlFacts = Object.entries(nhlFile.teams).flatMap(([teamId, facts]) => facts.map((fact) => ({ teamId, fact })));
-// How fans say a club's name when it is not the last word of the full name (the NFL test does the same for Bucs/Oilers).
-const NHL_NICKNAMES: Record<string, string[]> = {
-  'nhl-bluejackets': ['Jackets', 'Blue Jackets'],
-  'nhl-redwings': ['Wings', 'Red Wings'],
-  'nhl-mapleleafs': ['Leafs', 'Maple Leafs'],
-  'nhl-goldenknights': ['Golden Knights', 'Knights'],
-  'nhl-canadiens': ['Habs'],
-  'nhl-ducks': ['Mighty Ducks'],
-};
 
 function memoryKv(initial: Record<string, string> = {}): KvStore & { data: Map<string, string>; gets: string[]; puts: string[] } {
   const data = new Map(Object.entries(initial));
@@ -108,6 +95,95 @@ describe('the NFL rival facts file', () => {
     expect(validateRivalFacts(bad, NFL_IDS).some((problem) => problem.includes('sourceUrl must be an https'))).toBe(true);
   });
 });
+
+const MLB = TEAMS.filter((team) => team.league === 'MLB');
+const MLB_IDS = MLB.map((team) => team.id);
+const mlbFile: RivalFactsFile = JSON.parse(readFileSync(rivalFactsFile('mlb'), 'utf8'));
+const mlbFacts = Object.entries(mlbFile.teams).flatMap(([teamId, facts]) => facts.map((fact) => ({ teamId, fact })));
+
+describe('the MLB rival facts file', () => {
+  it('is publishable: 5 facts for each of the 30 MLB teams, nothing else', () => {
+    expect(MLB_IDS).toHaveLength(30);
+    expect(validateRivalFacts(mlbFile, MLB_IDS)).toEqual([]);
+    expect(mlbFacts).toHaveLength(150);
+  });
+
+  it('every fact is in the "Fun fact." voice and names its team', () => {
+    for (const { teamId, fact } of mlbFacts) {
+      const team = MLB.find((candidate) => candidate.id === teamId)!;
+      // "Boston Red Sox" -> "Red Sox"; others use the last word ("Diamondbacks", "Rangers").
+      const nickname = team.name.endsWith('Sox') ? team.name.split(' ').slice(-2).join(' ') : team.name.split(' ').slice(-1)[0];
+      expect(fact.text.startsWith(FACT_PREFIX), fact.text).toBe(true);
+      expect(
+        fact.text.includes(nickname) ||
+          (nickname === 'Athletics' && fact.text.includes("A's")) ||
+          (nickname === 'Guardians' && fact.text.includes('Indians')) ||
+          (nickname === 'Rangers' && fact.text.includes('Senators')) ||
+          (nickname === 'Nationals' && fact.text.includes('Nats')) ||
+          (nickname === 'Red Sox' && fact.text.includes('Sox')) ||
+          (nickname === 'White Sox' && fact.text.includes('Sox')) ||
+          fact.text.includes(team.name) ||
+          fact.text.includes(team.name.split(' ')[0]) ||
+          fact.text.includes(team.city),
+        `${teamId}: ${fact.text}`,
+      ).toBe(true);
+    }
+  });
+
+  it('every fact keeps its source page, the claim that was checked, a proof snippet and when it was checked', () => {
+    for (const { teamId, fact } of mlbFacts) {
+      expect(fact.sourceUrl, `${teamId}: ${fact.text}`).toMatch(/^https:\/\//);
+      expect(fact.sourceName.length).toBeGreaterThan(2);
+      expect(fact.claim.length).toBeGreaterThan(10);
+      expect(fact.proof.length).toBeGreaterThan(3);
+      expect(fact.checkedOn).toMatch(/^2026-11-\d\d$/);
+    }
+  });
+
+  it('has no fact twice', () => {
+    expect(new Set(mlbFacts.map(({ fact }) => fact.text)).size).toBe(mlbFacts.length);
+  });
+
+  it('rejects a file that is short, misses a team, or has a fact outside the voice', () => {
+    const copy = JSON.parse(JSON.stringify(mlbFile)) as RivalFactsFile;
+    copy.teams['mlb-tigers'].pop();
+    copy.teams['mlb-cubs'][0] = { ...copy.teams['mlb-cubs'][0], text: 'The Cubs are bad.' };
+    delete copy.teams['mlb-rays'];
+    const problems = validateRivalFacts(copy, MLB_IDS);
+    expect(problems).toContain('mlb-tigers: 4 facts, needs 5');
+    expect(problems).toContain('mlb-rays: no facts');
+    expect(problems.some((problem) => problem.startsWith('mlb-cubs[0]: text must start'))).toBe(true);
+    const bad = { ...copy, teams: { ...copy.teams, 'mlb-cubs': copy.teams['mlb-cubs'].map((fact: RivalFactEntry) => ({ ...fact, sourceUrl: 'http://example.com/x' })) } };
+    expect(validateRivalFacts(bad, MLB_IDS).some((problem) => problem.includes('sourceUrl must be an https'))).toBe(true);
+  });
+
+  it('the MLB facts publish to their own item, never the story bundle, and their payload keeps only text and source', async () => {
+    const kv = memoryKv({ [bundleKey('mlb')]: '{"stories":"untouched"}' });
+    expect(await publishRivalFacts('mlb', kv, { dryRun: true })).toMatchObject({ key: 'rivalfacts:mlb', wrote: false });
+    expect(kv.puts).toEqual([]);
+    expect(await publishRivalFacts('mlb', kv, { dryRun: false })).toMatchObject({ key: 'rivalfacts:mlb', wrote: true });
+    expect(kv.data.get(bundleKey('mlb'))).toBe('{"stories":"untouched"}');
+    expect(kv.gets.every((key) => key === 'rivalfacts:mlb')).toBe(true);
+    expect(() => loadRivalFacts('mlb', rivalFactsFile('mlb').replace('mlb.json', 'missing.json'))).toThrow();
+    const payload = toPublicPayload(mlbFile);
+    expect(Object.keys(payload.teams)).toEqual([...MLB_IDS].sort());
+    expect(Object.keys(payload.teams['mlb-cubs'][0]).sort()).toEqual(['source', 'text']);
+  });
+});
+
+const NHL = TEAMS.filter((team) => team.league === 'NHL');
+const NHL_IDS = NHL.map((team) => team.id);
+const nhlFile: RivalFactsFile = JSON.parse(readFileSync(rivalFactsFile('nhl'), 'utf8'));
+const nhlFacts = Object.entries(nhlFile.teams).flatMap(([teamId, facts]) => facts.map((fact) => ({ teamId, fact })));
+// How fans say a club's name when it is not the last word of the full name.
+const NHL_NICKNAMES: Record<string, string[]> = {
+  'nhl-bluejackets': ['Jackets', 'Blue Jackets'],
+  'nhl-redwings': ['Wings', 'Red Wings'],
+  'nhl-mapleleafs': ['Leafs', 'Maple Leafs'],
+  'nhl-goldenknights': ['Golden Knights', 'Knights'],
+  'nhl-canadiens': ['Habs'],
+  'nhl-ducks': ['Mighty Ducks'],
+};
 
 describe('the NHL rival facts file (FV2-235)', () => {
   it('is publishable: 5 facts for each of the 32 NHL teams, nothing else', () => {
@@ -298,7 +374,7 @@ describe('the facts Worker', () => {
   });
 });
 
-describe('the NHL facts stay apart from the news and are not published by this change (FV2-235)', () => {
+describe('the NHL facts stay apart from the news and are not served until the Worker is switched on (FV2-235)', () => {
   it('have their own key, a canonical public payload without the proof, and read back the same', () => {
     expect(rivalFactsKey('NHL')).toBe('rivalfacts:nhl');
     expect(rivalFactsKey('nhl')).not.toBe(bundleKey('nhl'));

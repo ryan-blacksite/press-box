@@ -1,0 +1,1416 @@
+{
+  "v": 1,
+  "league": "mlb",
+  "teams": {
+    "mlb-diamondbacks": [
+      {
+        "text": "Fun fact. The Diamondbacks were eliminated on the last day of the season — that's three straight Octobers without a playoff trip in the desert.",
+        "sourceName": "2026 Arizona Diamondbacks season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Arizona_Diamondbacks_season",
+        "claim": "Arizona missed the playoffs for a third straight season in 2026, eliminated on the final day of the regular season.",
+        "proof": "On September 27 (the last day of the season), the Diamondbacks were eliminated from playoff contention, and extending their drought of a playoff spot to three seasons.",
+        "asOf": "2026 season (completed)",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Arizona's 2023 pennant run ended in five quick games — Texas had the World Series wrapped up by November 1.",
+        "sourceName": "2023 World Series — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2023_World_Series",
+        "claim": "The Diamondbacks lost the 2023 World Series to the Texas Rangers in five games, ending on November 1.",
+        "proof": "The series began on October 27 and ended on November 1 with Texas winning in five games.",
+        "asOf": "2023 World Series",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Arizona's 2023 pennant came just two seasons removed from a 110-loss year that included an MLB-record 24 straight road losses.",
+        "sourceName": "2023 World Series — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2023_World_Series",
+        "claim": "Two seasons before the 2023 pennant, the Diamondbacks lost 110 games, including an MLB-record 24 consecutive road losses.",
+        "proof": "The Diamondbacks were just two seasons removed from a 110–loss season, which included an MLB-record 24 straight road losses.",
+        "asOf": "2023 season (referencing the 2021 season)",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 2024 the Diamondbacks won 89 games and missed the playoffs anyway — nudged out on a tiebreaker by Atlanta and the Mets.",
+        "sourceName": "2025 Arizona Diamondbacks season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_Arizona_Diamondbacks_season",
+        "claim": "The 2024 Diamondbacks finished 89–73 but missed the playoffs because they lost the tiebreaker to the Braves and Mets.",
+        "proof": "... season with a record of 89–73, an improvement on their 84–78 from 2023 ... However, they missed the playoffs due to losing the tiebreaker against the Atlanta Braves and New York Mets.",
+        "asOf": "2024 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Arizona's 2025 season was snuffed out by a loss to the Padres on September 26 — playoff hopes, gone.",
+        "sourceName": "2025 Arizona Diamondbacks season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_Arizona_Diamondbacks_season",
+        "claim": "The Diamondbacks were eliminated from playoff contention on September 26, 2025, with a loss to San Diego.",
+        "proof": "On September 26, with a loss to the San Diego Padres, the team was eliminated from playoff contention.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-braves": [
+      {
+        "text": "Fun fact. The Braves led the 2020 NLCS 3–1, before the Dodgers became the fourteenth team in postseason history to come back from a 3–1 series deficit.",
+        "sourceName": "2020 National League Championship Series - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2020_National_League_Championship_Series",
+        "claim": "The Braves blew a 3–1 series lead in the 2020 NLCS, which the Dodgers won in seven games.",
+        "proof": "The Dodgers defeated the Braves in seven games, winning their third National League pennant in four seasons. The Dodgers were the fourteenth team in postseason history to come back from a 3–1 series deficit.",
+        "asOf": "2020",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Yankees swept the 1999 Series in four games — their third straight Fall Classic win over the Braves franchise, who batted just .200.",
+        "sourceName": "1999 World Series - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/1999_World_Series",
+        "claim": "The Braves were swept 4–0 in the 1999 World Series by the Yankees, the Yankees' third straight Fall Classic win over the Braves franchise, and Atlanta batted .200 in the series.",
+        "proof": "The Yankees swept the 1999 Series in four games for their second consecutive title, third in four years, and 25th overall ... It was the Yankees' third straight defeat of the Braves franchise in the Fall Classic ... The powerhouse Braves batted just .200 in the 4-game Series.",
+        "asOf": "1999",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. One year after returning to the postseason, the Braves suffered a historic September collapse to miss the 2011 playoffs.",
+        "sourceName": "Atlanta Braves - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Atlanta_Braves",
+        "claim": "In 2011, the season after Bobby Cox's final 2010 season that saw the Braves return to the postseason, the Braves suffered a historic September collapse and missed the playoffs.",
+        "proof": "Bobby Cox's final year as manager in 2010 saw the Braves return to the postseason for the first time since 2005 ... The next season, the Braves suffered a historic September collapse to miss the postseason.",
+        "asOf": "2011",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. After winning their first division title in 1969, the Braves were promptly swept by the 'Miracle Mets' in the National League Championship Series.",
+        "sourceName": "Atlanta Braves - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Atlanta_Braves",
+        "claim": "In 1969 the Braves won their first division title, then were swept by the 'Miracle Mets' in the National League Championship Series.",
+        "proof": "After arriving in Atlanta in 1966, the Braves found success in 1969, winning the first National League West Division title with the onset of divisional play. In the National League Championship Series the Braves were swept by the \"Miracle Mets\".",
+        "asOf": "1969",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Braves' worst season ever came in 1935: a dismal 38–115 record.",
+        "sourceName": "Atlanta Braves - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Atlanta_Braves",
+        "claim": "The Braves finished the 1935 season with a dismal 38–115 record, the franchise's worst season.",
+        "proof": "The Braves finished the season with a dismal 38–115 record, marking the franchise's worst season.",
+        "asOf": "1935",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-orioles": [
+      {
+        "text": "Fun fact. The Orioles' last World Series appearance came in 1983 — followed by 14 consecutive losing seasons between 1998 and 2011. The 90s were rough.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltimore_Orioles",
+        "claim": "Orioles have not reached a World Series since 1983 and had 14 consecutive losing seasons 1998-2011",
+        "proof": "Since their last World Series appearance in 1983, the Orioles have struggled to sustain success, including suffering 14 consecutive losing seasons between 1998 and 2011.",
+        "asOf": "through 2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 1988 the Orioles lost the first 21 games of the season — the low point of a decline that began right after their 1983 World Series win.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltimore_Orioles",
+        "claim": "Orioles lost their first 21 games in 1988, at the end of a decline following the 1983 World Series win",
+        "proof": "After the 1983 World Series win, the Orioles experienced a decline, culminating in the 1988 season where they lost the first 21 games.",
+        "asOf": "1988 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2018 Orioles lost 115 games — the most in franchise history. Somebody check if the scoreboard still works.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltimore_Orioles",
+        "claim": "2018 Orioles lost 115 games, the most in franchise history",
+        "proof": "the 2018 season saw the Orioles lose 115 games, the most in franchise history",
+        "asOf": "2018 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2023 Orioles' \"successful season\" ended with the team losing three straight games to the Texas Rangers in the playoffs. Swept.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltimore_Orioles",
+        "claim": "2023 ALDS: Orioles lost three straight to Texas, a series sweep",
+        "proof": "the team's successful season ended in the postseason American League Division Series, with the Orioles losing three straight games to the Texas Rangers. The series sweep was the first time since the 2022 season that the Orioles had been swept in a series.",
+        "asOf": "2023 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. From 1901 through the end of 2026, the Orioles' all-time record is 9,274–10,253–110 (.475). Even the franchise's own history can't call them winners.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltimore_Orioles",
+        "claim": "Franchise all-time win-loss record 9,274-10,253-110 (.475) through end of 2026",
+        "proof": "From 1901 through the end of 2026, the franchise's overall win–loss record is 9,274–10,253–110 (.475).",
+        "asOf": "through 2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-redsox": [
+      {
+        "text": "Fun fact. Red Sox fans once endured an 86-year wait between World Series championships. Literally a lifetime of heartbreak before 2004.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+        "claim": "Red Sox endured an 86-year wait for their next World Series title, won in 2004",
+        "proof": "The Sox endured an 86-year wait before the team's sixth World Series championship in 2004.",
+        "asOf": "historical (1918-2004)",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In Game 6 of the 1986 World Series, the Shea Stadium scoreboard briefly congratulated the Red Sox as World Series champions. Famous last words.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+        "claim": "Shea Stadium scoreboard briefly congratulated Boston as champions during Game 6 of the 1986 World Series",
+        "proof": "A message even appeared briefly on the Shea Stadium scoreboard congratulating the Red Sox as World Series champions. After so many years of abject frustration, Red Sox fans around the world could taste victory.",
+        "asOf": "1986 World Series",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2011 Red Sox became the first team in MLB history to blow a 9-game lead in the division heading into September, going 7–20 in the final month.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+        "claim": "2011 Red Sox blew a 9-game September lead, went 7-20, missed the playoffs",
+        "proof": "In 2011, the Red Sox collapsed, becoming the first team in MLB history to blow a 9-game lead in the division heading into September, going 7–20 in the final month and failing again to make the playoffs.",
+        "asOf": "2011 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Fresh off the 2013 title, the Red Sox finished last in the AL East in 2014 (71–91) and again in 2015 (78–84). Champions to cellar in one year.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+        "claim": "Red Sox finished last in AL East in 2014 with 71-91 and again in 2015 with 78-84, right after the 2013 championship",
+        "proof": "Following the 2013 championship, the team finished last in the AL East during 2014 with a record of 71–91, and again in 2015 with a record of 78–84.",
+        "asOf": "2014-2015 seasons",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Red Sox finished last in their division in both 2022 and 2023 — with the exact same 78–84 record. Consistency at rock bottom.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+        "claim": "Red Sox finished last in the division in 2022 and 2023, both seasons 78-84",
+        "proof": "The 2022 season was much less successful, with the team finishing in last place within their division with a 78–84 record, the first losing record for the team in a 162-game season since 2015. In 2023, the Red Sox once again finished in last place in their division with a 78–84 record.",
+        "asOf": "2022-2023 seasons",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-cubs": [
+      {
+        "text": "Fun fact. The Cubs once went 108 years without a World Series title — a record drought in MLB that wasn't snapped until 2016.",
+        "sourceName": "Wikipedia – Chicago Cubs",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Cubs",
+        "claim": "The Cubs' 108-year World Series championship drought was a record drought in Major League Baseball and was ended in 2016.",
+        "proof": "the Cubs won the 2016 National League Championship Series and 2016 World Series, which ended a 71-year National League pennant drought and a 108-year World Series championship drought,[6] both of which are record droughts in Major League Baseball.[7][8]",
+        "asOf": "2016 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In the 2015 NLCS the Cubs were swept in four games by the Mets, keeping them from their first World Series since 1945.",
+        "sourceName": "Wikipedia – Chicago Cubs",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Cubs",
+        "claim": "The Cubs were swept in four games by the Mets in the 2015 NLCS and were unable to reach their first World Series since 1945.",
+        "proof": "However, they were swept in four games by the Mets and were unable to make it to their first World Series since 1945.[77]",
+        "asOf": "2015 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2019 Cubs lost nine straight games in late September, missed the playoffs entirely — the first time they'd failed to qualify since 2014.",
+        "sourceName": "Wikipedia – Chicago Cubs",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Cubs",
+        "claim": "A nine-game losing streak in late September 2019 contributed to the Cubs being eliminated from playoff contention — the first time they had failed to qualify since 2014.",
+        "proof": "The team's postseason chances were compromised after suffering a nine-game losing streak in late September.[97] The Cubs were eliminated from playoff contention on September 25, marking the first time the team had failed to qualify for the playoffs since 2014.[98]",
+        "asOf": "2019 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2026 Cubs went 89-73 and finished second in their division behind the Brewers — for the second year in a row.",
+        "sourceName": "Wikipedia – Chicago Cubs",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Cubs",
+        "claim": "In the 2026 season the Cubs finished 89-73, second in their division behind the Brewers for the second consecutive year.",
+        "proof": "The 2026 season saw the Cubs finish with a record of 89-73, placing second in their division behind the Brewers for the second year in a row.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2012 Cubs lost 101 games — their worst record since 1966.",
+        "sourceName": "Wikipedia – Chicago Cubs",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Cubs",
+        "claim": "The 2012 Cubs lost 101 games, their worst record since 1966.",
+        "proof": "Although the team had a dismal 2012 season, losing 101 games (the worst record since 1966), it was largely expected.",
+        "asOf": "2012 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-whitesox": [
+      {
+        "text": "Fun fact. The White Sox lost their 121st game in 2024 — the most losses in modern MLB history — and the record-breaker came against Detroit. You're welcome, Mets fans.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2024_Chicago_White_Sox_season",
+        "claim": "White Sox lost their 121st game of 2024 to Detroit, surpassing the 1962 Mets for most losses in modern MLB history.",
+        "proof": "On September 27, the White Sox lost their 121st game of the season to the Detroit Tigers, surpassing the 1962 New York Mets for the most losses in modern MLB history.",
+        "asOf": "2024 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Chicago dropped 21 straight games in 2024 — the first 21-game losing streak since the 1988 Orioles. That's a streak, not a slump.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2024_Chicago_White_Sox_season",
+        "claim": "White Sox lost 21 consecutive games in 2024; first team since the 1988 Orioles to endure a 21-game losing streak.",
+        "proof": "The streak continued, and on August 5, the White Sox lost their 21st consecutive game. This marked the first time since the 1988 Baltimore Orioles that a team endured a 21-game losing streak.",
+        "asOf": "2024 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. On August 17, 2024, the White Sox became the first team eliminated from playoff contention — the earliest such clinch since the divisional era began in 1969. Efficiency!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2024_Chicago_White_Sox_season",
+        "claim": "White Sox were the first team eliminated from playoff contention in 2024 (August 17), the earliest such elimination since the divisional era began in 1969.",
+        "proof": "On August 17, with their loss to the Houston Astros, the White Sox became the first team to be eliminated from playoff contention in 2024. This surpassed the 2018 Baltimore Orioles for the earliest clinch of missing the playoffs since the divisional era began in 1969.",
+        "asOf": "2024 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 2024 the Sox hit 100 losses on August 25 — the fastest any team has gotten there since the 1916 Athletics. Summer was just getting started.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2024_Chicago_White_Sox_season",
+        "claim": "White Sox lost their 100th game on August 25, 2024; fastest team to 100 losses since the 1916 Philadelphia Athletics.",
+        "proof": "on August 25, the White Sox became the fastest team since the 1916 Philadelphia Athletics to lose 100 games in a season when they lost to their division rival Detroit Tigers, dropping them to 31–100.",
+        "asOf": "2024 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The White Sox clinched their third consecutive losing season in August 2025. At least they're fast at clinching things.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_Chicago_White_Sox_season",
+        "claim": "White Sox clinched their third consecutive losing season in August 2025 (after a 1–0 loss on August 20).",
+        "proof": "Despite this, the team clinched their third consecutive losing season after a 1–0 loss on August 20 to the Atlanta Braves.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-reds": [
+      {
+        "text": "Fun fact. No MLB team has gone longer without winning a playoff series than the Reds — their last series win came back in 1995.",
+        "sourceName": "Wikipedia – Cincinnati Reds",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cincinnati_Reds",
+        "claim": "The Reds currently have the longest drought of not winning a playoff series of any MLB team, with their last series win coming in 1995.",
+        "proof": "currently have the longest drought of not winning a playoff series of any MLB team, with their last win coming in 1995.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Reds haven't won a World Series in 36 years — their last title came all the way back in 1990.",
+        "sourceName": "Wikipedia – MLB franchise postseason droughts",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Major_League_Baseball_franchise_postseason_droughts",
+        "claim": "The World Series championship droughts table lists the Reds at 36 years with their last title in 1990 (current through the 2026 season).",
+        "proof": "36 Cincinnati Reds 1990",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In the 2012 NLDS the Reds took a 2–0 lead, then lost three straight at home — the first NL team since the 1984 Cubs to lose a division series after leading 2–0.",
+        "sourceName": "Wikipedia – Cincinnati Reds",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cincinnati_Reds",
+        "claim": "In the 2012 NLDS the Reds led 2-0, then lost three straight at their home ballpark, becoming the first NL team since the 1984 Cubs to lose a division series after leading 2-0.",
+        "proof": "However, they lost three straight at their home ballpark, becoming the first National League team since the Chicago Cubs in 1984 to lose a division series after leading 2–0.",
+        "asOf": "2012 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Reds closed 2013 with six consecutive losses — including a wild-card playoff loss to the Pirates at PNC Park — and then fired Dusty Baker.",
+        "sourceName": "Wikipedia – Cincinnati Reds",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cincinnati_Reds",
+        "claim": "The Reds ended the 2013 season with six consecutive losses, including the NL wild-card loss to Pittsburgh at PNC Park, and then fired Dusty Baker.",
+        "proof": "Following six consecutive losses to close out the 2013 season, including a loss to the Pittsburgh Pirates at PNC Park in the National League wild-card playoff game, the Reds decided to fire Dusty Baker.",
+        "asOf": "2013 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Reds haven't won the NL Central since 2012 — a 14-year division-title drought.",
+        "sourceName": "Wikipedia – MLB franchise postseason droughts",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Major_League_Baseball_franchise_postseason_droughts",
+        "claim": "The division-champion droughts table lists the Reds at 14 years in the NL Central with their last division title in 2012 (current through the 2026 season).",
+        "proof": "14 Cincinnati Reds NL Central 2012",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-guardians": [
+      {
+        "text": "Fun fact. Cleveland's last World Series title came in 1948 — still the longest active championship drought among MLB's 30 teams. Ask a museum.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cleveland_Guardians",
+        "claim": "Guardians' World Series title drought dating to 1948 is the longest active among the 30 current MLB teams.",
+        "proof": "The team's World Series championship drought, dating to 1948, is the longest active among the 30 current Major League teams.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2016 Indians led the World Series 3–1, then lost Game 7, 8–7, in ten innings to the Cubs. Peak Cleveland.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2016_World_Series",
+        "claim": "Game 7 of the 2016 World Series was won by Chicago 8–7 in ten innings; the Cubs came back from a 3–1 series deficit (i.e., Cleveland led 3–1).",
+        "proof": "The deciding seventh game, won by Chicago 8–7 in ten innings, was the fifth World Series Game 7 to go into extra innings, and the first since 1997 … The Cubs became the first team to come back from a 3–1 deficit to win the Series since the 1985 Kansas City Royals.",
+        "asOf": "2016 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Cleveland lost the 1997 World Series on a Game 7 walk-off in extra innings — handing the Marlins their first-ever title. Salt, meet wound.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/1997_World_Series",
+        "claim": "Marlins beat the Indians 4–3 to win their first World Series; Game 7 was decided in extra innings on a walk-off single by Édgar Rentería.",
+        "proof": "The Marlins, who were underdogs, defeated the Indians, four games to three, to win their first World Series championship. Game 7 was decided in extra innings on a walk-off single hit by Édgar Rentería.",
+        "asOf": "1997 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Cleveland only won the 2025 AL Central when Detroit lost on the final day — then lost the Wild Card Series to those same Tigers, 2–1.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_American_League_Wild_Card_Series",
+        "claim": "Guardians won the AL Central when the Tigers lost on the final day; then the Tigers won the Wild Card Series 2–1 over Cleveland.",
+        "proof": "In the AL Central, the Guardians won, while the Tigers lost, giving Cleveland the AL Central title. … (3) Cleveland Guardians (AL Central champions) vs. (6) Detroit Tigers (third wild card): Tigers won the series, 2–1.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 1954 Indians won 111 games, then got swept in the World Series anyway. It's still the winningest season in franchise history. Yikes.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cleveland_Guardians",
+        "claim": "1954 Indians went 111–43 (winningest season in franchise history) and were swept in the World Series by the Giants.",
+        "proof": "The winningest season in franchise history came in 1954, when the Indians finished the season with a record of 111–43 (.721). … The team could not bring home the title, however, ultimately being upset by the Giants in a sweep.",
+        "asOf": "1954 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-rockies": [
+      {
+        "text": "Fun fact. The Rockies finished 2025 at 43–119, tying for the third-most losses in the modern era. Somewhere, the 2003 Tigers had company.",
+        "sourceName": "2025 Colorado Rockies season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_Colorado_Rockies_season",
+        "claim": "Colorado went 43–119 in 2025, tying for the third-most losses in the modern era (with the 2003 Tigers).",
+        "proof": "the Rockies finished the season with 43 wins and 119 losses, tying for the third-most losses in the modern era with the 2003 Detroit Tigers",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2025 Rockies posted a −424 run differential — the worst by any MLB team in the modern era, and the worst since the 1899 Cleveland Spiders.",
+        "sourceName": "2025 Colorado Rockies season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_Colorado_Rockies_season",
+        "claim": "Colorado's 2025 run differential of −424 is the worst by any MLB team in the modern era and the worst since the 1899 Cleveland Spiders.",
+        "proof": "The Rockies' −424 run differential is the worst by any MLB team in the modern era and the worst since the 1899 Cleveland Spiders.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Colorado lost 22 straight series, a major league record. Winning a series became a rare collectible in Denver.",
+        "sourceName": "2025 Colorado Rockies season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_Colorado_Rockies_season",
+        "claim": "The Rockies lost 22 consecutive series in 2024–2025, a major league record.",
+        "proof": "The Rockies lost a major league-record 22 straight series dating back to the previous September.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 2025 the Rockies became the first team since their own 1999 squad to give up 1,000 runs in a season. Tradition runs deep.",
+        "sourceName": "2025 Colorado Rockies season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_Colorado_Rockies_season",
+        "claim": "The 2025 Rockies allowed at least 1,000 runs, the first team to do so since the 1999 Rockies.",
+        "proof": "the Rockies became the first team since their 1999 team to give up at least 1,000 runs to their opponents in a season.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Rockies opened 2025 at 8–42 — the worst 50-game start in the era. Spring training apparently didn't take.",
+        "sourceName": "2025 Colorado Rockies season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_Colorado_Rockies_season",
+        "claim": "Colorado opened the 2025 season 8–42 (.160), the worst 50-game start in the era.",
+        "proof": "the Rockies opened to an 8–42 (.160) record through their first 50 games, marking the worst 50-game start in the era",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-tigers": [
+      {
+        "text": "Fun fact. The 2003 Tigers went 43–119 — the most losses in AL history — and came within one loss of the 1962 Mets' all-time mark. A masterpiece of futility.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2003_Detroit_Tigers_season",
+        "claim": "2003 Tigers finished 43–119: most losses in American League history and one loss short of the 1962 Mets' record.",
+        "proof": "the team finished with a record of 43–119, which surpassed the 1916 Philadelphia Athletics for the most losses in American League history (though not for the worst winning percentage) and came within one loss of tying the 1962 Mets of the National League for the most losses in modern major league history at the time.",
+        "asOf": "2003 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2003 Tigers were swept 21 times and won exactly eight series all season. Eight. That's a sweep collection, not a schedule.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2003_Detroit_Tigers_season",
+        "claim": "2003 Tigers were swept 21 times and had only eight series victories of their own.",
+        "proof": "They were swept a total of 21 times while notching only eight series victories (by any margin) of their own.",
+        "asOf": "2003 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. By August 30, 2003, Detroit had already lost 100 games for the second straight season. Consistency is the Tigers' superpower.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2003_Detroit_Tigers_season",
+        "claim": "Tigers had lost 100 games for the second consecutive season by August 30, 2003.",
+        "proof": "On August 30, after a 5–2 loss to the White Sox, the Tigers had lost 100 games for the second straight season",
+        "asOf": "2003 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2025 Tigers went 7–17 in September and gave the division lead to Cleveland — a team that had been 15.5 games behind them in July.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_Detroit_Tigers_season",
+        "claim": "Tigers went 7–17 in September 2025 and gave up their division lead to Cleveland, a team 15.5 games behind them in early July.",
+        "proof": "the Tigers faltered severely in the second half, going 28–37 since the All-Star Game and only 7–17 in September. They gave up their division lead to the Cleveland Guardians, a team that was 15.5 games behind them in early July",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Detroit lost the 2025 ALDS in five games — the exact same ALDS exit as 2024. Déjà vu, Motor City.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_Detroit_Tigers_season",
+        "claim": "Tigers lost the 2025 ALDS in five games, repeating their 2024 ALDS result.",
+        "proof": "Detroit repeated their 2024 ALDS performance, losing the series in five games.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-astros": [
+      {
+        "text": "Fun fact. The Astros' first-ever World Series appearance, 2005, ended in a sweep — the White Sox dispatched them in four straight.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Houston_Astros",
+        "claim": "Verified on the Houston Astros Wikipedia page: their first World Series appearance (2005) ended in a sweep by the White Sox.",
+        "proof": "culminating in their first World Series appearance in 2005 where they were swept by the Chicago White Sox.",
+        "asOf": "2005 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Astros lost more than 100 games three years in a row, ending with a franchise-worst 51–111 and a 15-game season-ending losing streak.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Houston_Astros",
+        "claim": "Verified on the Houston Astros Wikipedia page (2013 season section): three straight 100-loss seasons, 51–111 franchise-worst record, season-ending 15-game losing streak.",
+        "proof": "The Astros finished the season with a 51–111 record (a franchise-worst) with a season-ending 15-game losing streak, again surpassing their worst record from the previous season. The team finished 45 games behind the division winner Oakland Athletics, further adding to their futility. This marked three consecutive years that the Astros had lost more than 100 games in a single season.",
+        "asOf": "2013 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Houston's first World Series title, 2017, came with controversy and backlash from fans after the team was implicated in a sign stealing scandal.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Houston_Astros",
+        "claim": "Verified on the Houston Astros Wikipedia page: the 2017 World Series win (their first championship) drew controversy and backlash after the team was implicated in a sign stealing scandal.",
+        "proof": "During this era, the Astros won the 2017 World Series, their first championship, against the Los Angeles Dodgers; however, this win drew controversy and backlash from fans after the Astros were implicated in a sign stealing scandal.",
+        "asOf": "2017 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2019 World Series: the Astros went 0-4 at home against the Nationals, only winning the three games they played in Washington.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Houston_Astros",
+        "claim": "Verified on the Houston Astros Wikipedia page: lost the 2019 World Series in seven games, losing all four home games while winning three in Washington.",
+        "proof": "However, they lost the 2019 World Series to the Washington Nationals in seven games, taking three games in Washington but losing all four of their games at home.",
+        "asOf": "2019 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Astros didn't post their first winning record until 1972 — and their first-ever playoff appearance didn't come until 1980.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Houston_Astros",
+        "claim": "Verified on the Houston Astros Wikipedia page: first winning record in 1972, first playoff appearance in 1980.",
+        "proof": "The Astros posted their first winning record in 1972 and made the playoffs for the first time in 1980",
+        "asOf": "1980 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-royals": [
+      {
+        "text": "Fun fact. Kansas City went 28 consecutive seasons (1986–2013) without a single playoff berth. Grandparents raised entire kids in that drought.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kansas_City_Royals",
+        "claim": "Royals missed the postseason for 28 consecutive seasons from 1986 to 2013, one of the longest wild-card-era droughts.",
+        "proof": "For 28 consecutive seasons (1986–2013), the Royals did not qualify to play in the MLB postseason, one of the longest postseason droughts during baseball's current wild-card era.",
+        "asOf": "2013 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. From 1995 to 2012, the Royals had exactly one winning season: 2003. One. Frame it.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kansas_City_Royals",
+        "claim": "Royals had only one winning season (2003) from 1995 to 2012.",
+        "proof": "The team remained competitive throughout the early 1990s, but then had only one winning season (2003) from 1995 to 2012.",
+        "asOf": "2012 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2019 Royals' 59–103 record was one game BETTER than their 2018 record. Improvement, Royals style.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kansas_City_Royals",
+        "claim": "Royals finished the 2019 season at 59–103, one game better than their 2018 record.",
+        "proof": "The Royals finished the 2019 season one game better than 2018, at 59–103.",
+        "asOf": "2019 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2023 Royals went 56–106, tying the worst winning percentage in franchise history, and were mathematically out in August for the eighth straight year.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2023_Kansas_City_Royals_season",
+        "claim": "Royals eliminated from playoff contention August 29, 2023 (eighth consecutive season); 56–106 tied the lowest winning percentage (.346) in franchise history.",
+        "proof": "They were eliminated from playoff contention for the eighth consecutive season on August 29. Their 56–106 record tied the 2005 season for the lowest winning percentage (.346) in franchise history.",
+        "asOf": "2023 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Royals lost the 2014 World Series finale by one run, 3–2, with the potential tying run standing on third base. Ninety feet of heartbreak.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2014_World_Series",
+        "claim": "Giants won the 2014 World Series final game 3–2; Royals' Gordon reached third base as the potential tying run.",
+        "proof": "The Giants won the final game, 3–2, thanks to timely hitting, including the game-winning RBI by Michael Morse to score Pablo Sandoval. … which allowed Gordon to reach third base as the potential tying run",
+        "asOf": "2014 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-angels": [
+      {
+        "text": "Fun fact. The Angels have not appeared in the postseason since 2014 — the longest active playoff drought of any MLB team.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Angels",
+        "claim": "Verified on the Los Angeles Angels Wikipedia page: no postseason appearance since 2014, the longest active playoff drought of any MLB team.",
+        "proof": "Despite this, they have not appeared in the postseason since 2014, the longest active playoff drought of any MLB team.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Angels became the last active MLB franchise to lose 100 games in a season, doing so in 2026. Better late than never?",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Angels",
+        "claim": "Verified on the Los Angeles Angels Wikipedia page: they became the last active MLB franchise to lose 100 games in a season, doing so in 2026.",
+        "proof": "The Angels also became the last active MLB franchise to lose 100 games in a season, doing so in 2026.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Angels' founding owner never saw them win a World Series in his 38 years as owner — he'd been dead four years when they finally won in 2002.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Angels",
+        "claim": "Verified on the Los Angeles Angels Wikipedia page: Gene Autry never saw the Angels win a World Series in 38 years as owner; they won in 2002, four years after his death.",
+        "proof": "The saying refers to the Angels' founder and previous owner, Gene Autry, who never saw his Angels win a World Series in his 38 years as owner. Years went by as the team experienced many losses just strikes away from American League pennants. By the time the Angels won their first World Series in 2002, Autry had been dead for four years.",
+        "asOf": "2002 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 1982 and 1986 the Angels came within one game of reaching the World Series — and in both years, they didn't get there.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Angels",
+        "claim": "Verified on the Los Angeles Angels Wikipedia page: came within one game of the World Series in both 1982 and 1986.",
+        "proof": "The Angels came within one game of reaching the World Series in 1982 and 1986.",
+        "asOf": "1986 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Angels' entire World Series résumé is a single entry: 2002, their only championship appearance to date. One and done.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Angels",
+        "claim": "Verified on the Los Angeles Angels Wikipedia page: the 2002 World Series is their only championship appearance to date.",
+        "proof": "they would eventually achieve their first Wild Card spot in 2002 for their first postseason appearance since 1986 and used this momentum to win the 2002 World Series, their only championship appearance to date.",
+        "asOf": "2002 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-dodgers": [
+      {
+        "text": "Fun fact. The Dodgers' three-peat hopes ended in a four-game NLCS sweep by the Brewers, who went on to win the World Series.",
+        "sourceName": "2026 Los Angeles Dodgers season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Los_Angeles_Dodgers_season",
+        "claim": "Los Angeles was swept in the 2026 NLCS by the eventual champion Milwaukee Brewers, ending their bid to three-peat.",
+        "proof": "where they were swept by the eventual World Series champion Milwaukee Brewers in four games, ending their hopes of three-peating the World Series",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Dodgers failed to become the first team to three-peat since the 2000 Yankees. Keep dreaming, LA.",
+        "sourceName": "2026 Los Angeles Dodgers season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Los_Angeles_Dodgers_season",
+        "claim": "The Dodgers did not become the first team to three-peat since the 2000 New York Yankees.",
+        "proof": "They failed to become the first team to three-peat since the 2000 New York Yankees",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 111-win Dodgers were upset in four games by the 89-win Padres in 2022 — 'the biggest disappointment in Dodger history.'",
+        "sourceName": "2022 National League Division Series — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2022_National_League_Division_Series",
+        "claim": "The 89-win Padres upset the 111-win Dodgers in four games in the 2022 NLDS; Bill Plaschke called it the biggest disappointment in Dodger history.",
+        "proof": "With the win, the 89-win Padres completed the upset of the 111-win Dodgers in four games. ... sportswriter Bill Plaschke called the Dodgers' series loss to the Padres \"the biggest disappointment in Dodger history.\"",
+        "asOf": "2022 NLDS",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 2017 the Dodgers went the distance in the World Series and still lost — Houston took it, four games to three.",
+        "sourceName": "2017 World Series — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2017_World_Series",
+        "claim": "The Astros defeated the Dodgers four games to three in the 2017 World Series.",
+        "proof": "The Astros defeated the Dodgers, four games to three, to win their first World Series in franchise history",
+        "asOf": "2017 World Series",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Dodgers made back-to-back World Series trips and lost both — the franchise's last title was way back in 1988.",
+        "sourceName": "2018 World Series — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2018_World_Series",
+        "claim": "The Dodgers made their second consecutive World Series appearance in 2018, were beaten by Boston in five games, and last won a World Series in 1988.",
+        "proof": "The Red Sox defeated the Dodgers in five games to win their fourth World Series title in 15 years dating back to 2004 ... made their second consecutive appearance, after losing to the Houston Astros in 2017 ... who last won a World Series in 1988 over the Oakland Athletics",
+        "asOf": "2018 World Series",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-marlins": [
+      {
+        "text": "Fun fact. All four of the Marlins' playoff appearances came as wild card teams — they have never won a division title and are the only MLB franchise never to appear in back-to-back postseasons.",
+        "sourceName": "Miami Marlins - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Miami_Marlins",
+        "claim": "All four Marlins playoff appearances were wild card berths; they are one of two MLB franchises never to win a division title and the only franchise never to appear in back-to-back postseasons.",
+        "proof": "All four of their playoff appearances came as wild card teams, making them one of two MLB franchises (along with the Colorado Rockies) to have never won a division title, as well as the only franchise to have never appeared in back-to-back postseasons.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. With a record of 2,382–2,792 (.460), the Marlins have the second lowest winning percentage and fewest postseason appearances (four) among active MLB franchises.",
+        "sourceName": "Miami Marlins - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Miami_Marlins",
+        "claim": "The Marlins have the second lowest all-time winning percentage (.460) and fewest postseason appearances (four) among active MLB franchises.",
+        "proof": "With a record of 2,382–2,792 (.460), the Marlins have the second lowest winning percentage and fewest postseason appearances (four) among active MLB franchises.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Fresh off a World Series title, the Marlins traded most of the club's best players in one of the biggest fire sales in sports history.",
+        "sourceName": "History of the Miami Marlins - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/History_of_the_Miami_Marlins",
+        "claim": "Immediately after winning the 1997 World Series, Marlins owner Huizenga dismantled the team and traded most of the club's best players in one of the biggest fire sales in sports history.",
+        "proof": "Following the World Series victory, Huizenga dismantled the team, claiming financial losses despite winning the World Series. He traded most of the club's best players in one of the biggest fire sales in sports history.",
+        "asOf": "1997",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. One year after winning the World Series, the Marlins slumped to 54–108 — the worst record in the majors that year and the only team to lose 100 games a year after winning it.",
+        "sourceName": "History of the Miami Marlins - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/History_of_the_Miami_Marlins",
+        "claim": "In 1998, one year after winning the World Series, the Marlins slumped to 54–108, the worst record in the majors that year, and are the only team to lose 100 games a year after winning the World Series.",
+        "proof": "The Marlins slumped to 54–108 in 1998, the worst record in the major leagues that year, and the most losses in franchise history. They are the only team to lose 100 games a year after winning the World Series.",
+        "asOf": "1998",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Marlins' 2024 season ended at 62–100 (.383) and 5th place in the division.",
+        "sourceName": "2024 Miami Marlins season - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2024_Miami_Marlins_season",
+        "claim": "The 2024 Marlins finished the season 62–100 (.383) in 5th place in their division.",
+        "proof": "Record | 62–100 (.383)\nDivisional place | 5th",
+        "asOf": "2024 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-brewers": [
+      {
+        "text": "Fun fact. In the 2025 NLCS the Brewers hit .118 as a team — the worst batting average by any team in any postseason series of at least three games in MLB history.",
+        "sourceName": "Wikipedia – 2025 National League Championship Series",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_National_League_Championship_Series",
+        "claim": "The Brewers hit .118 as a team in the 2025 NLCS, the worst batting average by any team in any MLB postseason series of at least three games.",
+        "proof": "As a team, the Brewers hit .118 in the NLCS, which was the worst batting average by any team in any postseason series of at least three games in MLB history.[26]",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. That 2025 NLCS was also the Brewers' eleventh straight road postseason loss.",
+        "sourceName": "Wikipedia – 2025 National League Championship Series",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_National_League_Championship_Series",
+        "claim": "The 2025 NLCS marked the Brewers' eleventh consecutive road postseason loss.",
+        "proof": "This was the Brewers' eleventh straight road postseason loss.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 2023 the Brewers won the NL Central at 92–70, then were swept in the Wild Card series by the eventual NL champion Diamondbacks.",
+        "sourceName": "Wikipedia – Milwaukee Brewers",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Milwaukee_Brewers",
+        "claim": "The Brewers won the 2023 NL Central with a 92-70 record but were swept in the best-of-three Wild Card series by Arizona, the eventual NL champion.",
+        "proof": "In 2023, the Brewers won the NL Central with a 92–70 record, but were swept in the best-of-three Wild Card series by the eventual NL Champion Arizona Diamondbacks.",
+        "asOf": "2023 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Brewers' first-ever World Series appearance, in 1982, ended with a loss to the St. Louis Cardinals in seven games.",
+        "sourceName": "Wikipedia – Milwaukee Brewers",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Milwaukee_Brewers",
+        "claim": "Milwaukee's first World Series appearance, in 1982, ended with a loss to the St. Louis Cardinals in seven games.",
+        "proof": "In 1982, Milwaukee, led by AL MVP Robin Yount, won the American League East Division and the American League Pennant, earning their first World Series appearance and only American League pennant. In the Series, they lost to the St. Louis Cardinals in seven games.",
+        "asOf": "1982 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Through 2026 the Brewers' all-time regular-season record is 4,508–4,654–4 — a .492 winning percentage.",
+        "sourceName": "Wikipedia – Milwaukee Brewers",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Milwaukee_Brewers",
+        "claim": "Through 2026 the Brewers' all-time regular-season record is 4,508-4,654-4, a .492 winning percentage.",
+        "proof": "From 1969 through 2026, the Brewers' overall regular-season win–loss record is 4,508–4,654–4 (.492).",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-twins": [
+      {
+        "text": "Fun fact. Minnesota snapped an 18-game playoff losing streak in 2023 — their first postseason win since 2004. The streak could legally drink.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2023_Minnesota_Twins_season",
+        "claim": "Twins' 2023 Game 1 win was their first playoff win since 2004, snapping an 18-game playoff losing streak.",
+        "proof": "Their game 1 victory was their first playoff win since 2004, snapping an 18-game playoff losing streak.",
+        "asOf": "2023 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Twins' last World Series title came in 1991. Your championship ring is eligible for retirement benefits.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Minnesota_Twins",
+        "claim": "Franchise's World Series titles (as the Twins) were 1987 and 1991; none since.",
+        "proof": "The franchise won the World Series in 1924 as the Senators, and in 1987 and 1991 as the Twins.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2016 Twins lost 103 games — the worst record in all of baseball and their most losses since moving to Minnesota. Something to build on.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2016_Minnesota_Twins_season",
+        "claim": "2016 Twins lost 103 games: worst record in the majors and most losses since the franchise relocated to Minnesota in 1961.",
+        "proof": "The team finished in fifth place in the American League Central and lost 103 games, the worst record in the majors and the most losses since the franchise relocated to Minnesota in 1961.",
+        "asOf": "2016 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2025 Twins held a 'fire sale' at the trade deadline, trading away 11 players from the 40-man roster. Everything must go!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_Minnesota_Twins_season",
+        "claim": "Twins initiated a 'fire sale' at the 2025 trade deadline, trading 11 players off the 40-man roster.",
+        "proof": "At the trade deadline, ownership and the front office would initiate a “fire sale” that would see 11 players off of the 40-man roster traded away.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2025 Twins were eliminated from playoff contention on September 13 — for the second straight year — and the manager was fired at season's end.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_Minnesota_Twins_season",
+        "claim": "Twins eliminated from playoff contention September 13, 2025, second consecutive season; manager Rocco Baldelli fired after the season.",
+        "proof": "They were eliminated from playoff contention for the second consecutive season on September 13. After the season concluded, manager Rocco Baldelli was fired.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-mets": [
+      {
+        "text": "Fun fact. In their inaugural 1962 season, the Mets posted a record of 40–120, the second-most regular-season losses since MLB went to a 162-game schedule.",
+        "sourceName": "New York Mets - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Mets",
+        "claim": "The 1962 Mets, in their inaugural season, went 40–120 — the second-most regular-season losses by an MLB team in a 162-game schedule era season.",
+        "proof": "In their inaugural season, the Mets posted a record of 40–120, the second-most regular-season losses since MLB went to a 162-game schedule.",
+        "asOf": "1962",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 2007, the Mets entered the final 17 games with a seven-game NL East lead, went on an ill-timed losing streak, and watched the Phillies win the division by one game.",
+        "sourceName": "New York Mets - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Mets",
+        "claim": "In 2007 the Mets blew a seven-game NL East lead with 17 games left, losing 11 of 15, and the Philadelphia Phillies won the division by one game.",
+        "proof": "In 2007, the Mets entered the final 17 games in the season with a seven-game lead in the NL East. But the team went on an ill-timed losing streak, losing 11 of the next 15 games, resulting in the Philadelphia Phillies winning the division by one game.",
+        "asOf": "2007",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Despite acquiring Juan Soto, the Mets underwent a historic collapse in 2025, going 38–55 down the stretch and losing their playoff spot to the Cincinnati Reds.",
+        "sourceName": "New York Mets - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Mets",
+        "claim": "Despite acquiring Juan Soto, the Mets underwent a historic collapse in the 2025 season, going 38–55 down the stretch after a 45–24 start and losing their playoff spot to the Cincinnati Reds.",
+        "proof": "Despite the acquisition of Juan Soto, the Mets underwent a historic collapse in the 2025 season. While the Mets attained a record of 45–24 by June 12, the Mets went 38–55 down the stretch, and ended up losing their playoff spot to the Cincinnati Reds.",
+        "asOf": "2025",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The lowest point of the Mets' 1990s experiment was the 1993 season, when they lost 103 games — the worst record for a Mets team since 1965.",
+        "sourceName": "New York Mets - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Mets",
+        "claim": "The Mets' 1993 season, when they lost 103 games, was the lowest point of their early-1990s experiment and the worst record for a Mets team since 1965.",
+        "proof": "The lowest point of the experiment was the 1993 season when the Mets lost 103 games ... The meltdown season resulted in the worst record for a Mets team since 1965.",
+        "asOf": "1993",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. After winning 101 games in 2022, the Mets got swept in the Wild Card round and became the first team in MLB history to produce only one hit in a winner-take-all playoff game.",
+        "sourceName": "New York Mets - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Mets",
+        "claim": "After winning 101 games in 2022, the Mets were swept in the Wild Card round by the Braves and lost the 2022 Wild Card Series to San Diego, becoming the first MLB team to produce only one hit in a winner-take-all playoff game.",
+        "proof": "The Mets won 101 games and tied with the Atlanta Braves for the best record in the NL East; however, the Mets were designated as a Wild Card team due to them getting swept by the Braves. The Mets lost the 2022 National League Wild Card Series to the San Diego Padres. They also became the first team in MLB history to produce only one hit in a winner-take-all playoff game.",
+        "asOf": "2022",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-yankees": [
+      {
+        "text": "Fun fact. The Yankees fell to the Dodgers in the 2024 World Series — their 14th World Series loss, tying the Dodgers for the most in MLB history.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Yankees",
+        "claim": "Yankees lost the 2024 World Series to the Dodgers; 14th World Series loss, tied for most in MLB history",
+        "proof": "The Yankees fell to the Dodgers in a tightly contested five-game series, marking their 14th World Series loss—tying the Dodgers for the most in MLB history.",
+        "asOf": "2024 World Series",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2012 Yankees got swept in the ALCS, losing to the Tigers in a four-game sweep. Best-of-seven, zero wins. Attendance was great, though.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Yankees",
+        "claim": "Yankees were swept by the Tigers in the 2012 ALCS",
+        "proof": "However, in the ALCS, the Yankees lost to the Tigers again, this time in a four-game sweep, which was compounded with a struggling offense and a season-ending injury to Derek Jeter.",
+        "asOf": "2012 ALCS",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. After losing the 1981 World Series, the Yankees began their longest absence from the playoffs since 1921. Even empires need naps.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Yankees",
+        "claim": "After the 1981 World Series loss, Yankees began their longest playoff absence since 1921",
+        "proof": "Following the team's loss to the Dodgers in the 1981 World Series, the Yankees began their longest absence from the playoffs since 1921.",
+        "asOf": "1982-1994 stretch",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 1966, the mighty Yankees finished in last place in the AL for the first time since 1912. The pinstripes ended up in the basement.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Yankees",
+        "claim": "Yankees finished last in the AL in 1966 for the first time since 1912",
+        "proof": "In 1966, they finished in last place in the AL for the first time since 1912.",
+        "asOf": "1966 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In the 2004 ALCS the Yankees became the first team in professional baseball history to lose a best-of-seven series after taking a 3–0 lead — to Boston.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Yankees",
+        "claim": "Yankees lost the 2004 ALCS to Boston after leading 3-0, first in pro baseball history",
+        "proof": "In the ALCS, the Yankees met the Boston Red Sox again, and became the first team in professional baseball history, and only the third team in North American professional sports history, to lose a best-of-seven series after taking a 3–0 series lead.",
+        "asOf": "2004 ALCS",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-athletics": [
+      {
+        "text": "Fun fact. The Athletics' most recent World Series championship came in 1989. Their fans have been waiting a while for the next one.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Athletics_(baseball)",
+        "claim": "Verified on the Athletics Wikipedia page: the 1989 World Series is the Athletics' most recent championship.",
+        "proof": "the 1989 World Series in which the Athletics won their most recent championship",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The A's have called four different cities home — the most home cities of any MLB team. Pick a city, guys.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Athletics_(baseball)",
+        "claim": "Verified on the Athletics Wikipedia page: with four locations, the A's have had the most home cities of any MLB team.",
+        "proof": "With four locations, the A's have had the most home cities of any MLB team.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Athletics play their home games in a Triple-A ballpark — Sutter Health Park, home of the Giants' Triple-A affiliate — until 2028.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Athletics_(baseball)",
+        "claim": "Verified on the Athletics Wikipedia page: the team plays at Sutter Health Park, home of the Giants' Triple-A affiliate, through 2027 before a planned 2028 Las Vegas move.",
+        "proof": "Before the scheduled move to Las Vegas in 2028, the team is playing in West Sacramento, California, at Sutter Health Park (home of the San Francisco Giants' Triple-A affiliate, the Sacramento River Cats) for the 2025–2027 seasons (with an option for the 2028 season if necessary).",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Since 1901 the A's all-time record is 9,405–9,945 — a franchise with more losses than wins across its entire history.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Athletics_(baseball)",
+        "claim": "Verified on the Athletics Wikipedia page: franchise all-time record from 1901 through end of 2025 is 9,405–9,945–87 (.486), i.e. more losses than wins.",
+        "proof": "From 1901 through the end of 2025, the franchise's overall win–loss record is 9,405–9,945–87 (.486)",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 2026 the U.S. Patent and Trademark Office denied the A's request to trademark 'Las Vegas Athletics', leaving the franchise's future name in doubt.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Athletics_(baseball)",
+        "claim": "Verified on the Athletics Wikipedia page: USPTO denied the 'Las Vegas Athletics' / 'Vegas Athletics' trademark request on Jan 6, 2026, leaving the future of the franchise's name in doubt.",
+        "proof": "On January 6, 2026, the Associated Press reported that the U.S. Patent and Trademark Office had denied the A's request to trademark the names \"Las Vegas Athletics\" and \"Vegas Athletics\", leaving the future of the franchise's name in doubt.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-phillies": [
+      {
+        "text": "Fun fact. The Phillies were the first American sports franchise to amass over 10,000 losses — and they reached the mark in 2007, the same year they clinched the division.",
+        "sourceName": "Philadelphia Phillies - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Philadelphia_Phillies",
+        "claim": "The Phillies were the first American sports franchise to amass over 10,000 losses, becoming the first MLB franchise in history to lose 10,000 games all-time during the 2007 season.",
+        "proof": "Partly because of the team's longevity, the Phillies were the first American sports franchise to amass over 10,000 losses ... Despite the thrilling finish, the 2007 regular season was also marked by a piece of futility, as the franchise became the first in MLB history to lose 10,000 games all-time ... allowing them to clinch the division on the final day of the season.",
+        "asOf": "2007 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 1964 Phillies lost 10 games in a row, finished one game out of first place, and the 'Phold of '64' is called among the worst collapses in sports history.",
+        "sourceName": "Philadelphia Phillies - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Philadelphia_Phillies",
+        "claim": "In the 1964 'Phold', the Phillies lost 10 straight games and finished one game out of first place, one of the worst and most infamous collapses in sports history.",
+        "proof": "However, in a drastic turn, the Phillies lost 10 games in a row and ultimately finished one game out of first place, losing the pennant to the St. Louis Cardinals. The \"Phold of '64\" is frequently mentioned as among the worst and most infamous collapses in sports history.",
+        "asOf": "1964",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 1961, the Phillies lost 23 games in a row — the worst losing streak in the majors since 1900, and a record that still stands.",
+        "sourceName": "Philadelphia Phillies - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Philadelphia_Phillies",
+        "claim": "In 1961 the Phillies lost 23 games in a row, the worst losing streak in the majors since 1900, and that record still stands.",
+        "proof": "The team's competitive futility was highlighted by a record that still stands: in 1961, the Phillies lost 23 games in a row, the worst losing streak in the majors since 1900.",
+        "asOf": "1961",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. From 1918 to 1948, the Phillies had only one winning record, finished last 17 times, and had 12 seasons with at least 100 losses.",
+        "sourceName": "Philadelphia Phillies - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Philadelphia_Phillies",
+        "claim": "From 1918 to 1948 the Phillies had only one winning record (1932), finished in last place 17 times, and lost at least 100 games in 12 seasons.",
+        "proof": "From 1918 to 1948, the Phillies had only one winning record, which came in 1932. The team finished higher than sixth only twice, and were never a serious contender past June. During this stretch, they finished in last place a total of 17 times, and had 12 seasons in which they lost at least 100 games.",
+        "asOf": "1918–1948",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. With their first championship in 1980, the Phillies were the last of the 16 pre-expansion teams to win a World Series.",
+        "sourceName": "Philadelphia Phillies - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Philadelphia_Phillies",
+        "claim": "The Phillies' first championship came in 1980, making them the last of the 16 pre-expansion teams to win a World Series.",
+        "proof": "With their first championship in 1980, the Phillies were the last of the 16 pre-expansion teams to win a World Series.",
+        "asOf": "1980",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-pirates": [
+      {
+        "text": "Fun fact. From 1993 to 2012 the Pirates had a losing record 20 straight seasons — a record streak in MLB and all four major North American pro sports leagues.",
+        "sourceName": "Wikipedia – Pittsburgh Pirates",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Pirates",
+        "claim": "The Pirates posted a losing record in 20 consecutive seasons from 1993 to 2012, a record streak in both MLB and the four major North American professional sports leagues.",
+        "proof": "The Pirates additionally posted a losing record in 20 consecutive seasons from 1993 to 2012, a record streak in both MLB and the four major North American professional sports leagues.[5]",
+        "asOf": "2012 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Pirates own the longest pennant drought in the National League, plus the longest LCS-appearance and division-title droughts in all of baseball.",
+        "sourceName": "Wikipedia – Pittsburgh Pirates",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Pirates",
+        "claim": "The Pirates currently have the longest pennant drought in the National League and the longest League Championship Series appearance and division championship droughts in all of baseball.",
+        "proof": "the longest pennant drought in the National League,[6] and the longest League Championship Series appearance and division championship drought in all of baseball.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Pirates reached the postseason in 2014 and 2015, lost the Wild Card game both times — and haven't made the playoffs since.",
+        "sourceName": "Wikipedia – Pittsburgh Pirates",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Pirates",
+        "claim": "The Pirates returned to the postseason in 2014 and 2015, lost the Wild Card game both times, and have not qualified for the playoffs since then.",
+        "proof": "The Pirates returned to the postseason in 2014 and 2015 and lost the Wild Card game both times and have not qualified for the playoffs since then.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. PNC Park's biggest crowd ever — 40,889 fans — gathered to watch the Cubs shut out the Pirates 4–0 in the 2015 Wild Card Game.",
+        "sourceName": "Wikipedia – Pittsburgh Pirates",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Pirates",
+        "claim": "The biggest crowd in PNC Park history, 40,889 fans, watched the Cubs defeat the Pirates 4-0 in the 2015 National League Wild Card Game.",
+        "proof": "the biggest crowd in stadium history was the 2015 National League Wild Card Game, when 40,889 fans saw the Cubs defeat the Pirates 4–0.",
+        "asOf": "2015 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Since 1882 the Pirates have an all-time record of 10,992–10,990–140 — a dead-even .500 winning percentage.",
+        "sourceName": "Wikipedia – Pittsburgh Pirates",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Pirates",
+        "claim": "From 1882 to 2026 the Pirates have an all-time record of 10,992-10,990-140, a .500 winning percentage.",
+        "proof": "From 1882 to 2026, the Pirates have an overall record of 10,992–10,990–140 (.500 winning percentage).[7]",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-padres": [
+      {
+        "text": "Fun fact. San Diego's 2025 season ended with a Wild Card loss to the Cubs — so abrupt the manager retired on the spot.",
+        "sourceName": "2025 San Diego Padres season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_San_Diego_Padres_season",
+        "claim": "San Diego lost the 2025 Wild Card Series to the Cubs in three games, after which manager Mike Shildt announced his retirement.",
+        "proof": "they played the Cubs on the road in the National League Wild Card Series, which they lost in three games. At the conclusion of the round, manager Mike Shildt announced his retirement.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Padres' last day in first in 2025 was August 23 — their latest division lead since 2010 — and they still finished behind the Dodgers.",
+        "sourceName": "2025 San Diego Padres season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_San_Diego_Padres_season",
+        "claim": "San Diego's last NL West lead of 2025 came on August 23, its latest division lead since 2010; the Padres finished second behind the Dodgers.",
+        "proof": "The Padres held a lead at top of the NL West on August 23, the latest they've held a lead in the division during a season since 2010; however, they finished in second place in the division behind the Los Angeles Dodgers",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2026 Padres' season ended in the NLDS, a 3–1 loss to the Brewers — the eventual champs sent them home.",
+        "sourceName": "2026 San Diego Padres season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_San_Diego_Padres_season",
+        "claim": "San Diego's 2026 season ended with a 3–1 NLDS loss to the eventual World Series champion Brewers.",
+        "proof": "in two games and advanced to the National League Division Series against the eventual World Series champion Milwaukee Brewers, which is where their season ended with a 3–1 series loss.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Padres have reached the World Series twice and lost both times — the oldest franchise in MLB never to win one.",
+        "sourceName": "San Diego Padres — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/San_Diego_Padres",
+        "claim": "The Padres lost both of their World Series appearances (1984, 1998) and are the oldest team never to have won the World Series.",
+        "proof": "The team has won two NL pennants, in 1984 and 1998, losing in the World Series both years, and are the oldest team never to have won the World Series.",
+        "asOf": "1969–2026 franchise history",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. San Diego's 1998 pennant run ended with a World Series sweep by the Yankees. The Friars didn't even get to blink.",
+        "sourceName": "San Diego Padres — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/San_Diego_Padres",
+        "claim": "The Padres were swept by the New York Yankees in the 1998 World Series.",
+        "proof": "The Padres achieved their second NL pennant alongside Trevor Hoffman, only to be swept by the New York Yankees in the 1998 World Series.",
+        "asOf": "1998 World Series",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-giants": [
+      {
+        "text": "Fun fact. The 2026 Giants went 65–97 and still finished 4th in the NL West. Even losing has competition.",
+        "sourceName": "2026 San Francisco Giants season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_San_Francisco_Giants_season",
+        "claim": "San Francisco finished the 2026 season 65–97, in 4th place in the NL West.",
+        "proof": "The Giants finished the season with a record of 65–97, for 4th place in the NL West.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2026 Giants never spent a single day at or above .500 — first time that's happened since 2017.",
+        "sourceName": "2026 San Francisco Giants season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_San_Francisco_Giants_season",
+        "claim": "The Giants went the entire 2026 season without being at or above .500 for a single day, the first time since 2017.",
+        "proof": "the Giants never managed to cross that mark, going the full season without spending a day at or above for the first time since the 2017 season",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. San Francisco was mathematically eliminated on September 6 — the fifth straight season watching October from the couch.",
+        "sourceName": "2026 San Francisco Giants season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_San_Francisco_Giants_season",
+        "claim": "The Giants were eliminated from playoff contention on September 6, 2026, the fifth straight season they missed the playoffs.",
+        "proof": "On September 6, the Giants were eliminated from playoff contention for the 5th straight season.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2026 Giants used 71 different players, tying the Major League record — an open tryout apparently broke out at Oracle Park.",
+        "sourceName": "2026 San Francisco Giants season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_San_Francisco_Giants_season",
+        "claim": "The 2026 Giants used 71 players in a season, tying the Major League record.",
+        "proof": "becoming the 71st player to make an appearance for the team during the 2026 season. This tied the Major League record for most players used by a single team in a season",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Giants fired Bob Melvin in 2025 with a 161–163 record over two seasons. Sub-.500 is a firing offense in the Bay.",
+        "sourceName": "2025 San Francisco Giants season — Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2025_San_Francisco_Giants_season",
+        "claim": "The Giants fired manager Bob Melvin after the 2025 season; he went 161–163 in two seasons with the team.",
+        "proof": "On the day after the season ended, the Giants fired manager Bob Melvin, after he posted a 161–163 record in two seasons with the team.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-mariners": [
+      {
+        "text": "Fun fact. The Mariners are the only active MLB franchise to never appear in the World Series — they hold the sport's longest active World Series appearance drought.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Mariners",
+        "claim": "Verified on the Seattle Mariners Wikipedia page: only active MLB franchise to never appear in the World Series; longest active WS appearance drought.",
+        "proof": "The Mariners are the only active MLB franchise to never appear in the World Series, holding the sport's longest active World Series appearance drought.",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Following the 2001 season, the Mariners franchise entered a long period of mediocrity and would not make the postseason again until 2022. Mediocrity — their words.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Mariners",
+        "claim": "Verified on the Seattle Mariners Wikipedia page: after the 2001 season the franchise entered a long period of mediocrity and did not make the postseason again until 2022.",
+        "proof": "Following the 2001 season, the franchise entered a long period of mediocrity and would not make the postseason again until 2022.",
+        "asOf": "2022 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. After high expectations, the Mariners flopped in 2010, finishing 61–101 (.377) — the worst record in the American League.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Mariners",
+        "claim": "Verified on the Seattle Mariners Wikipedia page: 2010 team flopped at 61–101 (.377), worst record in the American League.",
+        "proof": "After its busy offseason and high expectations, the team flopped in 2010 and finishing at 61–101 (.377), the worst record in the American League.",
+        "asOf": "2010 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. 2025 ALCS: the Mariners lost a 3-1 lead in Game 7 — the first Game 7 in franchise history and the closest they've ever been to a World Series.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Mariners",
+        "claim": "Verified on the Seattle Mariners Wikipedia page: lost a 3-1 lead in ALCS Game 7 vs the Blue Jays; first Game 7 in franchise history and closest ever to a World Series appearance.",
+        "proof": "In the playoffs, they defeated the Tigers in the ALDS in five games and had a 2-0 ALCS lead against the Blue Jays until they ultimately lost a 3-1 lead in Game 7. This was the first time the franchise ever played in a Game 7, also meaning this is the closest they have ever been to a World Series appearance.",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Mariners have finished with a losing record in 30 of 49 seasons. Consistency!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Mariners",
+        "claim": "Verified on the Seattle Mariners Wikipedia page: losing record in 30 of 49 seasons, as of 2025.",
+        "proof": "The franchise has finished with a losing record in 30 of 49 seasons, as of 2025",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-cardinals": [
+      {
+        "text": "Fun fact. In 2023 the Cardinals finished last in their division for the first time since 1990 — with the Pirates finishing above them in fourth.",
+        "sourceName": "Wikipedia – 2023 St. Louis Cardinals season",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2023_St._Louis_Cardinals_season",
+        "claim": "The 2023 Cardinals secured their first last-place finish since 1990, with the Pittsburgh Pirates finishing above them in fourth place.",
+        "proof": "After their 89th loss on September 27, they secured their first last-place finish since 1990 (70–92), with the Pittsburgh Pirates finishing above them in fourth place.",
+        "asOf": "2023 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Cardinals' worst season ever came back in 1897: a 29–102 record and a franchise-worst .221 winning percentage.",
+        "sourceName": "Wikipedia – St. Louis Cardinals",
+        "sourceUrl": "https://en.wikipedia.org/wiki/St._Louis_Cardinals",
+        "claim": "The Cardinals' franchise-worst season was 1897: a 29-102 record and a .221 winning percentage.",
+        "proof": "The nadir was the 1897 season: a 29–102 record for a franchise-worst .221 winning percentage.[7]",
+        "asOf": "1897 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Through August 2026, the Cubs lead the all-time Cardinals–Cubs series 1,295-1,241.",
+        "sourceName": "Wikipedia – St. Louis Cardinals",
+        "sourceUrl": "https://en.wikipedia.org/wiki/St._Louis_Cardinals",
+        "claim": "The Cubs lead the all-time Cardinals-Cubs series 1,295-1,241 through August 2026.",
+        "proof": "The Cubs lead the series 1,295-1,241, through August 2026",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. St. Louis hasn't won a postseason series since the 2019 NLDS — seven years and counting.",
+        "sourceName": "Wikipedia – MLB franchise postseason droughts",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Major_League_Baseball_franchise_postseason_droughts",
+        "claim": "The postseason series-win droughts table lists the Cardinals at 7 years with their last series win the 2019 NLDS (current through the 2026 season).",
+        "proof": "7 St. Louis Cardinals 2019 NLDS",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Cardinals haven't reached a World Series since 2013 — a 13-year pennant drought and counting.",
+        "sourceName": "Wikipedia – MLB franchise postseason droughts",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Major_League_Baseball_franchise_postseason_droughts",
+        "claim": "The pennant (World Series appearance) droughts table lists the Cardinals at 13 years with their last pennant in 2013 (current through the 2026 season).",
+        "proof": "13 St. Louis Cardinals 2013",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-rays": [
+      {
+        "text": "Fun fact. The Rays are one of just four MLB teams without a World Series title — and currently hold the most World Series appearances without winning one, at three.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+        "claim": "Rays have zero World Series titles and the most World Series appearances (3) without a series win",
+        "proof": "The Rays are one of four MLB teams to not have a World Series title yet, the others being the San Diego Padres, Colorado Rockies, and Seattle Mariners, and are currently the team with the most World Series appearances without a series win with three appearances.",
+        "asOf": "through 2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In the Devil Rays' first decade they finished last in the AL East every year except 2004 — when they rose all the way to second to last.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+        "claim": "Devil Rays finished last in AL East every year of their first decade except 2004 (second to last)",
+        "proof": "The team's first decade of play was marked by futility; they finished in last place in the AL East in all but the 2004 season, when they finished second to last.",
+        "asOf": "1998-2007 seasons",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Tampa Bay's 2002 season led to a franchise-worst 55–106 record. Records are made to be broken — apparently not this one.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+        "claim": "2002 season ended with the franchise-worst 55-106 record",
+        "proof": "the 2002 season would lead to a franchise-worst 55–106 record, despite the emergence of key players like Aubrey Huff, Toby Hall, and Carl Crawford.",
+        "asOf": "2002 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Rays reached the World Series again in 2026 and — once again — lost. At this point \"again\" is the franchise's favorite word.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+        "claim": "Rays reached the 2026 World Series and lost, their third World Series loss",
+        "proof": "They reached the World Series again in 2026, but once again lost to the Milwaukee Brewers.",
+        "asOf": "2026 World Series",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Through 2026 the Rays' all-time record is 2,266–2,328 (.493) — the franchise has lost more games than it has ever won.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+        "claim": "Rays all-time record through 2026 is 2,266-2,328 (.493), a losing record",
+        "proof": "Through 2026, the Rays' all-time record is 2,266–2,328 (.493).",
+        "asOf": "through 2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-rangers": [
+      {
+        "text": "Fun fact. In 2011 the Rangers were one strike away from winning the World Series — twice, in game six — and still lost the series to the Cardinals in seven.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Texas_Rangers_(baseball)",
+        "claim": "Verified on the Texas Rangers Wikipedia page: lost the 2011 World Series in seven games after twice being one strike away from winning it in game six.",
+        "proof": "They repeated as American League champions in 2011, but lost the World Series to the St. Louis Cardinals in seven games after twice being one strike away from winning the series in game six.",
+        "asOf": "2011 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In the Rangers' first-ever World Series appearance, 2010, they fell to the San Francisco Giants in five games.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Texas_Rangers_(baseball)",
+        "claim": "Verified on the Texas Rangers Wikipedia page: in their first World Series appearance (2010) they fell to the Giants in five games.",
+        "proof": "In their first appearance in a World Series, the Rangers fell to the San Francisco Giants in five games.",
+        "asOf": "2010 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Back when this franchise was the Washington Senators, it never made the postseason — not once. Zero October trips in D.C.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Texas_Rangers_(baseball)",
+        "claim": "Verified on the Texas Rangers Wikipedia page: in the franchise's iteration as the Washington Senators, the team never made the postseason.",
+        "proof": "The Rangers have made nine appearances in the MLB postseason (all as the Rangers—in their iteration as the Washington Senators, the team never made the postseason).",
+        "asOf": "2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. From 1961 through 2025, the Rangers franchise's all-time record is 4,899–5,383–6 (.476) — more losses than wins across its entire history.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Texas_Rangers_(baseball)",
+        "claim": "Verified on the Texas Rangers Wikipedia page: franchise all-time win-loss record from 1961 through 2025 is 4,899–5,383–6 (.476), a losing record.",
+        "proof": "From 1961 through 2025, the franchise's overall win–loss record is 4,899–5,383–6 (.476).",
+        "asOf": "2025 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Rangers finished last in both 1972 and 1973 — the franchise's first winning season didn't arrive until 1974.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Texas_Rangers_(baseball)",
+        "claim": "Verified on the Texas Rangers Wikipedia page: finished last in both 1972 and 1973; first winning season in 1974.",
+        "proof": "In 1974, the Rangers had their first winning season after finishing last in both 1972 and 1973.",
+        "asOf": "1974 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-bluejays": [
+      {
+        "text": "Fun fact. After their championship seasons, the Blue Jays failed to qualify for the playoffs for 21 consecutive seasons. Two titles, then two decades of nothing.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Blue_Jays",
+        "claim": "Blue Jays missed the playoffs for 21 consecutive seasons after their 1992-93 championships",
+        "proof": "Following their championship seasons, the Blue Jays failed to qualify for the playoffs for 21 consecutive seasons until clinching a playoff berth and division championship in 2015.",
+        "asOf": "1994-2014 stretch",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 2025 the Blue Jays made the World Series, lost to the Dodgers in seven games, and watched Game 7 slip into extra innings. So close, Canada.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Blue_Jays",
+        "claim": "Blue Jays lost the 2025 World Series to the Dodgers in seven games, with Game 7 going to extra innings",
+        "proof": "The Blue Jays reached the World Series, losing to the Los Angeles Dodgers in seven games with Game 7 going into extra innings.",
+        "asOf": "2025 World Series",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In the late 1970s and early 1980s, the Blue Jays frequently finished last in their division. They set the tone early.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Blue_Jays",
+        "claim": "Blue Jays frequently finished last in their division in the late 1970s and early 1980s",
+        "proof": "In the late 1970s and early 1980s, the Blue Jays went through struggles typical of an expansion team, frequently finishing last in their division.",
+        "asOf": "late 1970s-early 1980s",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Blue Jays clinched back-to-back playoff berths in 2015-16, beat the Rangers in the Division Series both years, then lost the Championship Series both years.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Blue_Jays",
+        "claim": "In 2015 and 2016 the Blue Jays beat Texas in the AL Division Series but lost the AL Championship Series both years",
+        "proof": "The team clinched a second consecutive playoff berth in 2016, after securing an AL wild card position. In both years, the Blue Jays beat the Texas Rangers in the AL Division Series, but lost the AL Championship Series.",
+        "asOf": "2015-2016 seasons",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. From 1977 to 2026, the Blue Jays' overall win-loss record is 3,934–3,939–3 (.500). Nearly 50 years of baseball, still losing more than winning.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Blue_Jays",
+        "claim": "Blue Jays all-time record from 1977 to 2026 is 3,934-3,939-3 (.500), a losing record",
+        "proof": "From 1977 to 2026, the Blue Jays' overall win-loss record is 3,934–3,939–3 (.500).",
+        "asOf": "through 2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-nationals": [
+      {
+        "text": "Fun fact. After trading Juan Soto and others, the Nationals finished the 2022 season with the worst record in baseball at 55–107.",
+        "sourceName": "Washington Nationals - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Washington_Nationals",
+        "claim": "After trading Juan Soto and others, the Nationals finished the 2022 season with the worst record in baseball, 55–107.",
+        "proof": "After trading Soto and others, the Nationals finished the 2022 season with the worst record in baseball at 55–107.",
+        "asOf": "2022",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Nationals traded 23-year-old superstar Juan Soto away, losing their franchise icon and one of the last integral players from the 2019 championship team.",
+        "sourceName": "Washington Nationals - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Washington_Nationals",
+        "claim": "On August 2, 2022, the Nationals traded 23-year-old superstar Juan Soto to the Padres, losing their franchise icon and one of the last integral players from the 2019 championship team.",
+        "proof": "On August 2, 2022, the Nationals sent 23-year-old superstar Juan Soto to the San Diego Padres in a blockbuster trade after he turned down a 15-year, $440 million contract extension offer, which would have constituted the richest contract in baseball history. In doing so, the Nationals lost its franchise icon and one of the last integral players from the 2019 championship team.",
+        "asOf": "2022",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Nationals finished in last place in four out of five years from 2006 to 2010.",
+        "sourceName": "Washington Nationals - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Washington_Nationals",
+        "claim": "The Nationals finished in last place in four out of five years from 2006 to 2010.",
+        "proof": "The Nationals finished in last place in four out of five years from 2006 to 2010, but began building the foundations of a contender with their first-overall draft picks of pitcher Stephen Strasburg (in 2009) and catcher Bryce Harper, whom the team converted to the outfield, (in 2010), as well as their sixth-overall draft pick of infielder Anthony Rendon (in 2011).",
+        "asOf": "2006–2010",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Nationals won the NL East in 2014, 2016, and 2017, but failed to advance past the NLDS each time.",
+        "sourceName": "Washington Nationals - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Washington_Nationals",
+        "claim": "The Nationals won the National League East in 2014, 2016, and 2017 but failed to advance past the NLDS each time.",
+        "proof": "The team secured their first playoff berth and first division title in 2012 and won the National League East again in 2014, 2016, and 2017, but failed to advance past the NLDS each time.",
+        "asOf": "2014–2017",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 2025, the Nationals fired manager Dave Martinez and general manager Mike Rizzo, then finished the season with a disappointing 66–96 record.",
+        "sourceName": "Washington Nationals - Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Washington_Nationals",
+        "claim": "On July 6, 2025, the Nationals fired manager Dave Martinez and general manager Mike Rizzo, then finished the 2025 season with a disappointing 66–96 record.",
+        "proof": "On July 6, 2025, following a disappointing first half of the 2025 season below internal projections for the rebuild, the Nationals fired manager Dave Martinez and general manager Mike Rizzo ... The Nationals finished the 2025 season with a disappointing 66–96 record.",
+        "asOf": "2025",
+        "checkedOn": "2026-11-13"
+      }
+    ]
+  }
+}
