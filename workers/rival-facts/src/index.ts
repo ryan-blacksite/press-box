@@ -18,7 +18,7 @@ export interface Env {
   ALLOWED_ORIGIN?: string;
 }
 
-const LEAGUES = ['nfl'];
+const LEAGUES = ['nfl', 'mlb', 'nhl', 'nba'];
 const MAX_TEAMS = 12;
 const PREVIEW_ORIGIN = /^https:\/\/[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.fly-frontend-1ps\.pages\.dev$/;
 
