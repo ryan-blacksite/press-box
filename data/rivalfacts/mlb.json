@@ -1,0 +1,241 @@
+{
+  "v": 1,
+  "league": "mlb",
+  "teams": {
+    "mlb-orioles": [
+      {
+        "text": "Fun fact. The Orioles' last World Series appearance came in 1983 — followed by 14 consecutive losing seasons between 1998 and 2011. The 90s were rough.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltimore_Orioles",
+        "claim": "Orioles have not reached a World Series since 1983 and had 14 consecutive losing seasons 1998-2011",
+        "proof": "Since their last World Series appearance in 1983, the Orioles have struggled to sustain success, including suffering 14 consecutive losing seasons between 1998 and 2011.",
+        "asOf": "through 2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 1988 the Orioles lost the first 21 games of the season — the low point of a decline that began right after their 1983 World Series win.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltimore_Orioles",
+        "claim": "Orioles lost their first 21 games in 1988, at the end of a decline following the 1983 World Series win",
+        "proof": "After the 1983 World Series win, the Orioles experienced a decline, culminating in the 1988 season where they lost the first 21 games.",
+        "asOf": "1988 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2018 Orioles lost 115 games — the most in franchise history. Somebody check if the scoreboard still works.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltimore_Orioles",
+        "claim": "2018 Orioles lost 115 games, the most in franchise history",
+        "proof": "the 2018 season saw the Orioles lose 115 games, the most in franchise history",
+        "asOf": "2018 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2023 Orioles' \"successful season\" ended with the team losing three straight games to the Texas Rangers in the playoffs. Swept.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltimore_Orioles",
+        "claim": "2023 ALDS: Orioles lost three straight to Texas, a series sweep",
+        "proof": "the team's successful season ended in the postseason American League Division Series, with the Orioles losing three straight games to the Texas Rangers. The series sweep was the first time since the 2022 season that the Orioles had been swept in a series.",
+        "asOf": "2023 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. From 1901 through the end of 2026, the Orioles' all-time record is 9,274–10,253–110 (.475). Even the franchise's own history can't call them winners.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Baltimore_Orioles",
+        "claim": "Franchise all-time win-loss record 9,274-10,253-110 (.475) through end of 2026",
+        "proof": "From 1901 through the end of 2026, the franchise's overall win–loss record is 9,274–10,253–110 (.475).",
+        "asOf": "through 2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-redsox": [
+      {
+        "text": "Fun fact. Red Sox fans once endured an 86-year wait between World Series championships. Literally a lifetime of heartbreak before 2004.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+        "claim": "Red Sox endured an 86-year wait for their next World Series title, won in 2004",
+        "proof": "The Sox endured an 86-year wait before the team's sixth World Series championship in 2004.",
+        "asOf": "historical (1918-2004)",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In Game 6 of the 1986 World Series, the Shea Stadium scoreboard briefly congratulated the Red Sox as World Series champions. Famous last words.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+        "claim": "Shea Stadium scoreboard briefly congratulated Boston as champions during Game 6 of the 1986 World Series",
+        "proof": "A message even appeared briefly on the Shea Stadium scoreboard congratulating the Red Sox as World Series champions. After so many years of abject frustration, Red Sox fans around the world could taste victory.",
+        "asOf": "1986 World Series",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2011 Red Sox became the first team in MLB history to blow a 9-game lead in the division heading into September, going 7–20 in the final month.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+        "claim": "2011 Red Sox blew a 9-game September lead, went 7-20, missed the playoffs",
+        "proof": "In 2011, the Red Sox collapsed, becoming the first team in MLB history to blow a 9-game lead in the division heading into September, going 7–20 in the final month and failing again to make the playoffs.",
+        "asOf": "2011 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Fresh off the 2013 title, the Red Sox finished last in the AL East in 2014 (71–91) and again in 2015 (78–84). Champions to cellar in one year.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+        "claim": "Red Sox finished last in AL East in 2014 with 71-91 and again in 2015 with 78-84, right after the 2013 championship",
+        "proof": "Following the 2013 championship, the team finished last in the AL East during 2014 with a record of 71–91, and again in 2015 with a record of 78–84.",
+        "asOf": "2014-2015 seasons",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Red Sox finished last in their division in both 2022 and 2023 — with the exact same 78–84 record. Consistency at rock bottom.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+        "claim": "Red Sox finished last in the division in 2022 and 2023, both seasons 78-84",
+        "proof": "The 2022 season was much less successful, with the team finishing in last place within their division with a 78–84 record, the first losing record for the team in a 162-game season since 2015. In 2023, the Red Sox once again finished in last place in their division with a 78–84 record.",
+        "asOf": "2022-2023 seasons",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-yankees": [
+      {
+        "text": "Fun fact. The Yankees fell to the Dodgers in the 2024 World Series — their 14th World Series loss, tying the Dodgers for the most in MLB history.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Yankees",
+        "claim": "Yankees lost the 2024 World Series to the Dodgers; 14th World Series loss, tied for most in MLB history",
+        "proof": "The Yankees fell to the Dodgers in a tightly contested five-game series, marking their 14th World Series loss—tying the Dodgers for the most in MLB history.",
+        "asOf": "2024 World Series",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The 2012 Yankees got swept in the ALCS, losing to the Tigers in a four-game sweep. Best-of-seven, zero wins. Attendance was great, though.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Yankees",
+        "claim": "Yankees were swept by the Tigers in the 2012 ALCS",
+        "proof": "However, in the ALCS, the Yankees lost to the Tigers again, this time in a four-game sweep, which was compounded with a struggling offense and a season-ending injury to Derek Jeter.",
+        "asOf": "2012 ALCS",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. After losing the 1981 World Series, the Yankees began their longest absence from the playoffs since 1921. Even empires need naps.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Yankees",
+        "claim": "After the 1981 World Series loss, Yankees began their longest playoff absence since 1921",
+        "proof": "Following the team's loss to the Dodgers in the 1981 World Series, the Yankees began their longest absence from the playoffs since 1921.",
+        "asOf": "1982-1994 stretch",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 1966, the mighty Yankees finished in last place in the AL for the first time since 1912. The pinstripes ended up in the basement.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Yankees",
+        "claim": "Yankees finished last in the AL in 1966 for the first time since 1912",
+        "proof": "In 1966, they finished in last place in the AL for the first time since 1912.",
+        "asOf": "1966 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In the 2004 ALCS the Yankees became the first team in professional baseball history to lose a best-of-seven series after taking a 3–0 lead — to Boston.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Yankees",
+        "claim": "Yankees lost the 2004 ALCS to Boston after leading 3-0, first in pro baseball history",
+        "proof": "In the ALCS, the Yankees met the Boston Red Sox again, and became the first team in professional baseball history, and only the third team in North American professional sports history, to lose a best-of-seven series after taking a 3–0 series lead.",
+        "asOf": "2004 ALCS",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-rays": [
+      {
+        "text": "Fun fact. The Rays are one of just four MLB teams without a World Series title — and currently hold the most World Series appearances without winning one, at three.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+        "claim": "Rays have zero World Series titles and the most World Series appearances (3) without a series win",
+        "proof": "The Rays are one of four MLB teams to not have a World Series title yet, the others being the San Diego Padres, Colorado Rockies, and Seattle Mariners, and are currently the team with the most World Series appearances without a series win with three appearances.",
+        "asOf": "through 2026 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In the Devil Rays' first decade they finished last in the AL East every year except 2004 — when they rose all the way to second to last.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+        "claim": "Devil Rays finished last in AL East every year of their first decade except 2004 (second to last)",
+        "proof": "The team's first decade of play was marked by futility; they finished in last place in the AL East in all but the 2004 season, when they finished second to last.",
+        "asOf": "1998-2007 seasons",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Tampa Bay's 2002 season led to a franchise-worst 55–106 record. Records are made to be broken — apparently not this one.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+        "claim": "2002 season ended with the franchise-worst 55-106 record",
+        "proof": "the 2002 season would lead to a franchise-worst 55–106 record, despite the emergence of key players like Aubrey Huff, Toby Hall, and Carl Crawford.",
+        "asOf": "2002 season",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Rays reached the World Series again in 2026 and — once again — lost. At this point \"again\" is the franchise's favorite word.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+        "claim": "Rays reached the 2026 World Series and lost, their third World Series loss",
+        "proof": "They reached the World Series again in 2026, but once again lost to the Milwaukee Brewers.",
+        "asOf": "2026 World Series",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. Through 2026 the Rays' all-time record is 2,266–2,328 (.493) — the franchise has lost more games than it has ever won.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+        "claim": "Rays all-time record through 2026 is 2,266-2,328 (.493), a losing record",
+        "proof": "Through 2026, the Rays' all-time record is 2,266–2,328 (.493).",
+        "asOf": "through 2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ],
+    "mlb-bluejays": [
+      {
+        "text": "Fun fact. After their championship seasons, the Blue Jays failed to qualify for the playoffs for 21 consecutive seasons. Two titles, then two decades of nothing.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Blue_Jays",
+        "claim": "Blue Jays missed the playoffs for 21 consecutive seasons after their 1992-93 championships",
+        "proof": "Following their championship seasons, the Blue Jays failed to qualify for the playoffs for 21 consecutive seasons until clinching a playoff berth and division championship in 2015.",
+        "asOf": "1994-2014 stretch",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In 2025 the Blue Jays made the World Series, lost to the Dodgers in seven games, and watched Game 7 slip into extra innings. So close, Canada.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Blue_Jays",
+        "claim": "Blue Jays lost the 2025 World Series to the Dodgers in seven games, with Game 7 going to extra innings",
+        "proof": "The Blue Jays reached the World Series, losing to the Los Angeles Dodgers in seven games with Game 7 going into extra innings.",
+        "asOf": "2025 World Series",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. In the late 1970s and early 1980s, the Blue Jays frequently finished last in their division. They set the tone early.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Blue_Jays",
+        "claim": "Blue Jays frequently finished last in their division in the late 1970s and early 1980s",
+        "proof": "In the late 1970s and early 1980s, the Blue Jays went through struggles typical of an expansion team, frequently finishing last in their division.",
+        "asOf": "late 1970s-early 1980s",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. The Blue Jays clinched back-to-back playoff berths in 2015-16, beat the Rangers in the Division Series both years, then lost the Championship Series both years.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Blue_Jays",
+        "claim": "In 2015 and 2016 the Blue Jays beat Texas in the AL Division Series but lost the AL Championship Series both years",
+        "proof": "The team clinched a second consecutive playoff berth in 2016, after securing an AL wild card position. In both years, the Blue Jays beat the Texas Rangers in the AL Division Series, but lost the AL Championship Series.",
+        "asOf": "2015-2016 seasons",
+        "checkedOn": "2026-11-13"
+      },
+      {
+        "text": "Fun fact. From 1977 to 2026, the Blue Jays' overall win-loss record is 3,934–3,939–3 (.500). Nearly 50 years of baseball, still losing more than winning.",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Blue_Jays",
+        "claim": "Blue Jays all-time record from 1977 to 2026 is 3,934-3,939-3 (.500), a losing record",
+        "proof": "From 1977 to 2026, the Blue Jays' overall win-loss record is 3,934–3,939–3 (.500).",
+        "asOf": "through 2026 season",
+        "checkedOn": "2026-11-13"
+      }
+    ]
+  }
+}
