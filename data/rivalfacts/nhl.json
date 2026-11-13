@@ -1,0 +1,1510 @@
+{
+  "v": 1,
+  "league": "nhl",
+  "teams": {
+    "nhl-avalanche": [
+      {
+        "text": "Fun fact. The 2025–26 Avalanche won the Presidents' Trophy and still got swept 0–4 by Vegas in the conference finals!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Colorado_Avalanche",
+        "claim": "The 2025–26 Avalanche won the Presidents' Trophy with 55 wins (121 points) but were swept 0–4 by the Vegas Golden Knights in the conference finals.",
+        "proof": "the Avalanche won the Presidents' Trophy for the fourth time, with 55 victories in the regular season, but were swept by the Vegas Golden Knights in the conference finals ... 2025–26 || 82 || 55 || 16 || 11 || 121 || 302 || 203 || 1st, Central || Lost in conference finals, 0–4 (Golden Knights)",
+        "asOf": "2025–26 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2022–23 Avalanche won their division and still lost in the first round to the Kraken in seven games!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Colorado_Avalanche",
+        "claim": "The 2022–23 Avalanche finished first in the Central Division but lost the first round to the Seattle Kraken 3–4.",
+        "proof": "the Avalanche finished as division champions, but were upset by the Seattle Kraken in seven games in the first round of the 2023 playoffs ... 2022–23 || 82 || 51 || 24 || 7 || 109 || 289 || 226 || 1st, Central || Lost in first round, 3–4 (Kraken)",
+        "asOf": "2022–23 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2006–07 the Avalanche earned 95 points and still missed the playoffs — the first team in NHL history to do it!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Colorado_Avalanche",
+        "claim": "The 2006–07 Avalanche missed the playoffs with 95 points; before them no team in NHL history had missed the playoffs with 95 points.",
+        "proof": "The Avalanche missed the playoffs for the 2006–07 season ... finished fourth in the Northwest Division and ninth in the Western Conference with a 44–31–7 record for 95 points, one less than eighth-seeded Calgary ... no team in the history of the NHL had ever made it to 95 points without earning a spot in the playoffs",
+        "asOf": "2006–07 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2010–11 the Avalanche finished 29th in the 30-team NHL with just 68 points, besting only division rival Edmonton!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Colorado_Avalanche",
+        "claim": "In 2010–11 the Avalanche had 68 points and finished 29th in the 30-team NHL, ahead of only the Edmonton Oilers.",
+        "proof": "In the 2010–11 season, the Avalanche saw their worst season yet since moving to Denver. They only had 68 points in the standings and had winless streaks after the All-Star break. They finished 29th in the 30-team NHL, besting only their division mates, the Edmonton Oilers.",
+        "asOf": "2010–11 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Avalanche led the Edmonton Oilers 3–1 in a conference quarterfinal series and still lost it in seven games!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Colorado_Avalanche",
+        "claim": "Colorado led the Edmonton Oilers 3–1 in a conference quarterfinal series and lost in seven games.",
+        "proof": "The team lost in the conference quarterfinals against the Edmonton Oilers in seven games, having led the series 3–1",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-blackhawks": [
+      {
+        "text": "Fun fact. The Blackhawks missed the playoffs in each of the five seasons from 2021–22 through 2025–26!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Blackhawks",
+        "claim": "The Blackhawks did not qualify for the playoffs in any of the five seasons listed, 2021–22 through 2025–26.",
+        "proof": "2021–22 || 82 || 28 || 42 || 12 || 68 || 219 || 291 || 7th, Central || Did not qualify ... 2022–23 || 82 || 26 || 49 || 7 || 59 || 204 || 301 || 8th, Central || Did not qualify ... 2023–24 || 82 || 23 || 53 || 6 || 52 || 179 || 290 || 8th, Central || Did not qualify ... 2024–25 || 82 || 25 || 46 || 11 || 61 || 226 || 296 || 8th, Central || Did not qualify ... 2025–26 || 82 || 29 || 39 || 14 || 72 || 213 || 275 || 8th, Central || Did not qualify",
+        "asOf": "2025–26 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 1990–91 the Blackhawks won the Presidents' Trophy, then lost in the first round in six games to the North Stars!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Blackhawks",
+        "claim": "The 1990–91 Blackhawks won the Presidents' Trophy for best regular season record but lost the first round to the Minnesota North Stars in six games.",
+        "proof": "In 1990–91, Chicago was poised to fare even better in the playoffs, winning the Presidents' Trophy for best regular season record, but the Minnesota North Stars stunned them in six games in the first round",
+        "asOf": "1990–91 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 1991–92 the Blackhawks won 11 straight playoff games, an NHL record, then got swept four games to none by the Penguins in the Cup Final!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Blackhawks",
+        "claim": "In 1991–92 the Blackhawks won 11 consecutive playoff games (an NHL record) and were then swept four games to none by the Pittsburgh Penguins.",
+        "proof": "In 1991–92, the Blackhawks ... winning 11 consecutive playoff games that year, setting an NHL record in the process. However, they were swept four games to none by the Mario Lemieux-led defending Stanley Cup champion, the Pittsburgh Penguins",
+        "asOf": "1991–92 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 1997–98 the Blackhawks missed the playoffs for the first time in 29 years, then missed again for three more seasons!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Blackhawks",
+        "claim": "The Blackhawks missed the playoffs in 1997–98 for the first time in 29 years, and also missed in 1998–99, 1999–2000, and 2000–01.",
+        "proof": "they missed the playoffs by five points in 1997–98 for the first time in 29 years ... Chicago would also miss the playoffs for the second consecutive season in 1998–99, and missed the playoffs again in 1999–2000 and 2000–01 seasons",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2004 ESPN named the Blackhawks the worst franchise in all of professional sports!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chicago_Blackhawks",
+        "claim": "In February 2004, ESPN named the Blackhawks the worst franchise in professional sports.",
+        "proof": "A somber note was struck in February 2004, when ESPN named the Blackhawks the worst franchise in professional sports",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-bluejackets": [
+      {
+        "text": "Fun fact. The Jackets' first-ever playoff trip, in 2009, ended in a first-round sweep by Detroit!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Columbus_Blue_Jackets",
+        "claim": "The Blue Jackets made the playoffs for the first time in 2009 and were swept by the Detroit Red Wings in the first round.",
+        "proof": "The team qualified for the Stanley Cup playoffs for the first time in 2009, but were swept by the defending Stanley Cup champion Detroit Red Wings in the first round",
+        "asOf": "2008–09 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Jackets entered 2015–16 with high expectations, then lost their first eight in regulation — the second-longest season-opening skid in NHL history!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Columbus_Blue_Jackets",
+        "claim": "The 2015–16 Blue Jackets lost their first eight regular season games in regulation, the second-longest losing streak to start a season in NHL history.",
+        "proof": "The Blue Jackets initially went into the 2015–16 season with high expectations. However, the team got off to an inauspicious start by losing their first eight regular season games in regulation, the second longest losing streak to start a season in NHL history.",
+        "asOf": "2015–16 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Jackets' first-ever playoff lead came against Pittsburgh with a 3–1 edge — and they went on to lose that game 4–3!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Columbus_Blue_Jackets",
+        "claim": "In their first playoff game they ever led (against Pittsburgh), the Blue Jackets led 3–1 at one point and the Penguins rallied to win 4–3.",
+        "proof": "This was the first time in franchise history that Columbus ever led a postseason game. The Jackets lead the game 3–1 at one point from goals by Mark Letestu and Derek MacKenzie. However, the Penguins rallied to win it 4–3.",
+        "asOf": "2014 playoffs",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Jackets' second season ended next-to-last in the entire NHL, with only 57 points!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Columbus_Blue_Jackets",
+        "claim": "The season after their first (2000 start), the Blue Jackets finished next-to-last in the NHL with only 57 points.",
+        "proof": "The Blue Jackets played their first regular season game on October 7, 2000, a 5–3 loss to the Chicago Blackhawks. ... The Blue Jackets finished next-to-last in the NHL in the following season, with only 57 points.",
+        "asOf": "2001–02 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Jackets missed the playoffs with 89 points in 2024–25 — then again with 92 points in 2025–26!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Columbus_Blue_Jackets",
+        "claim": "The Blue Jackets did not qualify for the playoffs in 2024–25 with 89 points and in 2025–26 with 92 points.",
+        "proof": "2024–25 || 82 || 40 || 33 || 9 || 89 || 273 || 268 || 4th, Metropolitan || Did not qualify ... 2025–26 || 82 || 40 || 30 || 12 || 92 || 253 || 253 || 5th, Metropolitan || Did not qualify",
+        "asOf": "2025–26 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-blues": [
+      {
+        "text": "Fun fact. In 1999–2000 the Blues set a franchise record with 114 points, then got stunned in the first round in seven games!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/St._Louis_Blues",
+        "claim": "In 1999–2000 the Blues set a franchise record with 114 points and won the Presidents' Trophy, then lost the first round to the San Jose Sharks in seven games.",
+        "proof": "In 1999–2000, the team notched a franchise-record 114 points during the regular season, earning the Presidents' Trophy for the League's best record. However, they were stunned by the San Jose Sharks in the first round of the 2000 playoffs in seven games",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Blues didn't win their first Stanley Cup Final game until 2019 — they'd been swept in all three before!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/St._Louis_Blues",
+        "claim": "The Blues did not win a Stanley Cup Final series game until 2019, after being swept in their three previous Cup Final appearances (1968–1970).",
+        "proof": "On May 29, the Blues won a Stanley Cup Final series game for the first time in franchise history after getting swept in three previous series (1968–1970), when they defeated the Boston Bruins 3–2 in overtime. On June 12, 2019, the Blues defeated the Bruins 4–1 in game 7 to win their first Stanley Cup.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2013–14 Blues set a franchise record with 52 wins, then lost their final six games and blew a 2–0 lead to Chicago!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/St._Louis_Blues",
+        "claim": "The 2013–14 Blues set a franchise record with 52 wins, lost their final six regular season games, and blew a 2–0 series lead to the defending champion Chicago Blackhawks, losing the first round in six games.",
+        "proof": "The following season, 2013–14, the team hit the 100-point mark for the sixth time in franchise history, and gained a franchise record of 52 wins. ... they lost their final six games and wound up in second place in the Division, this time to the Colorado Avalanche. The slump haunted them, as they blew a 2–0 series lead to the defending champion Chicago Blackhawks, losing the first-round series in six games",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2005–06 the Blues posted their worst record in 27 years and missed the playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/St._Louis_Blues",
+        "claim": "The 2005–06 Blues finished with their worst record in 27 years and missed the playoffs for only the fourth time in franchise history.",
+        "proof": "the Blues finished the 2005–06 season with their worst record in 27 years. They missed the playoffs for only the fourth time in franchise history",
+        "asOf": "2005–06 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. At one point the Blues, on the brink of financial collapse, had their staff cut down to just three employees!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/St._Louis_Blues",
+        "claim": "The page says the franchise was on the brink of financial collapse and at one point its staff was cut down to three employees.",
+        "proof": "In the meantime, the franchise was on the brink of financial collapse. This was partly due to the pressures of the World Hockey Association (WHA), but mostly the result of financial decisions made when the Salomons first acquired the franchise. The deferred contracts came due just as the Blues' performance began to slip. At one point, the Salomons cut the team's staff down to three employees.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-bruins": [
+      {
+        "text": "Fun fact. The Bruins endured a 29-year Stanley Cup drought that only ended in 1970!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Bruins",
+        "claim": "Boston's Stanley Cup drought lasted 29 years and ended in 1970 with a four-game win over the St. Louis Blues in the Final.",
+        "proof": "In 1970, a 29-year Stanley Cup drought came to an end in Boston as the Bruins defeated the St. Louis Blues in four games in the 1970 Stanley Cup Final.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Bruins set the NHL single-season points record with 135 in 2022–23 — and still lost in the first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Bruins",
+        "claim": "The 2022–23 Bruins earned 135 points, the most in one season in NHL history, then lost the first round 3–4 to the Panthers.",
+        "proof": "amassing 135 points—the most in one season in NHL history ... 2022–23 || 82 || 65 || 12 || 5 || 135 || 305 || 177 || 1st, Atlantic || Lost in first round, 3–4 (Panthers)",
+        "asOf": "2022–23 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 1996–97 the Bruins finished last in the NHL and missed the playoffs for the first time in 30 years!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Bruins",
+        "claim": "In 1996–97 the Bruins fell to last place in the NHL and missed the playoffs for the first time in 30 years.",
+        "proof": "The team did not fare well in the 1996–97 season as they fell to last place in the NHL and Boston missed the playoffs for the first time in 30 years (and for the first time in the expansion era)",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2014–15 Bruins earned 96 points and STILL missed the playoffs — the most points ever for a team that missed them!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Bruins",
+        "claim": "The 2014–15 Bruins earned 96 points and missed the playoffs by two, the most points ever earned by a team that did not make the playoffs.",
+        "proof": "In the 2014–15 season, the Bruins finished with a record of 41–27–14 for 96 points, missing out on the playoffs by just two points. ... The 96 points they earned that season broke the record for the most points earned by a team that did not make the playoffs.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the deciding seventh game of the 1979 semifinals, the Bruins were up a goal, got called for too many men, and lost to Montreal in overtime!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boston_Bruins",
+        "claim": "In the 1979 semifinal Game 7, the Bruins led by one goal when a too-many-men penalty let Montreal tie the game and win in OT.",
+        "proof": "The 1979 semifinals series against the Canadiens proved to be Cherry's undoing. In the deciding seventh game, the Bruins, up by a goal, were called for having too many men on the ice in the late stages of the third period. Montreal tied the game on the ensuing power play and won in overtime.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-canadiens": [
+      {
+        "text": "Fun fact. In 2021–22 the Canadiens finished last in the NHL for the first time since 1939–40!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Montreal_Canadiens",
+        "claim": "The 2021–22 Canadiens finished last in the league for the first time since 1939–40 and the first time in the NHL's expansion era.",
+        "proof": "In 2021–22, the Canadiens were unable to replicate their success from the prior season, ultimately finishing last in the league for the first time since the 1939–40 season and the first time in the NHL's expansion era, in what was one of the worst seasons in the team's history.",
+        "asOf": "2021–22 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Canadiens' very first season ended with them last in the league!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Montreal_Canadiens",
+        "claim": "The Canadiens' inaugural season was not a success: they placed last in the league.",
+        "proof": "The team's inaugural season was not a success, as they placed last in the league.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. After 1995 the Canadiens missed the playoffs in four of their next ten seasons, and didn't get past the second round until 2010!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Montreal_Canadiens",
+        "claim": "After 1995 the Canadiens missed the playoffs in four of their next ten seasons and failed to advance past the second round until 2010.",
+        "proof": "Following Roy's departure in 1995, the Canadiens fell into an extended stretch of mediocrity, missing the playoffs in four of their next ten seasons and failing to advance past the second round of the playoffs until 2010.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. During the Great Depression the Canadiens' losses grew to the point that their owners considered selling interest in the team to Cleveland, Ohio!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Montreal_Canadiens",
+        "claim": "During the Great Depression era the Canadiens' losses grew to the point that team owners considered selling interest to Cleveland, Ohio, though local investors were found to finance the team.",
+        "proof": "Losses grew to the point where team owners considered selling interest to Cleveland, Ohio, though local investors were ultimately found to finance the Canadiens.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Canadiens were knocked out 1–4 in the first round in 2024–25, then 1–4 again in the conference finals in 2025–26!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Montreal_Canadiens",
+        "claim": "The Canadiens lost their 2024–25 first-round series 1–4 to the Washington Capitals and their 2025–26 conference finals series 1–4 to the Carolina Hurricanes.",
+        "proof": "2024–25 || 82 || 40 || 31 || 11 || 91 || 245 || 265 || 5th, Atlantic || Lost in first round, 1–4 (Capitals) ... 2025–26 || 82 || 48 || 24 || 10 || 106 || 283 || 256 || 3rd, Atlantic || Lost in conference finals, 1–4 (Hurricanes)",
+        "asOf": "2025–26 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-canucks": [
+      {
+        "text": "Fun fact. In 2025–26 the Canucks clinched last place overall in the NHL for the first time in 54 years!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vancouver_Canucks",
+        "claim": "The 2025–26 Canucks finished last in the league overall for the first time in 54 years.",
+        "proof": "2025–26 || 82 || 25 || 49 || 8 || 58 || 216 || 316 || 8th, Pacific || Did not qualify ... On April 2, 2026, after a loss to the Minnesota Wild, the Canucks would clinch last place overall in league standings for the first time in 54 years",
+        "asOf": "2025–26 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. After reaching the 1994 Stanley Cup Final, the Canucks failed to record a winning season in the six years that followed!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vancouver_Canucks",
+        "claim": "After their 1994 Stanley Cup Final appearance, the Canucks failed to record a winning season in the following six years.",
+        "proof": "With a young core that included Linden, Bure and McLean still in their 20s after the 1994 playoffs, the Canucks appeared poised to remain contenders in the league. However, the team failed to record a winning season in the six years following their Stanley Cup Final appearance.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2013 the Canucks won their fifth straight division title — then got swept in the first round by the sixth seed!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vancouver_Canucks",
+        "claim": "After winning the Northwest Division for the fifth consecutive year in 2013, the Canucks were swept in the first round of the playoffs by the sixth-seeded San Jose Sharks.",
+        "proof": "Vancouver finished the year winning their fifth consecutive Northwest Division title and the third seed in the West, but were swept in the first round of the 2013 playoffs by the sixth-seeded San Jose Sharks",
+        "asOf": "2013 playoffs",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the 2011 playoffs the Canucks led the Blackhawks 3–0, watched Chicago win three straight, then needed overtime in Game 7 to survive!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vancouver_Canucks",
+        "claim": "In the 2011 first round the Canucks led Chicago 3–0, Chicago won three straight to force a Game 7, and Vancouver won it 2–1 in overtime.",
+        "proof": "Entering the opening round of the 2011 Stanley Cup playoffs, the Canucks played the defending Stanley Cup champions and eighth-seeded Chicago Blackhawks, who had eliminated Vancouver in the previous two years in six games in the second round. While Vancouver initially took a 3–0 lead in the series, Chicago came back to win three straight games 7–2, 5–0 and 4–3, respectively to force a seventh game in the series. Forced into overtime in game seven, winger Alexandre Burrows scored his second goal of the game in overtime on Blackhawks goaltender Corey Crawford following a failed clearing attempt by Chicago defenceman Chris Campoli to win the game 2–1 and the series 4–3.",
+        "asOf": "2011 playoffs",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Canucks finished last in the Western Conference in 1997–98!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vancouver_Canucks",
+        "claim": "The Canucks finished last in the Western Conference in the 1997–98 season.",
+        "proof": "After the Canucks finished the 1997–98 season last in the Western Conference, former NHL vice president Brian Burke was named general manager in the summer",
+        "asOf": "1997–98 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-capitals": [
+      {
+        "text": "Fun fact. The Capitals' inaugural 1974–75 season set NHL records in futility: just eight wins, the fewest for any team playing at least 70 games!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Washington_Capitals",
+        "claim": "In their inaugural 1974–75 season the Capitals set NHL records in futility; their eight wins are the fewest for an NHL team playing at least 70 games.",
+        "proof": "The Capitals' inaugural season in 1974–75 set NHL records in futility. ... The eight wins are the fewest for an NHL team playing at least 70 games",
+        "asOf": "1974–75 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. After their 1998 Stanley Cup run, the Capitals failed to qualify for the playoffs the very next season!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Washington_Capitals",
+        "claim": "After their 1998 Stanley Cup run, the Capitals failed to qualify for the playoffs in 1998–99.",
+        "proof": "After their 1998 Stanley Cup run, the Capitals finished the 1998–99 season with a record of 31–45–6 and failed to qualify for the playoffs.",
+        "asOf": "1998–99 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Capitals won back-to-back Southeast Division titles in 2000 and 2001, yet lost in the first round of the playoffs to the Penguins both years!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Washington_Capitals",
+        "claim": "The Capitals won the Southeast Division in 2000 and 2001 and lost in the first round of the playoffs to the Penguins both years.",
+        "proof": "The Capitals went on to win back-to-back Southeast Division titles in 2000 and 2001, yet both years lost in the first round of the playoffs to the Penguins.",
+        "asOf": "2000 and 2001",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2011–12 Capitals started with a 7–0 record, then won only five of their next 15 games!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Washington_Capitals",
+        "claim": "The Capitals started 2011–12 with a 7–0 record but won only five of their next 15 games.",
+        "proof": "The Capitals started the 2011–12 season with a record of 7–0, but they only won five of their next 15 games.",
+        "asOf": "2011–12 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2013–14 the Capitals missed the playoffs by just three points in the standings!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Washington_Capitals",
+        "claim": "In 2013–14 the Capitals missed the playoffs by just three points in the standings.",
+        "proof": "In the 2013–14 season, the Capitals struggled to stay in a playoff spot and ultimately missed the playoffs by just three points in the standings",
+        "asOf": "2013–14 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-devils": [
+      {
+        "text": "Fun fact. The Devils franchise spent six seasons in Colorado and never won more than 22 games!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_Jersey_Devils",
+        "claim": "In its six seasons in Colorado, before it became the Devils, the franchise never won more than 22 games.",
+        "proof": "The franchise never won more than 22 games and did not return to the playoffs after 1977–78 in its six seasons in Colorado.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Devils missed the playoffs by two points the season after winning their first Stanley Cup, the first time in 26 years a team defending the Cup failed to reach them!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_Jersey_Devils",
+        "claim": "The season after winning their first Stanley Cup, the Devils missed the playoffs by two points; it was the first time in 26 years that a defending Cup champion failed to reach the playoffs.",
+        "proof": "They swept the heavily favored Detroit Red Wings to win the team's first-ever Stanley Cup ... The Devils missed the playoffs by two points the following season, with a 37–33–12 record and finishing twelfth overall in the league. ... It marked the first time in 26 years that a defending Cup champion failed to reach the playoffs.",
+        "asOf": "1995–96 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. During the 2012–13 season the Devils needed to borrow $30 million to meet their payroll, which prompted the owner to sell the team!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_Jersey_Devils",
+        "claim": "During 2012–13 the Devils needed to borrow $30 million to meet their payroll, which prompted the owner to sell the team.",
+        "proof": "The Devils' longtime financial struggles worsened during the 2012–13 season, and at one point the team needed to borrow $30 million to meet their payroll. This prompted owner Jeff Vanderbeek to sell the team.",
+        "asOf": "2012–13 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. One season a Devils goalie's 1.97 goals against average led the NHL, yet the team still missed the playoffs by five points!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_Jersey_Devils",
+        "claim": "In 2013–14 the Devils' 1.97 goals against average led the NHL, yet they missed the playoffs by five points.",
+        "proof": "Despite Schneider's 1.97 goals against average leading the NHL, the Devils missed the playoffs by five points due to lagging offensive production.",
+        "asOf": "2013–14 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. After finishing 15th in the East in 2018–19, the Devils landed the first overall draft pick for the second time in three years!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_Jersey_Devils",
+        "claim": "In 2018–19 the Devils finished 15th in the Eastern Conference, then received the first overall selection in the 2019 draft for the second time in three years.",
+        "proof": "The Devils failed to return to the playoffs in the 2018–19 season as they struggled. ... the Devils finished 15th in the Eastern Conference with 72 points. In the subsequent draft lottery, the team received the first overall selection in the 2019 NHL entry draft for the second time in three years.",
+        "asOf": "2018–19 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-ducks": [
+      {
+        "text": "Fun fact. The Ducks started out as the Mighty Ducks of Anaheim, a name based on a 1992 movie, until the team was renamed before the 2006–07 season!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Anaheim_Ducks",
+        "claim": "The franchise began as the Mighty Ducks of Anaheim, a name based on the 1992 film, and was renamed the Anaheim Ducks before the 2006–07 season.",
+        "proof": "known as the Mighty Ducks of Anaheim, a name based on the 1992 film The Mighty Ducks ... changed the name of the team to the Anaheim Ducks before the 2006–07 season",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Ducks were founded in 1993, and half of their $50 million entry fee had to go straight to the Los Angeles Kings to \"share\" the Los Angeles media market!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Anaheim_Ducks",
+        "claim": "The Mighty Ducks were founded in 1993; the $50 million entrance fee was half paid directly to the Los Angeles Kings to share the Los Angeles media market.",
+        "proof": "The Mighty Ducks of Anaheim were founded in 1993 by The Walt Disney Company. ... An entrance fee of $50 million was required, half of which Disney would pay directly to the Los Angeles Kings in order to \"share\" the Los Angeles media market.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the 2003 Cup Final against New Jersey, the home team won the first five games of the Ducks' series!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Anaheim_Ducks",
+        "claim": "In the 2003 Stanley Cup Final against the New Jersey Devils, the home team won the first five games of the series.",
+        "proof": "The 2003 Stanley Cup Final was played against the New Jersey Devils. The series began with the home team winning the first five games.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Ducks set an NHL record for the worst power play percentage in a season: 8.94%!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Anaheim_Ducks",
+        "claim": "The Ducks set an NHL record for the worst power play percentage in a season at 8.94%.",
+        "proof": "the team did not fare better as they set an NHL record for the worst power play percentage in a season at 8.94%",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2022–23 Ducks finished last in the league and allowed a league-worst 357 goals!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Anaheim_Ducks",
+        "claim": "The Ducks fell to last place in the 2022–23 season with a league-worst 357 goals against.",
+        "proof": "The Ducks fell to last place in the 2022–23 season, including a league worst 357 goals against and -129 goal differential.",
+        "asOf": "2022–23 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-flames": [
+      {
+        "text": "Fun fact. The Flames missed the playoffs in 1997 and did not return for seven years!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Calgary_Flames",
+        "claim": "The Flames missed the playoffs in 1997 and did not return for seven years.",
+        "proof": "In 1997, the Flames missed the playoffs and did not return for seven years",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the 1996 playoffs, the Flames lost in the first round to Chicago in a four-game sweep!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Calgary_Flames",
+        "claim": "In the 1996 playoffs the Flames lost in the first round in a four-game sweep by the Blackhawks (Chicago).",
+        "proof": "Iginla made his Flames debut in the 1996 playoffs, during which the Flames again lost in the first round in a four-game sweep by the Blackhawks",
+        "asOf": "1996 playoffs",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Flames won the 1987–88 Presidents' Trophy, then were swept by Edmonton in the second round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Calgary_Flames",
+        "claim": "After winning the 1987–88 Presidents' Trophy with the NHL's best record, the Flames were swept in four games by the Edmonton Oilers in the second round of the playoffs.",
+        "proof": "the Flames recorded their first 100-point season in 1987–88, earning the Presidents' Trophy for having the NHL's best record ... Their playoff frustrations continued against the Oilers as they were swept in four games in the second round",
+        "asOf": "1987–88 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Flames lost the 2004 Stanley Cup Final to Tampa Bay in seven games — after a controversial non-goal at home!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Calgary_Flames",
+        "claim": "The Flames lost the 2004 Stanley Cup Final to the Tampa Bay Lightning in seven games, after suffering a controversial non-goal in game six at home.",
+        "proof": "The 2004 Stanley Cup Final against the Tampa Bay Lightning went to seven games with the Flames suffering a controversial non-goal in game six at home ... The Lightning won the game in overtime, and won game seven at home to capture the Stanley Cup",
+        "asOf": "2004 playoffs",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Flames began in Atlanta, and the name comes from the Civil War fire started by troops there!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Calgary_Flames",
+        "claim": "The team was founded in Atlanta as the Atlanta Flames and named after the Civil War fire in which Atlanta was nearly destroyed.",
+        "proof": "The team was founded in 1972 in Atlanta as the Atlanta Flames ... named the team the \"Flames\" after the fire started by General William Tecumseh Sherman's troops in the American Civil War, in which Atlanta was nearly destroyed.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-flyers": [
+      {
+        "text": "Fun fact. The 1969–70 Flyers won only 17 games, then lost the tiebreaker for the final playoff spot to the Oakland Seals and missed the playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Philadelphia_Flyers",
+        "claim": "In 1969–70 the Flyers recorded only 17 wins and lost the tiebreaker for the final playoff spot to the Oakland Seals, missing the playoffs for the first time.",
+        "proof": "However, the team struggled in 1969–70, recording only 17 wins — the fewest in franchise history — while also setting the NHL record for most ties in a season (24). They lost the tiebreaker for the final playoff spot to the Oakland Seals, missing the playoffs for the first time.",
+        "asOf": "1969–70 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Over three seasons, 1981–82 to 1983–84, the Flyers won only one playoff game, with a sweep by Washington to finish it off!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Philadelphia_Flyers",
+        "claim": "Over the three seasons 1981–82 to 1983–84 the Flyers won only one playoff game, being eliminated by the Rangers in 1981–82 and 1982–83 and swept by the Capitals in 1983–84.",
+        "proof": "Over the next three seasons the team would suffer early playoff exits and manage to win only one playoff game during that span. They were eliminated two years in a row in 1981–82 and 1982–83 by the New York Rangers and then were swept by the Washington Capitals in 1983–84.",
+        "asOf": "1981–82 to 1983–84 seasons",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 1987–88 the Flyers blew a 3–1 series lead to Washington, then blew a 3–0 lead in Game 7 and lost in overtime!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Philadelphia_Flyers",
+        "claim": "In the 1987–88 first round the Flyers blew a 3–1 series lead to Washington, then blew a 3–0 lead in game seven and lost 5–4 in overtime.",
+        "proof": "In 1987–88, they finished third in the Patrick Division. ... In their first-round playoff series with Washington, the Flyers blew a 3–1 series lead as Washington forced a game seven. They then blew a 3–0 lead in game seven as Washington won in overtime 5–4.",
+        "asOf": "1987–88 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2006–07 the Flyers had the worst record in the league and set an NHL record for the biggest one-year drop in the standings, 45 points!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Philadelphia_Flyers",
+        "claim": "In 2006–07 the Flyers had the worst record in the league and set the NHL record for the biggest points drop-off in a single year, 101 points in 2005–06 to 56 in 2006–07, a difference of 45.",
+        "proof": "Ultimately, the Flyers finished with a 22–48–12 record, the most losses and the worst winning percentage in franchise history, and the worst record in the league. They also set the NHL record for the biggest points drop off in the standings in a one-year span (101 points in 2005–06 to 56 points in 2006–07, a difference of 45 points).",
+        "asOf": "2006–07 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2016–17 the Flyers won ten straight games, then missed the playoffs, the first team to miss them after a winning streak of ten or more games!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Philadelphia_Flyers",
+        "claim": "In 2016–17 the Flyers won ten straight games in November and December but were eliminated from playoff contention, becoming the first team to miss the playoffs after a winning streak of ten or more games.",
+        "proof": "In the 2016–17 season, the Flyers won ten straight games during the months of November and December. However, they fell out of the playoff picture after that streak ended, struggling in the standings and letting other teams get ahead of them. They were eliminated from playoff contention during the last two weeks of the regular season, becoming the first team to miss the playoffs after having a winning streak of ten or more games in the process.",
+        "asOf": "2016–17 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-goldenknights": [
+      {
+        "text": "Fun fact. The Golden Knights were not the first choice: the owner hoped to call the team the Black Knights, but dropped the plan after resistance from federal officials!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vegas_Golden_Knights",
+        "claim": "The Vegas team's founder had hoped to name it the Black Knights but dropped that plan after encountering resistance from federal officials; the team became the Golden Knights.",
+        "proof": "Foley had hoped to name his team the Black Knights, but dropped that plan after encountering resistance from federal officials.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In their first season the Golden Knights reached the Stanley Cup Final, but the Washington Capitals defeated them in five games!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vegas_Golden_Knights",
+        "claim": "In their inaugural season the Golden Knights reached the Stanley Cup Final and were defeated there by the Washington Capitals in five games.",
+        "proof": "On May 20, Vegas defeated the Winnipeg Jets to win the conference finals in five games, becoming the third NHL team to advance to the Stanley Cup Final in its inaugural season ... The Golden Knights were defeated in the Stanley Cup Final by the Washington Capitals in five games",
+        "asOf": "2017–18 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Golden Knights suffered their first-ever first-round elimination, losing to the Sharks in seven games after leading the series 3 games to 1!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vegas_Golden_Knights",
+        "claim": "The Golden Knights suffered their first-ever first-round elimination, losing to the San Jose Sharks in seven games after leading the series 3 games to 1.",
+        "proof": "They ultimately suffered their first-ever first-round elimination, losing to the San Jose Sharks in seven games after leading the series 3 games to 1.",
+        "asOf": "2018–19 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Vegas' playoff run again ended one round short of the Stanley Cup Final when the Golden Knights were upset by Montreal in six games!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vegas_Golden_Knights",
+        "claim": "The Golden Knights' 2020–21 playoff run ended one round short of the Stanley Cup Final when they were upset by the Montreal Canadiens in six games in the semifinals.",
+        "proof": "Vegas' playoff run would again end one round short of the Stanley Cup Final, as the Golden Knights were then upset by the Montreal Canadiens in six games in the Stanley Cup semifinals.",
+        "asOf": "2020–21 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the 2024 Winter Classic the Golden Knights lost 3–0 to Seattle, becoming the first team to be shut out in the Winter Classic!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Vegas_Golden_Knights",
+        "claim": "In the 2024 Winter Classic the Golden Knights lost 3–0 to Seattle and became the first team to be shut out in the Winter Classic.",
+        "proof": "January also saw the Golden Knights compete in the 2024 Winter Classic on New Year's Day, facing off against Seattle at T-Mobile Park in their second outdoor game; Vegas ultimately lost 3–0, becoming the first team to be shut out in the Winter Classic.",
+        "asOf": "2023–24 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-hurricanes": [
+      {
+        "text": "Fun fact. The Carolina Hurricanes looked poised to pick up where they left off in 2002–03, but a 10-loss January left them dead last in the league!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Carolina_Hurricanes",
+        "claim": "The Hurricanes looked poised to pick up where they left off in 2002–03 but never recovered from a 10-loss January and finished dead last in the league with 61 points.",
+        "proof": "The Hurricanes looked poised to pick up where they left off in the 2002–03, but never recovered from a 10-loss January and finished dead last in the league with 61 points",
+        "asOf": "2002–03 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. After winning the Cup, the Carolina Hurricanes missed the playoffs in 2006–07 and 2007–08, only the second club in NHL history to miss two seasons running after a Cup triumph!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Carolina_Hurricanes",
+        "claim": "The Hurricanes failed to qualify for the playoffs in 2006–07 and 2007–08, only the second club in NHL history to miss two seasons running after a Stanley Cup triumph.",
+        "proof": "Losing four players to free agency in the off-season and 222-man games to injury during the 2006–07, the team struggled throughout the regular season, and once eliminated in the last game, the Hurricanes finished third in the Southeast and 11th overall in the Eastern Conference. This finish made them the first champions since the 1938–39 Chicago Black Hawks to have failed to qualify for the playoffs both the seasons before and after their championship season ... In the 2007–08, Carolina again missed out as Washington Capitals stormed back to take the division title on the last day of the season, leaving the Hurricanes second in the division and ninth overall in the conference, and making the Hurricanes only the second club in NHL history to miss the playoffs for two seasons running after a Stanley Cup triumph.",
+        "asOf": "2007–08 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Carolina Hurricanes missed the playoffs eight seasons in a row, finishing last in the Metropolitan Division in 2014–15 along the way!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Carolina_Hurricanes",
+        "claim": "The Hurricanes missed the playoffs for eight consecutive seasons, including finishing last in the Metropolitan Division in 2014–15 and seventh in 2016–17.",
+        "proof": "During the 2014–15 season, the team finished last in the Metropolitan Division and would miss the playoffs for the sixth consecutive season ... Things did not improve in the 2016–17 season. The Hurricanes finished seventh in the division, missing the playoffs for the eighth consecutive season.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Carolina Hurricanes won their division in 2022–23, then got swept 0–4 by Florida in the conference finals!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Carolina_Hurricanes",
+        "claim": "After winning their division in 2022–23, the Hurricanes were swept 0–4 by the Florida Panthers in the conference finals.",
+        "proof": "2022–23 || 82 || 52 || 21 || 9 || 113 || 266 || 213 || 1st, Metropolitan || Lost in conference finals, 0–4 (Panthers)",
+        "asOf": "2022–23 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In their first Stanley Cup Final, the Carolina Hurricanes stunned Detroit in game one, then lost the next four games!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Carolina_Hurricanes",
+        "claim": "In their first Stanley Cup Final the Hurricanes won game one in overtime over the Red Wings, then Detroit won the next four games.",
+        "proof": "Carolina's Martin Gélinas would score to send the franchise to their first Stanley Cup Final appearance ... In the Stanley Cup Final, Carolina would face the Detroit Red Wings, thought to be the prohibitive favorite all year. Though the Hurricanes stunned the Wings in game one when Ron Francis scored in the first minute of overtime, Detroit stormed back to win the next four games.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-islanders": [
+      {
+        "text": "Fun fact. In their first season the Islanders set an NHL record for most losses and worst overall record in a season!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Islanders",
+        "claim": "In their first season the expansion Islanders set an NHL record for most losses and worst overall record in a season.",
+        "proof": "In the team's first season, young players such as Smith, Nystrom, and Henning (all of whom would be part of the Islanders dynasty of the early 1980s) were given chances to prove themselves in the NHL. The young and inexperienced expansion team, however, posted a record of 12–60–6, setting an NHL record for most losses and worst overall record in a season.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 1988–89 Islanders won only seven of their first 27 games and finished tied with Quebec for the worst record in the league!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Islanders",
+        "claim": "In 1988–89 the Islanders won only seven of their first 27 games and finished with 61 points, tied with the Quebec Nordiques for the worst record in the league.",
+        "proof": "The 1988–89 season saw the Islanders win only seven of their first 27 games. ... and the team finished with 61 points, tied with the Quebec Nordiques for the worst record in the league.",
+        "asOf": "1988–89 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Islanders barely made the 1994 playoffs, then got swept in a lopsided opening series by the first-place Rangers!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Islanders",
+        "claim": "The Islanders barely squeezed into the 1994 playoffs, then were swept in a lopsided opening series by the first-place Rangers, who went on to win the Cup.",
+        "proof": "The Islanders barely squeezed past the Panthers to make the 1994 playoffs before being swept in a lopsided opening series by the first-place Rangers, who went on to win the Cup.",
+        "asOf": "1994 playoffs",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the lockout-shortened 1994–95 season the Islanders missed the playoffs and finished ahead of only the third-year Ottawa Senators!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Islanders",
+        "claim": "In the lockout-shortened 1994–95 season the Islanders failed to qualify for the playoffs and finished ahead of only the third-year Ottawa Senators.",
+        "proof": "In the lockout-shortened 1994–95 season, the Islanders not only failed to qualify for the playoffs, they finished ahead of only the third-year Ottawa Senators.",
+        "asOf": "1994–95 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Rangers fans mockingly called the Islanders \"fishsticks\" over their new fisherman logo, and it was a disappointing year on the ice too: they finished in last place!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Islanders",
+        "claim": "After the Islanders unveiled a new fisherman logo, rival Rangers fans mockingly called them \"fishsticks\", and the same year the team finished in last place.",
+        "proof": "The same year, the Islanders' attempt at updating their look resulted in the unveiling of a new team logo of a slicker-clad fisherman holding a hockey stick. Islanders fans disliked it, and rival Rangers' fans mockingly called the Islanders \"fishsticks\"—mocking how the logo resembled the Gorton's Fisherman. ... The year was a disappointment on the ice as well, as the Islanders finished in last place with a record of 22–50–10.",
+        "asOf": "1995–96 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-jets": [
+      {
+        "text": "Fun fact. In 12 years in Atlanta, the franchise that became the Winnipeg Jets made the playoffs once and never won a playoff game!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Winnipeg_Jets",
+        "claim": "In their 12 years in Atlanta the Thrashers (now the Jets franchise) qualified for the playoffs once, in 2006–07, and never won a playoff game.",
+        "proof": "In the 12 years in Atlanta, the Thrashers qualified for the Stanley Cup playoffs once, during the 2006–07 season, and never won a playoff game.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2015 the Winnipeg Jets clinched their first playoff spot since relocating, then were swept in four games by the Anaheim Ducks in the first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Winnipeg_Jets",
+        "claim": "On April 9, 2015 the Jets clinched their first playoff appearance since relocating to Winnipeg, then were swept in four games by the top-seeded Ducks in the first round.",
+        "proof": "On April 9, 2015, the Jets clinched their first Stanley Cup playoff appearance since relocating to Winnipeg ... they played the top-seeded Anaheim Ducks in the first round. In the first playoff series that involved a team from Winnipeg since the 1996 playoffs, the Ducks swept the Jets in four games.",
+        "asOf": "2015 playoffs",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The season after their first playoff run, the Winnipeg Jets finished 25th overall, then won the second overall pick through the draft lottery!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Winnipeg_Jets",
+        "claim": "The season after their first playoff run the Jets finished 25th overall, well out of the playoffs, yet won the second overall pick in the 2016 draft lottery despite the sixth-worst record.",
+        "proof": "The season following their first playoff run was a disappointment, as the Jets finished 25th overall, well out of the playoffs ... Despite finishing with the sixth-worst record in the league, the Jets managed to win the second overall pick in the 2016 NHL entry draft through the draft lottery",
+        "asOf": "2016–17 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2018 the Winnipeg Jets won game 1 of the conference finals against Vegas 4–2, then lost the next four games!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Winnipeg_Jets",
+        "claim": "In the 2018 conference finals the Jets won game 1 against the Golden Knights 4–2, then Vegas won the following four games.",
+        "proof": "On April 11, 2018, the Jets won the first playoff game in the history of the Atlanta/Winnipeg franchise when they defeated the Minnesota Wild 3–2 ... Facing the Vegas Golden Knights in the conference finals, the Jets defeated the Golden Knights in the first game of the series 4–2. However, the Jets went on to lose the conference finals, with the Golden Knights defeating the Jets in the following four games in the series.",
+        "asOf": "2018 playoffs",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2024–25 the Winnipeg Jets won their first Presidents Trophy, then lost to Dallas in six games in the second round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Winnipeg_Jets",
+        "claim": "In 2024–25 the Jets won their first Presidents Trophy and division championship, beat St. Louis in seven games, then lost to the Dallas Stars in six games in the second round.",
+        "proof": "During the 2024–25 season, the Jets won their first Presidents Trophy and their division championship for most wins (56), most points (116). They would then win against the St. Louis Blues in the first round in seven games  before eventually losing to the Dallas Stars in six games.",
+        "asOf": "2024–25 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-kings": [
+      {
+        "text": "Fun fact. The Los Angeles Kings won game 1 of the 1993 Stanley Cup Final and led game 2 late, but never recovered and lost to Montreal!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Kings",
+        "claim": "In the 1993 Final the Kings won game 1 and led game 2 2–1 late, but never recovered: they dropped the next two games in overtime and lost game 5, giving Montreal its 24th Cup.",
+        "proof": "In the 1993 Stanley Cup Final, the Kings faced the Montreal Canadiens. They won the first game 4–1, but late in game 2, with the Kings leading by a score of 2–1, Canadiens coach Jacques Demers requested a measurement of Kings defenseman Marty McSorley's stick blade ... and the Kings never recovered. They dropped the next two games in overtime, and lost game 5, 4–1, giving the Canadiens their league-leading 24th Stanley Cup in franchise history.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Los Angeles Kings' 1995–96 alternate jersey was so unpopular with fans that it was scrapped after only one season!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Kings",
+        "claim": "The Kings' alternate jersey for 1995–96, the so-called \"Burger King\" jersey, was unpopular with fans and was scrapped after one season.",
+        "proof": "The Kings briefly reintroduced purple and gold to the color scheme upon unveiling an alternate jersey for the 1995–96 season ... The so-called \"Burger King\" jersey proved to be unpopular with fans, and was scrapped after only one season.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Los Angeles Kings entered 2014–15 as early favorites to retain their title, then missed the playoffs, only the fourth team to do so as defending winners since 1967!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Kings",
+        "claim": "The Kings, favorites to retain their title in 2014–15, missed the postseason, only the fourth defending Cup champion to do so since the 1967 expansion.",
+        "proof": "Having won two Stanley Cup championships in the last three years, the Kings entered the 2014–15 season as the early favorites to retain their title ... the Kings became the first defending Stanley Cup champion to miss the postseason since the 2006–07 Carolina Hurricanes and only the fourth overall since the 1967 NHL expansion season.",
+        "asOf": "2014–15 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Los Angeles Kings began 2023–24 with an NHL-record road streak, then suddenly won just three of 17 games before the All-Star break!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Kings",
+        "claim": "In 2023–24 the Kings broke the NHL record for the longest unbeaten road streak to start a year, then won just three of their final 17 games before the All-Star break.",
+        "proof": "The 2023–24 season got off to a strong start, as the team began the season with an 11–0–0 record on the road, breaking the NHL record (previously held by the Buffalo Sabres) for the longest unbeaten road streak to start the year ... However, in January 2024, the Kings' season collapsed; despite making no major lineup or personnel changes, the Kings suddenly won just three of their final 17 games before the All-Star break.",
+        "asOf": "2023–24 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Los Angeles Kings opened their first season in Long Beach because the Forum was unfinished, and the Forum's opener was a 2–0 shutout loss!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Kings",
+        "claim": "In 1967–68 the Kings opened at Long Beach Arena because the Forum was not complete; the Forum opened December 30, 1967 with the Kings shut out 2–0 by the Flyers.",
+        "proof": "Construction on Cooke's new arena, the Forum, was not yet complete when the 1967–68 season began, so the Kings opened their first season at the Long Beach Arena in the neighboring city of Long Beach on October 14, 1967, defeating another expansion team, the Philadelphia Flyers, 4–2. The \"Fabulous Forum\" finally opened its doors on December 30, 1967, with the Kings being shut out by the Flyers, 2–0.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-kraken": [
+      {
+        "text": "Fun fact. The Seattle Kraken lost their first game and their first home game, then finished their inaugural season last in the Pacific Division!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Kraken",
+        "claim": "The Kraken lost their first regular season game (4–3 to Vegas) and first home game (4–2 to Vancouver), and finished their inaugural season in last place of the Pacific Division.",
+        "proof": "The Kraken played their first regular season game the next day, a 4–3 loss to the Vegas Golden Knights ... The Kraken played their first home game at Climate Pledge Arena (formerly KeyArena) on October 23, a 4–2 loss to the division rival Vancouver Canucks ... The Kraken finished their inaugural season in last place of the Pacific Division",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2023–24 the Seattle Kraken had a franchise-record nine-game win streak and still missed the playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Kraken",
+        "claim": "In 2023–24 the Kraken had a franchise record nine-game win streak yet missed the playoffs.",
+        "proof": "In December and January, following an eight-game losing streak, goaltender Joey Daccord started in eight out of nine games of a franchise record nine-game win streak ... During the 2023–24 season, the team missed the playoffs, scoring only 217 goals and achieving only 81 points.",
+        "asOf": "2023–24 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Before their first season, the Seattle Kraken's home preseason games were held in Spokane, Everett and Kent because their arena renovation was delayed!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Kraken",
+        "claim": "The Kraken's three home preseason games before 2021–22 were in Spokane, Everett and Kent due to delays in the renovation of Climate Pledge Arena.",
+        "proof": "The Kraken's three home preseason games prior to the 2021–22 season were held at Spokane Arena in Spokane, Angel of the Winds Arena in Everett, and the accesso ShoWare Center in Kent: arenas home to Western Hockey League (WHL) teams, in an event known as the 3-Rink Rush, due to delays in the renovation of Climate Pledge Arena.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2022–23 the Seattle Kraken won their first playoff series by upsetting the Avalanche in seven games, then lost to Dallas in the second round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Kraken",
+        "claim": "In 2022–23 the Kraken upset the Avalanche in seven games, the first expansion team to win its first playoff series over the defending champion, then lost to the Stars in the second round.",
+        "proof": "During the 2022–23 season, the team achieved a record of 46–28–8 and 100 points, securing fourth place in the Pacific Division ... They upset the Avalanche in seven games, becoming the first expansion team to win their first playoff series over the defending Stanley Cup champion. However, they lost to the Dallas Stars in the second round",
+        "asOf": "2022–23 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Seattle Kraken's 2024 Winter Classic uniform leaked four days before its unveiling when NBA Utah Jazz players walked into their arena wearing it!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Seattle_Kraken",
+        "claim": "The Kraken's 2024 Winter Classic uniform, unveiled November 22, 2023, leaked four days earlier when Utah Jazz players walked into their home arena wearing it.",
+        "proof": "For the 2024 NHL Winter Classic, the Kraken wore a uniform inspired by the Seattle Metropolitans ... The uniform was officially unveiled on November 22, 2023, but was leaked four days earlier when players from the National Basketball Association's Utah Jazz walked into their home arena wearing it.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-lightning": [
+      {
+        "text": "Fun fact. The Tampa Bay Lightning rose to the top of their division within a month of their first season, then finished in last place!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Lightning",
+        "claim": "In their first season the Lightning rose to the top of the Norris Division within a month, but finished in last place.",
+        "proof": "The Lightning played their first regular season game on October 7, 1992, in Tampa's Expo Hall at the Florida State Fairgrounds ... The team rose to the top of the Campbell Conference's Norris Division within a month, behind Kontos' initial torrid scoring pace and a breakout season by forward Brian Bradley. However, the team finished in last place",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. After a third straight Stanley Cup Final in 2022, the Tampa Bay Lightning lost in the first round of the playoffs in each of the next four seasons, 2022–23 through 2025–26!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Lightning",
+        "claim": "After clinching a third straight Final berth in 2022, the Lightning lost in the first round in 2022–23, 2023–24, 2024–25 and 2025–26.",
+        "proof": "On June 11, the Lightning clinched their third straight Stanley Cup Final berth defeating the New York Rangers in game six of the conference finals ... In the 2022–23 season, the Lightning finished in third place in the Atlantic Division and sixth in the Eastern Conference, and once again played the Toronto Maple Leafs in the first round of the 2023 playoffs. However, the Maple Leafs eliminated the Lightning 4–2. In the 2023–24 season, the Lightning finished in fourth place in the Atlantic Division, and qualified for the 2024 playoffs as the first wild card, but were eliminated by their in–state rivals, the Florida Panthers, in five games in the first round ... In the 2024–25 season, they played the Florida Panthers in the first round of the playoffs and lost in five games. The 2025–26 season ended with another first round playoff loss, this time against the Montreal Canadiens in seven games.",
+        "asOf": "2025–26 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Tampa Bay Lightning lost 54 games in 1999–2000 and 52 in 2000–01, becoming the first NHL team to post four straight 50-loss seasons!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Lightning",
+        "claim": "The Lightning lost 54 games in 1999–2000 and 52 in 2000–01, becoming the first team in NHL history to post four straight 50-loss seasons.",
+        "proof": "the Lightning lost 54 games in 1999–2000 and 52 in 2000–01, becoming the first team in NHL history to post four straight 50-loss seasons.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2018–19 the Tampa Bay Lightning won the Presidents' Trophy, then became the first winner swept in the first round of the playoffs, by eighth-seeded Columbus!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Lightning",
+        "claim": "In 2018–19 the Lightning clinched the Presidents' Trophy, then were swept in four games in the 2019 first round by the eighth seeded Blue Jackets, the first Presidents' Trophy winner swept in the first round.",
+        "proof": "During the 2018–19 season, the Lightning clinched their first Presidents' Trophy ... However, in the first round of the 2019 playoffs, they were swept in four games by the eighth seeded Columbus Blue Jackets, becoming the first Presidents' Trophy winner to be swept in the first round of the playoffs.",
+        "asOf": "2018–19 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2014–15 the Tampa Bay Lightning beat three Original Six teams in the first three rounds, then lost the Stanley Cup Final to Chicago in six games!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tampa_Bay_Lightning",
+        "claim": "In 2014–15 the Lightning defeated three Original Six teams in the first three rounds, then lost the Stanley Cup Final to the Blackhawks in six games.",
+        "proof": "Prior to the 2014–15 season, the Lightning drafted Brayden Point at 79th overall ... In the playoffs, they defeated the Detroit Red Wings in the first round, the Montreal Canadiens in the second round, and the New York Rangers in the Eastern Conference final ... They also became the first team to successfully defeat three Original Six teams in the first three rounds ... However, they lost the series in six games.",
+        "asOf": "2014–15 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-mapleleafs": [
+      {
+        "text": "Fun fact. The Maple Leafs franchise, then the Arenas, sold stars to pay legal bills in 1918–19 and won just five games, still its worst winning percentage!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Maple_Leafs",
+        "claim": "In 1918–19 legal bills forced the Arenas (the Maple Leafs franchise) to sell stars, resulting in a five-win season with a .278 winning percentage, the worst in franchise history.",
+        "proof": "Mounting legal bills from the dispute forced the Arenas to sell some of their stars, resulting in a horrendous five-win season in 1918–19. ... The Arenas' .278 winning percentage that season remains the worst in franchise history.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 1952–53 the Maple Leafs failed to make the playoffs for the first time since 1945–46!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Maple_Leafs",
+        "claim": "In the 1952–53 season the Maple Leafs failed to make the postseason for the first time since the 1945–46 playoffs.",
+        "proof": "With the conclusion of the 1952–53 regular season, the Leafs failed to make it to the postseason for the first time since the 1945–46 playoffs.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 1972–73 the Maple Leafs, undermanned and demoralized after losing key players to the new WHA, finished with the fourth-worst record in the league!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Maple_Leafs",
+        "claim": "In 1972–73 the Maple Leafs, after losing key players to the new WHA, finished with the fourth-worst record in the league.",
+        "proof": "By the end of 1971, the World Hockey Association (WHA) began operations as a direct competitor to the NHL. Believing the WHA would not be able to compete against the NHL, Ballard's attitude caused the Maple Leafs to lose key players, including Parent to the upstart league. Undermanned and demoralized, the Leafs finished with the fourth-worst record for the 1972–73 season.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the 2013 playoffs the Maple Leafs blew a 4–1 third-period lead to the Bruins and lost 5–4 in overtime!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Maple_Leafs",
+        "claim": "In the 2013 Stanley Cup playoffs the Bruins rallied from a 4–1 third-period deficit to beat the Maple Leafs 5–4 in overtime and advance.",
+        "proof": "The rivalry has since been renewed from the 2013 Stanley Cup playoffs which saw the Bruins rally from a 4–1 third-period deficit to defeat the Maple Leafs in overtime, 5–4, and advance to the second round.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2025–26 the Maple Leafs finished last in the Atlantic Division, missing the playoffs for the first time since 2015–16!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toronto_Maple_Leafs",
+        "claim": "In 2025–26 the Maple Leafs finished last in the Atlantic Division and missed the playoffs for the first time since 2015–16.",
+        "proof": "The team would end up finishing the 2025–26 season with a 32–36–14 record with 78 points, finishing last in the Atlantic Division, and missing the playoffs for the first time since the 2015–16 season.",
+        "asOf": "2025–26 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-oilers": [
+      {
+        "text": "Fun fact. In 1992–93 the Oilers missed the playoffs for the first time as an NHL team, and didn't return for four years!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Edmonton_Oilers",
+        "claim": "In 1992–93 the Oilers missed the playoffs for the first time as an NHL team and did not return to the postseason for four years.",
+        "proof": "In 1992–93, they missed the playoffs for the first time as an NHL team. They did not return to the postseason for four years, despite the emergence of young centremen Doug Weight and Jason Arnott.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. After coming up short in the 2006 Stanley Cup Final, the Oilers missed the playoffs for the next 10 straight seasons!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Edmonton_Oilers",
+        "claim": "After coming up short in the 2006 Stanley Cup Final, the Oilers missed the playoffs for the subsequent 10 seasons.",
+        "proof": "The Oilers struggled after coming up short in the 2006 Stanley Cup Final, missing the playoffs for the subsequent 10 seasons.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 1981–82 the Oilers finished second overall, then were upset by the Kings after blowing a 5–0 lead in game 3 — the Miracle on Manchester!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Edmonton_Oilers",
+        "claim": "In 1981–82 the Oilers finished second overall and were upset by the Kings in five games; in game 3 they took a 5–0 lead into the third period but lost 6–5 in overtime (the Miracle on Manchester).",
+        "proof": "The Oilers improved in 1981–82, finishing second overall. ... They were upset by the Los Angeles Kings in a five-game series. In game 3 of this series, the Miracle on Manchester, the Oilers took a 5–0 lead into the third period, only to lose 6–5 in overtime).",
+        "asOf": "1981–82 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2014–15 the Oilers earned only 62 points, one of their worst seasons as an NHL team!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Edmonton_Oilers",
+        "claim": "In 2014–15 the Oilers earned only 62 points in one of their worst seasons as an NHL team.",
+        "proof": "Off-season moves failed to help the Oilers in the 2014–15 season, as the team earned only 62 points in one of their worst seasons as an NHL team.",
+        "asOf": "2014–15 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 1988–89 the Oilers led the Kings 3–1 in the first round, then lost game 7 6–3 in Los Angeles — their first first-round exit since 1982!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Edmonton_Oilers",
+        "claim": "In the 1988–89 first-round playoffs, the Oilers took a 3–1 series lead over the Los Angeles Kings but lost game 7 6–3 in Los Angeles, their first first-round elimination since 1982.",
+        "proof": "The loss of Gretzky had an immediate impact in 1988–89 ... the Oilers' first-round playoff opponent was Gretzky's Los Angeles Kings. Edmonton took a commanding 3–1 series lead, but Gretzky and the Kings fought back to win the series, winning game 7 6–3 in Los Angeles. It was the first time since 1982 that the Oilers had been eliminated from the playoffs in the first round.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-panthers": [
+      {
+        "text": "Fun fact. In 1997–98 the Panthers went through a 15-game winless streak on the way to the worst record in franchise history!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Florida_Panthers",
+        "claim": "In 1997–98 the Panthers posted a franchise-worst 24–43–15 record, including a 15-game winless streak.",
+        "proof": "The team would plummet in the 1997–98 season. ... The change did not aid matters, as Florida posted a franchise-worst 24–43–15 record, including a 15-game winless streak.",
+        "asOf": "1997–98 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2008–09 the Panthers had their second-highest finish ever with 93 points, yet missed the playoffs for an eighth-straight season, the then-longest streak in the NHL!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Florida_Panthers",
+        "claim": "In 2008–09 the Panthers earned 93 points, their second-highest finish in franchise history, yet missed the playoffs for an eighth-straight season, the then-longest streak in the NHL.",
+        "proof": "The Panthers finished the 2008–09 season with a strong 41–30–11 record and 93 points, their second-highest finish in franchise history. Despite this, however, the Panthers missed the playoffs for an eighth-straight season, the then-longest streak in the NHL.",
+        "asOf": "2008–09 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2012–13 the Panthers followed their first-ever division title with the worst record in the League!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Florida_Panthers",
+        "claim": "After winning the first division title in franchise history (April 2012), the Panthers had the worst record in the League in the lockout-shortened 2012–13 season.",
+        "proof": "The Panthers won the first-ever division title in franchise history with a 4–1 victory over the Carolina Hurricanes on April 7, 2012. ... In the lockout-shortened 2012–13 season, the Panthers had an abysmal season. Unable to regain their form from last season, the Panthers suffered key injuries and fell back down into the basement with the worst record in the League.",
+        "asOf": "2012–13 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2017–18 the Panthers earned 96 points, tying the NHL record for most points by a team to miss the postseason, ending one point short of a playoff berth!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Florida_Panthers",
+        "claim": "In 2017–18 the Panthers ended one point short of a playoff berth with 96 regular season points, tying the league record for the most regular season points to miss the postseason.",
+        "proof": "The 2017–18 season began with a 19–22–6 record leading up to the 2018 NHL All-Star Game. The Panthers then went on a 25–8–2 run in their last 35 games, ending up one point short of a playoff berth. Their 44–30–8 record earned 96 regular season points, tying the league record of the 2014–15 Boston Bruins and the 2018–19 Montreal Canadiens for the team with the most regular season points to miss the postseason.",
+        "asOf": "2017–18 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2021–22 the Panthers won the Atlantic with 122 points, then were swept by Tampa Bay in the second round, scoring only three goals in the series!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Florida_Panthers",
+        "claim": "In 2021–22 the Panthers finished 1st in the Atlantic with 122 points, then were swept in four games by the Tampa Bay Lightning in the second round, scoring only three goals in the series.",
+        "proof": "2021–22 || 82 || 58 || 18 || 6 || 122 || 340 || 246 || 1st, Atlantic || Lost in second round, 0–4 (Lightning) ... However, the Panthers were swept in four games by the archrival the Tampa Bay Lightning in the second round. Florida went completely dry offensively, scoring only three goals throughout the whole four-game series.",
+        "asOf": "2021–22 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-penguins": [
+      {
+        "text": "Fun fact. In 2005–06 the Penguins began with a long winless skid, then again posted the worst record in the Eastern Conference!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Penguins",
+        "claim": "In 2005–06 the Penguins began the season with a long winless skid and again posted the worst record in the Eastern Conference.",
+        "proof": "The addition of Crosby paid instant dividends, with attendance rising by approximately 4,000 per game on average in the 2005–06 season. However, Crosby's presence did not immediately translate into wins, as the team began the season with a long winless skid ... The Penguins again posted the worst record in the Eastern Conference and the highest goals-against total in the League.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2002 the Penguins missed the playoffs for the first time in 12 years, tied for third-to-last in their conference!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Penguins",
+        "claim": "The Penguins missed the playoffs in 2002 for the first time in 12 years, finishing in a tie for third-to-last in their conference.",
+        "proof": "The Penguins missed the playoffs for the first time in 12 years in 2002, finishing in a tie for third-to-last in their conference.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 2003–04 Penguins finished with the worst record in the NHL, winning just 23 games!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Penguins",
+        "claim": "The 2003–04 Penguins had the worst record in the NHL, winning just 23 games.",
+        "proof": "The 2003–04 season was an ordeal ... This culminated in the worst record in the NHL, with the team winning just 23 games.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the 2022 playoffs the Penguins lost in seven to the Rangers despite a 3–1 lead — the first time they lost a game 7 on the road in franchise history!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Penguins",
+        "claim": "In the 2022 first-round playoffs the Penguins lost to the Rangers in seven games despite a 3–1 series lead, marking their first road game 7 loss in franchise history.",
+        "proof": "In the first round of the 2022 Stanley Cup playoffs, the Penguins lost in seven games to the New York Rangers despite having a 3–1 series lead. The game 7 loss marked the first time the Penguins lost a game 7 on the road in franchise history after going 6–0 the previous six instances.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2022–23 the Penguins missed the playoffs for the first time since 2005–06, ending a 16-season playoff streak!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Pittsburgh_Penguins",
+        "claim": "In 2022–23 the Penguins missed the playoffs for the first time since 2005–06, ending a 16-season playoff streak.",
+        "proof": "2022–23 || 82 || 40 || 31 || 11 || 91 || 262 || 264 || 5th, Metropolitan || Did not qualify ... However, despite being in a playoff position midway in the season, the Penguins missed the playoffs for the first time since Crosby's rookie season in 2005–06, ending a 16-season playoff streak",
+        "asOf": "2022–23 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-predators": [
+      {
+        "text": "Fun fact. Nashville's name vote had Ice Tigers, Fury and Attack on the ballot, then one more entry was added to the vote, and 'Predators' won!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nashville_Predators",
+        "claim": "Three candidates (Ice Tigers, Fury, Attack) were chosen from 75 for the fan vote; a further name, Predators, was added to the vote and won.",
+        "proof": "Three candidates were culled from 75: \"Ice Tigers,\" \"Fury\" and \"Attack.\" Leipold added his own submission to the vote, \"Predators\". On November 13, Leipold revealed at a press conference that his submission had won out and the new franchise would be known as the \"Nashville Predators.\"",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Predators' first-ever game was a 1–0 home loss to the Panthers, and their first season ended second-to-last in the West!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nashville_Predators",
+        "claim": "The Predators lost their first game 1–0 at home to the Florida Panthers on October 10, 1998, and finished their first season second-to-last in the Western Conference.",
+        "proof": "The Predators began play during the 1998–99 season, taking to the ice for the first time on October 10, 1998, where they lost 1–0 at home to the Florida Panthers. Three nights later, on October 13, they defeated the Carolina Hurricanes 3–2 for their first win. The Predators finished second-to-last in the Western Conference with a 28–47–7 record.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. After an 8–0 start and 106 points, the Predators were knocked out by the Sharks in five games in the first round of the 2006 playoffs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nashville_Predators",
+        "claim": "In 2005–06 the Predators started 8–0 and reached 106 points with first-round home ice, then lost to the San Jose Sharks in five games in the first round of the 2006 playoffs.",
+        "proof": "the Predators became only the fourth NHL franchise to start the season 8–0 ... By the end of the season, the Predators had accumulated 106 points and clinched home-ice advantage in the first round of the playoffs for the first time in team history. ... However, the Predators would be eliminated by the San Jose Sharks in five games in the first round of the 2006 playoffs.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2018 the Predators won their first division title and first Presidents' Trophy, then lost a seven-game series to the Jets in the second round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nashville_Predators",
+        "claim": "On April 5, 2018 the Predators clinched their first division title and first Presidents' Trophy, beat Colorado in round one, then lost to the Winnipeg Jets in seven games in the second round.",
+        "proof": "On April 5, 2018, the Predators clinched their first division title in team history while also claiming their first Presidents' Trophy. They defeated the Colorado Avalanche in the first round of the playoffs in six games, and then lost to the Winnipeg Jets in seven games in the second round.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. After making a splash in free agency in the 2024 offseason, the Predators finished 30th in the NHL with the second-fewest goals for!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nashville_Predators",
+        "claim": "After a big free-agent signing spree in the 2024 offseason, the Predators finished 30th in the NHL with the second-fewest goals for in 2024–25.",
+        "proof": "In the 2024 offseason, the team made a splash in free agency signing Jonathan Marchessault, Steven Stamkos, and Brady Skjei. However, the team finished 30th in the NHL with the second fewest goals for.",
+        "asOf": "2024–25 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-rangers": [
+      {
+        "text": "Fun fact. In 2024–25 the Rangers became just the fourth team to miss the playoffs the year after winning the Presidents' Trophy!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Rangers",
+        "claim": "In 2024–25 the Rangers became just the fourth team to miss the playoffs the year following a Presidents' Trophy win.",
+        "proof": "The 2024–25 season was disastrous, as the Rangers became just the fourth team to miss the playoffs the year following a Presidents' Trophy win.",
+        "asOf": "2024–25 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the 1950 Stanley Cup Final the Rangers had to play all their games, even the \"home\" ones, in Toronto while the circus was at the Garden, and lost in overtime in game seven!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Rangers",
+        "claim": "In the 1950 Stanley Cup Final the Rangers were forced to play every game, including home games, in Toronto while the circus was at the Garden, and lost to the Red Wings in overtime in the seventh game.",
+        "proof": "In the 1950 Stanley Cup Final, the Rangers were forced to play all of their games, including \"home\" games, in Toronto, while the circus was held at the Garden. They lost to the Detroit Red Wings in overtime in the seventh game of the series.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. From 1998 to 2005 the Rangers endured a franchise-record seven-year postseason drought!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Rangers",
+        "claim": "From 1998 to 2005 the Rangers went through a franchise-record seven-year postseason drought.",
+        "proof": "The team was unable to duplicate that success in the years that followed, and entered into another period of mediocrity, enduring a franchise-record seven-year postseason drought from 1998 to 2005.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Rangers collapsed by the mid-1940s, losing games by scores as lopsided as 15–0!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Rangers",
+        "claim": "By the mid-1940s the Rangers collapsed, losing games by scores as lopsided as 15–0.",
+        "proof": "The Rangers collapsed by the mid-1940s, losing games by scores as lopsided as 15–0.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The 1991–92 Rangers won the Presidents' Trophy, took a 2–1 series lead on the Penguins, then faltered in three straight!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/New_York_Rangers",
+        "claim": "The 1991–92 Rangers captured the Presidents' Trophy, took a 2–1 series lead on the defending champion Penguins, and then faltered in three straight.",
+        "proof": "Frustration was at its peak when the 1991–92 Rangers captured the Presidents' Trophy. They took a 2–1 series lead on the defending champion Pittsburgh Penguins and then faltered in three straight",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-redwings": [
+      {
+        "text": "Fun fact. In February 2020 the Red Wings became the first team since the 2003–04 Penguins to be eliminated from playoff contention before the trade deadline!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Detroit_Red_Wings",
+        "claim": "On February 21, 2020, the Red Wings became the first team since the 2003–04 Pittsburgh Penguins to be eliminated from playoff contention before the trade deadline.",
+        "proof": "On February 21, 2020, the Red Wings became the first team to be eliminated from playoff contention before the trade deadline since the 2003–04 Pittsburgh Penguins.",
+        "asOf": "2019–20 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Red Wings once finished dead last in the NHL with only 40 points, the worst record in the league!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Detroit_Red_Wings",
+        "claim": "The Red Wings finished last place with a 17–57–6 record for only 40 points, the worst record in the league.",
+        "proof": "after they finished last place with a 17–57–6 record for only 40 points, the worst record in the league.",
+        "asOf": "1985–86 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. A year after the 1966 Stanley Cup Final, the Red Wings finished 24 points out of the playoffs, then made them only twice between 1966–67 and 1982–83!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Detroit_Red_Wings",
+        "claim": "Only a year after making the 1966 Stanley Cup Final the Red Wings finished a distant fifth, 24 points out of the playoffs, and between 1966–67 and 1982–83 they made the playoffs only twice.",
+        "proof": "Only a year after making the 1966 Stanley Cup Final, the Red Wings finished a distant fifth, 24 points out of the playoffs. ... They struggled between the 1966–67 and 1982–83 seasons, only making the playoffs twice in that stretch.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 1958–59 the Red Wings missed the playoffs for the first time in 21 years!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Detroit_Red_Wings",
+        "claim": "In 1958–59 the Red Wings missed the playoffs for the first time in 21 years.",
+        "proof": "In 1958–59, the Red Wings missed the playoffs for the first time in 21 years.",
+        "asOf": "1958–59 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. On April 11, 2026, a 5–3 loss to the Devils eliminated the Red Wings from playoff contention for the tenth consecutive season!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Detroit_Red_Wings",
+        "claim": "On April 11, 2026, the Red Wings were eliminated from playoff contention for the tenth consecutive season following a 5–3 loss to the New Jersey Devils.",
+        "proof": "On April 11, 2026, the Red Wings were eliminated from playoff contention for the tenth consecutive season following a 5–3 loss to the New Jersey Devils.",
+        "asOf": "2025–26 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-sabres": [
+      {
+        "text": "Fun fact. In 2022–23 the Sabres finished above .500 for the first time since 2011 and still ended up one point below the playoff line!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Buffalo_Sabres",
+        "claim": "In 2022–23 Buffalo went 42–33–7, above .500 for the first time since 2011, and finished one point below the playoff line.",
+        "proof": "The Sabres improved in the 2022–23 season, going 42–33–7 and finishing above .500 for the first time since 2011 and only finishing one point below the playoff line.",
+        "asOf": "2022–23 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2021–22 the Sabres missed the playoffs for the 11th consecutive season, setting the record for consecutive missed playoff seasons!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Buffalo_Sabres",
+        "claim": "Buffalo missed the playoffs in 2021–22 for the 11th consecutive season, a record for consecutive missed playoff seasons.",
+        "proof": "The team ended up missing for the 11th consecutive season, setting the record for consecutive missed playoff seasons. ... 2021–22 || 82 || 32 || 39 || 11 || 75 || 232 || 290 || 5th, Atlantic || Did not qualify",
+        "asOf": "2021–22 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In March 2021 the Sabres tied the Penguins' all-time NHL losing streak of 18 games, blowing a 3–0 third-period lead to the Flyers and losing in overtime!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Buffalo_Sabres",
+        "claim": "On March 29, 2021 Buffalo tied the Penguins' all-time NHL losing streak of 18 games after blowing a 3–0 third-period lead to the Flyers and losing in overtime.",
+        "proof": "After continuing to lose games, on March 29, 2021, the Sabres tied the Pittsburgh Penguins' all-time NHL losing streak of 18 games from the 2003–04 season after blowing a 3–0 lead in the third period against the Philadelphia Flyers and subsequently losing in overtime; it is the longest losing streak since the shootout was introduced.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2017–18 the Sabres finished in last place for the third time in five seasons, then won the draft lottery for the first time since 1987!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Buffalo_Sabres",
+        "claim": "In 2017–18 Buffalo finished last in the NHL for the third time in five seasons and won the draft lottery for the first time since 1987.",
+        "proof": "In the 2017–18 season, the Sabres participated in the 2018 Winter Classic, losing 3–2 in overtime to the New York Rangers. Buffalo finished in last place in the NHL for the third time in five seasons and won the draft lottery for the 2018 NHL entry draft for the first time since 1987",
+        "asOf": "2017–18 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2006 the Sabres unveiled a new logo so widely reviled it was compared to a banana slug, earning the nickname \"Buffaslug\"!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Buffalo_Sabres",
+        "claim": "On September 16, 2006 the Sabres unveiled a new logo that was widely reviled and compared to a banana slug, hence the nickname \"Buffaslug\".",
+        "proof": "On September 16, 2006, the Sabres unveiled new home and away jerseys featuring midnight blue, maize (gold), silver and white colors. ... The new logo, a stylized bison, was widely reviled, drawing unfavorable comparisons to a banana slug (hence the nickname \"Buffaslug\").",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-senators": [
+      {
+        "text": "Fun fact. The Senators opened in October 1992 with a 5–3 win over the Canadiens, then floundered and tied the Sharks for the worst record in the league with only 10 wins!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ottawa_Senators",
+        "claim": "After winning their first game on October 8, 1992, 5–3 over the Canadiens, the Senators floundered and tied the Sharks for the worst record in the league, winning only 10 games.",
+        "proof": "played their first game on October 8, 1992, in the Ottawa Civic Centre against the Montreal Canadiens with much pre-game spectacle. The Senators defeated the Canadiens 5–3 in one of the few highlights that season. Following the initial excitement of the opening night victory, the club floundered badly. Eventually, it tied the San Jose Sharks for the worst record in the league, winning only 10 games with 70 losses and four ties for 24 points, three points better than the NHL record for futility.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2002–03 the Senators were bankrupt and playing on emergency financing, yet won the Presidents' Trophy, then fell one game short of the Stanley Cup Final!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ottawa_Senators",
+        "claim": "Though bankrupt, the Senators kept playing in 2002–03 on emergency financing, placed first overall to win the Presidents' Trophy, and lost in the playoffs one game short of the 2003 Stanley Cup Final.",
+        "proof": "Although the Senators were bankrupt, they continued to play in the 2002–03 season after getting emergency financing. Despite the off-ice problems, Ottawa had an outstanding season, placing first overall in the NHL to win the Presidents' Trophy. In the playoffs, they came within one game of making it into the 2003 Stanley Cup Final, losing to the eventual Stanley Cup champion New Jersey Devils.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Senators lost four straight playoff series to their provincial rival, the Maple Leafs!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ottawa_Senators",
+        "claim": "In the Jacques Martin era the Senators made the playoffs every season but lost four straight series against the Toronto Maple Leafs.",
+        "proof": "Martin imposed a \"strong defence first\" philosophy that led to the team qualifying for the playoffs every season that he coached, but he was criticized for the team's lack of success in the playoffs, notably losing four straight series against their provincial rival, the Toronto Maple Leafs.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Senators posted the top record among Canadian teams, yet missed the playoffs, in a season when all seven Canadian teams missed out!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ottawa_Senators",
+        "claim": "Despite the best record of any Canadian team in the league, the Senators failed to make the playoffs in a season when all seven Canadian teams missed.",
+        "proof": "Despite posting the best record of any Canadian team in the league, the Senators failed to make the playoffs in what was considered a disappointing season (all seven Canadian teams missed the playoffs).",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2016–17 the Senators came within one win of the Stanley Cup Final, losing game seven of the conference finals to the Penguins in double overtime!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ottawa_Senators",
+        "claim": "In the 2016–17 playoffs the Senators came within one win of the 2017 Stanley Cup Final, losing game seven of the conference finals in double overtime to the Pittsburgh Penguins.",
+        "proof": "The Senators finished second in the Atlantic Division during the 2016–17 season. ... The Senators would come within one win of the Stanley Cup Final having lost in double overtime of the seventh game of their conference finals series against the Pittsburgh Penguins, who went on to win their second consecutive Stanley Cup.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-sharks": [
+      {
+        "text": "Fun fact. In 2023–24 the Sharks became the first team since the 1965–66 Bruins to allow 10 goals in consecutive games, and tied the record for the longest losing streak to start a season!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/San_Jose_Sharks",
+        "claim": "During the 2023–24 season the Sharks became the first team since the 1965–66 Boston Bruins to allow 10 goals in consecutive games, and their start tied the record for longest losing streak to start a season.",
+        "proof": "During the 2023–24 season, the Sharks became the first team since the 1965–66 Boston Bruins to allow 10 goals in consecutive games. Their 0–10–1 record tied the record for longest losing streak to start the season.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 1992–93 the Sharks lost 71 games, an NHL record, including a 17-game losing streak that was a record at the time!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/San_Jose_Sharks",
+        "claim": "The Sharks lost 71 games in 1992–93, an NHL record, including a then-NHL-record 17-game losing streak.",
+        "proof": "Their 71 losses in the 1992–93 season is an NHL record. During this season, they suffered a 17-game losing streak (a then-NHL record), and won only 11 games while earning 24 points in the standings.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Sharks missed the playoffs five straight seasons, 2021–22 through 2025–26, including a 2023–24 season of just 47 points!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/San_Jose_Sharks",
+        "claim": "From 2021–22 through 2025–26 the Sharks did not qualify for the playoffs in five consecutive seasons, with 47 points in 2023–24.",
+        "proof": "2021–22 || 82 || 32 || 37 || 13 || 77 || 214 || 264 || 6th, Pacific || Did not qualify ... 2022–23 || 82 || 22 || 44 || 16 || 60 || 234 || 321 || 7th, Pacific || Did not qualify ... 2023–24 || 82 || 19 || 54 || 9 || 47 || 181 || 331 || 8th, Pacific || Did not qualify ... 2024–25 || 82 || 20 || 50 || 12 || 52 || 210 || 315 || 8th, Pacific || Did not qualify ... 2025–26 || 82 || 39 || 35 || 8 || 86 || 251 || 292 || 5th, Pacific || Did not qualify",
+        "asOf": "2025–26 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In the 2014 playoffs the Sharks led the Kings 3–0 in the series, then lost in seven games, only the fourth team in NHL history to do that!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/San_Jose_Sharks",
+        "claim": "In the 2014 first round the Sharks took a 3–0 series lead on the Kings and lost in seven, only the fourth time in NHL history a team lost a best-of-seven series after winning its first three games.",
+        "proof": "In the first round of the 2014 playoffs, the Sharks were matched with rivals and eventual Stanley Cup champion Los Angeles Kings. Although the Sharks took a 3–0 series lead, the Kings came back to tie the series before advancing with a 5–1 win in game seven (only the fourth time in NHL history where a team lost a best-of-seven series after winning their first three games).",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Sharks went into 2014–15 camp with no captain, then missed the playoffs for the first time in ten years!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/San_Jose_Sharks",
+        "claim": "The Sharks went into 2014–15 camp without a captain and missed the playoffs that season for the first time in ten years.",
+        "proof": "On August 20, 2014, head coach Todd McLellan announced the team would go into training camp for the 2014–15 season without a captain, and that all players would have the opportunity to compete for the captaincy. The Sharks hosted the 2015 Stadium Series against the Kings at Levi's Stadium in February 2015, losing 2–1. The team missed the playoffs for the first time in ten years.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-stars": [
+      {
+        "text": "Fun fact. In 2011–12 the Stars controlled their own Pacific title hopes in late March, won just once more all season, and missed the playoffs by six points!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dallas_Stars",
+        "claim": "In 2011–12 the Stars needed four points on a late-March road trip to win the Pacific, won once more (their last win of the season), and missed the 2012 playoffs by six points.",
+        "proof": "To begin the 2011–12 season ... Going into the road trip, the Stars were in control of their own destiny, having to gain four points on the road trip to win their first Pacific Division title since the 2005–06 season. After the Stars lost 5–4 in Calgary to the Flames on March 26, the Stars beat the Oilers two nights later, 3–1. This would be their last win of the season ... missing the 2012 playoffs by six points",
+        "asOf": "2011–12 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2016–17 the Stars missed the playoffs for the seventh time in nine seasons, falling 15 points short!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dallas_Stars",
+        "claim": "In 2016–17 the Stars missed the playoffs for the seventh time in the past nine seasons, by 15 points.",
+        "proof": "The Stars finished with a 34–37–11 record in an injury-plagued 2016–17 season, missing the playoffs for the seventh time in the past nine seasons, missing the 2017 playoffs by 15 points.",
+        "asOf": "2016–17 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2001–02 the Stars had a respectable record but still missed the playoffs, falling four points short of the final eighth spot in the West!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dallas_Stars",
+        "claim": "In 2001–02 the Stars posted a respectable record but fell four points short of the final eighth spot in the Western Conference.",
+        "proof": "Moving into the brand new American Airlines Center for the 2001–02 season ... The Stars would eventually go on to post a respectable record of 35–28–13–5. However, it would not be enough for the playoffs, as they fell four points short of the final eighth spot in the Western Conference.",
+        "asOf": "2001–02 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2021–22 the Stars lost game 7 to Calgary in overtime, 3–2, after being outshot two to one!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dallas_Stars",
+        "claim": "In the 2021–22 first round the Stars lost game 7 to the Flames 3–2 in overtime, while the Flames made twice as many shots and attempts.",
+        "proof": "The Stars would rebound in the 2021–22 season ... They were defeated by the Flames in seven games, losing 3–2 in overtime of game 7 in Calgary. In game 7 the Stars took the game to overtime despite the Flames making twice as many shots and attempts as the Stars",
+        "asOf": "2021–22 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2025–26 the Stars piled up 112 points and finished second in the Central, then lost their first-round series 2–4 to the Wild!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dallas_Stars",
+        "claim": "In 2025–26 the Stars finished 2nd in the Central with 112 points and lost in the first round, 2–4, to the Wild.",
+        "proof": "2025–26 || 82 || 50 || 20 || 12 || 112 || 279 || 226 || 2nd, Central || Lost in first round, 2–4 (Wild)",
+        "asOf": "2025–26 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-utah": [
+      {
+        "text": "Fun fact. Utah's team played its first season simply named \"Utah\", without an official logo, mascot or team colors, and with \"Utah\" written across the jerseys!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Utah_Mammoth",
+        "claim": "The team confirmed it would play its first season simply named \"Utah\", without an official logo, mascot, or team colors.",
+        "proof": "the team would play their first season simply named \"Utah\", without an official logo, mascot, or team colors, and with \"Utah\" written across the jerseys.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Utah Mammoth play at the Delta Center, an arena once judged not well suited to host ice hockey permanently because of poor sightlines and broadcasting capabilities!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Utah_Mammoth",
+        "claim": "The Delta Center, the Mammoth's home arena, was not considered well suited to host ice hockey permanently owing to poor sightlines and broadcasting capabilities.",
+        "proof": "Delta Center previously hosted multiple Los Angeles Kings preseason games as part of the NHL's Frozen Fury series. ... However, the arena was not considered well suited to host ice hockey permanently, owing to poor sightlines and broadcasting capabilities.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Utah's first playoff berth in franchise history, in 2025–26, ended in a 2–4 first-round loss to the Golden Knights!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Utah_Mammoth",
+        "claim": "Utah's first playoff berth in franchise history (2025–26) ended in a first-round loss, 2–4, to the Vegas Golden Knights.",
+        "proof": "earning their first playoff berth in franchise history. ... 2025–26 || 82 || 43 || 33 || 6 || 92 || 268 || 240 || 4th, Central || Lost in first round, 2–4 (Golden Knights)",
+        "asOf": "2025–26 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Utah's team was widely expected to be the Yeti, even among its players, until the trademark office refused the name over its similarity to Yeti Holdings — so it became the Mammoth!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Utah_Mammoth",
+        "claim": "The Yeti name was refused by the U.S. Patent and Trademark Office over its similarity to Yeti Holdings, though it had been widely expected (even among players) to be chosen; the team was then revealed as the Utah Mammoth.",
+        "proof": "the \"Utah Yetis\" and singular \"Utah Yeti\" brands were refused by the U.S. Patent and Trademark Office due to its similarity to the company name Yeti Holdings. Prior to the rejection, it had been widely expected, even among Utah players, that the \"Yeti\" name would be chosen. ... These speculations were confirmed on May 7, when the team officially revealed their permanent name as the Utah Mammoth.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. Utah became the first team in NHL history to play a full 82-game season without any shootouts since the tiebreaker was adopted in 2005!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Utah_Mammoth",
+        "claim": "Utah became the first team in NHL history to play the full 82-game season without any shootouts since that tiebreaker was adopted in 2005.",
+        "proof": "Utah became the first team in NHL history to play the full 82-game season without any shootouts since that form of tiebreaker was adopted in 2005.",
+        "asOf": "2025–26 season",
+        "checkedOn": "2026-11-12"
+      }
+    ],
+    "nhl-wild": [
+      {
+        "text": "Fun fact. The Wild earned a point in each of their first seven games in 2001–02, then finished in last place again anyway!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Minnesota_Wild",
+        "claim": "In 2001–02 the Wild earned at least one point in their first seven games, yet finished in last place again.",
+        "proof": "The Wild got off to a strong start in the 2001–02 season by earning at least one point in their first seven games. However, the Wild finished in last place again with a record of 26–35–12–6.",
+        "asOf": "2001–02 season",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. The Wild's first-ever playoff run reached the conference finals, where they were swept 4–0 by the Mighty Ducks of Anaheim and scored just one goal!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Minnesota_Wild",
+        "claim": "In their first-ever playoff appearance the Wild made the conference finals, were swept 4–0 by the Mighty Ducks of Anaheim, and scored only one goal in the series.",
+        "proof": "the Wild, in their first-ever playoff appearance, made it to the conference finals before being swept 4–0 by the Mighty Ducks of Anaheim, scoring only one goal against a red hot Jean-Sébastien Giguère.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2016 the Wild set a franchise record in the first 41 games, then immediately lost 13 of their next 14!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Minnesota_Wild",
+        "claim": "In 2016 the Wild set a franchise record for the best win record in the first 41 games, then immediately lost 13 of the next 14 games.",
+        "proof": "In 2016, the Wild set a franchise record with the best win record in the first 41 games of the season. Immediately afterward, they went into a skid, losing the next 13 of 14 games",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. After another 100-point season, the Wild lost to the Jets in five games in the 2018 playoffs, a third straight year of not getting past the first round!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Minnesota_Wild",
+        "claim": "After another 100-point regular season, the Wild lost to the Winnipeg Jets in five games in the 2018 playoffs, their third straight season failing to advance past the first round.",
+        "proof": "Following another 100-point regular season, the Wild matched up with Central Division rival, the Winnipeg Jets, in the first round of the 2018 playoffs. The Jets defeated the Wild in five games, making it three straight seasons in which the Wild failed to advance past the first round.",
+        "asOf": "historical",
+        "checkedOn": "2026-11-12"
+      },
+      {
+        "text": "Fun fact. In 2021–22 the Wild had home ice advantage in round one, yet blew a 2–1 series lead, went out in six games and lost their seventh consecutive playoff series!",
+        "sourceName": "Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Minnesota_Wild",
+        "claim": "In the 2021–22 first round the Wild had home ice advantage but blew a 2–1 series lead and lost in six games, their seventh consecutive playoff series loss.",
+        "proof": "2021–22 || 82 || 53 || 22 || 7 || 113 || 310 || 253 || 2nd, Central || Lost in first round, 2–4 (Blues) ... They faced the division rival St. Louis Blues in the first round, but despite having home ice advantage and the services of recently acquired goaltender Marc-André Fleury, blew a 2–1 series lead and were eliminated in six games, losing their seventh consecutive playoff series.",
+        "asOf": "2021–22 season",
+        "checkedOn": "2026-11-12"
+      }
+    ]
+  }
+}
