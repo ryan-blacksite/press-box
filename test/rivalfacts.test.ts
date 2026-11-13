@@ -30,6 +30,29 @@ const NFL = TEAMS.filter((team) => team.league === 'NFL');
 const NFL_IDS = NFL.map((team) => team.id);
 const file: RivalFactsFile = JSON.parse(readFileSync(rivalFactsFile('nfl'), 'utf8'));
 const allFacts = Object.entries(file.teams).flatMap(([teamId, facts]) => facts.map((fact) => ({ teamId, fact })));
+const NBA = TEAMS.filter((team) => team.league === 'NBA');
+const nbaFile: RivalFactsFile = JSON.parse(readFileSync(rivalFactsFile('nba'), 'utf8'));
+const nbaFacts = Object.entries(nbaFile.teams).flatMap(([teamId, facts]) => facts.map((fact) => ({ teamId, fact })));
+
+describe('the NBA rival facts file', () => {
+  it('contains five sourced facts for each NBA team', () => {
+    expect(NBA).toHaveLength(30);
+    expect(nbaFile.league).toBe('nba');
+    expect(validateRivalFacts(nbaFile, NBA.map((team) => team.id))).toEqual([]);
+    expect(nbaFacts).toHaveLength(150);
+    expect(new Set(nbaFacts.map(({ fact }) => fact.text)).size).toBe(150);
+    for (const { teamId, fact } of nbaFacts) {
+      const team = NBA.find((candidate) => candidate.id === teamId)!;
+      expect(fact.text.startsWith(FACT_PREFIX)).toBe(true);
+      expect(fact.text.includes(team.name) || (teamId === 'nba-hornets' && fact.text.includes('Charlotte Bobcats')), fact.text).toBe(true);
+      expect(fact.sourceUrl).toMatch(/^https:\/\//);
+      expect(fact.sourceName.length).toBeGreaterThan(2);
+      expect(fact.claim.length).toBeGreaterThan(10);
+      expect(fact.proof.length).toBeGreaterThan(3);
+      expect(fact.checkedOn).toMatch(/^2026-11-\d\d$/);
+    }
+  });
+});
 
 function memoryKv(initial: Record<string, string> = {}): KvStore & { data: Map<string, string>; gets: string[]; puts: string[] } {
   const data = new Map(Object.entries(initial));
